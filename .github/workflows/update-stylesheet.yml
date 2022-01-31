@@ -1,0 +1,27 @@
+name: update-stylesheet
+
+on:
+  workflow_dispatch:
+  # Scheduled trigger
+  schedule:
+    - cron: '42 0 * * *'
+   
+jobs:
+  download-stylesheet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Make script executable
+        run: chmod +x indent.sh
+      
+      - name: Download CSS file
+        run: |
+          wget -O stylesheet.css discord.com/assets/$(curl --list-only https://discord.com/app | grep stylesheet | cut -d " " -f3 | cut -d "/" -f3 | sed s/\"//)
+          
+      - name: Format stylesheet
+        run: cat stylesheet.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
+        
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: stylesheet.css
