@@ -17,10 +17,13 @@ jobs:
       
       - name: Download CSS file
         run: |
-          wget -O stylesheet.css discord.com/assets/$(curl --list-only https://discord.com/app | grep stylesheet | cut -d " " -f3 | cut -d "/" -f3 | sed s/\"//)
+          wget -O temp.css discord.com/assets/$(curl --list-only https://discord.com/app | grep stylesheet | cut -d " " -f3 | cut -d "/" -f3 | sed s/\"//)
           
       - name: Format stylesheet
-        run: cat stylesheet.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
+        run: cat temp.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
+        
+      - name: Clean up files
+        run: rm temp.css
         
       - name: Check for errors
         run: test -s stylesheet.css
