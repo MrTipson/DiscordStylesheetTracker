@@ -22,6 +22,9 @@ jobs:
       - name: Format stylesheet
         run: cat stylesheet.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
         
+      - name: Check for errors
+        run: test -s stylesheet.css
+        
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: stylesheet.css
