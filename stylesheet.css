@@ -9357,6 +9357,11 @@ img[alt]
 {
 	position:absolute
 }
+.clickableWrapper-2WTAkL
+{
+	width:100%;
+	height:100%
+}
 .imageWrapperBackground-3Vss_C
 {
 	background:rgba(0,0,0,.05)
@@ -47101,19 +47106,50 @@ strong
 	position:relative;
 	width:320px;
 	margin-bottom:100px;
-	overflow:hidden;
-	border-radius:8px 8px 0 0
+	overflow:hidden
 }
-.tierDraftIndicator-25aoIA
+.cardContainerWithoutTopIndicator-36cvDB
 {
-	position:absolute;
-	left:0;
-	right:0;
 	border-radius:8px 8px 0 0;
-	background-color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+	margin-top:24px;
+	overflow:hidden
+}
+.draftBadgeContainer-1z4EiO
+{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	position:relative;
+	margin-top:-10px;
+	padding:2px;
+	background-color:var(--background-tertiary);
+	z-index:1;
+	overflow:hidden;
+	border-radius:8px
+}
+.draftBadge-BjooxK
+{
+	color:hsl(240,calc(var(--saturation-factor, 1)*7.7%),2.5%);
+	letter-spacing:.02em
+}
+.tierTrialIndicator-2gWK6S
+{
+	background-color:hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+	padding-top:4px;
+	padding-bottom:4px;
+	font-weight:500;
+	color:var(--interactive-active)
+}
+.tierTrialIndicatorIcon-3JxVc4
+{
+	margin-left:4px
+}
+.tierTopIndicator-vTnFLP
+{
+	border-radius:8px 8px 0 0;
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
@@ -47122,8 +47158,22 @@ strong
 	line-height:16px;
 	text-transform:uppercase
 }
+.tierInfoContainer-3o77tj,
+.tierTopIndicator-vTnFLP
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
 .tierInfoContainer-3o77tj
 {
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
 	text-align:center;
 	background-color:var(--background-tertiary);
 	padding:32px 16px 16px
@@ -47138,13 +47188,13 @@ strong
 	width:80px;
 	height:80px;
 	border-radius:50%;
-	margin-bottom:16px;
 	-o-object-fit:cover;
 	object-fit:cover
 }
 .tierPrice-1_YWyC
 {
 	margin-bottom:2px;
+	margin-top:16px;
 	font-weight:600
 }
 .tierPeriod-3U60RB,
