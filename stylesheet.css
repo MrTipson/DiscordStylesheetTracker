@@ -20218,11 +20218,15 @@ img[alt]
 }
 .closeIcon-2jT3e_
 {
-	color:#fff;
+	color:var(--interactive-normal);
 	margin-right:8px;
-	background-color:rgba(0,0,0,.42);
 	padding:4px;
 	border-radius:8px
+}
+.closeIconBanner-2Kvk6-
+{
+	color:#fff;
+	background-color:rgba(0,0,0,.42)
 }
 .closeButton-3xPRc3
 {
@@ -20237,6 +20241,11 @@ img[alt]
 }
 .closeButton-3xPRc3:focus .closeIcon-2jT3e_,
 .closeButton-3xPRc3:hover .closeIcon-2jT3e_
+{
+	color:var(--interactive-active)
+}
+.closeButton-3xPRc3:focus .closeIconBanner-2Kvk6-,
+.closeButton-3xPRc3:hover .closeIconBanner-2Kvk6-
 {
 	background-color:rgba(0,0,0,.8)
 }
@@ -20464,8 +20473,7 @@ img[alt]
 	padding-left:20px;
 	padding-right:20px
 }
-.guildIconExpired-2BFmZC,
-.invalidChannelIcon-3ljk2u
+.guildIconExpired-2BFmZC
 {
 	background-color:var(--background-secondary);
 	background-size:50px 26px;
@@ -20474,10 +20482,6 @@ img[alt]
 	background-position:50%;
 	width:48px;
 	height:48px
-}
-.invalidChannelIcon-3ljk2u
-{
-	background-image:url(/assets/3ccc2a72685af4830e22220f049339ba.svg)
 }
 .inviteDestinationExpired-1n9a5a
 {
@@ -42409,6 +42413,7 @@ strong
 {
 	cursor:not-allowed
 }
+.disabled-2qTmnp .title-2dsDLn,
 .disabled-2qTmnp .titleDefault-3GR-DE,
 .disabled-2qTmnp .titleMini-1VCYd9
 {
@@ -68118,6 +68123,9 @@ h6.title-1p9WyQ
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	overflow:hidden;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
 	color:inherit
 }
 .linkButton-2NshQj
