@@ -3045,6 +3045,11 @@ html.low-saturation .lowSaturationUnderline-Z6CW6z
 {
 	color:var(--text-danger)
 }
+.enable-forced-colors .disabled-2DSdZK
+{
+	color:GrayText;
+	opacity:1
+}
 
 .backdrop-2ByYRN
 {
@@ -3379,6 +3384,12 @@ html.low-saturation .lowSaturationUnderline-Z6CW6z
 .enable-forced-colors .input-2g-os5:focus
 {
 	border-color:Highlight
+}
+.enable-forced-colors .input-2g-os5.disabled-1MTS26
+{
+	background-color:Canvas;
+	border-color:GrayText;
+	opacity:1
 }
 
 .wrapper-1HSdhi
@@ -7255,6 +7266,12 @@ textarea
 img[alt]
 {
 	text-indent:-9999px
+}
+.enable-forced-colors .appMount-2yBXZl
+{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border:2px solid CanvasText
 }
 
 .wrapper-1f5byN
@@ -13399,6 +13416,26 @@ img[alt]
 {
 	cursor:pointer
 }
+.enable-forced-colors .banner-1YaD3N
+{
+	forced-color-adjust:none
+}
+.enable-forced-colors .pencilContainer-18TrEJ
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .pencilContainer-18TrEJ:focus,
+.enable-forced-colors .pencilContainer-18TrEJ:hover
+{
+	background-color:ButtonFace;
+	border-color:ButtonText
+}
+.enable-forced-colors .pencilIcon-z04-c5
+{
+	color:ButtonText
+}
 
 .container-2O1UgZ
 {
@@ -13604,6 +13641,30 @@ img[alt]
 .roleIcon-29epUq
 {
 	margin-right:4px
+}
+.enable-forced-colors .role-2TIOKu
+{
+	border:1px solid CanvasText
+}
+.enable-forced-colors .popoutRoleDot-2_Nt5g,
+.enable-forced-colors .roleCircle-1EgnFN
+{
+	forced-color-adjust:none
+}
+.enable-forced-colors .actionButton-1YKTU0
+{
+	color:ButtonText
+}
+.enable-forced-colors .roleRemoveIcon-387wKV
+{
+	background-color:ButtonFace;
+	color:ButtonText;
+	padding:2px;
+	border-radius:100%
+}
+.enable-forced-colors .roleRemoveIcon-387wKV path
+{
+	fill:ButtonText!important
 }
 
 .textarea-_59yqs
@@ -14875,6 +14936,11 @@ img[alt]
 {
 	color:var(--interactive-active)
 }
+.enable-forced-colors .avatarHintInner-2HUAWj
+{
+	background-color:ButtonFace;
+	color:ButtonText
+}
 
 .baseAvatar-1IkcZI
 {
@@ -15153,6 +15219,11 @@ img[alt]
 	height:92px;
 	border-radius:8px;
 	margin:0 0 0 16px
+}
+.enable-forced-colors .eventName-3XaUP0
+{
+	color:ButtonText;
+	text-decoration:underline
 }
 
 .container-2WT-1z
@@ -16082,6 +16153,21 @@ img[alt]
 .theme-dark .inputPrefix-1N1Pey
 {
 	opacity:.5
+}
+.enable-forced-colors .cardInput-33x7OF
+{
+	border:1px solid ButtonText;
+	display:block
+}
+.enable-forced-colors .cardInput-33x7OF:focus,
+.enable-forced-colors .cardInput-33x7OF:hover,
+.enable-forced-colors .cardInputFocused-31lFD1
+{
+	border-color:Highlight
+}
+.enable-forced-colors .inputPrefix-1N1Pey
+{
+	opacity:1
 }
 
 .cardNumberWrapper-3VguvY
@@ -20027,6 +20113,20 @@ img[alt]
 	max-width:280px;
 	text-align:center
 }
+.enable-forced-colors .iconButton-Go5KJo
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace
+}
+.enable-forced-colors .iconButton-Go5KJo .icon-12Gd96
+{
+	color:ButtonText
+}
+.enable-forced-colors .iconButton-Go5KJo:focus,
+.enable-forced-colors .iconButton-Go5KJo:hover
+{
+	border-color:ButtonText
+}
 
 .container-1r_14G
 {
@@ -20274,13 +20374,13 @@ img[alt]
 {
 	background-color:ButtonFace!important;
 	border:1px solid ButtonFace;
-	color:ButtonText
+	color:ButtonText!important
 }
 .enable-forced-colors .item-3XjbnG:hover
 {
 	background-color:ButtonFace!important;
 	border-color:ButtonText;
-	color:ButtonText
+	color:ButtonText!important
 }
 .enable-forced-colors .item-3XjbnG[aria-selected=true],
 .enable-forced-colors .item-3XjbnG[aria-selected=true]:hover,
@@ -20289,7 +20389,7 @@ img[alt]
 {
 	background-color:HighlightText!important;
 	border-color:Highlight;
-	color:Highlight
+	color:Highlight!important
 }
 .enable-forced-colors .disabled-1nofHP.item-3XjbnG,
 .enable-forced-colors .disabled-1nofHP.item-3XjbnG:hover
@@ -22990,6 +23090,32 @@ img[alt]
 	background-color:#2f3136;
 	color:rgba(246,246,247,.3)
 }
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker
+{
+	border:2px solid CanvasText
+}
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--keyboard-selected,
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected:hover,
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day:hover
+{
+	background-color:HighlightText;
+	color:Highlight
+}
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected:after
+{
+	background-color:Highlight
+}
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day:focus-visible
+{
+	background-color:HighlightText;
+	color:Highlight;
+	border-color:Highlight
+}
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
+.enable-forced-colors .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover
+{
+	color:GrayText
+}
 
 .calendarContainer-TgxIEf
 {
@@ -25071,7 +25197,8 @@ img[alt]
 	flex:none;
 	-o-object-fit:cover;
 	object-fit:cover;
-	background-color:#000
+	-webkit-animation:fadeIn-2cil6T .7s;
+	animation:fadeIn-2cil6T .7s
 }
 .brokenImageIconWrapper-cVqYK1
 {
@@ -25083,7 +25210,8 @@ img[alt]
 	align-items:center;
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
-	justify-content:center
+	justify-content:center;
+	background-color:#000
 }
 .brokenImageIcon-3HMkn0
 {
@@ -40271,6 +40399,10 @@ strong
 	-ms-user-select:none;
 	user-select:none;
 	pointer-events:none
+}
+.enable-forced-colors .placeholder-1rCBhr
+{
+	color:GrayText
 }
 
 .slateContainer-3x9zil
@@ -65563,6 +65695,10 @@ strong
 {
 	color:#e292aa
 }
+.enable-forced-colors .learnMoreLink-2JwgbJ
+{
+	color:LinkText
+}
 
 .headerBar-1dSpQr:before
 {
@@ -74211,6 +74347,18 @@ a.ctaAnchor-4F1kpS:hover
 	background:linear-gradient(90deg,#8547c6,#e292ab);
 	opacity:1
 }
+.enable-forced-colors .selected-2Uns2B
+{
+	color:Highlight
+}
+.enable-forced-colors .selectedIcon-2zSuOP
+{
+	fill:Highlight
+}
+.enable-forced-colors .selectedBackground-1t6xXq
+{
+	background-color:HighlightText
+}
 
 .standardSidebarView-E9Pc3j
 {
@@ -76926,6 +77074,28 @@ a.ctaAnchor-4F1kpS:hover
 	padding-bottom:16px
 }
 
+.addAnotherRuleCardContainer-mSromY
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	height:60px;
+	border:2px dashed var(--background-accent);
+	border-radius:5px;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	margin-bottom:16px
+}
+.plusIcon-3Y56QO
+{
+	margin-left:4px
+}
+
 .errorMessage-1H60Eg
 {
 	padding-top:4px
@@ -78901,6 +79071,28 @@ a.ctaAnchor-4F1kpS:hover
 {
 	height:168px
 }
+.insightsNoticeContainer-2ZrM4d
+{
+	background-color:var(--background-secondary);
+	padding:8px 16px 8px 8px;
+	margin-bottom:40px;
+	border-radius:4px
+}
+.insightsNoticeIcon-2OfC6m
+{
+	color:var(--interactive-normal);
+	margin-right:10px
+}
+.insightsNoticeText-32i9Oj
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	white-space:pre-wrap
+}
 
 .selectTeamContainer-1O8qat
 {
@@ -79097,6 +79289,18 @@ a.ctaAnchor-4F1kpS:hover
 {
 	background-color:#dcddde;
 	background-image:url(/assets/4a1000a95b1aad334e98f9d15b9d0ec4.svg)
+}
+.enable-forced-colors .imageUploaderInner-IIRaFr
+{
+	border:2px solid ButtonText;
+	forced-color-adjust:none;
+	outline:1px solid Canvas;
+	outline-offset:-3px
+}
+.enable-forced-colors .imageUploaderHint-33zkjZ
+{
+	background-color:ButtonFace;
+	color:ButtonText
 }
 
 .container-1MpVoK
@@ -81807,6 +82011,53 @@ a.ctaAnchor-4F1kpS:hover
 	background-color:var(--background-accent);
 	color:#fff
 }
+.enable-forced-colors .group-LWHoGI
+{
+	border:none
+}
+.enable-forced-colors .allow-1h61-Z,
+.enable-forced-colors .deny-1GO6vI,
+.enable-forced-colors .item-4m-12I
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .allow-1h61-Z:focus,
+.enable-forced-colors .allow-1h61-Z:hover,
+.enable-forced-colors .deny-1GO6vI:focus,
+.enable-forced-colors .deny-1GO6vI:hover,
+.enable-forced-colors .item-4m-12I:focus,
+.enable-forced-colors .item-4m-12I:hover
+{
+	border-color:ButtonText
+}
+.enable-forced-colors .allow-1h61-Z.selected-3jieYB,
+.enable-forced-colors .deny-1GO6vI.selected-3jieYB,
+.enable-forced-colors .item-4m-12I.selected-3jieYB
+{
+	background-color:HighlightText;
+	border-color:Highlight;
+	color:Highlight
+}
+.enable-forced-colors .disabled-1cYtPn
+{
+	opacity:1
+}
+.enable-forced-colors .disabled-1cYtPn .allow-1h61-Z,
+.enable-forced-colors .disabled-1cYtPn .deny-1GO6vI,
+.enable-forced-colors .disabled-1cYtPn .item-4m-12I
+{
+	background-color:Canvas;
+	border-color:Canvas;
+	color:GrayText
+}
+.enable-forced-colors .disabled-1cYtPn .allow-1h61-Z.selected-3jieYB,
+.enable-forced-colors .disabled-1cYtPn .deny-1GO6vI.selected-3jieYB,
+.enable-forced-colors .disabled-1cYtPn .item-4m-12I.selected-3jieYB
+{
+	border-color:GrayText
+}
 
 .title-ihi_Pe
 {
@@ -83146,7 +83397,11 @@ a.ctaAnchor-4F1kpS:hover
 .image-141SOA
 {
 	-webkit-animation:floating-house-3o9H9e 3s ease-in-out infinite;
-	animation:floating-house-3o9H9e 3s ease-in-out infinite;
+	animation:floating-house-3o9H9e 3s ease-in-out infinite
+}
+.image-141SOA,
+.sparkles-1nSL9S
+{
 	z-index:1
 }
 .sparkles-1nSL9S
@@ -83154,8 +83409,7 @@ a.ctaAnchor-4F1kpS:hover
 	position:absolute;
 	top:0;
 	left:0;
-	width:100%;
-	z-index:1
+	width:100%
 }
 .guildDetails-1il1dn
 {
@@ -84701,6 +84955,11 @@ a.ctaAnchor-4F1kpS:hover
 {
 	background-color:null
 }
+.enable-forced-colors .button-1yVL_7
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonText
+}
 
 .button-3woVyH
 {
@@ -85287,6 +85546,7 @@ a.ctaAnchor-4F1kpS:hover
 	display:flex;
 	font-weight:500;
 	margin-bottom:16px;
+	margin-top:24px;
 	width:100%
 }
 .icon-1PAq_f
@@ -85962,8 +86222,7 @@ a.ctaAnchor-4F1kpS:hover
 .headerDescription-2CuqyX
 {
 	font-size:14px;
-	margin-top:16px;
-	margin-bottom:24px
+	margin-top:16px
 }
 .section-13Mc8R
 {
@@ -92803,6 +93062,12 @@ html .invoiceCancelRow-3s2UuC
 	-ms-user-select:text;
 	user-select:text
 }
+.enable-forced-colors .channelContainer-7uiQGJ
+{
+	background-color:ButtonFace;
+	color:ButtonText;
+	text-decoration:underline
+}
 
 .content-2gE8yW
 {
@@ -94464,6 +94729,20 @@ html .invoiceCancelRow-3s2UuC
 .iconButton-2rHy7x:hover .icon-3DnmvF
 {
 	color:var(--interactive-active)
+}
+.enable-forced-colors .iconButton-2rHy7x
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace
+}
+.enable-forced-colors .iconButton-2rHy7x .icon-3DnmvF
+{
+	color:ButtonText
+}
+.enable-forced-colors .iconButton-2rHy7x:focus,
+.enable-forced-colors .iconButton-2rHy7x:hover
+{
+	border-color:ButtonText
 }
 
 .header-3R079E
@@ -96476,6 +96755,23 @@ html .invoiceCancelRow-3s2UuC
 .launchIcon-RTf7He
 {
 	margin-left:8px
+}
+.enable-forced-colors .additionalActionsIcon-3Cy8UU
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .additionalActionsIcon-3Cy8UU:focus,
+.enable-forced-colors .additionalActionsIcon-3Cy8UU:hover
+{
+	border-color:ButtonText
+}
+.enable-forced-colors .additionalActionsIcon-3Cy8UU:active
+{
+	background-color:HighlightText;
+	border-color:Highlight;
+	color:Highlight
 }
 
 .root-8LYsGj
@@ -100355,6 +100651,14 @@ html .invoiceCancelRow-3s2UuC
 {
 	background-color:var(--text-brand)
 }
+.enable-forced-colors .progressBar-18rmp1
+{
+	background-color:CanvasText
+}
+.enable-forced-colors .selectedProgressBar-11z5d9
+{
+	background-color:Highlight
+}
 
 .container-3zZkKh
 {
@@ -102947,6 +103251,21 @@ html .invoiceCancelRow-3s2UuC
 	color:var(--header-primary);
 	text-overflow:ellipsis
 }
+.enable-forced-colors .overflowMenuIcon-2Bjb5_
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .overflowMenuIcon-2Bjb5_:focus,
+.enable-forced-colors .overflowMenuIcon-2Bjb5_:hover
+{
+	border-color:ButtonText
+}
+.enable-forced-colors .accountProfileCard-lbN7n-
+{
+	border:1px solid CanvasText
+}
 
 .header-1LEkUo
 {
@@ -103249,6 +103568,7 @@ html .invoiceCancelRow-3s2UuC
 	height:48px;
 	border:1px solid rgba(153,170,181,.3);
 	border-radius:5px;
+	background-color:transparent;
 	background-size:36px 36px;
 	background-repeat:no-repeat;
 	background-position:50%;
@@ -103259,6 +103579,7 @@ html .invoiceCancelRow-3s2UuC
 .inner-1lPVFp:hover
 {
 	background-color:rgba(153,170,181,.3);
+	border-color:transparent;
 	cursor:pointer
 }
 .inner-1lPVFp:disabled
@@ -103278,15 +103599,20 @@ html .invoiceCancelRow-3s2UuC
 {
 	background-color:#4f545c
 }
-.theme-dark .inner-1lPVFp,
-.theme-light .inner-1lPVFp
+.enable-forced-colors .inner-1lPVFp
 {
-	background-color:transparent
+	border:1px solid ButtonFace
 }
-.theme-dark .inner-1lPVFp:hover,
-.theme-light .inner-1lPVFp:hover
+.enable-forced-colors .inner-1lPVFp:focus,
+.enable-forced-colors .inner-1lPVFp:hover
 {
-	border-color:transparent
+	background-color:ButtonFace;
+	border-color:ButtonText
+}
+.enable-forced-colors .inner-1lPVFp:disabled
+{
+	opacity:.3;
+	pointer-events:none
 }
 
 .accountList-Wii_T5
@@ -103464,6 +103790,35 @@ html .invoiceCancelRow-3s2UuC
 .integrationRevoked-2VwT0o a
 {
 	color:var(--text-link)
+}
+.enable-forced-colors .connection-YOVI9j
+{
+	border:1px solid CanvasText
+}
+.enable-forced-colors .connectionHeader-Ixbb1s
+{
+	border-bottom:1px solid CanvasText
+}
+.enable-forced-colors .connectionDelete-3YgMVq
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .connectionDelete-3YgMVq:focus,
+.enable-forced-colors .connectionDelete-3YgMVq:hover
+{
+	border-color:ButtonText
+}
+.enable-forced-colors .accountBtn-3pgcgr .accountBtnInner-3ttD-i
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace
+}
+.enable-forced-colors .accountBtn-3pgcgr .accountBtnInner-3ttD-i:hover
+{
+	background-color:ButtonFace;
+	border-color:ButtonText
 }
 
 .item-1GpJEU
@@ -105035,6 +105390,30 @@ html .invoiceCancelRow-3s2UuC
 {
 	background-image:url(/assets/6345e6aced36309efc7fe28a539383ab.svg)
 }
+.enable-forced-colors .guild-2Fq4I5
+{
+	border:1px solid CanvasText
+}
+.enable-forced-colors .guildHeader-1EPPBS
+{
+	border-bottom:1px solid CanvasText
+}
+.enable-forced-colors .guildSubscriptionSlot-1mef6n
+{
+	border-color:CanvasText
+}
+.enable-forced-colors .guildSubscriptionSlotMenuIcon-3UcQXW
+{
+	background-color:ButtonFace;
+	border:1px solid ButtonFace;
+	border-radius:4px;
+	color:ButtonText
+}
+.enable-forced-colors .guildSubscriptionSlotMenuIcon-3UcQXW:focus,
+.enable-forced-colors .guildSubscriptionSlotMenuIcon-3UcQXW:hover
+{
+	border-color:ButtonText
+}
 
 .features-2OVNMp
 {
@@ -105313,6 +105692,10 @@ html .invoiceCancelRow-3s2UuC
 .theme-light .emptyGuilds-3pisxB
 {
 	background-image:url(/assets/293d215cc67a256ed2ef775e28922b3a.svg)
+}
+.enable-forced-colors .card-2xlCYc
+{
+	border:1px solid ButtonText
 }
 
 .list-2kUvmJ
@@ -105798,6 +106181,22 @@ html .invoiceCancelRow-3s2UuC
 	background-color:var(--background-floating);
 	-webkit-box-sizing:content-box;
 	box-sizing:content-box
+}
+.enable-forced-colors .banner-3D8GgT
+{
+	border:2px solid ButtonText;
+	forced-color-adjust:none;
+	outline:1px solid Canvas;
+	outline-offset:-3px
+}
+.enable-forced-colors .bannerNitroUpsell-2iP18z
+{
+	background-color:ButtonFace;
+	color:ButtonText
+}
+.enable-forced-colors .profileBannerPreview-3mLIdO
+{
+	border:1px solid CanvasText
 }
 
 .bioTextArea-dDGOeC
@@ -106953,6 +107352,18 @@ html .invoiceCancelRow-3s2UuC
 {
 	color:var(--interactive-muted);
 	cursor:auto
+}
+.enable-forced-colors .cardFolder-3H4uH4
+{
+	border:1px solid CanvasText
+}
+.enable-forced-colors .removeIcon-26pNo1
+{
+	color:ButtonText
+}
+.enable-forced-colors .disabledRemoveIcon-3upLsy
+{
+	color:GrayText
 }
 
 .formSection-3j4GW-
