@@ -6790,6 +6790,24 @@ code
 	--font-chinese-simplified:Whitney,"Microsoft YaHei New",微软雅黑,"Microsoft Yahei","Microsoft JhengHei",宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	--font-chinese-traditional:Whitney,"Microsoft JhengHei",微軟正黑體,"Microsoft JhengHei UI","Microsoft YaHei",微軟雅黑,宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
+:lang(ja),
+:lang(ja-JP)
+{
+	--font-primary:Whitney,"Hiragino Sans","\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3","Hiragino Kaku Gothic ProN",メイリオ,Meiryo,Osaka,"MS PGothic","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+:lang(ko)
+{
+	--font-primary:Whitney,"Apple SD Gothic Neo",NanumBarunGothic,"\B9D1\C740   \ACE0\B515","Malgun Gothic",Gulim,굴림,Dotum,돋움,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+:lang(zh-CN)
+{
+	--font-primary:Whitney,"Microsoft YaHei New",微软雅黑,"Microsoft Yahei","Microsoft JhengHei",宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+:lang(zh-HK),
+:lang(zh-TW)
+{
+	--font-primary:Whitney,"Microsoft JhengHei",微軟正黑體,"Microsoft JhengHei UI","Microsoft YaHei",微軟雅黑,宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
 .theme-dark
 {
 	--header-primary:#fff;
@@ -7144,198 +7162,6 @@ textarea
 {
 	font-family:var(--font-primary);
 	text-rendering:optimizeLegibility
-}
-html:lang(ja) ::-webkit-input-placeholder,
-html:lang(ja) body,
-html:lang(ja) button,
-html:lang(ja) input,
-html:lang(ja) select,
-html:lang(ja) textarea,
-html:lang(ja-JP) ::-webkit-input-placeholder,
-html:lang(ja-JP) body,
-html:lang(ja-JP) button,
-html:lang(ja-JP) input,
-html:lang(ja-JP) select,
-html:lang(ja-JP) textarea
-{
-	font-family:var(--font-japanese)
-}
-html:lang(ja) ::-moz-placeholder,
-html:lang(ja) body,
-html:lang(ja) button,
-html:lang(ja) input,
-html:lang(ja) select,
-html:lang(ja) textarea,
-html:lang(ja-JP) ::-moz-placeholder,
-html:lang(ja-JP) body,
-html:lang(ja-JP) button,
-html:lang(ja-JP) input,
-html:lang(ja-JP) select,
-html:lang(ja-JP) textarea
-{
-	font-family:var(--font-japanese)
-}
-html:lang(ja) :-ms-input-placeholder,
-html:lang(ja) body,
-html:lang(ja) button,
-html:lang(ja) input,
-html:lang(ja) select,
-html:lang(ja) textarea,
-html:lang(ja-JP) :-ms-input-placeholder,
-html:lang(ja-JP) body,
-html:lang(ja-JP) button,
-html:lang(ja-JP) input,
-html:lang(ja-JP) select,
-html:lang(ja-JP) textarea
-{
-	font-family:var(--font-japanese)
-}
-html:lang(ja) ::placeholder,
-html:lang(ja) body,
-html:lang(ja) button,
-html:lang(ja) input,
-html:lang(ja) select,
-html:lang(ja) textarea,
-html:lang(ja-JP) ::placeholder,
-html:lang(ja-JP) body,
-html:lang(ja-JP) button,
-html:lang(ja-JP) input,
-html:lang(ja-JP) select,
-html:lang(ja-JP) textarea
-{
-	font-family:var(--font-japanese)
-}
-html:lang(ko) ::-webkit-input-placeholder,
-html:lang(ko) body,
-html:lang(ko) button,
-html:lang(ko) input,
-html:lang(ko) select,
-html:lang(ko) textarea
-{
-	font-family:var(--font-korean)
-}
-html:lang(ko) ::-moz-placeholder,
-html:lang(ko) body,
-html:lang(ko) button,
-html:lang(ko) input,
-html:lang(ko) select,
-html:lang(ko) textarea
-{
-	font-family:var(--font-korean)
-}
-html:lang(ko) :-ms-input-placeholder,
-html:lang(ko) body,
-html:lang(ko) button,
-html:lang(ko) input,
-html:lang(ko) select,
-html:lang(ko) textarea
-{
-	font-family:var(--font-korean)
-}
-html:lang(ko) ::placeholder,
-html:lang(ko) body,
-html:lang(ko) button,
-html:lang(ko) input,
-html:lang(ko) select,
-html:lang(ko) textarea
-{
-	font-family:var(--font-korean)
-}
-html:lang(zh-CN) ::-webkit-input-placeholder,
-html:lang(zh-CN) body,
-html:lang(zh-CN) button,
-html:lang(zh-CN) input,
-html:lang(zh-CN) select,
-html:lang(zh-CN) textarea
-{
-	font-family:var(--font-chinese-simplified)
-}
-html:lang(zh-CN) ::-moz-placeholder,
-html:lang(zh-CN) body,
-html:lang(zh-CN) button,
-html:lang(zh-CN) input,
-html:lang(zh-CN) select,
-html:lang(zh-CN) textarea
-{
-	font-family:var(--font-chinese-simplified)
-}
-html:lang(zh-CN) :-ms-input-placeholder,
-html:lang(zh-CN) body,
-html:lang(zh-CN) button,
-html:lang(zh-CN) input,
-html:lang(zh-CN) select,
-html:lang(zh-CN) textarea
-{
-	font-family:var(--font-chinese-simplified)
-}
-html:lang(zh-CN) ::placeholder,
-html:lang(zh-CN) body,
-html:lang(zh-CN) button,
-html:lang(zh-CN) input,
-html:lang(zh-CN) select,
-html:lang(zh-CN) textarea
-{
-	font-family:var(--font-chinese-simplified)
-}
-html:lang(zh-HK) ::-webkit-input-placeholder,
-html:lang(zh-HK) body,
-html:lang(zh-HK) button,
-html:lang(zh-HK) input,
-html:lang(zh-HK) select,
-html:lang(zh-HK) textarea,
-html:lang(zh-TW) ::-webkit-input-placeholder,
-html:lang(zh-TW) body,
-html:lang(zh-TW) button,
-html:lang(zh-TW) input,
-html:lang(zh-TW) select,
-html:lang(zh-TW) textarea
-{
-	font-family:var(--font-chinese-traditional)
-}
-html:lang(zh-HK) ::-moz-placeholder,
-html:lang(zh-HK) body,
-html:lang(zh-HK) button,
-html:lang(zh-HK) input,
-html:lang(zh-HK) select,
-html:lang(zh-HK) textarea,
-html:lang(zh-TW) ::-moz-placeholder,
-html:lang(zh-TW) body,
-html:lang(zh-TW) button,
-html:lang(zh-TW) input,
-html:lang(zh-TW) select,
-html:lang(zh-TW) textarea
-{
-	font-family:var(--font-chinese-traditional)
-}
-html:lang(zh-HK) :-ms-input-placeholder,
-html:lang(zh-HK) body,
-html:lang(zh-HK) button,
-html:lang(zh-HK) input,
-html:lang(zh-HK) select,
-html:lang(zh-HK) textarea,
-html:lang(zh-TW) :-ms-input-placeholder,
-html:lang(zh-TW) body,
-html:lang(zh-TW) button,
-html:lang(zh-TW) input,
-html:lang(zh-TW) select,
-html:lang(zh-TW) textarea
-{
-	font-family:var(--font-chinese-traditional)
-}
-html:lang(zh-HK) ::placeholder,
-html:lang(zh-HK) body,
-html:lang(zh-HK) button,
-html:lang(zh-HK) input,
-html:lang(zh-HK) select,
-html:lang(zh-HK) textarea,
-html:lang(zh-TW) ::placeholder,
-html:lang(zh-TW) body,
-html:lang(zh-TW) button,
-html:lang(zh-TW) input,
-html:lang(zh-TW) select,
-html:lang(zh-TW) textarea
-{
-	font-family:var(--font-chinese-traditional)
 }
 a,
 button,
@@ -12640,6 +12466,7 @@ img[alt]
 	border:none;
 	white-space:pre-wrap
 }
+.markup-eYLPri.inlineFormat-27RIC2 li,
 .markup-eYLPri .inlineFormat-27RIC2 li
 {
 	display:inline;
@@ -12647,17 +12474,36 @@ img[alt]
 	padding-right:8px;
 	white-space:normal
 }
+.markup-eYLPri.inlineFormat-27RIC2 li:before,
 .markup-eYLPri .inlineFormat-27RIC2 li:before
 {
 	content:"\2022";
 	padding-right:4px
 }
+.markup-eYLPri.inlineFormat-27RIC2 li li:before,
 .markup-eYLPri .inlineFormat-27RIC2 li li:before
 {
 	content:"\25CB";
 	font-size:0.625rem;
 	padding:0 4px 4px;
 	line-height:1rem
+}
+.markup-eYLPri.inlineFormat-27RIC2 .mention,
+.markup-eYLPri .inlineFormat-27RIC2 .mention
+{
+	background-color:inherit;
+	color:inherit
+}
+.markup-eYLPri.inlineFormat-27RIC2.smallFontSize-izoQL5 .channelMention,
+.markup-eYLPri .inlineFormat-27RIC2.smallFontSize-izoQL5 .channelMention
+{
+	padding-left:19px
+}
+.markup-eYLPri.inlineFormat-27RIC2.smallFontSize-izoQL5 .channelMention svg,
+.markup-eYLPri .inlineFormat-27RIC2.smallFontSize-izoQL5 .channelMention svg
+{
+	width:15px;
+	height:18px
 }
 .markup-eYLPri li
 {
@@ -12737,6 +12583,30 @@ img[alt]
 {
 	font-size:1.25rem;
 	margin:16px 0 8px
+}
+.markup-eYLPri h1 .channelMention
+{
+	padding-left:24px
+}
+.markup-eYLPri h1 .channelMention svg
+{
+	width:20px;
+	height:20px;
+	top:3px
+}
+.markup-eYLPri h1.inlineFormat-27RIC2
+{
+	font-size:inherit
+}
+.markup-eYLPri h1.inlineFormat-27RIC2 .channelMention
+{
+	padding-left:21px
+}
+.markup-eYLPri h1.inlineFormat-27RIC2 .channelMention svg
+{
+	width:17px;
+	height:21px;
+	top:0
 }
 .markup-eYLPri h2
 {
@@ -47753,6 +47623,12 @@ strong
 {
 	color:var(--header-secondary)
 }
+.focusTarget-2TVccU
+{
+	width:0;
+	height:0;
+	pointer-events:none
+}
 .neverSeenBefore-3UB8fL:before
 {
 	background-color:var(--header-primary);
@@ -52714,7 +52590,7 @@ strong
 	gap:4px
 }
 
-.container-1m3VLs
+.container-1wD_rJ
 {
 	-webkit-box-align:start;
 	-ms-flex-align:start;
@@ -52725,40 +52601,40 @@ strong
 	border-radius:4px;
 	background-color:var(--background-secondary)
 }
-.container-1m3VLs,
-.textContainer-11vZvt
+.container-1wD_rJ,
+.textContainer-HXkIj3
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex
 }
-.textContainer-11vZvt
+.textContainer-HXkIj3
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1
 }
-.warningIcon-FnGxVx
+.warningIcon-3V-_FU
 {
 	width:20px;
 	height:20px
 }
-.info-3tTCiW,
-.warningIcon-FnGxVx
+.info-3HOF7W,
+.warningIcon-3V-_FU
 {
 	color:var(--interactive-normal)
 }
-.info-3tTCiW
+.info-3HOF7W
 {
 	font-size:14px;
 	line-height:18px
 }
-.error-3gtn5e
+.error-1e2tPM
 {
 	color:var(--text-danger);
 	font-weight:500
 }
-.undoButton-2T2Psj
+.undoButton-3M2KlH
 {
 	padding:0 4px;
 	margin-top:2px
@@ -65970,6 +65846,38 @@ strong
 {
 	background-image:url(/assets/fa890ac72a9871fbe24c7a74cf2aa76a.svg)
 }
+.coPromoBanner-Oe0jlg
+{
+	background-image:url(/assets/61182cd5889085a3f10f44136c6755c5.svg)
+}
+.clPromoBanner-d39jJy
+{
+	background-image:url(/assets/aa57ca05643e288556792f7988a45645.svg)
+}
+.arPromoBanner-14FLNJ
+{
+	background-image:url(/assets/0900938b69556e12856351142790eb44.svg)
+}
+.jpPromoBanner-MOwUQM
+{
+	background-image:url(/assets/3bbf81d9d0fa5c24795874e74c1ea08e.svg)
+}
+.vnPromoBanner-rqLtEp
+{
+	background-image:url(/assets/7882c2216722a350bf14b0857360b76e.svg)
+}
+.thPromoBanner-E-tCxO
+{
+	background-image:url(/assets/4f9371d0bc8f05912d37af37e964d7ae.svg)
+}
+.idPromoBanner-6C-EJ8
+{
+	background-image:url(/assets/6885526679ec150e9b8cee5f62f338d8.svg)
+}
+.myPromoBanner-3sLxJh
+{
+	background-image:url(/assets/d8ce9bec7a520cb905532aa7ee58197b.svg)
+}
 .promoBanner-1pEkqm
 {
 	background-position:0;
@@ -66000,7 +65908,7 @@ strong
 .heroBody-1EuD4B
 {
 	margin-top:8px;
-	max-width:266px;
+	max-width:272px;
 	color:#fff
 }
 .heroBody-1EuD4B a
@@ -82664,8 +82572,10 @@ a.ctaAnchor-4F1kpS:hover
 {
 	background:url(/assets/e74d1a4db5fe1fd9c19ff9949bba9b7e.svg)
 }
-.themeOverrideLight-bdYR2N.icon-2PiQ65.autoModrationRule-1Gu508,
-.theme-light .icon-2PiQ65.autoModrationRule-1Gu508
+.themeOverrideLight-bdYR2N.icon-2PiQ65.autoModerationBlockMessage-97cbNX,
+.themeOverrideLight-bdYR2N.icon-2PiQ65.autoModerationRule-2pc9PC,
+.theme-light .icon-2PiQ65.autoModerationBlockMessage-97cbNX,
+.theme-light .icon-2PiQ65.autoModerationRule-2pc9PC
 {
 	background:url(/assets/d441a32c45c82f6185df2522109cf541.svg)
 }
@@ -82769,7 +82679,9 @@ a.ctaAnchor-4F1kpS:hover
 {
 	background:url(/assets/561a626f671b8fd8f0c2e85c97df9b04.svg)
 }
+.themeOverrideDark-3-xxHI.icon-2PiQ65.autoModerationBlockMessage-97cbNX,
 .themeOverrideDark-3-xxHI.icon-2PiQ65.autoModerationRule-2pc9PC,
+.theme-dark .icon-2PiQ65.autoModerationBlockMessage-97cbNX,
 .theme-dark .icon-2PiQ65.autoModerationRule-2pc9PC
 {
 	background:url(/assets/210ac667f45d13bc52020744f008b1ed.svg)
@@ -84355,6 +84267,18 @@ a.ctaAnchor-4F1kpS:hover
 	margin-bottom:16px;
 	min-height:200px
 }
+.headerContainer-1v2rrF
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.titleContainer-3RZ-8X
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
+}
 .titleInput-w1T6uO
 {
 	background-color:transparent;
@@ -84380,6 +84304,20 @@ a.ctaAnchor-4F1kpS:hover
 .titleInput-w1T6uO::placeholder
 {
 	color:var(--text-muted)
+}
+.disableSwitch-34gU2v
+{
+	margin-bottom:0
+}
+.overflowMenuIcon-Jm4mez
+{
+	color:var(--interactive-normal);
+	cursor:pointer;
+	margin-right:-8px
+}
+.overflowMenuIcon-Jm4mez:hover
+{
+	color:var(--interactive-hover)
 }
 .descriptionInput-1XveK7
 {
@@ -84460,11 +84398,42 @@ a.ctaAnchor-4F1kpS:hover
 
 .container-29xe1i
 {
+	position:relative;
 	color:var(--text-normal);
 	background-color:var(--background-secondary-alt);
-	margin-bottom:16px;
 	padding:16px;
-	border-radius:16px
+	margin-bottom:16px;
+	border-radius:16px;
+	height:88px
+}
+.container-29xe1i,
+.dragIcon-3iICPc
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.dragIcon-3iICPc
+{
+	position:absolute;
+	left:-20px;
+	top:0;
+	color:var(--interactive-muted);
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	cursor:-webkit-grab;
+	cursor:grab;
+	width:20px;
+	height:100%
+}
+.dragIcon-3iICPc:hover
+{
+	color:var(--interactive-hover)
+}
+.dragIconDisabled-3u7JeK
+{
+	visibility:hidden
 }
 
 .createRow-2nwAFE
@@ -84492,6 +84461,106 @@ a.ctaAnchor-4F1kpS:hover
 	margin-right:8px;
 	font-weight:600;
 	font-size:16px
+}
+
+.rolePrompt-29wod2
+{
+	background-color:var(--background-message-hover);
+	padding:16px;
+	margin:16px;
+	border-radius:8px
+}
+.rolePromptButtonContainer-110s2E
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	padding:8px 0
+}
+.rolePromptButton-zt8DqF
+{
+	margin-left:8px;
+	padding:0
+}
+.theme-dark .rolePromptButtonColors-2BBXHt
+{
+	background-color:#4f545c
+}
+.theme-dark .rolePromptButtonColors-2BBXHt .roleIconText-3AWIgu
+{
+	color:#dcddde
+}
+.theme-dark .rolePromptButtonColors-2BBXHt:hover
+{
+	background-color:#72767d
+}
+.theme-dark .rolePromptButtonColors-2BBXHt:active
+{
+	background-color:#b9bbbe
+}
+.theme-light .rolePromptButtonColors-2BBXHt
+{
+	background-color:#c7ccd1
+}
+.theme-light .rolePromptButtonColors-2BBXHt .roleIconText-3AWIgu
+{
+	color:#2e3338
+}
+.theme-light .rolePromptButtonColors-2BBXHt:hover
+{
+	background-color:#9099a4
+}
+.theme-light .rolePromptButtonColors-2BBXHt:active
+{
+	background-color:#747f8d
+}
+.roleIconText-3AWIgu
+{
+	margin:4px
+}
+.roleIcon-3_RuFu
+{
+	padding:4px;
+	height:24px;
+	width:24px
+}
+.rolePromptButtonInner-1hKxkN
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	margin:0 4px
+}
+.rolePromptButton-zt8DqF:first-child
+{
+	margin-left:0
+}
+
+.header-2-lfB_
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	padding:60px 16px 16px;
+	-webkit-box-pack:end;
+	-ms-flex-pack:end;
+	justify-content:flex-end
+}
+
+.rolePromptsHeader-1rVsTf
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:end;
+	-ms-flex-pack:end;
+	justify-content:flex-end;
+	margin-bottom:24px
+}
+.previewButton-1NQPVN,
+.rolePromptsSearchBar-3wuMIZ
+{
+	margin-right:16px
 }
 
 .description-33gMJs
