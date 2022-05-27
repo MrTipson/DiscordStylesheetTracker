@@ -16430,7 +16430,30 @@ img[alt]
 }
 .sliderBody-1SR1Ot
 {
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-flex:0;
+	-ms-flex-positive:0;
+	flex-grow:0;
+	width:408px;
 	padding-bottom:16px
+}
+@media (max-width:485px)
+{
+	.sliderBody-1SR1Ot
+	{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-box-flex:1;
+		-ms-flex-positive:1;
+		flex-grow:1;
+		width:100%
+	}
+	
 }
 
 .content-2eQb8J
@@ -16635,6 +16658,18 @@ img[alt]
 	min-width:auto;
 	padding:2px 4px;
 	margin-right:auto
+}
+.primaryIcon-1otbYQ
+{
+	width:16px;
+	height:16px;
+	margin-right:4px
+}
+.button-38jg6B
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
 }
 
 .awaitingAuthenticationStep-1tYUFR,
@@ -19603,6 +19638,17 @@ img[alt]
 	margin-top:24px;
 	margin-bottom:16px
 }
+@media (max-width:485px)
+{
+	.accountIdentifier-36MJrB
+	{
+		margin-top:48px;
+		-webkit-box-pack:center;
+		-ms-flex-pack:center;
+		justify-content:center
+	}
+	
+}
 .bodyText-145bR3
 {
 	font-weight:500;
@@ -19685,10 +19731,6 @@ img[alt]
 .paymentSourceWrapper-2Krioq
 {
 	margin:16px 0
-}
-.purchaseTerms-3wV0aZ
-{
-	margin-bottom:16px
 }
 .confirmUpgrade-13E44g p:first-child
 {
@@ -36084,6 +36126,14 @@ html .progress-2Otdc-
 {
 	
 }
+.item-1TpRGb,
+.itemValue-1-Xx5h
+{
+	-webkit-user-select:text;
+	-moz-user-select:text;
+	-ms-user-select:text;
+	user-select:text
+}
 .itemValue-1-Xx5h
 {
 	
@@ -48639,6 +48689,12 @@ strong
 	margin-right:4px;
 	margin-top:1px;
 	height:24px
+}
+.messageCountText-J-9pag
+{
+	color:var(--text-normal);
+	font-size:14px;
+	font-weight:500
 }
 .newMessageCount-jqlY9z
 {
