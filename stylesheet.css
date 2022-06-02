@@ -27522,12 +27522,14 @@ img[alt]
 .communicationDisabled-2KRN2p
 {
 	margin-right:8px;
-	vertical-align:-1px
+	vertical-align:-1px;
+	color:var(--status-danger)
 }
 .compactCommunicationDisabled-9iUn1D
 {
 	margin:0 4px;
-	vertical-align:-1px
+	vertical-align:-1px;
+	color:var(--status-danger)
 }
 .communicationDisabledOpacity-2u2aB2
 {
@@ -43029,7 +43031,8 @@ strong
 .icon-2PhspP
 {
 	-webkit-box-sizing:border-box;
-	box-sizing:border-box
+	box-sizing:border-box;
+	color:var(--status-danger)
 }
 .header-2a3o4x
 {
@@ -43050,7 +43053,8 @@ strong
 	width:24px;
 	height:24px;
 	-ms-flex-item-align:center;
-	align-self:center
+	align-self:center;
+	color:var(--status-danger)
 }
 .bannerContainer-3AIrw8
 {
@@ -53128,7 +53132,6 @@ strong
 }
 .name-yBgpWl
 {
-	font-weight:500;
 	margin-bottom:2px
 }
 .linkedName-2qgnko:hover
@@ -53451,7 +53454,6 @@ strong
 {
 	font-family:var(--font-display);
 	text-transform:uppercase;
-	font-weight:600;
 	letter-spacing:.02em
 }
 .benefitsSection-2VIuyT:not(:last-child)
@@ -53470,6 +53472,12 @@ strong
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column
+}
+.emojiList-1-YeQP
+{
+	display:grid;
+	grid-template-columns:repeat(9,1fr);
+	gap:9px 8px
 }
 
 .container-2_BXG-
@@ -53578,6 +53586,7 @@ strong
 }
 .ctaTitle-3zxXyr strong
 {
+	font-weight:700;
 	color:var(--header-primary)
 }
 .ctaSubtitle-2NP9L_
@@ -98555,6 +98564,20 @@ html .invoiceCancelRow-3s2UuC
 }
 .channelSelector-kqa96N,
 .header-1sfymH
+{
+	margin-bottom:8px
+}
+
+.actionContentContainer-aAj9mv
+{
+	padding:16px
+}
+.durationSelector-2XFxb4
+{
+	margin-top:16px;
+	margin-bottom:8px
+}
+.header-1mFViq
 {
 	margin-bottom:8px
 }
