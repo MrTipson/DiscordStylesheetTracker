@@ -78184,7 +78184,7 @@ a.ctaAnchor-4F1kpS:hover
 {
 	position:fixed;
 	bottom:20px;
-	width:664px;
+	width:660px;
 	z-index:100
 }
 
@@ -78238,13 +78238,13 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
 	flex-direction:row;
-	padding:10px 16px;
+	padding:8px 12px;
 	background-color:var(--background-secondary-alt);
 	border-radius:8px
 }
 .actionContainer-2krsiT:not(:last-child)
 {
-	margin-bottom:8px
+	margin-bottom:4px
 }
 .actionIconContainer-BgAyZv
 {
@@ -78259,32 +78259,17 @@ a.ctaAnchor-4F1kpS:hover
 	justify-content:center;
 	height:24px;
 	width:24px;
-	margin-right:16px
+	margin-right:12px
 }
 .actionIcon-xZ8Xaf
 {
-	color:var(--header-secondary)
+	color:var(--text-muted)
 }
 .actionTextContainer-v3SvgJ
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1
-}
-.actionTextHeader-hqjab9
-{
-	font-size:16px;
-	line-height:20px;
-	font-weight:500;
-	font-family:var(--font-primary);
-	color:var(--header-primary)
-}
-.actionTextDescription-3_3DY7
-{
-	font-size:12px;
-	line-height:16px;
-	font-family:var(--font-primary);
-	color:var(--header-secondary)
 }
 .actionContainer-2krsiT
 {
@@ -78449,7 +78434,7 @@ a.ctaAnchor-4F1kpS:hover
 }
 .triggerMainContainer-274ue5
 {
-	padding:16px;
+	padding:12px;
 	border:1px solid var(--background-modifier-accent);
 	border-radius:8px;
 	-webkit-box-flex:1;
@@ -78465,7 +78450,7 @@ a.ctaAnchor-4F1kpS:hover
 	-ms-flex:0;
 	flex:0;
 	margin-right:8px;
-	margin-top:4px
+	margin-top:6px
 }
 .stepCountIcon-1A2Rxd
 {
@@ -78489,8 +78474,8 @@ a.ctaAnchor-4F1kpS:hover
 }
 .stepCount-29SKCG
 {
-	font-weight:700;
-	line-height:0
+	line-height:0;
+	font-weight:700
 }
 .stepCount-29SKCG,
 .triggerHeader-2lsIwv
@@ -78501,7 +78486,7 @@ a.ctaAnchor-4F1kpS:hover
 }
 .triggerHeader-2lsIwv
 {
-	font-weight:500;
+	font-weight:600;
 	line-height:20px
 }
 .triggerSettingsContainer--iO5xr
@@ -78513,7 +78498,7 @@ a.ctaAnchor-4F1kpS:hover
 {
 	margin:0 auto;
 	width:0;
-	padding:6px 0
+	padding:0
 }
 .dividerIconContainer-E-i3xb
 {
@@ -78605,7 +78590,7 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-transition:background-color .1s ease;
 	transition:background-color .1s ease
 }
-.editCard-K9Q9mb:active
+.editCard-K9Q9mb.active-Xi2rnV
 {
 	background-color:var(--background-accent)
 }
@@ -78630,7 +78615,7 @@ a.ctaAnchor-4F1kpS:hover
 {
 	cursor:default
 }
-.editCard-K9Q9mb.toggled-35JcVc:active
+.editCard-K9Q9mb.toggled-35JcVc.active-Xi2rnV
 {
 	background-color:var(--background-secondary)
 }
@@ -78640,7 +78625,7 @@ a.ctaAnchor-4F1kpS:hover
 }
 .editCard-K9Q9mb:not(:last-child)
 {
-	margin-bottom:16px
+	margin-bottom:8px
 }
 .innerHeader-Us1oKD
 {
@@ -78672,7 +78657,7 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	padding:6px 8px;
+	padding:4px 8px 4px 6px;
 	background-color:var(--background-secondary-alt);
 	border-radius:80px
 }
@@ -78707,22 +78692,13 @@ a.ctaAnchor-4F1kpS:hover
 }
 .actionTextHeader-yeCKjC
 {
-	color:var(--header-secondary);
-	word-wrap:normal
-}
-.actionTextHeader-yeCKjC,
-.actionTextHelper-11N8co
-{
-	font-size:12px;
-	line-height:16px;
-	font-weight:500;
-	font-family:var(--font-primary)
+	word-wrap:normal;
+	text-transform:lowercase
 }
 .actionTextHelper-11N8co
 {
-	display:inline;
-	color:var(--interactive-normal);
-	margin-left:4px
+	margin-left:4px;
+	text-transform:lowercase
 }
 
 .ruleNameInput-A5Tx_k
@@ -78775,6 +78751,8 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
 	margin-top:4px
 }
 .ruleIcon-jIriNN
@@ -78783,8 +78761,19 @@ a.ctaAnchor-4F1kpS:hover
 }
 .menuIconButton-3s0yeo
 {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
 	cursor:pointer;
-	position:relative;
 	margin-left:8px
 }
 .menuIcon-3ZqGxU
@@ -111705,6 +111694,11 @@ html .invoiceCancelRow-3s2UuC
 	-ms-flex-align:center;
 	align-items:center;
 	gap:8px
+}
+.warningText-28ZYdG
+{
+	color:var(--status-warning);
+	font-weight:600
 }
 
 .category-CysNYv
