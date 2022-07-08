@@ -6636,7 +6636,8 @@ html.disable-forced-colors *
 	-webkit-box-orient:horizontal;
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
-	flex-direction:row
+	flex-direction:row;
+	min-height:0
 }
 .mobileAppDevToolsWrapper-3fQFz2
 {
@@ -103893,13 +103894,12 @@ input::-webkit-outer-spin-button
 	-ms-flex-direction:column;
 	flex-direction:column
 }
-.table-3XsRlg
+.tableContainer-3J13WW
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1;
-	min-height:0;
-	overflow:auto
+	min-height:0
 }
 .subPanel-26wuj8
 {
@@ -103925,7 +103925,6 @@ input::-webkit-outer-spin-button
 .traceContainer-Z-p-fR
 {
 	padding:8px;
-	overflow:auto;
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1
@@ -103963,7 +103962,7 @@ input::-webkit-outer-spin-button
 	-ms-flex-direction:column;
 	flex-direction:column
 }
-.table-3Q7OLV
+.tableContainer-3evb7v
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
@@ -104085,7 +104084,7 @@ input::-webkit-outer-spin-button
 	-ms-flex:0 0 auto;
 	flex:0 0 auto
 }
-.customProperties-x1uTXc
+.customPropertiesContainer-1KQ9uv
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
@@ -104138,16 +104137,15 @@ input::-webkit-outer-spin-button
 	padding:0 4px
 }
 .searchBar-36GM4Z,
-.table-1Taq-8
+.tableContainer-eGOeKm
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1
 }
-.table-1Taq-8
+.tableContainer-eGOeKm
 {
-	min-height:0;
-	overflow:auto
+	min-height:0
 }
 .storeNameColumn-1Omezx
 {
@@ -104175,7 +104173,6 @@ input::-webkit-outer-spin-button
 {
 	background:var(--background-secondary);
 	padding:8px;
-	overflow:auto;
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1
@@ -104207,10 +104204,6 @@ input::-webkit-outer-spin-button
 	flex-direction:column;
 	height:100%;
 	border-left:1px solid var(--background-tertiary)
-}
-.desktopContainer-2goW-f
-{
-	height:100vh
 }
 .mobileHeaderCollapsed-3B7oGf
 {
