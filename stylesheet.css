@@ -2841,7 +2841,8 @@ html.low-saturation .lowSaturationUnderline-Z6CW6z
 {
 	overflow:hidden;
 	text-overflow:ellipsis;
-	white-space:nowrap
+	white-space:nowrap;
+	min-width:0
 }
 .lineClamp2Plus-2RYGV2
 {
@@ -12119,6 +12120,7 @@ img[alt]
 .spoilerContainer-3wsC0k
 {
 	position:relative;
+	overflow:hidden;
 	-webkit-filter:blur(0);
 	filter:blur(0);
 	border-radius:3px
@@ -30916,13 +30918,22 @@ html .progress-2Otdc-
 	border:1px solid ButtonText
 }
 
+.modalCarouselWrapper-YK1MX4
+{
+	-webkit-box-align:center!important;
+	-ms-flex-align:center!important;
+	align-items:center!important
+}
+.zoomedCarouselModalRoot-beLNhM
+{
+	background:transparent
+}
+
 .embed-hKpSrO
 {
 	position:relative;
 	display:grid;
-	max-width:-webkit-fit-content;
-	max-width:-moz-fit-content;
-	max-width:fit-content;
+	max-width:520px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	border-radius:4px
@@ -34465,6 +34476,20 @@ html .progress-2Otdc-
 	-ms-flex:1;
 	flex:1
 }
+.dismissButton-3jbLsz
+{
+	color:var(--interactive-normal)
+}
+.dismissButton-3jbLsz:hover
+{
+	color:var(--interactive-hover)
+}
+.dismissIcon-3D0Pmm
+{
+	display:block;
+	height:16px;
+	width:16px
+}
 
 .image-3tDi44,
 .imageLoading-2uloYN
@@ -34696,6 +34721,15 @@ html .progress-2Otdc-
 	overflow:hidden;
 	margin-top:16px;
 	margin-right:4px
+}
+.sectionPremiumUpsellTopOfList-36GKJc
+{
+	margin-top:8px
+}
+.premiumUpsellTopOfList-38LwbE
+{
+	margin-top:0;
+	height:50px
 }
 
 .premiumRetentionNotice-A_Ke4K
@@ -35780,16 +35814,6 @@ html .progress-2Otdc-
 	color:var(--text-danger);
 	font-size:12px;
 	line-height:16px
-}
-.modalCarouselWrapper-1CCJIq
-{
-	-webkit-box-align:center!important;
-	-ms-flex-align:center!important;
-	align-items:center!important
-}
-.zoomedCarouselModalRoot-1tAxiu
-{
-	background:transparent
 }
 
 .popoutContainer-2-aEUH
@@ -56910,13 +56934,6 @@ strong
 	width:12px;
 	height:12px;
 	color:var(--header-primary)
-}
-.name-3VLRmL
-{
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	overflow:hidden;
-	min-width:0
 }
 .tooltipPill-2ubLoh
 {
@@ -86701,6 +86718,13 @@ a.ctaAnchor-4F1kpS:hover
 	line-height:16px;
 	white-space:normal
 }
+.modal-3GUHHK
+{
+	position:relative;
+	border-radius:4px;
+	width:300px;
+	overflow:hidden
+}
 
 .container-5N5x2A
 {
@@ -87953,7 +87977,6 @@ a.ctaAnchor-4F1kpS:hover
 .mainChannelInfo-3I-_7Y .title-1xszmS
 {
 	margin-bottom:2px;
-	color:var(--header-primary);
 	min-width:0;
 	-ms-flex-negative:1;
 	flex-shrink:1;
@@ -87961,8 +87984,7 @@ a.ctaAnchor-4F1kpS:hover
 }
 .mainChannelInfo-3I-_7Y .subtitle-NatkZZ
 {
-	margin-bottom:24px;
-	color:var(--header-secondary)
+	margin-bottom:24px
 }
 .previewChannelHeader-eFlbuJ
 {
@@ -88002,10 +88024,6 @@ a.ctaAnchor-4F1kpS:hover
 {
 	z-index:10;
 	pointer-events:all
-}
-.title-1xszmS
-{
-	font-weight:600
 }
 .actions-AdUAR0
 {
@@ -95104,16 +95122,9 @@ a.ctaAnchor-4F1kpS:hover
 }
 .prefix-37pLbv
 {
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
 	-webkit-box-flex:0;
 	-ms-flex-positive:0;
-	flex-grow:0;
-	font-family:Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace
+	flex-grow:0
 }
 .typeCreate--o_pRH
 {
@@ -110369,18 +110380,6 @@ html .invoiceCancelRow-3s2UuC
 	border-color:ButtonText
 }
 
-.carousel-2_a8sX
-{
-	max-width:100%;
-	background-color:transparent;
-	margin-bottom:16px
-}
-.carouselModal-1eUFoq
-{
-	width:100vw;
-	height:100vh
-}
-
 .header-3R079E
 {
 	font-size:20px;
@@ -110930,6 +110929,18 @@ html .invoiceCancelRow-3s2UuC
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex
+}
+
+.carousel-2_a8sX
+{
+	max-width:100%;
+	background-color:transparent;
+	margin-bottom:16px
+}
+.carouselModal-1eUFoq
+{
+	width:100vw;
+	height:100vh
 }
 
 .subscription-1wJwQk
@@ -115771,10 +115782,6 @@ html .invoiceCancelRow-dVOR64
 .stepContainer-SaPPyG:hover
 {
 	background:var(--background-secondary-alt)
-}
-.stepName-1_e7jw
-{
-	font-weight:500
 }
 .stepDescription-18J3XQ
 {
