@@ -14878,6 +14878,25 @@ img[alt]
 	
 }
 
+.popularApplicationCommandsWrapper-A0OgHt
+{
+	margin-bottom:16px
+}
+.popularApplicationCommandsList-gVK9i6
+{
+	display:-webkit-inline-box;
+	display:-ms-inline-flexbox;
+	display:inline-flex;
+	gap:6px;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap
+}
+.bodyTitle-3ZoCeT
+{
+	margin-bottom:8px;
+	font-weight:700
+}
+
 .nameTag-H6kSJ0
 {
 	display:-webkit-box;
@@ -15170,19 +15189,6 @@ img[alt]
 	display:flex;
 	font-weight:700;
 	margin-bottom:8px
-}
-.popularApplicationCommandsWrapper-Nkatlj
-{
-	margin-bottom:16px
-}
-.popularApplicationCommandsList-34TRVq
-{
-	display:-webkit-inline-box;
-	display:-ms-inline-flexbox;
-	display:inline-flex;
-	gap:6px;
-	-ms-flex-wrap:wrap;
-	flex-wrap:wrap
 }
 .aboutMeGuildIcon-1AzRSE
 {
@@ -16203,18 +16209,16 @@ img[alt]
 	display:flex;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
-	margin-right:-2px;
-	margin-bottom:-2px;
+	gap:2px;
 	min-height:26px
+}
+.containerWithContent-2_V0PM
+{
+	padding:2px 4px
 }
 .clickable-28QF7i
 {
-	cursor:pointer;
-	margin:2px 2px 2px 0
-}
-.clickable-28QF7i:first-child
-{
-	margin-left:2px
+	cursor:pointer
 }
 .profileBadge-2YySEb
 {
@@ -16276,7 +16280,7 @@ img[alt]
 	align-self:flex-end;
 	background-color:var(--profile-body-background-color);
 	border-radius:8px;
-	max-width:245px
+	max-width:190px
 }
 .avatarHint-2g3Mcd
 {
@@ -17146,6 +17150,10 @@ img[alt]
 {
 	background-image:url(/assets/8396c7887cb828f5657a74646756fe77.svg)
 }
+.cardIcon-1d-mcG.venmo-2lzqMX:before
+{
+	background-image:url(/assets/eb7086fd8c74f5c8268053bb6f746f75.svg)
+}
 .cardIconSmall-1bah4o
 {
 	width:32px;
@@ -17290,6 +17298,32 @@ img[alt]
 .p24Form-19_HBa
 {
 	padding-top:20px
+}
+
+.inputWrapper-1fEOir
+{
+	position:relative
+}
+.venmoIcon-H3M4NI
+{
+	position:absolute;
+	top:9px;
+	left:8px;
+	z-index:1
+}
+.venmoInput-fGKb-a
+{
+	padding-left:48px;
+	cursor:default
+}
+.theme-dark .venmoInput-fGKb-a,
+.theme-dark .venmoInput-fGKb-a:focus,
+.theme-dark .venmoInput-fGKb-a:hover,
+.theme-light .venmoInput-fGKb-a,
+.theme-light .venmoInput-fGKb-a:focus,
+.theme-light .venmoInput-fGKb-a:hover
+{
+	border-color:hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3)
 }
 
 .error-3AuLwi
@@ -32454,6 +32488,8 @@ html .progress-2Otdc-
 .removeAttachmentButton-1iO1qS
 {
 	opacity:0;
+	-ms-flex-item-align:start;
+	align-self:flex-start;
 	-webkit-box-flex:0;
 	-ms-flex:0 0 auto;
 	flex:0 0 auto;
@@ -35534,6 +35570,12 @@ html .progress-2Otdc-
 .enable-forced-colors .emojiItem-277VFM.emojiItemSelected-2Lg50V:before
 {
 	border-color:Highlight
+}
+.theme-light .emojiItem-277VFM.emojiItemSelected-2Lg50V
+{
+	background-color:var(--background-primary);
+	-webkit-box-shadow:inset 0 0 0 1px var(--background-modifier-accent);
+	box-shadow:inset 0 0 0 1px var(--background-modifier-accent)
 }
 
 .listWrapper-2nHLP8
@@ -41814,7 +41856,8 @@ html .progress-2Otdc-
 	padding:32px 32px 40px;
 	position:relative;
 	text-align:center;
-	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)
+	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%);
+	overflow:hidden
 }
 .heroImages-2g-v0-
 {
@@ -41852,7 +41895,8 @@ html .progress-2Otdc-
 	flex-direction:column;
 	margin-bottom:24px;
 	padding:16px;
-	position:relative
+	position:relative;
+	overflow:hidden
 }
 .ctaImages-1s97vM
 {
@@ -42783,7 +42827,8 @@ html .progress-2Otdc-
 }
 .bottomIllustration-GuKjww
 {
-	
+	position:absolute;
+	bottom:0
 }
 @media screen and (max-width:1560px)
 {
@@ -52425,6 +52470,44 @@ html .progress-2Otdc-
 	pointer-events:none
 }
 
+.container-2ExHch
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	background:var(--background-secondary-alt);
+	border-radius:8px;
+	padding:24px 12px
+}
+.textContainer-okCICN
+{
+	margin:0 12px
+}
+.headerText-6vCy5f
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.newBadge-21NE6b
+{
+	margin-right:8px
+}
+
 .accountList-Wii_T5
 {
 	padding:20px 20px 12px;
@@ -52600,6 +52683,10 @@ html .progress-2Otdc-
 .integrationRevoked-2VwT0o a
 {
 	color:var(--text-link)
+}
+.xboxUpsellWrapper-3nr36v
+{
+	padding:16px
 }
 .enable-forced-colors .connection-YOVI9j
 {
@@ -55066,6 +55153,10 @@ html .progress-2Otdc-
 	-ms-flex-item-align:center;
 	align-self:center;
 	margin-left:auto
+}
+.xboxUpsellWrapper-1RIZ_Y
+{
+	padding:16px
 }
 .enable-forced-colors .connection-RE3Idz
 {
@@ -62629,23 +62720,23 @@ strong
 }
 .container-2qVG6q:hover
 {
-	background-color:var(--background-modifier-hover);
+	background-color:var(--background-primary);
+	border-color:var(--background-modifier-hover);
 	-webkit-box-shadow:var(--elevation-medium);
-	box-shadow:var(--elevation-medium)
-}
-.container-2qVG6q:active,
-.container-2qVG6q:hover
-{
+	box-shadow:var(--elevation-medium);
 	-webkit-transform:translateY(1px);
 	transform:translateY(1px)
 }
 .container-2qVG6q:active
 {
-	background-color:var(--background-modifier-active)
+	background-color:var(--background-modifier-active);
+	-webkit-transform:translateY(1px);
+	transform:translateY(1px)
 }
 .container-2qVG6q.isOpen-2OXbFs,
 .container-2qVG6q:active
 {
+	border:1px solid transparent;
 	-webkit-box-shadow:none;
 	box-shadow:none
 }
@@ -64818,15 +64909,11 @@ strong
 {
 	grid-area:channelName
 }
-.subtitle-84VytG,
-.title-3O465_
+.subtitle-84VytG
 {
 	text-overflow:ellipsis;
 	white-space:nowrap;
-	overflow:hidden
-}
-.subtitle-84VytG
-{
+	overflow:hidden;
 	grid-area:channelText
 }
 .accessoryContainer-3h083S
@@ -79023,6 +79110,15 @@ strong
 	bottom:0;
 	width:800px
 }
+.effectLayerWrapper-3m5_E0
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center
+}
 
 .wrapper-1gVUIN
 {
@@ -79153,6 +79249,11 @@ strong
 .wrapper-1gVUIN.minimum-fXpVNc .callContainer-HtHELf
 {
 	background:none
+}
+.voiceChannelEffectsLayerContainer-1rDYWI
+{
+	position:relative;
+	overflow-x:clip
 }
 .chatToasts-3oZ62v
 {
@@ -94866,35 +94967,6 @@ a.ctaAnchor-4F1kpS:hover
 	background:linear-gradient(90deg,hsl(160,calc(var(--saturation-factor, 1)*81.3%),35.7%),hsl(198,calc(var(--saturation-factor, 1)*81.5%),46.7%))
 }
 
-.messageBlock-3K-P-A
-{
-	border-width:1px;
-	border-style:solid;
-	border-radius:4px;
-	width:-webkit-fit-content;
-	width:-moz-fit-content;
-	width:fit-content;
-	margin:0 auto
-}
-.yellowMessageBlock-30xvbA
-{
-	background-color:hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,.1);
-	border-color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%)
-}
-.yellowMessageBlock-30xvbA .messageBlockIcon-a_xAgW
-{
-	color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%)
-}
-.redMessageBlock-2jr6uT
-{
-	background-color:hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,.1);
-	border-color:hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%)
-}
-.redMessageBlock-2jr6uT .messageBlockIcon-a_xAgW
-{
-	color:hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%)
-}
-
 .table-iBBufI
 {
 	width:100%
@@ -95231,6 +95303,35 @@ a.ctaAnchor-4F1kpS:hover
 .confirmationBody-3ugdpJ
 {
 	text-align:center
+}
+
+.messageBlock-3K-P-A
+{
+	border-width:1px;
+	border-style:solid;
+	border-radius:4px;
+	width:-webkit-fit-content;
+	width:-moz-fit-content;
+	width:fit-content;
+	margin:0 auto
+}
+.yellowMessageBlock-30xvbA
+{
+	background-color:hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,.1);
+	border-color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%)
+}
+.yellowMessageBlock-30xvbA .messageBlockIcon-a_xAgW
+{
+	color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%)
+}
+.redMessageBlock-2jr6uT
+{
+	background-color:hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,.1);
+	border-color:hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%)
+}
+.redMessageBlock-2jr6uT .messageBlockIcon-a_xAgW
+{
+	color:hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%)
 }
 
 .container-1MpVoK
@@ -106369,10 +106470,7 @@ input::-webkit-outer-spin-button
 }
 .participantName-1xQQfc
 {
-	margin-left:8px;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	overflow:hidden
+	margin-left:8px
 }
 
 .firefoxFixScrollFlex-3iXpkl
@@ -109975,15 +110073,9 @@ input::-webkit-outer-spin-button
 	margin-bottom:16px;
 	text-transform:uppercase
 }
-.betaTag-3ogFWC
-{
-	margin-top:0;
-	margin-bottom:4px
-}
 .title-3eX87i
 {
-	text-align:center;
-	white-space:nowrap
+	text-align:center
 }
 .closeButton-1dHuLy
 {
@@ -118480,7 +118572,7 @@ html .invoiceCancelRow-dVOR64
 .mainCard-3KBsBI
 {
 	background-color:var(--background-primary);
-	border:1px solid var(--background-primary);
+	border:1px solid transparent;
 	border-radius:12px
 }
 .emptyMainCard-2pg-47,
@@ -119132,7 +119224,9 @@ html .invoiceCancelRow-dVOR64
 }
 .controls-3EanmI
 {
-	width:100%;
+	-webkit-box-flex:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
 	gap:8px;
 	overflow:hidden
 }
@@ -119161,15 +119255,15 @@ html .invoiceCancelRow-dVOR64
 	-moz-column-gap:8px;
 	column-gap:8px
 }
-.submitContainer-3PgLAl
-{
-	-ms-flex-negative:0;
-	flex-shrink:0
-}
 .characterCount-3Zm5Bi
 {
 	font-size:14px;
 	position:static
+}
+.expressionPicker-3ELgS3
+{
+	margin:0;
+	padding:0
 }
 .form-25Aujy .submitButton-3B-dZd
 {
@@ -123157,11 +123251,6 @@ html .invoiceCancelRow-dVOR64
 	top:12px;
 	right:8px;
 	z-index:10
-}
-.headerText-cdBwty
-{
-	font-weight:600;
-	line-height:30px
 }
 .subheaderText-2Slnoc
 {
