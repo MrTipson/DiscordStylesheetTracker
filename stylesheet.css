@@ -15653,6 +15653,16 @@ img[alt]
 	border:2px solid CanvasText
 }
 
+.divider-1tWBgZ
+{
+	margin:12px 12px 0;
+	height:1px;
+	position:sticky;
+	top:0;
+	background-color:var(--profile-body-divider-color);
+	opacity:var(--profile-body-divider-opacity)
+}
+
 .baseAvatar-3dOoXW
 {
 	display:inline-block;
@@ -16041,22 +16051,6 @@ img[alt]
 	-webkit-box-shadow:0 -1px 0 var(--background-modifier-accent);
 	box-shadow:0 -1px 0 var(--background-modifier-accent)
 }
-.divider-1gzPrC
-{
-	margin:12px 12px 0;
-	height:1px;
-	background-color:var(--profile-body-divider-color);
-	position:sticky;
-	top:0
-}
-.theme-dark .divider-1gzPrC
-{
-	opacity:.48
-}
-.theme-light .divider-1gzPrC
-{
-	opacity:.12
-}
 
 .popoutMenu-2G1ap0
 {
@@ -16411,16 +16405,19 @@ img[alt]
 	--profile-gradient-overlay-color:transparent;
 	--profile-gradient-button-color:var(--button-secondary-background);
 	--profile-avatar-border-color:var(--background-secondary-alt);
-	--profile-message-input-border-color:var(--background-modifier-accent);
-	--profile-body-divider-color:var(--background-modifier-accent)
+	--profile-message-input-border-color:var(--background-modifier-accent)
 }
 .theme-dark.profileColors-3Y0XaR
 {
-	--profile-body-background-color:rgba(0,0,0,0.45)
+	--profile-body-background-color:rgba(0,0,0,0.45);
+	--profile-body-divider-color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%);
+	--profile-body-divider-opacity:0.24
 }
 .theme-light.profileColors-3Y0XaR
 {
-	--profile-body-background-color:hsla(0,0%,100%,0.45)
+	--profile-body-background-color:hsla(0,0%,100%,0.45);
+	--profile-body-divider-color:var(--button-secondary-background);
+	--profile-body-divider-opacity:0.16
 }
 
 .userPopout-3fydSP
@@ -46553,6 +46550,15 @@ html .progress-2Otdc-
 	width:16px;
 	height:16px
 }
+.divider-5XEleg
+{
+	margin:12px 12px 0;
+	height:1px;
+	position:sticky;
+	top:0;
+	background-color:var(--profile-body-divider-color);
+	opacity:var(--profile-body-divider-opacity)
+}
 .enable-forced-colors .banner-1rJmju
 {
 	border:2px solid ButtonText;
@@ -47214,7 +47220,7 @@ html .progress-2Otdc-
 	background-color:hsl(180,calc(var(--saturation-factor, 1)*7.7%),97.5%)
 }
 
-.bar-13dNfi
+.bar-2vQXIi
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -47223,14 +47229,35 @@ html .progress-2Otdc-
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
 	flex-direction:row;
-	-webkit-box-align:baseline;
-	-ms-flex-align:baseline;
-	align-items:baseline;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
 	line-height:16px;
 	font-weight:500;
-	padding:8px 16px;
+	padding:8px 8px 8px 16px;
 	color:var(--interactive-active);
-	font-size:16px
+	font-size:16px;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between
+}
+.closeButton-2bhPVq
+{
+	-webkit-box-flex:0;
+	-ms-flex:0 0 auto;
+	flex:0 0 auto;
+	cursor:pointer;
+	color:var(--interactive-normal);
+	line-height:0
+}
+.closeButton-2bhPVq:hover
+{
+	color:var(--interactive-hover)
+}
+.closeIcon-2iS5gZ
+{
+	width:16px;
+	height:16px
 }
 
 .noAutocompleteResults-1GxhnW
@@ -62922,11 +62949,6 @@ strong
 	-ms-flex-direction:column;
 	flex-direction:column
 }
-.channelName-1On3TJ,
-.channelNameSpan-2CGJt7
-{
-	margin-right:8px
-}
 .messageFocusBlock-2yGtKw
 {
 	min-width:0
@@ -63065,36 +63087,27 @@ strong
 }
 .tags-2CaEuN
 {
-	gap:4px;
-	font-family:Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-weight:500
-}
-.newBadge-1LcB6t,
-.tags-2CaEuN
-{
 	height:24px;
 	display:-webkit-inline-box;
 	display:-ms-inline-flexbox;
 	display:inline-flex;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center
+	align-items:center;
+	gap:8px;
+	font-family:Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin-bottom:8px
+}
+.channelNameSpan-2CGJt7
+{
+	margin-right:8px
 }
 .newBadge-1LcB6t
 {
-	border-radius:12px;
-	-ms-flex-negative:0;
-	flex-shrink:0;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	margin-right:4px;
-	padding:0 6px
-}
-.newBadgeText-1y7fMO
-{
 	color:hsl(235,calc(var(--saturation-factor, 1)*51.4%),52.4%);
-	text-transform:uppercase
+	display:inline-block;
+	vertical-align:middle
 }
 .typing-uHRw1D
 {
@@ -63210,11 +63223,11 @@ strong
 	display:inline-flex;
 	-ms-flex-negative:0;
 	flex-shrink:0;
-	height:20px;
+	height:24px;
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	width:20px
+	width:24px
 }
 .timestampTooltip-3-st-4
 {
