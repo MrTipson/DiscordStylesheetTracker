@@ -11644,24 +11644,30 @@ img[alt]
 	top:16px;
 	left:0;
 	right:0;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
 	z-index:2
 }
-.newMessagesPill-2YdO-e,
-.newMessagesPillContainer-1EFmTu
+.containerMarginTop-bqbT0b
+{
+	top:48px
+}
+.newMessagesPill-2YdO-e
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center
-}
-.newMessagesPill-2YdO-e
-{
-	padding:9px 12px;
+	align-items:center;
+	padding:9px 12px 9px 16px;
 	border-radius:18px 0 0 18px;
 	background-color:var(--background-floating);
 	cursor:pointer
@@ -11677,13 +11683,6 @@ img[alt]
 .theme-light .newMessagesPill-2YdO-e:hover
 {
 	background-color:var(--background-tertiary)
-}
-.newMessagesPillIcon-2gBipC
-{
-	margin-right:8px;
-	height:16px;
-	width:16px;
-	color:var(--text-normal)
 }
 .newMessagesClear-2LQVHt
 {
@@ -16036,7 +16035,7 @@ img[alt]
 
 .section-3FmfOT
 {
-	padding:12px 6px 0 12px
+	padding:12px 4px 0 12px
 }
 .section-3FmfOT:empty
 {
@@ -16328,7 +16327,6 @@ img[alt]
 {
 	color:var(--interactive-active);
 	margin-top:12px;
-	margin-right:-8px;
 	padding:12px;
 	background-color:var(--background-primary);
 	border-radius:4px;
@@ -17673,6 +17671,10 @@ img[alt]
 .cardIcon-1d-mcG.kakaopay-3hSF3R:before
 {
 	background-image:url(/assets/62be55d1267158f4910cc9909cfc47a4.svg)
+}
+.cardIcon-1d-mcG.gopay_wallet-12_dDw:before
+{
+	background-image:url(/assets/3c30ab8f6212da227f2b4ee87d7366ae.svg)
 }
 .cardIconSmall-1bah4o
 {
@@ -51863,9 +51865,9 @@ html .progress-2Otdc-
 	display:-ms-flexbox;
 	display:flex;
 	margin-bottom:24px;
-	-webkit-box-align:end;
-	-ms-flex-align:end;
-	align-items:end
+	-webkit-box-align:baseline;
+	-ms-flex-align:baseline;
+	align-items:baseline
 }
 .logo-1IGBNl
 {
@@ -55201,34 +55203,11 @@ html .progress-2Otdc-
 
 .connectedAccountVanityMetadata-3_RhV9
 {
-	-webkit-box-flex:1;
-	-ms-flex:1;
-	flex:1;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:column;
-	flex-direction:column;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center
+	margin-top:4px
 }
 .connectedAccountVanityMetadata-3_RhV9:not(:last-of-type)
 {
 	padding-right:8px
-}
-.connectedAccountVanityMetadata-3_RhV9:not(:first-of-type)
-{
-	padding-left:8px
-}
-.connectedAccountVanityMetadataLabel-3IPlm_
-{
-	text-transform:uppercase
 }
 .connectedAccountVanityMetadataTag-2IMx0L
 {
@@ -55257,13 +55236,11 @@ html .progress-2Otdc-
 {
 	height:18px;
 	width:18px;
-	margin-right:8px
+	margin-right:4px
 }
-.connectedAccountVanityMetadataJoined-Ha4rmN
+.paypalVerifiedTag-ah9S4y
 {
-	-webkit-box-align:start;
-	-ms-flex-align:start;
-	align-items:flex-start
+	background-color:var(--status-positive-background)
 }
 
 .topContainer-1aU071
@@ -55524,23 +55501,16 @@ html .progress-2Otdc-
 }
 .metadataItem-20JcWZ
 {
-	-webkit-box-flex:0!important;
-	-ms-flex:none!important;
-	flex:none!important
+	margin-top:0!important
 }
-.metadataItem-20JcWZ:not(:last-of-type)
-{
-	padding-right:24px;
-	border-right:1px solid var(--background-modifier-accent)
-}
-.metadataItem-20JcWZ:not(:first-of-type)
-{
-	padding-left:24px
-}
+.metadataItem-20JcWZ,
 .metadataRefreshButton-3zzcEZ
 {
 	-ms-flex-item-align:center;
-	align-self:center;
+	align-self:center
+}
+.metadataRefreshButton-3zzcEZ
+{
 	margin-left:auto
 }
 .xboxUpsellWrapper-1RIZ_Y
@@ -57921,6 +57891,7 @@ strong
 }
 .toolbar-3_r2xA
 {
+	-webkit-box-flex:0;
 	-ms-flex:0 0 auto;
 	flex:0 0 auto;
 	min-width:0
@@ -57928,7 +57899,6 @@ strong
 .title-17SveM,
 .toolbar-3_r2xA
 {
-	-webkit-box-flex:0;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -57941,12 +57911,16 @@ strong
 	-webkit-box-pack:start;
 	-ms-flex-pack:start;
 	justify-content:flex-start;
-	margin:0 8px 0 0;
-	-ms-flex:0 0 auto;
-	flex:0 0 auto;
-	min-width:auto;
 	overflow:hidden;
 	white-space:nowrap
+}
+.titleWrapper-24Kyzc
+{
+	margin:0 8px 0 0;
+	-webkit-box-flex:0;
+	-ms-flex:0 0 auto;
+	flex:0 0 auto;
+	min-width:auto
 }
 .clickable-ZD7xvu
 {
@@ -58980,6 +58954,11 @@ strong
 .largeButton-x1o_n3
 {
 	margin-left:16px
+}
+
+.notSpamTooltip-1n4XH6
+{
+	text-align:center
 }
 
 .container-lJuBHq
@@ -110230,6 +110209,7 @@ input::-webkit-outer-spin-button
 {
 	background:var(--background-modifier-hover)
 }
+.accessibilityOverlays-3eP0o-,
 .violationList-3G6G4r
 {
 	display:-webkit-box;
@@ -110240,6 +110220,10 @@ input::-webkit-outer-spin-button
 	-ms-flex-direction:column;
 	flex-direction:column;
 	gap:8px
+}
+.accessibilityOverlays-3eP0o-
+{
+	padding:8px
 }
 
 .panel-2sQKO9
@@ -110682,6 +110666,10 @@ input::-webkit-outer-spin-button
 .kakaopayLogo-2tRV4a
 {
 	background-image:url(/assets/62be55d1267158f4910cc9909cfc47a4.svg)
+}
+.goPayLogo-3K7UDl
+{
+	background-image:url(/assets/3c30ab8f6212da227f2b4ee87d7366ae.svg)
 }
 .message-2Bl5tJ
 {
@@ -116133,23 +116121,40 @@ html .invoiceCancelRow-3s2UuC
 	padding:0 20px 20px;
 	height:100%
 }
-.discordUserCreatedAt-2iHl1S
+.discordMemberCreatedAt-3htTfn
 {
-	margin-top:16px;
-	margin-bottom:-4px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.discordMemberCreatedAtIconContainer-2NS-8S
+{
+	background-color:var(--background-modifier-hover);
+	color:var(--interactive-active);
+	height:24px;
+	width:24px;
+	padding:8px;
+	border-radius:50%
+}
+.discordMemberCreatedAtIcon-vq2h2M
+{
+	margin-right:8px;
+	-ms-flex-item-align:center;
+	align-self:center
+}
+.discordMemberCreatedAtText-18ZCAV
+{
+	-webkit-box-orient:vertical;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.connectedAccounts-fvr7-7,
+.discordMemberCreatedAtText-18ZCAV
+{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center
-}
-.discordUserCreatedAtIcon-3K2lmj
-{
-	color:var(--interactive-active);
-	height:16px;
-	width:16px;
-	margin-right:4px
+	-webkit-box-direction:normal
 }
 .connectedAccounts-fvr7-7
 {
@@ -116157,17 +116162,13 @@ html .invoiceCancelRow-3s2UuC
 	-ms-flex-direction:row;
 	flex-direction:row
 }
-.connectedAccounts-fvr7-7,
 .connectedAccountsColumn-2LgTkZ
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-direction:normal
-}
-.connectedAccountsColumn-2LgTkZ
-{
 	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column
 }
@@ -116178,8 +116179,8 @@ html .invoiceCancelRow-3s2UuC
 .connectedAccountContainer-SlCC-S
 {
 	margin-top:20px;
-	padding:12px;
-	width:244px;
+	padding:8px;
+	width:252px;
 	background-color:var(--background-tertiary);
 	border-radius:4px
 }
@@ -116189,33 +116190,34 @@ html .invoiceCancelRow-3s2UuC
 	flex-shrink:1;
 	-webkit-box-flex:0;
 	-ms-flex-positive:0;
-	flex-grow:0;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center
+	flex-grow:0
 }
 .connectedAccount-2PrNaX,
 .connectedAccountChildren-1H5QGc
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
-	display:flex
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
 .connectedAccountChildren-1H5QGc
 {
-	margin-top:12px;
-	padding-top:12px;
-	border-top:1px solid var(--background-modifier-accent);
+	margin-top:4px;
 	-webkit-box-orient:horizontal;
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
 	flex-direction:row;
-	width:100%
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin-left:32px;
+	overflow:hidden
 }
 .connectedAccountIcon-1FXG0p
 {
-	width:20px;
-	height:20px;
+	width:24px;
+	height:24px;
 	-ms-flex-negative:0;
 	flex-shrink:0
 }
@@ -116251,14 +116253,21 @@ html .invoiceCancelRow-3s2UuC
 {
 	margin:0 5px
 }
+.connectedAccountOpenIconContainer-1jLh0z
+{
+	-ms-flex-item-align:start;
+	align-self:flex-start
+}
 .connectedAccountOpenIcon-QgWKH8
 {
 	-ms-flex-negative:0;
 	flex-shrink:0;
-	width:18px;
-	height:18px;
+	width:24px;
+	height:24px;
 	color:var(--interactive-normal);
-	display:block
+	display:block;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg)
 }
 .connectedAccountOpenIcon-QgWKH8:hover
 {
