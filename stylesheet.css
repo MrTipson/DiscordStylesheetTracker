@@ -16036,6 +16036,36 @@ img[alt]
 	height:18px
 }
 
+.memberSinceContainer-2CBD23
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-column-gap:8px;
+	-moz-column-gap:8px;
+	column-gap:8px;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.discordIcon-32mgeP
+{
+	height:16px;
+	width:16px;
+	color:var(--interactive-normal)
+}
+.divider-MZkkle
+{
+	height:4px;
+	width:4px;
+	border-radius:50%;
+	background-color:var(--background-accent)
+}
+
 .nickname-t08Mck
 {
 	word-break:break-word
@@ -16870,6 +16900,36 @@ img[alt]
 {
 	border-color:transparent;
 	border-right-color:hsla(210,calc(var(--saturation-factor, 1)*2.9%),86.7%,.6)
+}
+
+.memberSinceContainer-3biwiY
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-column-gap:8px;
+	-moz-column-gap:8px;
+	column-gap:8px;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.discordIcon-JXet1k
+{
+	height:16px;
+	width:16px;
+	color:var(--interactive-normal)
+}
+.divider-D-Vspq
+{
+	height:4px;
+	width:4px;
+	border-radius:50%;
+	background-color:var(--background-accent)
 }
 
 .note-6O4w9y textarea:focus
@@ -54998,20 +55058,16 @@ html .progress-2Otdc-
 	-ms-flex-pack:center;
 	justify-content:center
 }
-.codeBodyText-vkgHXe
-{
-	width:368px
-}
 .codeBodyText-vkgHXe,
+.dropBodyText-3lmTiN
+{
+	text-align:center
+}
 .dropBodyText-3lmTiN
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	text-align:center
-}
-.dropBodyText-3lmTiN
-{
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
@@ -55052,7 +55108,7 @@ html .progress-2Otdc-
 .closeButton-3T2O1X
 {
 	color:var(--header-primary);
-	margin-right:8px
+	min-width:0
 }
 .closeButton-3T2O1X:hover
 {
@@ -55322,6 +55378,19 @@ html .progress-2Otdc-
 	-ms-user-select:text;
 	user-select:text;
 	cursor:text
+}
+.dropsHeaderContainer-31_KlG
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.betaTagIcon-BX5YL2
+{
+	margin-left:8px
 }
 .divider-1Ve6Kl
 {
@@ -84687,9 +84756,9 @@ h6.title-1p9WyQ
 	top:50%;
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
+	color:var(--interactive-normal);
 	width:50px;
 	height:50px;
-	color:hsl(240,calc(var(--saturation-factor, 1)*5.9%),96.7%);
 	line-height:0;
 	cursor:pointer;
 	font-size:0
@@ -92695,7 +92764,6 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	padding-top:32px;
 	z-index:1
 }
 .closeContent-38PPXq
@@ -92716,6 +92784,7 @@ a.ctaAnchor-4F1kpS:hover
 {
 	position:relative;
 	right:120px;
+	top:32px;
 	pointer-events:all
 }
 .header-XAevvr
@@ -94125,6 +94194,14 @@ a.ctaAnchor-4F1kpS:hover
 }
 .headerNameAndButtons-2JHvx9
 {
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	margin-bottom:16px
+}
+.headerNameAndButtons-2JHvx9,
+.headerNameAndIcon-2NBScj
+{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -94132,13 +94209,18 @@ a.ctaAnchor-4F1kpS:hover
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
 	flex-direction:row;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center;
-	margin-bottom:16px
+	align-items:center
+}
+.premiumIcon-3uw5J0
+{
+	margin-left:16px;
+	margin-right:16px
+}
+.premiumIconTooltip-228iq_
+{
+	max-width:220px
 }
 .sidebar-z1V1wx
 {
@@ -94418,6 +94500,25 @@ a.ctaAnchor-4F1kpS:hover
 {
 	margin-top:auto;
 	padding-top:16px
+}
+.premiumText-xyx1PL
+{
+	color:var(--text-muted);
+	margin-left:4px
+}
+.premiumContainer-7WZAtZ
+{
+	color:var(--text-muted);
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row
 }
 
 .container-1urqoj
@@ -119990,12 +120091,16 @@ html .invoiceCancelRow-3s2UuC
 	width:310px;
 	background-image:url(/assets/f4b61a99ed5029248803a14aaaecccee.svg)
 }
+.bodyText-1AiO3D,
+.claimBodyText-3M4V-e
+{
+	text-align:center
+}
 .bodyText-1AiO3D
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	text-align:center;
 	width:368px
 }
 .formDivider-2AbQ-H
