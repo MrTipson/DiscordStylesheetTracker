@@ -21495,6 +21495,66 @@ img[alt]
 	align-self:center
 }
 
+.container-1XL04_
+{
+	position:relative;
+	display:inline-block
+}
+.sparkle-20-Tko
+{
+	position:absolute
+}
+.sparkleStarTopRight-9-iiLE
+{
+	bottom:calc(100% - 4px);
+	left:calc(100% - 5px);
+	width:12.75px;
+	height:12.75px
+}
+.sparkleStarRight-1EeOs8
+{
+	bottom:3px;
+	left:calc(100% + 1.31px)
+}
+.sparkleStarBottomLeft-1PidKy,
+.sparkleStarRight-1EeOs8
+{
+	height:7.44px;
+	width:7.44px
+}
+.sparkleStarBottomLeft-1PidKy
+{
+	top:calc(100% + .56px);
+	left:-1px
+}
+.theme-dark .sparkle-20-Tko
+{
+	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)
+}
+.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarTopRight-9-iiLE,
+.theme-light .sparkle-20-Tko.sparkleStarTopRight-9-iiLE
+{
+	color:#83ddc5
+}
+.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarRight-1EeOs8,
+.theme-light .sparkle-20-Tko.sparkleStarRight-1EeOs8
+{
+	color:#e15be1
+}
+.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarBottomLeft-1PidKy,
+.theme-light .sparkle-20-Tko.sparkleStarBottomLeft-1PidKy
+{
+	color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),63.3%)
+}
+
+.tag-3Upstw
+{
+	background-color:var(--brand-experiment);
+	font-size:12px;
+	line-height:16px;
+	padding:0 6px
+}
+
 .trialOfferText-qd9hSp
 {
 	max-height:20px;
@@ -21617,7 +21677,7 @@ img[alt]
 {
 	margin-right:8px
 }
-.newTagIcon-2UTu_0
+.newCircleIcon-2GVzBh
 {
 	position:absolute;
 	top:-24px;
@@ -21649,13 +21709,17 @@ img[alt]
 	background-color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%);
 	color:var(--brand-experiment-500)
 }
-.theme-dark .newTagIcon-2UTu_0
+.theme-dark .newCircleIcon-2GVzBh
 {
 	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)
 }
-.theme-light .newTagIcon-2UTu_0
+.theme-light .newCircleIcon-2GVzBh
 {
 	color:hsl(47,calc(var(--saturation-factor, 1)*98.9%),63.9%)
+}
+.newTagItem-1LPxlR
+{
+	margin-left:8px
 }
 
 .skuButtons-1fwkxf
@@ -35069,13 +35133,22 @@ html .progress-2Otdc-
 	padding:8px;
 	width:90px
 }
+.reactorsContainer-2y6FdR
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
 .reactors-1VXca7
 {
-	-webkit-box-flex:0;
-	-ms-flex:0 0 auto;
-	flex:0 0 auto;
-	width:410px;
-	height:100%
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	width:410px
 }
 .reactionDefault-1Sjj1f,
 .reactionSelected-1aMb2K
@@ -36356,7 +36429,8 @@ html .progress-2Otdc-
 	box-shadow:var(--elevation-low);
 	padding:12px;
 	z-index:100;
-	position:relative
+	position:relative;
+	grid-column:1/3
 }
 .emojiPickerInExpressionPicker-2nOwH8 .header-11eigE
 {
@@ -36375,6 +36449,14 @@ html .progress-2Otdc-
 .headerWithoutAccessory-2t4j0d
 {
 	grid-template-columns:auto
+}
+.searchBarFullRow-2d3B66
+{
+	grid-column:1/3
+}
+.diversitySelector-P-W_tU
+{
+	grid-column:2/3
 }
 .categoryList-2qRrlj
 {
@@ -42070,6 +42152,43 @@ html .progress-2Otdc-
 	background-image:url(/assets/80cb895c1ed74292d5cf0acabe103f32.svg)
 }
 
+.brandShine-2_xHTj
+{
+	color:hsla(235,calc(var(--saturation-factor, 1)*85.6%),64.7%,.1)!important
+}
+.freeTrialText-1tHbUv
+{
+	text-transform:capitalize
+}
+
+.container-3ci9p2
+{
+	background:linear-gradient(97.5deg,hsl(235,calc(var(--saturation-factor, 1)*46.7%),38.2%) 6.21%,hsl(235,calc(var(--saturation-factor, 1)*51.4%),52.4%) 49.75%,hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%) 94.22%);
+	display:grid;
+	grid-template-columns:1fr auto;
+	border-radius:8px
+}
+.leftColumn-2lOmis
+{
+	padding:24px 0 24px 24px
+}
+.rightColumn-157-8O
+{
+	position:relative;
+	width:232px
+}
+.rightColumnImg-10Vk7C
+{
+	position:absolute;
+	top:-16px
+}
+.subHeader-38DcJ4
+{
+	color:hsl(47,calc(var(--saturation-factor, 1)*98.9%),63.9%);
+	margin-top:4px;
+	margin-bottom:8px
+}
+
 .container-LUKdw8
 {
 	-webkit-box-flex:1;
@@ -42375,65 +42494,9 @@ html .progress-2Otdc-
 	bottom:0;
 	height:300px
 }
-
-.container-1XL04_
+.activitiesBannerContainer-aAnWk6
 {
-	position:relative;
-	display:inline-block
-}
-.sparkle-20-Tko
-{
-	position:absolute
-}
-.sparkleStarTopRight-9-iiLE
-{
-	bottom:calc(100% - 4px);
-	left:calc(100% - 5px);
-	width:12.75px;
-	height:12.75px
-}
-.sparkleStarRight-1EeOs8
-{
-	bottom:3px;
-	left:calc(100% + 1.31px)
-}
-.sparkleStarBottomLeft-1PidKy,
-.sparkleStarRight-1EeOs8
-{
-	height:7.44px;
-	width:7.44px
-}
-.sparkleStarBottomLeft-1PidKy
-{
-	top:calc(100% + .56px);
-	left:-1px
-}
-.theme-dark .sparkle-20-Tko
-{
-	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)
-}
-.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarTopRight-9-iiLE,
-.theme-light .sparkle-20-Tko.sparkleStarTopRight-9-iiLE
-{
-	color:#83ddc5
-}
-.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarRight-1EeOs8,
-.theme-light .sparkle-20-Tko.sparkleStarRight-1EeOs8
-{
-	color:#e15be1
-}
-.containerColored-3FAZAx .sparkle-20-Tko.sparkleStarBottomLeft-1PidKy,
-.theme-light .sparkle-20-Tko.sparkleStarBottomLeft-1PidKy
-{
-	color:hsl(38,calc(var(--saturation-factor, 1)*95.7%),63.3%)
-}
-
-.tag-3Upstw
-{
-	background-color:var(--brand-experiment);
-	font-size:12px;
-	line-height:16px;
-	padding:0 4px
+	margin-bottom:24px
 }
 
 .root-3Uv5Th
@@ -43013,6 +43076,15 @@ html .progress-2Otdc-
 	height:127px
 }
 .featureLongerMessageContent-4BIM8v .featureImage-91H2fC
+{
+	max-height:90%;
+	width:100%
+}
+.featureActivities-LzpEN3 .featureTitle-3N9Stg
+{
+	color:#5c87ff
+}
+.featureActivities-LzpEN3 .featureImage-91H2fC
 {
 	max-height:90%;
 	width:100%
@@ -43605,15 +43677,6 @@ html .progress-2Otdc-
 	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)!important
 }
 
-.brandShine-2_xHTj
-{
-	color:hsla(235,calc(var(--saturation-factor, 1)*85.6%),64.7%,.1)!important
-}
-.freeTrialText-1tHbUv
-{
-	text-transform:capitalize
-}
-
 .container-1vJMin
 {
 	text-align:center;
@@ -43899,10 +43962,12 @@ html .progress-2Otdc-
 	display:grid;
 	gap:16px;
 	grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-	justify-items:center
+	justify-items:center;
+	margin-bottom:32px
 }
 .smallPerkCard-2sX_--
 {
+	position:relative;
 	background-color:var(--background-secondary-alt);
 	border-radius:16px;
 	-webkit-box-sizing:border-box;
@@ -43956,6 +44021,16 @@ html .progress-2Otdc-
 .moreGuildsImage-31VCP1
 {
 	width:116px
+}
+.activitiesImages-1_FVwh
+{
+	width:222px
+}
+.newTag-RoxV8D
+{
+	position:absolute;
+	top:-4px;
+	left:-2px
 }
 
 .root-1-rRcJ
@@ -91610,6 +91685,37 @@ a.ctaAnchor-4F1kpS:hover
 	margin-left:-2px
 }
 
+.header-32CfhS
+{
+	margin-top:14px;
+	white-space:pre-line
+}
+.headerContainer-1ztsTF
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row
+}
+.betaTag-2eU5Mt
+{
+	margin-left:4px;
+	-ms-flex-item-align:center;
+	align-self:center;
+	color:var(--brand-experiment)
+}
+.content-1Wn6jC
+{
+	text-align:center
+}
+.video-1kHKsl
+{
+	border-radius:8px
+}
+
 .container-2pEU_G
 {
 	width:285px;
@@ -91647,11 +91753,17 @@ a.ctaAnchor-4F1kpS:hover
 	margin:0 auto;
 	font-weight:500
 }
-.container-2pEU_G .image-1pmWOi
+.container-2pEU_G .monsterHunterRiseImage-ze0JY0
 {
 	position:absolute;
 	top:-140px;
 	right:-55px
+}
+.container-2pEU_G .omegaStrikersImage-qt-0NX
+{
+	position:absolute;
+	width:260px;
+	bottom:220px
 }
 .container-2pEU_G .title-BoDjin
 {
@@ -91720,11 +91832,17 @@ a.ctaAnchor-4F1kpS:hover
 	margin:0 auto;
 	font-weight:500
 }
-.container-1hqi95 .image-2nIAKV
+.container-1hqi95 .monsterHunterRiseImage-29pbBU
 {
 	position:absolute;
 	top:-140px;
 	right:-55px
+}
+.container-1hqi95 .omegaStrikersImage-2LvT0V
+{
+	position:absolute;
+	width:260px;
+	bottom:180px
 }
 .container-1hqi95 .title-_GD6cF
 {
@@ -114379,10 +114497,6 @@ input::-webkit-outer-spin-button
 	justify-content:center;
 	margin-top:12px
 }
-.betaTag-1BuJUk
-{
-	margin-left:4px
-}
 .modalCloseButton-35fetH
 {
 	padding:0;
@@ -118080,6 +118194,17 @@ html .invoiceCancelRow-3s2UuC
 	margin-bottom:40px;
 	position:relative;
 	text-align:center
+}
+.headerSpinner-2kXBfT
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	width:644px;
+	height:72px
 }
 .closeButton-hi9Bxx
 {
@@ -122430,6 +122555,7 @@ html .invoiceCancelRow-dVOR64
 
 .container-2_J666
 {
+	z-index:1;
 	background-color:var(--background-primary);
 	border-radius:12px;
 	color:var(--interactive-normal);
