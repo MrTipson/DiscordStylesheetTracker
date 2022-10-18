@@ -67081,10 +67081,14 @@ strong
 }
 .subtitle-84VytG
 {
-	text-overflow:ellipsis;
 	white-space:nowrap;
-	overflow:hidden;
 	grid-area:channelText
+}
+.channelSubtitle-3VZjHG,
+.subtitle-84VytG
+{
+	text-overflow:ellipsis;
+	overflow:hidden
 }
 .accessoryContainer-3h083S
 {
@@ -68796,7 +68800,7 @@ strong
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	padding:32px 16px;
+	padding:32px;
 	gap:32px
 }
 @media (max-width:486px)
@@ -68809,13 +68813,17 @@ strong
 }
 .homeContent-2_a0jF
 {
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
 	width:100%;
-	max-width:600px
+	min-width:0
 }
 .widgets-37sQdc
 {
-	width:100%;
-	max-width:320px;
+	width:25%;
+	min-width:320px;
+	max-width:480px;
 	position:sticky
 }
 .widgetsContainer-nTESfL
@@ -68845,10 +68853,13 @@ strong
 	}
 	.homeContent-2_a0jF
 	{
-		margin:auto
+		margin:auto;
+		max-width:600px
 	}
 	.widgets-37sQdc
 	{
+		width:100%;
+		min-width:none;
 		max-width:600px;
 		margin:0 auto;
 		position:static
@@ -121807,6 +121818,29 @@ html .invoiceCancelRow-dVOR64
 	text-align:center
 }
 .closeButton-2kK2tn
+{
+	position:absolute;
+	top:5px;
+	right:0
+}
+
+.modalBody-1Zp4_o
+{
+	margin-top:16px
+}
+.modalContent-1Ycg1C
+{
+	padding:16px
+}
+.toggle-1AT26z
+{
+	margin-bottom:0
+}
+.cancelButton-1IZcSv
+{
+	margin-right:4px
+}
+.closeButton-16cn7E
 {
 	position:absolute;
 	top:5px;
