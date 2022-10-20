@@ -14155,6 +14155,10 @@ img[alt]
 	top:14px;
 	right:16px
 }
+.premiumIconTooltipContent-1AxjuR
+{
+	text-align:center
+}
 .premiumIconWrapper-yyGDql
 {
 	position:absolute;
@@ -14168,6 +14172,17 @@ img[alt]
 	transition:opacity .15s ease-out,-webkit-transform .15s ease-out;
 	transition:opacity .15s ease-out,transform .15s ease-out;
 	transition:opacity .15s ease-out,transform .15s ease-out,-webkit-transform .15s ease-out
+}
+.premiumIconWrapper-yyGDql.visible-1ZXoXa
+{
+	opacity:1;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	outline:1px solid transparent
+}
+.premiumIconWrapper-yyGDql.clickable-1LpIFn
+{
+	cursor:pointer
 }
 .profileBannerPremium-3xIFwS .premiumIconWrapper-yyGDql
 {
@@ -14200,20 +14215,9 @@ img[alt]
 	top:16px;
 	right:16px
 }
-.banner-2boKnS:hover .premiumIconWrapper-yyGDql
-{
-	opacity:1;
-	-webkit-transform:translateZ(0);
-	transform:translateZ(0);
-	outline:1px solid transparent
-}
 .banner-2boKnS:hover .gifTag-1Lux26
 {
 	opacity:0
-}
-.clickable-1LpIFn
-{
-	cursor:pointer
 }
 .enable-forced-colors .banner-2boKnS
 {
@@ -17620,21 +17624,22 @@ img[alt]
 }
 .copy-1DPd7K
 {
-	-webkit-box-flex:0;
-	-ms-flex:0 0 auto;
-	flex:0 0 auto;
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	max-width:100%
+	-webkit-box-flex:1;
+	-ms-flex:1 0;
+	flex:1 0
 }
 .nitroWheel-2fHAGL
 {
 	width:20px;
 	height:20px;
-	margin-left:8px;
 	vertical-align:sub;
 	color:hsl(0,calc(var(--saturation-factor, 1)*0%),100%)
+}
+.dismissButton-GdOPhI
+{
+	width:16px;
+	height:16px;
+	margin-left:8px
 }
 
 .container-q97qHp
@@ -18300,6 +18305,10 @@ img[alt]
 .cardIcon-1d-mcG.gopay_wallet-12_dDw:before
 {
 	background-image:url(/assets/3c30ab8f6212da227f2b4ee87d7366ae.svg)
+}
+.cardIcon-1d-mcG.bancontact-wYHuap:before
+{
+	background-image:url(/assets/17d76b685c62dc4d337f3ee0a8e3c7b2.svg)
 }
 .theme-light .cardIcon-1d-mcG.venmo-2lzqMX:before
 {
@@ -92388,6 +92397,25 @@ a.ctaAnchor-4F1kpS:hover
 	top:100%
 }
 
+.profileThemesFeatureEducationArt-M4gj2m
+{
+	background-image:url(/assets/bba74417c0189c39e1ecee33c4bb2ef1.gif);
+	margin-bottom:16px;
+	width:248px;
+	height:217px;
+	-ms-flex-item-align:center;
+	align-self:center;
+	border-radius:8px
+}
+.reduce-motion .profileThemesFeatureEducationArt-M4gj2m
+{
+	background-image:url(/assets/340252a0b44228f7c0a36f8ac21f8c64.png)
+}
+.reduce-motion .profileThemesFeatureEducationArt-M4gj2m:hover
+{
+	background-image:url(/assets/bba74417c0189c39e1ecee33c4bb2ef1.gif)
+}
+
 .button-12Fmur
 {
 	line-height:0;
@@ -92600,28 +92628,10 @@ a.ctaAnchor-4F1kpS:hover
 	top:-100px;
 	left:calc(50% - 140px)
 }
-.profileThemesFeatureEducationArt-2U3gN0
-{
-	background-image:url(/assets/bba74417c0189c39e1ecee33c4bb2ef1.gif);
-	margin-bottom:16px;
-	width:248px;
-	height:217px;
-	-ms-flex-item-align:center;
-	align-self:center;
-	border-radius:8px
-}
 .accountProfilePopoutWrapper-3GskID
 {
 	position:relative;
 	left:-28px
-}
-.reduce-motion .profileThemesFeatureEducationArt-2U3gN0
-{
-	background-image:url(/assets/340252a0b44228f7c0a36f8ac21f8c64.png)
-}
-.reduce-motion .profileThemesFeatureEducationArt-2U3gN0:hover
-{
-	background-image:url(/assets/bba74417c0189c39e1ecee33c4bb2ef1.gif)
 }
 
 .icon-39rdLt
@@ -113044,6 +113054,10 @@ input::-webkit-outer-spin-button
 {
 	background-image:url(/assets/3c30ab8f6212da227f2b4ee87d7366ae.svg)
 }
+.bancontactLogo-1C-Wel
+{
+	background-image:url(/assets/17d76b685c62dc4d337f3ee0a8e3c7b2.svg)
+}
 .message-2Bl5tJ
 {
 	font-size:24px;
@@ -114374,6 +114388,11 @@ input::-webkit-outer-spin-button
 	-ms-flex-pack:center;
 	justify-content:center
 }
+.profileThemesUpsellModalTitle-2QUgst
+{
+	width:445px;
+	text-align:center
+}
 .profileThemesUpsellModalBetaTag-1BevDt
 {
 	margin-right:8px;
@@ -114401,19 +114420,6 @@ input::-webkit-outer-spin-button
 {
 	width:498px;
 	margin:24px auto
-}
-.profileThemesUpsellModalFooter-hg7vdD
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between
-}
-.profileThemesUpsellModalPerkLinkButton-2CP9q5
-{
-	padding:0
 }
 
 .notice-120vIO
@@ -118332,15 +118338,15 @@ html .invoiceCancelRow-3s2UuC
 	background-image:url(/assets/c32a6f214c276af4b954c27871de54b4.svg)
 }
 
-.row-3p2FPT
+.row-3NCCgF
 {
 	padding:8px 16px
 }
-.heading-3ELvYJ
+.heading-1il9N3
 {
 	padding:0 0 4px
 }
-.divider-1WxFNb
+.divider-1NwQuP
 {
 	padding:8px 16px
 }
@@ -118829,19 +118835,6 @@ html .invoiceCancelRow-3s2UuC
 .theme-light .emptyIconFriends-3MCBQa
 {
 	background-image:url(/assets/c32a6f214c276af4b954c27871de54b4.svg)
-}
-
-.row-3YjhlG
-{
-	padding:8px 16px
-}
-.heading-30W6u6
-{
-	padding:0 0 4px
-}
-.divider-2_BLon
-{
-	padding:8px 16px
 }
 
 .userInfoSection-1gptv0
