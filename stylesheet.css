@@ -21553,7 +21553,10 @@ img[alt]
 }
 .contentExpandContainer-3R7yOZ
 {
-	overflow:hidden
+	overflow:hidden;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
 }
 .showOverflow-1bbCoU
 {
@@ -109254,11 +109257,6 @@ input::-webkit-outer-spin-button
 	opacity:1
 }
 
-.buttonWithTooltip-1nC6PQ
-{
-	width:100%
-}
-
 .container-4nzqrl,
 .header-1sz2Ds
 {
@@ -111768,6 +111766,258 @@ input::-webkit-outer-spin-button
 	height:1px;
 	background:var(--background-modifier-accent);
 	margin:32px 0
+}
+
+.container-AxP_J8
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	cursor:pointer
+}
+.container-AxP_J8.disabled-3Q7kTN
+{
+	cursor:not-allowed
+}
+.backgroundModifierContainer-WjXgb2
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	width:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	gap:8px;
+	border-radius:4px;
+	padding:12px;
+	border-left:3px solid var(--background-secondary);
+	-webkit-transition:background-color .15s ease-in-out;
+	transition:background-color .15s ease-in-out;
+	cursor:pointer
+}
+.backgroundModifierContainer-WjXgb2.disabled-3Q7kTN
+{
+	cursor:not-allowed
+}
+.backgroundModifierContainer-WjXgb2.selected-2f8_FP
+{
+	background-color:var(--background-modifier-selected)
+}
+.backgroundModifierContainer-WjXgb2:hover:not(.disabled-3Q7kTN)
+{
+	background-color:var(--background-modifier-hover)
+}
+.backgroundModifierContainer-WjXgb2:active:not(.disabled-3Q7kTN)
+{
+	background-color:var(--background-modifier-active)
+}
+.statusGreen-Iw_dcs
+{
+	border-left:3px solid var(--status-positive)
+}
+.statusGreen-Iw_dcs.disabled-3Q7kTN
+{
+	border-left:3px solid var(--background-secondary)
+}
+.statusOrange-zz0-Vv
+{
+	border-left:3px solid var(--status-orange-530)
+}
+.statusOrange-zz0-Vv.disabled-3Q7kTN
+{
+	border-left:3px solid var(--background-accent)
+}
+.statusRed-1dK5Ao
+{
+	border-left:3px solid var(--status-danger)
+}
+.statusRed-1dK5Ao.disabled-3Q7kTN
+{
+	border-left:3px solid var(--background-accent)
+}
+.statusYellow-2nYnVP
+{
+	border-left:3px solid var(--status-warning)
+}
+.accent-2FWtD1,
+.statusYellow-2nYnVP.disabled-3Q7kTN
+{
+	border-left:3px solid var(--background-accent)
+}
+.accent-2FWtD1.disabled-3Q7kTN
+{
+	border-left:3px solid var(--background-secondary)
+}
+.transparent-2FWmln
+{
+	border-left:3px solid transparent
+}
+.description-1AuQKU
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
+}
+.disabled-3Q7kTN
+{
+	opacity:.5
+}
+
+.groupContainer-x_RNHs
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	gap:8px;
+	background-color:var(--background-secondary);
+	border-radius:4px;
+	padding:0
+}
+.groupContainer-x_RNHs,
+.groupHeaderRow-2WgkMA
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	width:100%
+}
+.pointer-1p1R-4
+{
+	width:0;
+	height:0;
+	border:8px solid transparent;
+	pointer-events:none;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-4px;
+	margin-top:-8px;
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+	background-color:var(--background-secondary-alt)
+}
+.radioItem-9hpM39
+{
+	margin:-4px 0
+}
+.groupCollapsedContainer-1h2Wkb
+{
+	width:100%;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	gap:8px;
+	position:relative;
+	z-index:1;
+	background-color:var(--background-secondary-alt);
+	border:3px solid var(--background-secondary);
+	border-radius:4px;
+	padding:12px
+}
+.groupCollapsedRow-2CgoFk
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	width:100%;
+	background-color:var(--background-tertiary);
+	color:var(--interactive-normal)
+}
+.selected-58N8gq
+{
+	color:var(--interactive-active);
+	background-color:var(--background-modifier-active)
+}
+
+.betaTag-3FFAB4
+{
+	display:inline-block;
+	margin-left:4px;
+	margin-bottom:-2px
+}
+.headerContainer-1nvGAb
+{
+	margin-bottom:24px
+}
+.descriptionContainer-2NqVJ5
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	gap:0;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
+}
+.divider-2vjha-
+{
+	margin:24px
+}
+.highlightedSettingsRow-3ob6ci
+{
+	background-color:var(--background-secondary)
+}
+.switchItem-2AhkHz
+{
+	margin:0
+}
+.switchItemTextContent-3evIU4
+{
+	gap:4px
+}
+.setupContainer-38rQDO,
+.switchItemTextContent-3evIU4
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.setupContainer-38rQDO
+{
+	gap:8px
 }
 
 .row-1lgfJq
@@ -126302,6 +126552,14 @@ html .invoiceCancelRow-dVOR64
 {
 	width:100%
 }
+.gridUpsellContainer-2yRge0
+{
+	text-align:center
+}
+.gridUpsellAsset-3KP1li
+{
+	margin-bottom:16px
+}
 
 .container-2y0BMF
 {
@@ -134498,6 +134756,76 @@ html .invoiceCancelRow-dVOR64
 	right:-8px
 }
 
+.mainCheckboxContainer-2FcEmc
+{
+	-webkit-box-align:stretch;
+	-ms-flex-align:stretch;
+	align-items:stretch;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	-webkit-box-orient:vertical;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	margin-top:16px;
+	margin-bottom:16px
+}
+.checkboxContainer-yVbwWS,
+.mainCheckboxContainer-2FcEmc
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-direction:normal;
+	gap:8px
+}
+.checkboxContainer-yVbwWS
+{
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:start;
+	-ms-flex-pack:start;
+	justify-content:flex-start;
+	-webkit-box-orient:horizontal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	padding:8px;
+	background-color:var(--background-secondary);
+	border-radius:4px;
+	cursor:pointer
+}
+.checkboxContainer-yVbwWS:hover
+{
+	background-color:var(--background-secondary-alt)
+}
+.checkbox-K3upcG
+{
+	-webkit-box-flex:0;
+	-ms-flex-positive:0;
+	flex-grow:0
+}
+
+.mainChannelContainer-3okOeY
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:stretch;
+	-ms-flex-align:stretch;
+	align-items:stretch;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:4px;
+	margin-top:16px;
+	margin-bottom:16px
+}
+
 .card-1AUjv4
 {
 	margin-bottom:20px;
@@ -135501,56 +135829,6 @@ html .invoiceCancelRow-dVOR64
 .closeIcon-2shGNU:hover
 {
 	color:var(--interactive-hover)
-}
-
-.mainCheckboxContainer-2FcEmc
-{
-	-webkit-box-align:stretch;
-	-ms-flex-align:stretch;
-	align-items:stretch;
-	-webkit-box-flex:1;
-	-ms-flex:1;
-	flex:1;
-	-webkit-box-orient:vertical;
-	-ms-flex-direction:column;
-	flex-direction:column;
-	margin-top:16px;
-	margin-bottom:16px
-}
-.checkboxContainer-yVbwWS,
-.mainCheckboxContainer-2FcEmc
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-direction:normal;
-	gap:8px
-}
-.checkboxContainer-yVbwWS
-{
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	-webkit-box-pack:start;
-	-ms-flex-pack:start;
-	justify-content:flex-start;
-	-webkit-box-orient:horizontal;
-	-ms-flex-direction:row;
-	flex-direction:row;
-	padding:8px;
-	background-color:var(--background-secondary);
-	border-radius:4px;
-	cursor:pointer
-}
-.checkboxContainer-yVbwWS:hover
-{
-	background-color:var(--background-secondary-alt)
-}
-.checkbox-K3upcG
-{
-	-webkit-box-flex:0;
-	-ms-flex-positive:0;
-	flex-grow:0
 }
 
 .header-DdKz5e
