@@ -9682,40 +9682,50 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 
 .presets-2zm9Ir
 {
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
 	gap:16px 24px;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
 	margin-top:16px
+}
+.header-LaudvZ,
+.presets-2zm9Ir
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
 }
 .header-LaudvZ
 {
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	-ms-flex-align:center
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
-.header-LaudvZ,
+.headings-1UkJbq
+{
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:4px
+}
+.headings-1UkJbq,
 .title-1ezOSD
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	align-items:center
+	display:flex
 }
 .title-1ezOSD
 {
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1;
-	-ms-flex-align:center
-}
-.subheader-3JiXHI
-{
-	margin-top:4px
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
 .betaTag-3eRHW2
 {
@@ -9976,7 +9986,6 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
-	margin-bottom:16px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box
 }
@@ -56023,11 +56032,21 @@ input[type=checked]:focus-visible+.label-3TDpbn
 {
 	margin-right:2px
 }
-.applicationCommand-2wdTS6>[data-slate-node=text]:last-child>:last-child
+.applicationCommand-2wdTS6:after
 {
-	-webkit-box-flex:2;
-	-ms-flex:2;
-	flex:2
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	padding-left:4px;
+	padding-top:8px;
+	white-space:nowrap;
+	color:var(--text-muted);
+	pointer-events:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	content:attr(data-trailing-placeholder)
 }
 .applicationCommand-2wdTS6>[data-slate-node=text]>*,
 .optionPillValue-2uxsMp>[data-slate-node=text]>*
@@ -56126,16 +56145,6 @@ input[type=checked]:focus-visible+.label-3TDpbn
 .newLine-1Tglhg
 {
 	display:inline-block
-}
-.remainingOptions-2kCt8U
-{
-	padding-top:8px;
-	color:var(--text-muted);
-	pointer-events:none;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none
 }
 
 .editor-H2NA06
