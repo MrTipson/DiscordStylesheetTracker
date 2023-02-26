@@ -13266,7 +13266,27 @@ html.disable-forced-colors *
 	-webkit-transition:color .2s ease-in-out;
 	transition:color .2s ease-in-out
 }
+.volumeButtonIcon-1W132j:hover
+{
+	-webkit-transition:none;
+	transition:none;
+	color:var(--interactive-hover)
+}
+.volumeButtonIcon-1W132j:active
+{
+	-webkit-transition:none;
+	transition:none;
+	color:var(--interactive-active)
+}
 .playing-1NDSYY .volumeButtonIcon-1W132j
+{
+	color:var(--brand-300)
+}
+.playing-1NDSYY .volumeButtonIcon-1W132j:hover
+{
+	color:var(--brand-200)
+}
+.playing-1NDSYY .volumeButtonIcon-1W132j:active
 {
 	color:var(--white-500)
 }
