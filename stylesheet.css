@@ -31532,6 +31532,7 @@ img[alt]
 
 .guildStatus-12htKt
 {
+	margin-bottom:50px;
 	text-align:center
 }
 .guildIcon-3etGSf
@@ -31688,6 +31689,249 @@ img[alt]
 	height:16px;
 	margin-right:8px;
 	width:16px
+}
+
+.cannonWrapper-ElUdzz
+{
+	z-index:1
+}
+.cannon-2DQZtE,
+.cannonWrapper-ElUdzz
+{
+	position:absolute;
+	height:100%;
+	width:100%
+}
+.confettiTriggerWrapper-wF3oBn
+{
+	cursor:pointer;
+	height:100%;
+	width:100%
+}
+.confettiTrigger-10-C0t
+{
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	height:100%;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	width:100%
+}
+
+.progressBarMarker-2dy17R
+{
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	background-color:hsl(var(--white-500-hsl)/.4);
+	border-radius:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	height:32px;
+	isolation:isolate;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	position:absolute;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width:32px;
+	z-index:2
+}
+.progressBarMarker-2dy17R.progressBarMarkerCurrent-uM9Ee_
+{
+	background-color:transparent
+}
+.progressBarMarkerUnlocked-2TzsEs .progressBarMarkerIndicator-3_FLlB
+{
+	background:var(--guild-boosting-pink);
+	border-radius:100%;
+	content:"";
+	height:32px;
+	left:50%;
+	position:absolute;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:32px;
+	z-index:0
+}
+.progressBarMarkerUnlocked-2TzsEs.progressBarMarkerLower-OpLL7E .progressBarMarkerIndicator-3_FLlB
+{
+	height:20px;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:20px;
+	z-index:3
+}
+.progressBarMarkerTooltipHitTarget-JYlFO1
+{
+	height:44px;
+	left:50%;
+	position:absolute;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:44px;
+	z-index:3
+}
+.progressBarMarkerLabel-2EgZ3G
+{
+	color:var(--white-500);
+	left:50%;
+	margin-top:4px;
+	opacity:.4;
+	position:absolute;
+	top:100%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	white-space:nowrap
+}
+.progressBarMarkerUnlocked-2TzsEs .progressBarMarkerLabel-2EgZ3G
+{
+	opacity:.8
+}
+.progressBarMarkerCurrent-uM9Ee_ .progressBarMarkerLabel-2EgZ3G
+{
+	opacity:1
+}
+.progressBarMarkerUnlockedIcon-ebdCAK
+{
+	height:16px;
+	position:absolute;
+	right:calc(100% + 3px);
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	width:16px
+}
+.boostedTierIconBackground-2d03yZ
+{
+	background-color:hsl(var(--white-500-hsl)/.5);
+	border-radius:20px;
+	height:20px;
+	width:20px;
+	z-index:2
+}
+.boostedTierIcon-2E8qMF,
+.boostedTierIconBackground-2d03yZ
+{
+	left:50%;
+	position:absolute;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%)
+}
+.boostedTierIcon-2E8qMF
+{
+	color:var(--guild-boosting-pink);
+	height:12px;
+	width:12px;
+	z-index:4
+}
+.progressBarMarkerUnlocked-2TzsEs .boostedTierIcon-2E8qMF
+{
+	color:var(--white-500)
+}
+.progressBarMarkerCurrent-uM9Ee_ .boostedTierIcon-2E8qMF
+{
+	height:16px;
+	width:16px
+}
+
+.progressBar-2oTiSh
+{
+	height:54px;
+	isolation:isolate;
+	margin:0 auto 48px;
+	max-width:660px;
+	position:relative
+}
+.progressBarScrubber-39Iczc
+{
+	height:8px;
+	left:20px;
+	position:absolute;
+	right:20px;
+	top:13px
+}
+.progressBarTrack-1JMWIp
+{
+	background-color:hsl(var(--white-500-hsl)/.3);
+	width:100%;
+	z-index:0
+}
+.progressBarFill-1eX_h_,
+.progressBarTrack-1JMWIp
+{
+	border-radius:8px;
+	height:100%;
+	position:absolute
+}
+.progressBarFill-1eX_h_
+{
+	background-image:-webkit-gradient(linear,left top,right top,from(var(--guild-boosting-purple)),to(var(--white-500)));
+	background-image:linear-gradient(90deg,var(--guild-boosting-purple),var(--white-500));
+	left:0;
+	z-index:2
+}
+.progressBarCurrentProgressTooltip-HcAf9Y
+{
+	margin-top:100px
+}
+.progressBarCurrentProgressTooltipMarker-pjxgH1
+{
+	border-radius:100%;
+	height:50px;
+	position:absolute;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:50px;
+	z-index:3
+}
+.progressBarCurrentProgressTooltipHeading-2upUJk
+{
+	font-weight:600;
+	margin-bottom:2px
+}
+.progressBarCurrentProgressTooltipSubheading-2vxhBl
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.progressBarCurrentProgressTooltipSubheadingIcon-30ZBqp
+{
+	color:var(--guild-boosting-pink);
+	-webkit-box-flex:0;
+	-ms-flex:0 0 auto;
+	flex:0 0 auto;
+	height:16px;
+	margin-left:-2px;
+	margin-right:4px;
+	width:16px
+}
+.progressBarCurrentProgressTooltipSubheadingCopy-3YQpSX
+{
+	-webkit-box-flex:1;
+	-ms-flex:1 1 auto;
+	flex:1 1 auto
 }
 
 .tierCards-1cjGnx
@@ -37945,6 +38189,10 @@ img[alt]
 	-ms-flex-direction:column;
 	flex-direction:column;
 	gap:16px
+}
+.cta-8iUADI
+{
+	margin-bottom:16px
 }
 
 .title-1p9WyQ
@@ -45721,6 +45969,11 @@ h6.title-1p9WyQ
 .cozy-VmLDNB.wrapper-30-Nkg
 {
 	padding-left:72px
+}
+.compact-2Nkcau.wrapper-30-Nkg.contentOnly-CIq5X5,
+.cozy-VmLDNB.wrapper-30-Nkg.contentOnly-CIq5X5
+{
+	padding-left:16px
 }
 .repliedMessage-3Z6XBG
 {
@@ -76336,6 +76589,29 @@ html .progress-2Otdc-
 	color:var(--status-positive)
 }
 
+.container-PAPxZh
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:8px
+}
+.container-PAPxZh,
+.row--LCpto
+{
+	border-radius:8px
+}
+.row--LCpto
+{
+	background-color:var(--background-primary);
+	cursor:pointer;
+	padding:16px
+}
+
 .container-hQ2eH1
 {
 	min-width:0;
@@ -76366,9 +76642,7 @@ html .progress-2Otdc-
 	-ms-flex-pack:center;
 	justify-content:center;
 	gap:32px;
-	padding:32px;
-	-ms-flex-wrap:wrap;
-	flex-wrap:wrap
+	padding:32px
 }
 .homeContainer-1T8N7y::-webkit-scrollbar-track
 {
@@ -83241,6 +83515,47 @@ html .progress-2Otdc-
 .newPostCount-3SXe5K
 {
 	background-color:var(--brand-260)
+}
+
+.progressBarContainer-E1K7OK
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:4px;
+	padding:4px 8px 16px 16px;
+	cursor:pointer
+}
+.progressBarText-1CVwdS
+{
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between
+}
+.progressBarText-1CVwdS,
+.rightContainer-3YNPYs,
+.rightText-3s7mE9
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.rightText-3s7mE9
+{
+	gap:2px
+}
+.arrow-3X8pHH
+{
+	color:var(--header-secondary);
+	-ms-flex-negative:0;
+	flex-shrink:0
 }
 
 .wrapper-2fEmwW
@@ -96676,6 +96991,11 @@ html .progress-2Otdc-
 {
 	border-color:var(--background-accent)
 }
+.topicBoxSelected-1Mtn1j
+{
+	border:2px solid var(--background-modifier-selected);
+	background:var(--background-secondary)
+}
 .topicBoxLast-3pOv0S
 {
 	margin-bottom:16px
@@ -96687,11 +97007,6 @@ html .progress-2Otdc-
 	min-height:16px;
 	margin-left:12px;
 	background-color:var(--background-primary)
-}
-.topicBoxSelected-1Mtn1j
-{
-	border:2px solid var(--background-modifier-selected);
-	background:var(--background-secondary)
 }
 .infoRow-3f8F8T,
 .topicTitle-26D4b5
@@ -101582,7 +101897,8 @@ html .tabBadge-h4HGed
 	-ms-flex-align:baseline;
 	align-items:baseline;
 	width:100%;
-	height:135px
+	height:135px;
+	max-width:760px
 }
 .contentWithTags-Ght4Nx
 {
@@ -107703,26 +108019,24 @@ html .tabBadge-h4HGed
 	padding-bottom:16px;
 	margin-bottom:-2px
 }
-.checklist-2SzRx1
+
+.checklist-2zMwBm
 {
 	position:sticky;
 	top:16px;
 	margin-left:40px;
 	-webkit-box-flex:0;
-	-ms-flex-positive:0;
-	flex-grow:0;
-	-ms-flex-preferred-size:248px;
-	flex-basis:248px
+	-ms-flex:0 0 248px;
+	flex:0 0 248px
 }
 @media (max-width:900px)
 {
-	.checklist-2SzRx1
+	.checklist-2zMwBm
 	{
 		margin-top:70px
 	}
 	
 }
-
 .container-3rxzV7
 {
 	border:1px solid var(--background-modifier-accent);
@@ -111181,7 +111495,21 @@ html .tabBadge-h4HGed
 
 .page-30p_Rr
 {
-	padding-bottom:48px
+	padding-bottom:48px;
+	display:grid;
+	grid-template-columns:2fr 1fr;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row
+}
+.leftColumn-23tvCC
+{
+	padding-right:8px
+}
+.rightColumn-tLGVPQ
+{
+	padding-top:8px
 }
 .header-3FaytI
 {
@@ -111201,7 +111529,15 @@ html .tabBadge-h4HGed
 }
 .descriptionSection-24bXB9
 {
-	margin:8px 0 32px
+	margin:8px 0 24px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:8px
 }
 .splitSection-1y6VWd
 {
@@ -111236,9 +111572,6 @@ html .tabBadge-h4HGed
 }
 .editWelcomeSection-Uy3hU2
 {
-	-webkit-box-flex:1;
-	-ms-flex:1 0 50%;
-	flex:1 0 50%;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -111248,69 +111581,48 @@ html .tabBadge-h4HGed
 	flex-direction:column;
 	gap:8px;
 	padding-right:8px
-}
-.previewWelcomeSection-7_twSk
-{
-	-webkit-box-flex:1;
-	-ms-flex:1 0 50%;
-	flex:1 0 50%
 }
 .previewWelcome-Wv97N-
 {
 	margin-top:36px
 }
-.badExample--8IH4p,
-.goodExample-1gp3f3
+.badExample--8IH4p
 {
-	-webkit-box-flex:1;
-	-ms-flex:1 0 50%;
-	flex:1 0 50%;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
 	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
-	gap:8px
+	margin-bottom:32px
 }
-.goodExample-1gp3f3
-{
-	padding-right:8px
-}
+.badExample--8IH4p,
 .example-3sUElw
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-orient:horizontal;
 	-webkit-box-direction:normal;
+	gap:8px
+}
+.example-3sUElw
+{
+	-webkit-box-orient:horizontal;
 	-ms-flex-direction:row;
 	flex-direction:row;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
-	gap:8px;
 	border:2px solid var(--background-modifier-accent);
 	border-radius:12px;
 	padding:8px 12px
 }
-.badExampleIcon-33kC6N,
-.goodExampleIcon-2CwPkt
+.badExampleIcon-33kC6N
 {
 	padding:12px;
 	background:var(--background-secondary);
-	border-radius:50%
-}
-.goodExampleIcon-2CwPkt
-{
-	color:var(--green-330)
-}
-.badExampleIcon-33kC6N
-{
+	border-radius:50%;
 	color:var(--red-400)
 }
-.actionItem-2aVT03
+.actionItem-2aVT03,
+.resourceChannel-26Ed-C
 {
 	position:relative;
 	display:-webkit-box;
@@ -111330,7 +111642,8 @@ html .tabBadge-h4HGed
 	width:100%;
 	margin-top:12px
 }
-.actionItemEmojiWrapper-1B2uqj
+.actionItemEmojiWrapper-1B2uqj,
+.resourceChannelIcon-EreZiJ
 {
 	padding:12px;
 	background:var(--background-tertiary);
@@ -111338,20 +111651,26 @@ html .tabBadge-h4HGed
 	color:var(--interactive-normal);
 	-webkit-box-flex:0;
 	-ms-flex:0 0 46px;
-	flex:0 0 46px
+	flex:0 0 46px;
+	height:48px
 }
-.actionItemText--qW9Ho
+.actionItemText--qW9Ho,
+.resourceChannelTitle-1DHf44
 {
 	-webkit-box-flex:1;
 	-ms-flex:1 1 auto;
 	flex:1 1 auto
 }
-.actionItemEditButton-do4Ch_
+.actionItemEditButton-do4Ch_,
+.resourceChannelEditButton-nrLMEQ
 {
-	width:auto;
-	-webkit-box-flex:0;
-	-ms-flex:0 0 auto;
-	flex:0 0 auto
+	padding:4px;
+	color:var(--white-100)
+}
+.actionItemEditButtonInner-3X2P4q,
+.resourceChannelEditButtonInner-2_Atv-
+{
+	height:24px
 }
 .addActionItem-2IwCLo
 {
@@ -111404,10 +111723,6 @@ html .tabBadge-h4HGed
 }
 .homeBannerExplainer-2F5wUm
 {
-	padding-right:8px;
-	-webkit-box-flex:1;
-	-ms-flex:1 1 50%;
-	flex:1 1 50%;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -111418,18 +111733,13 @@ html .tabBadge-h4HGed
 	-webkit-box-align:start;
 	-ms-flex-align:start;
 	align-items:flex-start;
-	gap:8px
-}
-.homeBannerImage-w9zAXO
-{
-	-webkit-box-flex:1;
-	-ms-flex:1 1 50%;
-	flex:1 1 50%
+	gap:8px;
+	margin-bottom:16px
 }
 .uploadButton-2DjV7N,
 .upsellButton-25oygl
 {
-	margin-top:16px
+	margin-top:8px
 }
 .upsellButtonInner-GnUkpp
 {
@@ -111445,66 +111755,9 @@ html .tabBadge-h4HGed
 	-ms-flex-align:center;
 	align-items:center
 }
-.editResources-VF5jzi,
-.previewResources-3Oem5B
+.editResources-VF5jzi
 {
-	-webkit-box-flex:1;
-	-ms-flex:1 1 50%;
-	flex:1 1 50%;
 	padding-right:8px
-}
-.resourceChannels-2LZlxq
-{
-	margin:8px 0;
-	border-radius:8px;
-	background-color:var(--background-secondary)
-}
-.resourceChannel-26Ed-C
-{
-	position:relative;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:horizontal;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:row;
-	flex-direction:row;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	padding:12px 16px
-}
-.resourceChannelIcon-EreZiJ
-{
-	-webkit-box-flex:0;
-	-ms-flex-positive:0;
-	flex-grow:0
-}
-.resourceChannelIconEmoji-gX0ayc
-{
-	width:20px;
-	height:20px;
-	margin-right:6px
-}
-.resourceChannelDelete-3B6qt_
-{
-	-webkit-box-flex:0;
-	-ms-flex-positive:0;
-	flex-grow:0;
-	cursor:pointer;
-	color:var(--interactive-muted)
-}
-.resourceChannelTitle-1DHf44
-{
-	-webkit-box-flex:1;
-	-ms-flex-positive:1;
-	flex-grow:1
-}
-.resourceChannelSeparator-ZBycex
-{
-	margin:0 16px;
-	height:1px;
-	background-color:var(--background-modifier-accent)
 }
 .previewControl-jQmn3a
 {
@@ -111572,6 +111825,23 @@ html .tabBadge-h4HGed
 .stackedDropIndicatorAfter-3oFPMK:after
 {
 	bottom:-2px
+}
+.previewImage-QtT1cg
+{
+	margin-top:10px
+}
+.centeredSection-VppSN4
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center
 }
 
 .optionCard-1zlvDz
@@ -126909,6 +127179,24 @@ input::-webkit-outer-spin-button
 	border-bottom:1px solid var(--background-modifier-accent);
 	margin-top:16px;
 	padding-bottom:0
+}
+.userSubscriptionDetailsContainer-toJTLz
+{
+	padding-top:16px
+}
+
+.body-LXY-y9
+{
+	text-align:center;
+	padding:32px
+}
+.title-Jhf3KV
+{
+	padding-bottom:24px
+}
+.img-2AqcT1
+{
+	padding:0 24px 24px
 }
 
 .modalHeader-1nzW1E
