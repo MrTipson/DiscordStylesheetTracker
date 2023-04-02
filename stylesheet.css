@@ -21724,6 +21724,16 @@ code
 	--application-subscription-start-hsl:235 calc(var(--saturation-factor, 1)*68.5%) 52.7%;
 	--battlenet:hsl(var(--battlenet-hsl)/1);
 	--battlenet-hsl:200 calc(var(--saturation-factor, 1)*100%) 44.9%;
+	--bg-gradient-aurora-1:hsl(var(--bg-gradient-aurora-1-hsl)/1);
+	--bg-gradient-aurora-1-hsl:220 calc(var(--saturation-factor, 1)*86.5%) 17.5%;
+	--bg-gradient-aurora-2:hsl(var(--bg-gradient-aurora-2-hsl)/1);
+	--bg-gradient-aurora-2-hsl:238 calc(var(--saturation-factor, 1)*76.4%) 41.6%;
+	--bg-gradient-aurora-3:hsl(var(--bg-gradient-aurora-3-hsl)/1);
+	--bg-gradient-aurora-3-hsl:184 calc(var(--saturation-factor, 1)*78%) 33.9%;
+	--bg-gradient-aurora-4:hsl(var(--bg-gradient-aurora-4-hsl)/1);
+	--bg-gradient-aurora-4-hsl:169 calc(var(--saturation-factor, 1)*60.2%) 32.5%;
+	--bg-gradient-aurora-5:hsl(var(--bg-gradient-aurora-5-hsl)/1);
+	--bg-gradient-aurora-5-hsl:230 calc(var(--saturation-factor, 1)*92.5%) 26.3%;
 	--bg-gradient-chroma-glow-1:hsl(var(--bg-gradient-chroma-glow-1-hsl)/1);
 	--bg-gradient-chroma-glow-1-hsl:183 calc(var(--saturation-factor, 1)*86.3%) 40.2%;
 	--bg-gradient-chroma-glow-2:hsl(var(--bg-gradient-chroma-glow-2-hsl)/1);
@@ -21798,10 +21808,30 @@ code
 	--bg-gradient-mint-apple-2-hsl:119 calc(var(--saturation-factor, 1)*40.4%) 55.9%;
 	--bg-gradient-mint-apple-3:hsl(var(--bg-gradient-mint-apple-3-hsl)/1);
 	--bg-gradient-mint-apple-3-hsl:87 calc(var(--saturation-factor, 1)*48.3%) 59.8%;
+	--bg-gradient-neon-nights-1:hsl(var(--bg-gradient-neon-nights-1-hsl)/1);
+	--bg-gradient-neon-nights-1-hsl:176 calc(var(--saturation-factor, 1)*98.8%) 33.1%;
+	--bg-gradient-neon-nights-2:hsl(var(--bg-gradient-neon-nights-2-hsl)/1);
+	--bg-gradient-neon-nights-2-hsl:259 calc(var(--saturation-factor, 1)*39.5%) 55.3%;
+	--bg-gradient-neon-nights-3:hsl(var(--bg-gradient-neon-nights-3-hsl)/1);
+	--bg-gradient-neon-nights-3-hsl:314 calc(var(--saturation-factor, 1)*52.5%) 46.3%;
 	--bg-gradient-retro-raincloud-1:hsl(var(--bg-gradient-retro-raincloud-1-hsl)/1);
 	--bg-gradient-retro-raincloud-1-hsl:202 calc(var(--saturation-factor, 1)*47%) 42.9%;
 	--bg-gradient-retro-raincloud-2:hsl(var(--bg-gradient-retro-raincloud-2-hsl)/1);
 	--bg-gradient-retro-raincloud-2-hsl:241 calc(var(--saturation-factor, 1)*29.6%) 61%;
+	--bg-gradient-retro-storm-1:hsl(var(--bg-gradient-retro-storm-1-hsl)/1);
+	--bg-gradient-retro-storm-1-hsl:202 calc(var(--saturation-factor, 1)*47%) 42.9%;
+	--bg-gradient-retro-storm-2:hsl(var(--bg-gradient-retro-storm-2-hsl)/1);
+	--bg-gradient-retro-storm-2-hsl:241 calc(var(--saturation-factor, 1)*27.8%) 47.3%;
+	--bg-gradient-sepia-1:hsl(var(--bg-gradient-sepia-1-hsl)/1);
+	--bg-gradient-sepia-1-hsl:33 calc(var(--saturation-factor, 1)*14.2%) 45.7%;
+	--bg-gradient-sepia-2:hsl(var(--bg-gradient-sepia-2-hsl)/1);
+	--bg-gradient-sepia-2-hsl:36 calc(var(--saturation-factor, 1)*46.8%) 24.3%;
+	--bg-gradient-strawberry-lemonade-1:hsl(var(--bg-gradient-strawberry-lemonade-1-hsl)/1);
+	--bg-gradient-strawberry-lemonade-1-hsl:327 calc(var(--saturation-factor, 1)*74.1%) 39.4%;
+	--bg-gradient-strawberry-lemonade-2:hsl(var(--bg-gradient-strawberry-lemonade-2-hsl)/1);
+	--bg-gradient-strawberry-lemonade-2-hsl:28 calc(var(--saturation-factor, 1)*71.7%) 44.3%;
+	--bg-gradient-strawberry-lemonade-3:hsl(var(--bg-gradient-strawberry-lemonade-3-hsl)/1);
+	--bg-gradient-strawberry-lemonade-3-hsl:40 calc(var(--saturation-factor, 1)*80.2%) 52.5%;
 	--bg-gradient-sunrise-1:hsl(var(--bg-gradient-sunrise-1-hsl)/1);
 	--bg-gradient-sunrise-1-hsl:327 calc(var(--saturation-factor, 1)*42%) 43.9%;
 	--bg-gradient-sunrise-2:hsl(var(--bg-gradient-sunrise-2-hsl)/1);
@@ -31366,6 +31396,11 @@ img[alt]
 .theme-light .stage-2WUQlJ
 {
 	color:var(--premium-perk-green)
+}
+.theme-dark .soundboard-18MBzI,
+.theme-light .soundboard-18MBzI
+{
+	color:var(--premium-perk-light-blue)
 }
 
 .wrapper-3mwv0u
@@ -51259,6 +51294,12 @@ input[type=checked]:focus-visible+.label-3TDpbn
 	-ms-flex:1;
 	flex:1
 }
+.unavailableTooltip-CuQXIg
+{
+	position:absolute;
+	height:40px;
+	width:150px
+}
 
 .soundButton-1oOuga
 {
@@ -55288,6 +55329,10 @@ input[type=checked]:focus-visible+.label-3TDpbn
 	margin-left:16px;
 	margin-right:9.5px
 }
+.featureSoundboard-14erND .featureImage-91H2fC
+{
+	height:132px
+}
 .newSparkles-23Fy9H
 {
 	display:inline-block;
@@ -56557,6 +56602,7 @@ input[type=checked]:focus-visible+.label-3TDpbn
 {
 	width:222px
 }
+.soundboardImage-2eOE50,
 .superReactionsImage-cyqMzO
 {
 	height:132px
@@ -106437,6 +106483,15 @@ html .tabBadge-h4HGed
 	border-radius:8px
 }
 
+.art-fZr6w6
+{
+	background-image:url(/assets/f0c03bb46b68b81645f5447b5139d3e4.png);
+	width:236px;
+	height:61px;
+	-ms-flex-item-align:center;
+	align-self:center
+}
+
 .coachmark-1Q7aTy
 {
 	text-align:center
@@ -107315,11 +107370,13 @@ html .tabBadge-h4HGed
 	color:var(--interactive-active)
 }
 
-.headerArt-10zJXm
+.educationFeatureArt-PcA8gX
 {
-	background-image:url(/assets/7cb25b8ad51d09af28fa31124e067f9b.png);
-	width:248px;
-	height:112px
+	background-image:url(/assets/48487ea628753e41eb84479b61463e86.svg);
+	width:164px;
+	height:132px;
+	-ms-flex-item-align:center;
+	align-self:center
 }
 
 .scroller-laUYTP
@@ -122833,12 +122890,12 @@ input::-webkit-outer-spin-button
 }
 .tierHeader-3q9jIw
 {
-	border-radius:4px 4px 0 0;
+	border-radius:8px 8px 0 0;
 	position:relative
 }
 .tierHeaderWithoutCardBody-1iT8o_
 {
-	border-radius:4px;
+	border-radius:8px;
 	margin-bottom:16px
 }
 .tierHeaderContent-2SPBAA
@@ -122976,7 +123033,7 @@ input::-webkit-outer-spin-button
 .tierBody-1d3UiS
 {
 	padding:16px;
-	border-radius:0 0 4px 4px;
+	border-radius:0 0 8px 8px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	font-weight:500
@@ -123592,6 +123649,18 @@ input::-webkit-outer-spin-button
 	margin-left:4px
 }
 
+.container-2Guv4p
+{
+	background:var(--background-secondary);
+	margin-top:24px
+}
+
+.container-2oV1oe
+{
+	margin-bottom:0;
+	margin-top:24px
+}
+
 .row-1lgfJq
 {
 	position:relative;
@@ -123638,6 +123707,13 @@ input::-webkit-outer-spin-button
 .emptyText-37mKDQ
 {
 	margin-bottom:40px
+}
+.buttons-cyJBPx
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	gap:20px
 }
 .soundTable-2ti1yU
 {
