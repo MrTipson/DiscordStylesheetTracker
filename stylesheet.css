@@ -73151,6 +73151,7 @@ strong
 }
 .overlay-1wSZ6w
 {
+	pointer-events:none;
 	height:80px;
 	width:100%;
 	position:absolute;
@@ -77919,37 +77920,6 @@ strong
 .favoriteIcon-2kWmTP
 {
 	display:block
-}
-
-.upsellTooltip-25L378
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex
-}
-.upsellIcon-uG6LH_
-{
-	-webkit-box-flex:0;
-	-ms-flex:0 0 auto;
-	flex:0 0 auto;
-	margin-right:8px;
-	margin-left:-6px
-}
-.upsellText-934yH0
-{
-	-webkit-box-flex:1;
-	-ms-flex:1 1 auto;
-	flex:1 1 auto;
-	line-height:22px
-}
-.nitroUpsell-2KcFaN
-{
-	background:linear-gradient(135deg,var(--premium-tier-2-purple),var(--premium-tier-2-pink));
-	color:var(--white-500)
-}
-.nitroUpsellIcon-2RilVC
-{
-	stroke:#000 2px
 }
 
 .progressContainer-2vzAZ9
@@ -130636,6 +130606,48 @@ html .invoiceCancelRow-3s2UuC
 	color:var(--primary-400)
 }
 
+.root-2gUyRF
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	width:440px
+}
+.rocket-3nJNpQ
+{
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:-132px
+}
+.content-KUxvYy
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	padding-top:78px;
+	text-align:center;
+	height:210px
+}
+.content-KUxvYy,
+.footer-2rIkzW
+{
+	-webkit-box-direction:normal
+}
+.footer-2rIkzW
+{
+	-webkit-box-orient:horizontal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between
+}
+
 .content-Nq0S3Z
 {
 	display:-webkit-box;
@@ -135906,99 +135918,6 @@ html .invoiceCancelRow-3s2UuC
 	margin:12px -12px
 }
 
-.container-3kfp0r
-{
-	width:336px;
-	background-color:var(--background-floating);
-	-webkit-box-shadow:var(--elevation-high);
-	box-shadow:var(--elevation-high);
-	padding:8px;
-	border-radius:4px
-}
-.header-cH4JI8
-{
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
-	padding:4px 8px;
-	margin-bottom:8px
-}
-.header-cH4JI8,
-.headerLeft-9xKCbp
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center
-}
-.headerText-35XLOt
-{
-	text-transform:uppercase
-}
-.countContainer-3DOo5v
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	background-color:var(--brand-experiment);
-	padding:2px;
-	min-width:16px;
-	border-radius:50%;
-	margin-left:8px
-}
-.countText-35ewVE
-{
-	color:#fff
-}
-.tagContainer-eQuOYf
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	-ms-flex-wrap:wrap;
-	flex-wrap:wrap;
-	gap:8px;
-	padding-bottom:16px
-}
-.tag-3T_qsl
-{
-	-ms-flex-negative:0;
-	flex-shrink:0
-}
-.clear-2gkgln
-{
-	color:var(--text-brand);
-	margin-bottom:4px
-}
-.row-2Gz4_p
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:horizontal;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:row;
-	flex-direction:row;
-	gap:8px
-}
-.separator-13F3xT
-{
-	border-top:1px solid var(--background-modifier-accent);
-	margin:0 4px 8px;
-	font-size:0
-}
-
 .uploadInput-3fblkw
 {
 	position:relative;
@@ -136116,6 +136035,190 @@ html .invoiceCancelRow-3s2UuC
 	font-weight:600
 }
 
+.container-12-eoM
+{
+	background-color:var(--background-secondary);
+	padding:24px 48px 16px
+}
+.uploads-3zdzrp
+{
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	gap:8px
+}
+.uploads-3zdzrp,
+.uploadsContainer-362hAb
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.uploadsContainer-362hAb
+{
+	margin-top:16px
+}
+
+.thumbnailContainer-LoILOG
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	width:153px;
+	height:86px;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	background-color:var(--background-secondary);
+	border-radius:8px;
+	overflow:hidden;
+	position:relative
+}
+.changeThumbnailContainer-CXxKgd
+{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:hsl(var(--black-500-hsl)/.8);
+	z-index:1
+}
+.changeThumbnailContainer-CXxKgd,
+.uploadThumbnailContainer-PmYhOz
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	height:100%;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.uploadThumbnailContainer-PmYhOz
+{
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	position:relative
+}
+.editIcon-3NRX0-
+{
+	margin-left:4px
+}
+.editIcon-3NRX0-,
+.uploadIcon-kYbDgp
+{
+	color:var(--interactive-normal)
+}
+.thumbnail-3xyNKQ
+{
+	width:100%;
+	height:100%;
+	-o-object-fit:cover;
+	object-fit:cover
+}
+
+.container-3kfp0r
+{
+	width:336px;
+	background-color:var(--background-floating);
+	-webkit-box-shadow:var(--elevation-high);
+	box-shadow:var(--elevation-high);
+	padding:8px;
+	border-radius:4px
+}
+.header-cH4JI8
+{
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	padding:4px 8px;
+	margin-bottom:8px
+}
+.header-cH4JI8,
+.headerLeft-9xKCbp
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.headerText-35XLOt
+{
+	text-transform:uppercase
+}
+.countContainer-3DOo5v
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	background-color:var(--brand-experiment);
+	padding:2px;
+	min-width:16px;
+	border-radius:50%;
+	margin-left:8px
+}
+.countText-35ewVE
+{
+	color:#fff
+}
+.tagContainer-eQuOYf
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	gap:8px;
+	padding-bottom:16px
+}
+.tag-3T_qsl
+{
+	-ms-flex-negative:0;
+	flex-shrink:0
+}
+.clear-2gkgln
+{
+	color:var(--text-brand);
+	margin-bottom:4px
+}
+.row-2Gz4_p
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	gap:8px
+}
+.separator-13F3xT
+{
+	border-top:1px solid var(--background-modifier-accent);
+	margin:0 4px 8px;
+	font-size:0
+}
+
 .cooldownWrapper-2ZdoRw
 {
 	display:-webkit-box;
@@ -136144,7 +136247,11 @@ html .invoiceCancelRow-3s2UuC
 {
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
 	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
 	-webkit-box-flex:1;
@@ -136152,9 +136259,23 @@ html .invoiceCancelRow-3s2UuC
 	flex:1 1 auto;
 	min-height:0;
 	min-width:0;
-	padding:10px 12px
+	padding-top:10px;
+	padding-bottom:10px
 }
-.container-JhuCwn,
+.horizontalPadding-3WQsQ9
+{
+	padding-left:12px;
+	padding-right:12px
+}
+.formContainer-1zrOWf
+{
+	-webkit-box-orient:horizontal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	padding-left:12px;
+	padding-right:12px
+}
+.form-25Aujy,
 .formContainer-1zrOWf
 {
 	display:-webkit-box;
@@ -136162,22 +136283,12 @@ html .invoiceCancelRow-3s2UuC
 	display:flex;
 	-webkit-box-direction:normal
 }
-.formContainer-1zrOWf
-{
-	-webkit-box-orient:horizontal;
-	-ms-flex-direction:row;
-	flex-direction:row
-}
 .form-25Aujy
 {
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
 	-webkit-box-flex:1;
 	-ms-flex:1;
 	flex:1;
 	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
 	min-height:0
@@ -136450,7 +136561,8 @@ html .invoiceCancelRow-3s2UuC
 	display:-ms-flexbox;
 	display:flex;
 	gap:8px;
-	margin-top:16px
+	margin-top:16px;
+	margin-bottom:12px
 }
 .tagsIcon-1ia6lX
 {
@@ -136506,7 +136618,6 @@ html .invoiceCancelRow-3s2UuC
 }
 .tagsDivider-3LhkLA
 {
-	margin-top:12px;
 	height:1px;
 	width:calc(100% + 24px);
 	position:relative;
