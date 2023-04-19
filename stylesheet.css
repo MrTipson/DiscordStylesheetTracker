@@ -42963,9 +42963,37 @@ h6.title-1p9WyQ
 	border-radius:10px;
 	overflow:hidden
 }
+.thumbnailContainer-3JdYTm
+{
+	width:100%;
+	position:relative
+}
 .thumbnail-jSM4Zo
 {
 	width:100%
+}
+.thumbnailOverlay-2A614n
+{
+	position:absolute;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	top:0;
+	width:100%;
+	height:100%
+}
+.thumbnailOverlayButton-2ZHRiH
+{
+	background-color:rgba(49,51,56,.75);
+	color:var(--white-500);
+	border-radius:64px;
+	padding:24px 16px
 }
 .descriptionContainer-2ZAH52
 {
