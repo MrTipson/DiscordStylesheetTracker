@@ -3332,7 +3332,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .lowerBadge-3j0ZAg
 {
-	bottom:0
+	bottom:0;
+	z-index:2
 }
 .lowerBadge-3j0ZAg,
 .upperBadge-1d6YsW
@@ -17864,6 +17865,16 @@ html.disable-forced-colors *
 	color:var(--white-500)
 }
 
+.paymentModalLockIcon-3iNBZX
+{
+	color:var(--primary-500);
+	padding:0 10px
+}
+.theme-dark .paymentModalLockIcon-3iNBZX
+{
+	color:var(--primary-300)
+}
+
 .back-Zt4JKc
 {
 	width:auto;
@@ -26801,6 +26812,47 @@ img[alt]
 	opacity:1
 }
 
+.cardBrands-3VQKtJ
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-box-pack:right;
+	-ms-flex-pack:right;
+	justify-content:right;
+	margin-bottom:-15px
+}
+.cardFormHeader-1oooZk
+{
+	margin-left:5px
+}
+.cardFormHeader-1oooZk.jcb-Ff1Gj5:before
+{
+	background-image:url(/assets/2f837517dadf32743c343c0692856dbb.svg)
+}
+.cardFormHeader-1oooZk.amex-3qtwwv:before
+{
+	background-image:url(/assets/e6f5fdb421197ac145651a603b2a4ca1.svg)
+}
+.cardFormHeader-1oooZk.mastercard-WtGV2v:before
+{
+	background-image:url(/assets/8859268fe0da6c1d43120cc61af43cb2.svg)
+}
+.cardFormHeader-1oooZk.visa-3AxzrI:before
+{
+	background-image:url(/assets/46bbfc06391fb63686e04c31a0f5d393.svg)
+}
+.cardFormHeader-1oooZk.discover-Iz-grc:before
+{
+	background-image:url(/assets/151e9174cffc5d38d6ce34b0e119b613.svg)
+}
+.cardFormHeader-1oooZk.dinersclub-23rERj:before
+{
+	background-image:url(/assets/1192c04cdb47505dbb57fba293b49956.svg)
+}
+
 .cardNumberWrapper-3VguvY
 {
 	position:relative
@@ -29167,6 +29219,13 @@ img[alt]
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex
+}
+.back-Uv5ziB
+{
+	width:auto;
+	min-width:auto;
+	padding:2px 4px;
+	margin-right:auto
 }
 
 .renewalInvoiceDate-1qMnnA
@@ -52642,7 +52701,9 @@ input[type=checked]:focus-visible+.label-3TDpbn
 }
 .infoItem-1OVJGV
 {
-	gap:16px
+	gap:16px;
+	-ms-flex-item-align:start;
+	align-self:flex-start
 }
 .infoItemSpacing-5b2hIJ
 {
@@ -81889,6 +81950,15 @@ strong
 {
 	position:relative
 }
+.hideEmoji-3wiav7
+{
+	opacity:0
+}
+.serverEmoji-2OaL7m
+{
+	width:16px;
+	height:16px
+}
 
 .pill-22lZHo
 {
@@ -100451,7 +100521,8 @@ html .tabBadge-h4HGed
 .activitiesBirthdayIcon-1Ou-De
 {
 	border-radius:4px;
-	color:var(--discord-8th-bday-yellow)
+	color:var(--discord-8th-bday-yellow);
+	margin-bottom:6px
 }
 .activitiesBirthdayIconLight-1QhKyv
 {
@@ -135569,10 +135640,36 @@ html .invoiceCancelRow-3s2UuC
 
 .outerContainer-2qLQSo
 {
-	width:100%;
-	padding:clamp(16px,calc(4vw - 12.48px),64px);
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	min-width:0;
 	background-color:var(--background-tertiary);
-	overflow:auto
+	height:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.activitiesBirthdayIcon-vp7oVk
+{
+	color:var(--discord-8th-bday-yellow);
+	margin:0 8px 6px
+}
+.activitiesBirthdayIconLight-2Djimf
+{
+	color:var(--discord-8th-bday-dark-blue)
+}
+.scroller-3y59C7
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	min-height:0;
+	padding:24px
 }
 .innerContainer-1PsSdm
 {
@@ -135980,9 +136077,31 @@ html .invoiceCancelRow-3s2UuC
 
 .outerContainer-3t7lrW
 {
-	width:100%;
 	background-color:var(--background-primary);
-	overflow:auto
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	min-width:0;
+	height:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.rocketIcon-1m_qHn
+{
+	margin:0 8px
+}
+.scroller-B4-bwK
+{
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	min-height:0;
+	padding:0 24px 24px
 }
 .innerContainer-PFRsaf
 {
@@ -136018,10 +136137,21 @@ html .invoiceCancelRow-3s2UuC
 	position:absolute;
 	top:0;
 	left:0;
-	padding:16px;
+	padding:16px
+}
+.backButtonContainer-y_0u_2,
+.titleContainer-3hHuPp
+{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex
+}
+.titleContainer-3hHuPp
+{
+	min-width:0;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
 .backButtonIcon-iID3UV
 {
