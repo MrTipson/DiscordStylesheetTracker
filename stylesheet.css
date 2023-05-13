@@ -22809,6 +22809,8 @@ html.disable-forced-colors *
 	--background-secondary-alt:var(--primary-660);
 	--background-tertiary:var(--primary-700);
 	--black:var(--black-500);
+	--border-strong:hsl(var(--white-500-hsl)/0.16);
+	--border-subtle:hsl(var(--white-500-hsl)/0.08);
 	--bug-reporter-modal-submitting-background:hsl(var(--primary-800-hsl)/0.6);
 	--button-danger-background:var(--red-430);
 	--button-danger-background-active:var(--red-530);
@@ -22878,6 +22880,8 @@ html.disable-forced-colors *
 	--deprecated-text-input-border-hover:var(--primary-900);
 	--deprecated-text-input-prefix:var(--primary-200);
 	--display-banner-overflow-background:hsl(var(--primary-700-hsl)/0.5);
+	--divider-strong:hsl(var(--white-500-hsl)/0.16);
+	--divider-subtle:hsl(var(--white-500-hsl)/0.08);
 	--focus-primary:var(--blue-345);
 	--forum-post-extra-media-count-container-background:hsl(var(--primary-660-hsl)/0.8);
 	--forum-post-tag-background:hsl(var(--primary-660-hsl)/0.9);
@@ -22983,6 +22987,8 @@ html.disable-forced-colors *
 	--background-secondary:var(--primary-130);
 	--background-secondary-alt:var(--primary-160);
 	--background-tertiary:var(--primary-200);
+	--border-strong:hsl(var(--black-500-hsl)/0.16);
+	--border-subtle:hsl(var(--black-500-hsl)/0.08);
 	--bug-reporter-modal-submitting-background:hsl(var(--white-500-hsl)/0.6);
 	--button-danger-background:var(--red-430);
 	--button-danger-background-active:var(--red-530);
@@ -23052,6 +23058,8 @@ html.disable-forced-colors *
 	--deprecated-text-input-border-hover:var(--primary-300);
 	--deprecated-text-input-prefix:var(--primary-300);
 	--display-banner-overflow-background:hsl(var(--white-200-hsl)/0.5);
+	--divider-strong:hsl(var(--black-500-hsl)/0.16);
+	--divider-subtle:hsl(var(--black-500-hsl)/0.08);
 	--forum-post-extra-media-count-container-background:hsl(var(--primary-160-hsl)/0.8);
 	--forum-post-tag-background:hsl(var(--primary-160-hsl)/0.9);
 	--header-primary:var(--primary-860);
@@ -23162,6 +23170,8 @@ html.disable-forced-colors *
 	--background-secondary:var(--primary-830);
 	--background-secondary-alt:var(--primary-800);
 	--background-tertiary:var(--primary-860);
+	--border-strong:hsl(var(--white-500-hsl)/0.16);
+	--border-subtle:hsl(var(--white-500-hsl)/0.08);
 	--bug-reporter-modal-submitting-background:hsl(var(--primary-800-hsl)/0.6);
 	--button-danger-background:var(--red-430);
 	--button-danger-background-active:var(--red-530);
@@ -23231,6 +23241,8 @@ html.disable-forced-colors *
 	--deprecated-text-input-border-hover:var(--primary-900);
 	--deprecated-text-input-prefix:var(--primary-200);
 	--display-banner-overflow-background:hsl(var(--primary-700-hsl)/0.5);
+	--divider-strong:hsl(var(--white-500-hsl)/0.16);
+	--divider-subtle:hsl(var(--white-500-hsl)/0.08);
 	--forum-post-extra-media-count-container-background:hsl(var(--primary-660-hsl)/0.8);
 	--forum-post-tag-background:hsl(var(--primary-660-hsl)/0.9);
 	--header-primary:var(--primary-130);
@@ -131373,9 +131385,10 @@ html .invoiceCancelRow-3s2UuC
 .container-1NUmtJ
 {
 	position:relative;
-	height:24px;
+	height:42px;
 	width:100%;
-	padding:0;
+	padding:0 8px;
+	margin:0;
 	-webkit-box-pack:start;
 	-ms-flex-pack:start;
 	justify-content:flex-start
@@ -131383,6 +131396,8 @@ html .invoiceCancelRow-3s2UuC
 .container-1NUmtJ,
 .pill-1cZmwZ
 {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -131400,21 +131415,16 @@ html .invoiceCancelRow-3s2UuC
 	-ms-flex-pack:center;
 	justify-content:center;
 	padding:2px 8px 2px 6px;
-	gap:3px;
 	position:absolute;
 	height:18px;
-	right:0;
-	top:6;
+	right:8px;
+	top:12px;
 	background:var(--background-primary);
 	border-radius:9px
 }
-.icon-2OmVzO,
-.pill-1cZmwZ
-{
-	margin-right:3px
-}
 .icon-2OmVzO
 {
+	margin-right:3px;
 	color:var(--interactive-normal)
 }
 .pillText-3DSlgK
@@ -131422,6 +131432,13 @@ html .invoiceCancelRow-3s2UuC
 	text-transform:uppercase;
 	font-size:10px;
 	font-weight:700
+}
+.sparkles-2myNBH
+{
+	top:2px;
+	left:2px;
+	width:42px;
+	height:42px
 }
 
 .container-2oGtqt
@@ -131520,7 +131537,8 @@ html .invoiceCancelRow-3s2UuC
 }
 .option-2E32Qy
 {
-	padding:8px
+	padding:0 8px 0 0;
+	height:42px
 }
 .switch-2u7lmW
 {
@@ -135810,6 +135828,12 @@ html .invoiceCancelRow-3s2UuC
 	flex:1 1 300px;
 	padding:0 16px
 }
+.birthdayExplanationNitroIcon-1wRcn3
+{
+	-webkit-transform:translateY(7px);
+	transform:translateY(7px);
+	margin-top:-10px
+}
 .birthdayBalloonsContainer-2_cxx4
 {
 	-webkit-box-flex:0;
@@ -136132,7 +136156,14 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
-	cursor:pointer
+	cursor:pointer;
+	position:relative
+}
+.celebrateNitroIcon-2yBtFa
+{
+	position:absolute;
+	top:7px;
+	left:4px
 }
 .celebrateCardHeader-d3NG-H
 {
@@ -136240,26 +136271,76 @@ html .invoiceCancelRow-3s2UuC
 }
 .kitBashContainer-7nmYyp
 {
-	margin-top:24px;
+	margin-top:64px;
 	width:100%;
+	aspect-ratio:874/355;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
 	gap:24px;
-	max-height:220px;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center
 }
 .kitBash-34gcW7
 {
-	-webkit-box-flex:0;
-	-ms-flex:0 1 auto;
-	flex:0 1 auto;
-	min-width:0
+	width:100%;
+	height:auto
+}
+.kitBashAnimation-1cFnOv>*
+{
+	-webkit-transform:translateY(0);
+	transform:translateY(0);
+	-webkit-transition:all 5s;
+	transition:all 5s
+}
+.kitBashAnimation-1cFnOv>:first-child
+{
+	-webkit-transition-delay:1s;
+	transition-delay:1s
+}
+.kitBashAnimation-1cFnOv>:nth-child(2)
+{
+	-webkit-transition-delay:2s;
+	transition-delay:2s
+}
+.kitBashAnimation-1cFnOv>:nth-child(3)
+{
+	-webkit-transition-delay:3s;
+	transition-delay:3s
+}
+.kitBashAnimation-1cFnOv>:nth-child(4)
+{
+	-webkit-transition-delay:4s;
+	transition-delay:4s
+}
+.kitBashAnimation-1cFnOv>:nth-child(5)
+{
+	-webkit-transition-delay:5s;
+	transition-delay:5s
+}
+.kitBashAnimation-1cFnOv>:nth-child(6)
+{
+	-webkit-transition-delay:6s;
+	transition-delay:6s
+}
+.kitBashAnimation-1cFnOv>:nth-child(7)
+{
+	-webkit-transition-delay:7s;
+	transition-delay:7s
+}
+.kitBashAnimation-1cFnOv>:nth-child(8)
+{
+	-webkit-transition-delay:8s;
+	transition-delay:8s
+}
+.kitBashAnimation-1cFnOv:hover>*
+{
+	-webkit-transform:translateY(-10px);
+	transform:translateY(-10px)
 }
 
 .container-lpf9y1
@@ -136567,8 +136648,8 @@ html .invoiceCancelRow-3s2UuC
 .activityImage-21gMrZ
 {
 	-webkit-box-flex:1;
-	-ms-flex:1 1 365px;
-	flex:1 1 365px;
+	-ms-flex:1 1 335px;
+	flex:1 1 335px;
 	min-width:0;
 	aspect-ratio:16/9;
 	border-radius:4px
