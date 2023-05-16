@@ -19016,28 +19016,6 @@ html.disable-forced-colors *
 	
 }
 
-.container-mAkQVR
-{
-	display:-webkit-inline-box;
-	display:-ms-inline-flexbox;
-	display:inline-flex;
-	margin-top:8px
-}
-.akaBadge-ep3q0P
-{
-	display:inline;
-	background-color:var(--background-secondary);
-	color:var(--header-secondary);
-	margin-right:4px
-}
-.nicknames-3g5AJ9
-{
-	display:inline-box;
-	-webkit-box-orient:vertical;
-	-webkit-line-clamp:1;
-	overflow:hidden
-}
-
 .copiableField-2DYmf7
 {
 	padding-right:8px
@@ -135716,19 +135694,32 @@ html .invoiceCancelRow-3s2UuC
 	top:8px;
 	cursor:pointer
 }
+.clickableContainer-1N_Wn8:focus+.flipCardInner-2hI9Pw,
 .clickableContainer-1N_Wn8:hover+.flipCardInner-2hI9Pw
 {
 	-webkit-transform:scale(1.02) rotateY(-20deg);
 	transform:scale(1.02) rotateY(-20deg)
 }
+.clickableContainer-1N_Wn8:focus+.flipCardInner-2hI9Pw .flipCardText-2qCpbY,
 .clickableContainer-1N_Wn8:hover+.flipCardInner-2hI9Pw .flipCardText-2qCpbY
 {
 	background-color:var(--brand-experiment-560)
 }
+.clickableContainer-1N_Wn8:focus+.flipCardInnerFlipped-TpPsYw,
 .clickableContainer-1N_Wn8:hover+.flipCardInnerFlipped-TpPsYw
 {
 	-webkit-transform:scale(1.02) rotateY(-200deg);
 	transform:scale(1.02) rotateY(-200deg)
+}
+.clickableContainerReducedMotion-2fMtsd:focus+.flipCardInner-2hI9Pw,
+.clickableContainerReducedMotion-2fMtsd:focus+.flipCardInnerFlipped-TpPsYw,
+.clickableContainerReducedMotion-2fMtsd:hover+.flipCardInner-2hI9Pw,
+.clickableContainerReducedMotion-2fMtsd:hover+.flipCardInnerFlipped-TpPsYw
+{
+	-webkit-transition:-webkit-transform 0ms;
+	transition:-webkit-transform 0ms;
+	transition:transform 0ms;
+	transition:transform 0ms,-webkit-transform 0ms
 }
 .flipCardOuter-3lABce
 {
@@ -135768,6 +135759,13 @@ html .invoiceCancelRow-3s2UuC
 	transition:transform .3s,-webkit-transform .3s;
 	-webkit-transform:rotateY(0);
 	transform:rotateY(0)
+}
+.flipCardInnerReducedMotion-3pUwJa
+{
+	-webkit-transition:-webkit-transform 0ms;
+	transition:-webkit-transform 0ms;
+	transition:transform 0ms;
+	transition:transform 0ms,-webkit-transform 0ms
 }
 .flipCardOpening-2dsu_P
 {
@@ -135825,6 +135823,14 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center
+}
+@supports (not (-moz-appearance:none))
+{
+	.flipCardClosed-2MHhtz
+	{
+		z-index:1
+	}
+	
 }
 .flipCardClosedImg-17wHvQ
 {
