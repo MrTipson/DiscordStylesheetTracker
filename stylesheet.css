@@ -1992,6 +1992,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 .enable-forced-colors.theme-dark .button-ejjZWC .contents-3NembX,
 .enable-forced-colors.theme-light .button-ejjZWC .contents-3NembX
 {
+	forced-color-adjust:none;
 	color:ButtonText
 }
 .enable-forced-colors.theme-dark .button-ejjZWC .contents-3NembX svg,
@@ -7482,6 +7483,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .enable-forced-colors .interactive-26HRN_
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	border:1px solid ButtonFace;
 	color:ButtonText
@@ -7802,6 +7804,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .enable-forced-colors .colorDefault-2_rLdz
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	border:1px solid ButtonFace;
 	color:ButtonText
@@ -8315,6 +8318,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .enable-forced-colors .pageButton-uta6J3
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText
 }
@@ -9366,6 +9370,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .enable-forced-colors .option-Uc12mm
 {
+	forced-color-adjust:none;
 	background-color:Canvas;
 	border:1px solid Canvas;
 	color:CanvasText
@@ -9596,6 +9601,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 }
 .enable-forced-colors .item-2GWPIy
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace!important;
 	border:1px solid ButtonFace;
 	color:ButtonText!important
@@ -10527,6 +10533,9 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 {
 	width:100%;
 	height:100%;
+	-webkit-box-orient:horizontal;
+	-ms-flex-direction:row;
+	flex-direction:row;
 	background-color:var(--background-floating)
 }
 .authorize-2xTTr-,
@@ -10535,21 +10544,21 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:column;
-	flex-direction:column
-}
-.captcha-1iq3Zi
-{
-	padding-top:28px;
-	padding-bottom:28px;
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center
+	align-items:center;
+	-webkit-box-direction:normal
+}
+.captcha-1iq3Zi
+{
+	padding-top:28px;
+	padding-bottom:28px;
+	-webkit-box-orient:vertical;
+	-ms-flex-direction:column;
+	flex-direction:column
 }
 .captchaLabel-3tgZDU
 {
@@ -10559,8 +10568,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z
 {
 	height:80px
 }
-.content-3oGIwf,
-.scrollContent-_1I-44
+.content-3oGIwf
 {
 	padding:0 16px
 }
@@ -12296,6 +12304,11 @@ html.disable-forced-colors *
 .enable-forced-colors .userProfileOuter-2tQwNf
 {
 	border:2px solid CanvasText
+}
+.enable-forced-colors .userPopoutOverlayBackground-3A0Pcz,
+.enable-forced-colors .userProfileInner-1ngKnf:before
+{
+	background-color:Canvas
 }
 
 .divider-2dDziJ
@@ -17545,6 +17558,7 @@ li)
 {
 	border-left-width:0
 }
+.enable-forced-colors .roleMention-11Aaqi,
 .enable-forced-colors .mention
 {
 	background-color:ButtonFace;
@@ -36852,12 +36866,6 @@ img[alt]
 {
 	color:hsl(var(--white-500-hsl)/.4)
 }
-.enable-forced-colors .username-h_Y3Us
-{
-	background-color:ButtonFace;
-	color:ButtonText!important;
-	text-decoration:underline
-}
 .badgesContainer-Pqq0Kv
 {
 	display:-webkit-inline-box;
@@ -36876,6 +36884,13 @@ img[alt]
 .cozy-VmLDNB .badgesContainer-Pqq0Kv
 {
 	margin-left:.25rem
+}
+.enable-forced-colors .headerText-2z4IhQ .username-h_Y3Us
+{
+	forced-color-adjust:none;
+	background-color:Canvas;
+	color:ButtonText;
+	text-decoration:underline
 }
 
 .badge-2WCXoe
@@ -46744,6 +46759,7 @@ input[type=checked]:focus-visible+.label-3TDpbn
 }
 .enable-forced-colors .interactive-MpGq2z
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText
 }
@@ -51102,6 +51118,15 @@ input[type=checked]:focus-visible+.label-3TDpbn
 .interactionSending-3fE-1R
 {
 	opacity:.5
+}
+.enable-forced-colors .automodMessage-265YwJ:before,
+.enable-forced-colors .ephemeral-2nDdnn:before,
+.enable-forced-colors .highlighted-1TaRLI:before,
+.enable-forced-colors .mentioned-Tre-dv:before,
+.enable-forced-colors .replying-eZ7p5z:before
+{
+	forced-color-adjust:none;
+	width:4px
 }
 
 .pro-3GwLMX
@@ -60643,13 +60668,13 @@ strong
 	margin-bottom:8px;
 	width:32px
 }
-.premiumCategory-1bZwXQ:hover
+.firstPartyCategory-2ZVMkC:hover
 {
 	background-color:var(--background-modifier-hover);
 	color:var(--interactive-hover)
 }
-.premiumCategorySelected-2KWLhN,
-.premiumCategorySelected-2KWLhN:hover,
+.firstPartyCategorySelected-2zQ3yM,
+.firstPartyCategorySelected-2zQ3yM:hover,
 .stickerCategoryGenericSelected-DnO2K8,
 .stickerCategoryGenericSelected-DnO2K8:hover
 {
@@ -60757,16 +60782,16 @@ strong
 {
 	color:GrayText
 }
-.enable-forced-colors .premiumCategorySelected-2KWLhN,
-.enable-forced-colors .premiumCategorySelected-2KWLhN:hover,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM:hover,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8:hover
 {
 	background-color:HighlightText;
 	border-color:Highlight
 }
-.enable-forced-colors .premiumCategorySelected-2KWLhN .stickerCategoryGenericIcon-3wumVD,
-.enable-forced-colors .premiumCategorySelected-2KWLhN:hover .stickerCategoryGenericIcon-3wumVD,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM .stickerCategoryGenericIcon-3wumVD,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM:hover .stickerCategoryGenericIcon-3wumVD,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8 .stickerCategoryGenericIcon-3wumVD,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8:hover .stickerCategoryGenericIcon-3wumVD
 {
@@ -67348,6 +67373,7 @@ strong
 }
 .enable-forced-colors .cursorPointer-3JF56F
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText;
 	text-decoration:underline
@@ -75439,6 +75465,7 @@ strong
 .enable-forced-colors .mainContent-20q_Hp,
 .enable-forced-colors .name-28HaxV
 {
+	forced-color-adjust:none;
 	color:ButtonText
 }
 .enable-forced-colors .wrapper-NhbLHG:hover .content-1gYQeQ
@@ -81215,6 +81242,7 @@ strong
 }
 .enable-forced-colors .clickable-vvKY2q .header-3OsQeK
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText
 }
@@ -84836,6 +84864,7 @@ strong
 }
 .enable-forced-colors .actionButton-3eYdq1
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	border:1px solid ButtonFace;
 	color:ButtonText
@@ -86860,6 +86889,7 @@ strong
 }
 .enable-forced-colors .actionButton-3-B2x-
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	border:1px solid ButtonFace;
 	color:ButtonText
@@ -89673,9 +89703,17 @@ strong
 {
 	color:var(--red-400)
 }
-.enable-forced-colors .wrapper-9CUbzN
+.enable-forced-colors .border-2Vy6FN
 {
-	border:1px solid ButtonText
+	forced-color-adjust:none;
+	-webkit-box-shadow:inset 0 0 0 1px ButtonText;
+	box-shadow:inset 0 0 0 1px ButtonText
+}
+.enable-forced-colors .border-2Vy6FN.speaking-7QZEkv,
+.enable-forced-colors .border-2Vy6FN.voiceChannelEffect-1J1MWE
+{
+	-webkit-box-shadow:inset 0 0 0 2px Highlight,inset 0 0 0 3px var(--black-500);
+	box-shadow:inset 0 0 0 2px Highlight,inset 0 0 0 3px var(--black-500)
 }
 
 .container-1l_891
@@ -92843,6 +92881,7 @@ strong
 }
 .enable-forced-colors .text-NKMwrd
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText;
 	text-decoration:underline
@@ -93985,60 +94024,6 @@ strong
 	border:2px solid CanvasText
 }
 
-.appText-3s1de-
-{
-	text-align:left;
-	max-width:288px
-}
-.switchContainer-2II_Xm
-{
-	-ms-flex-negative:0;
-	flex-shrink:0;
-	margin-left:8px
-}
-.toggleContainer-3Cpmim
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:horizontal;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:row;
-	flex-direction:row;
-	padding:16;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center
-}
-.icon--8wfnj
-{
-	border-radius:100%;
-	margin-right:16px
-}
-.headerContainer-1UzS17
-{
-	-webkit-box-flex:1;
-	-ms-flex:1;
-	flex:1;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	-ms-flex-direction:column;
-	flex-direction:column;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center
-}
-.separator-2TJzL9
-{
-	margin-bottom:16px;
-	margin-top:16px;
-	border-bottom:1px solid var(--background-modifier-accent);
-	width:100%
-}
-
 .modalHeader-1V_jCD
 {
 	-webkit-box-align:center;
@@ -94155,6 +94140,43 @@ strong
 .modal-1oA8C9
 {
 	max-height:508px
+}
+.applicationRow-29JdRK
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.applicationRow-29JdRK:not(:first-child)
+{
+	padding-top:16px
+}
+.applicationRow-29JdRK:not(:last-child)
+{
+	border-bottom:1px solid var(--background-modifier-accent);
+	padding-bottom:16px
+}
+.applicationIcon-iiuPIy
+{
+	border-radius:50%;
+	margin-right:16px
+}
+.applicationText-3ZBwCO
+{
+	text-align:left;
+	margin-right:16px
+}
+.applicationButtonHack-caRgZ-
+{
+	-ms-flex-negative:0;
+	flex-shrink:0
 }
 
 .listRow-2nO1T6
@@ -100778,6 +100800,7 @@ strong
 .enable-forced-colors .interactive-iyXY_x,
 .enable-forced-colors .link-39sEB3
 {
+	forced-color-adjust:none;
 	color:ButtonText
 }
 .enable-forced-colors .interactiveSelected-29CP8y,
@@ -103505,6 +103528,7 @@ html .tabBadge-h4HGed
 }
 .enable-forced-colors .categoryItem-Kc_HK_
 {
+	forced-color-adjust:none;
 	color:ButtonText
 }
 .enable-forced-colors .categoryItem-Kc_HK_ .itemInner-3e_4G4
@@ -109240,11 +109264,31 @@ html .tabBadge-h4HGed
 .showHideButton-25bHRG
 {
 	padding-top:2px;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
 	gap:6px;
 	color:var(--interactive-hover)
+}
+.roleTag-12hkwd,
+.roleTagContainer-3c8xv8,
+.showHideButton-25bHRG
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.roleTag-12hkwd
+{
+	padding:8px;
+	border-radius:4px;
+	background:var(--background-modifier-hover);
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.roleColor-1d_WrY
+{
+	width:12px;
+	height:12px;
+	border-radius:6px
 }
 
 .badge-1hTRAi
@@ -132682,6 +132726,7 @@ html .invoiceCancelRow-3s2UuC
 }
 .enable-forced-colors .channelContainer-7uiQGJ
 {
+	forced-color-adjust:none;
 	background-color:ButtonFace;
 	color:ButtonText;
 	text-decoration:underline
@@ -155234,6 +155279,81 @@ html .invoiceCancelRow-3s2UuC
 	color:var(--interactive-normal)
 }
 
+.roleInputContainer-29uoeo
+{
+	position:relative
+}
+.roleColorContainer-1RK2oR
+{
+	position:absolute;
+	right:0;
+	top:0;
+	padding-right:10px;
+	height:100%;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.dropperIconContainer-1MQqLn
+{
+	height:16px;
+	cursor:pointer
+}
+.dropperIconContainer-1MQqLn :hover
+{
+	-webkit-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+	opacity:.85
+}
+.dropperIcon-1WrZrD
+{
+	color:var(--interactive-normal)
+}
+.roleColorPreview-1T6C8a
+{
+	width:16px;
+	height:16px;
+	border-radius:50%
+}
+
+.attachedRoleContainer-LYLqUk
+{
+	display:-webkit-inline-box;
+	display:-ms-inline-flexbox;
+	display:inline-flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:12px 10px;
+	border-radius:4px;
+	background-color:var(--background-secondary);
+	border:1px solid var(--background-modifier-active)
+}
+.attachedRoleColor-2nhYs7
+{
+	width:16px;
+	height:16px;
+	border-radius:50%
+}
+.attachedRoleClose-1hBrvU
+{
+	height:16px
+}
+.attachedRoleClose-1hBrvU :hover
+{
+	-webkit-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+	opacity:.7
+}
+.attachedRoleCloseIcon-2FmoYL
+{
+	color:var(--text-normal);
+	cursor:pointer
+}
+
 .modalRoot-ni21gU
 {
 	width:1026px
@@ -155295,7 +155415,35 @@ html .invoiceCancelRow-3s2UuC
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between
+}
+.footerActionLeftButtons-DXANBe,
+.footerActionRightButtons-2YB03Q
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
 	gap:12px
+}
+.benefitToggleContainer-3VJ8VS
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	background-color:var(--background-modifier-hover);
+	border-radius:8px;
+	padding:7px 10px
 }
 
 .header-1XFMZK
@@ -159640,7 +159788,8 @@ html .invoiceCancelRow-3s2UuC
 	border:1px solid var(--background-accent);
 	border-radius:4px;
 	padding:12px;
-	gap:14px
+	gap:14px;
+	cursor:pointer
 }
 .optionText-2EglTC
 {
