@@ -21225,7 +21225,11 @@ html.disable-forced-colors *
 
 .heading-3P5RIL
 {
-	margin-bottom:24px
+	margin-bottom:8px
+}
+.context-3zt8nW
+{
+	margin-bottom:16px
 }
 .gradientUpsellWrapper-10fDYZ
 {
@@ -21244,7 +21248,8 @@ html.disable-forced-colors *
 	-ms-flex-direction:column;
 	flex-direction:column;
 	padding:24px 16px;
-	width:100%
+	width:100%;
+	margin-top:16px
 }
 .gradientUpsellWrapper-10fDYZ a,
 .gradientUpsellWrapper-10fDYZ a:hover
@@ -22976,6 +22981,7 @@ html.disable-forced-colors *
 	z-index:auto;
 	height:100%
 }
+.allowsScrolling-DbsGWA,
 .mobileApp-3_TCAV
 {
 	overflow:auto
@@ -30635,36 +30641,6 @@ img[alt]
 	padding-bottom:16px
 }
 
-.bogoPromo-WNXw7H
-{
-	background:linear-gradient(97.5deg,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-purple-for-gradients-2) 50%,var(--premium-tier-2-pink-for-gradients));
-	border-radius:4px;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	vertical-align:center;
-	text-align:center;
-	text-transform:uppercase;
-	padding:16px 4px
-}
-.giftIcon-1n-FNE
-{
-	color:#fff
-}
-.textHeader-1ptkaY
-{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	margin-left:10px
-}
-
 .noticeRoot-dNwFD-
 {
 	-webkit-box-align:center;
@@ -31483,6 +31459,59 @@ img[alt]
 	font-weight:500;
 	line-height:20px;
 	text-align:center
+}
+
+.bannerContainer-22r3cH
+{
+	height:48px;
+	width:408px;
+	position:relative
+}
+.giftIcon-1n-FNE
+{
+	color:#fff
+}
+.textContainer-32LZ2b
+{
+	position:absolute;
+	top:0;
+	height:48px;
+	width:408px;
+	max-width:408px;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	text-align:center;
+	text-transform:uppercase
+}
+.textContainer-32LZ2b,
+.textHeader-1ptkaY
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.textHeader-1ptkaY
+{
+	margin-left:10px
+}
+.banner-2EqGlC
+{
+	border-radius:4px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	vertical-align:center;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:4px;
+	margin-bottom:4px
 }
 
 .planSelectSeparatorLower-1fnlBj,
@@ -40417,6 +40446,11 @@ html .progress-2Otdc-
 	padding:32px 16px 64px;
 	overflow:auto!important
 }
+.directoryContainerTablet-2CBNK0
+{
+	padding:32px 32px 64px;
+	overflow:auto!important
+}
 .content-3C5Io5
 {
 	position:relative;
@@ -40761,13 +40795,25 @@ html .progress-2Otdc-
 	padding:4px 12px;
 	border-radius:30px;
 	color:var(--white-500);
-	background:hsl(var(--black-500-hsl)/.6);
-	white-space:nowrap
+	background-color:rgba(43,45,49,.7);
+	white-space:nowrap;
+	-webkit-transition:background-color .2s ease-in-out;
+	transition:background-color .2s ease-in-out
+}
+.productThumbnailContainer-iSvWHI:hover .purchaseToUnlockBadge-A3TLAq
+{
+	background-color:rgba(43,45,49,.45)
 }
 .lockIcon-2PpbsO
 {
 	width:16px;
 	height:16px
+}
+.productName-3jtJ0D
+{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden
 }
 .productDetails-18hXGG
 {
@@ -83527,7 +83573,9 @@ strong
 	align-items:center;
 	-webkit-box-pack:right;
 	-ms-flex-pack:right;
-	justify-content:right
+	justify-content:right;
+	height:16px;
+	overflow:visible
 }
 .overflow-24rSZ8
 {
@@ -84743,6 +84791,14 @@ strong
 }
 .content-3KMaGU .learnMore-3qkzzd
 {
+	display:block
+}
+
+.tooltipImage-3xUWdR
+{
+	height:100px;
+	width:auto;
+	margin:0 auto 16px;
 	display:block
 }
 
@@ -100710,6 +100766,7 @@ strong
 	background:linear-gradient(90deg,hsl(269,calc(var(--saturation-factor, 1)*52.7%),52.7%),hsl(325,calc(var(--saturation-factor, 1)*31.7%),51.8%));
 	display:inline
 }
+.bogoPillWithSparkles-2cfttm,
 .freeTrialPillWithSparkles-3fINgJ
 {
 	max-width:100%;
@@ -134907,7 +134964,7 @@ html .invoiceCancelRow-3s2UuC
 	height:76px;
 	cursor:pointer;
 	overflow:hidden;
-	border-radius:var(--radius-xs)
+	border-radius:6px
 }
 .uploadButton-21GBRt
 {
@@ -135078,7 +135135,7 @@ html .invoiceCancelRow-3s2UuC
 	-ms-flex-align:center;
 	align-items:center;
 	padding:12px 10px;
-	border-radius:4px;
+	border-radius:6px;
 	background-color:var(--background-secondary);
 	border:1px solid var(--background-modifier-active)
 }
@@ -135149,8 +135206,7 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
-	gap:24px;
-	border-right:1px solid var(--background-modifier-accent)
+	gap:24px
 }
 .thumbnailLabel-pdvYTa
 {
@@ -135165,7 +135221,8 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
-	flex-direction:column
+	flex-direction:column;
+	border-left:1px solid var(--background-modifier-accent)
 }
 .previewHeading-obFXK_
 {
@@ -135206,6 +135263,10 @@ html .invoiceCancelRow-3s2UuC
 	border-radius:8px;
 	padding:7px 10px;
 	cursor:pointer
+}
+.disabled-1_Bxxh
+{
+	cursor:not-allowed
 }
 
 .container-3JugSj
@@ -138974,9 +139035,9 @@ html .invoiceCancelRow-3s2UuC
 	flex-wrap:wrap;
 	margin-top:12px;
 	margin-bottom:12px;
-	-webkit-column-gap:16px;
-	-moz-column-gap:16px;
-	column-gap:16px;
+	-webkit-column-gap:8px;
+	-moz-column-gap:8px;
+	column-gap:8px;
 	color:var(--header-primary);
 	position:relative
 }
@@ -138989,7 +139050,7 @@ html .invoiceCancelRow-3s2UuC
 }
 .featureCard-37wVa-
 {
-	width:317px;
+	width:212px;
 	min-height:130px;
 	background:var(--background-secondary-alt);
 	border-radius:11px;
@@ -139003,8 +139064,6 @@ html .invoiceCancelRow-3s2UuC
 }
 .featureCardImg-rz2qAH
 {
-	width:285px;
-	height:128px;
 	padding:24px 16px 0
 }
 .featureCardTextGroup-eGkGYR
@@ -146942,7 +147001,8 @@ html .invoiceCancelRow-3s2UuC
 .container-12-eoM
 {
 	background-color:var(--background-secondary);
-	padding:24px 48px 16px
+	padding:24px 48px 16px;
+	position:relative
 }
 .uploads-3zdzrp
 {
@@ -146950,6 +147010,7 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-direction:normal;
 	-ms-flex-direction:row;
 	flex-direction:row;
+	padding-top:16px;
 	gap:8px
 }
 .uploads-3zdzrp,
@@ -146958,10 +147019,6 @@ html .invoiceCancelRow-3s2UuC
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex
-}
-.uploadsContainer-362hAb
-{
-	margin-top:16px
 }
 
 .thumbnailContainer-LoILOG
