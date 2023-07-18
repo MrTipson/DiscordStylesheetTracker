@@ -78747,17 +78747,7 @@ strong
 }
 .highestRole-ReE-QC
 {
-	-webkit-box-flex:0;
-	-ms-flex:0 0;
-	flex:0 0;
-	width:auto;
-	margin:0
-}
-.highestRole-ReE-QC,
-.otherRoles-LMys1u
-{
-	border-radius:var(--radius-xs);
-	background-color:var(--background-secondary);
+	margin:0;
 	height:24px
 }
 .otherRoles-LMys1u
@@ -78776,6 +78766,9 @@ strong
 	-ms-flex-pack:center;
 	justify-content:center;
 	width:24px;
+	height:24px;
+	border-radius:var(--radius-xs);
+	background-color:var(--background-secondary);
 	cursor:pointer
 }
 .addRoleIcon-5oV6RN
@@ -120720,10 +120713,6 @@ input::-webkit-outer-spin-button
 {
 	text-decoration:underline
 }
-.header-3_r5Ze
-{
-	margin-bottom:32px
-}
 .divider-LdK8RO
 {
 	margin:24px 0;
@@ -120897,7 +120886,7 @@ input::-webkit-outer-spin-button
 	align-items:center;
 	background-color:var(--background-secondary);
 	border-radius:var(--radius-sm);
-	margin-top:16px;
+	margin-top:32px;
 	padding:24px
 }
 .changelogImage-2gS91s
@@ -120905,6 +120894,7 @@ input::-webkit-outer-spin-button
 	width:100px;
 	margin-right:16px
 }
+.header-3kvM14,
 .updatesDescription-D08wxz,
 .updatesHeader-MkzgKb
 {
