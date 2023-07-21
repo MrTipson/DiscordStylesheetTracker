@@ -27818,6 +27818,14 @@ img[alt]
 {
 	margin:0 4px 1px 0
 }
+.messageNegative-1uADAS
+{
+	color:var(--text-danger)
+}
+.messagePositive-22gIEW
+{
+	color:var(--text-positive)
+}
 
 .button-2BMPJJ
 {
@@ -115371,6 +115379,20 @@ html .tabBadge-h4HGed
 	padding-bottom:4px
 }
 
+.marginBottom8-2TAo74
+{
+	margin-bottom:8px
+}
+.marginBottom4-13zt5X
+{
+	margin-bottom:4px
+}
+.divider-1gkJIq
+{
+	margin-top:24px;
+	margin-bottom:24px
+}
+
 .emojiAliasPlaceholder-3oShSx
 {
 	position:absolute;
@@ -117318,20 +117340,36 @@ html .tabBadge-h4HGed
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
 	padding:12px 16px;
 	position:relative;
 	width:calc(50% - 4px);
 	-webkit-transition:.2s linear;
-	transition:.2s linear
+	transition:.2s linear;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center
 }
 .optionCard-1zlvDz:hover
 {
 	border-color:var(--interactive-muted)
 }
-.optionCard-1zlvDz.singleColumn-X3lBA2,
+.optionCard-1zlvDz.singleColumn-X3lBA2
+{
+	width:100%
+}
+.optionCardRow-10gh4f
+{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
 .singleColumn-X3lBA2
 {
 	width:100%
@@ -158854,7 +158892,7 @@ html .invoiceCancelRow-3s2UuC
 	background:var(--background-secondary);
 	border-radius:var(--radius-sm);
 	height:40px;
-	width:100%;
+	width:50%;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -158948,12 +158986,16 @@ html .invoiceCancelRow-3s2UuC
 }
 .container-23Fx6T
 {
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex
+	margin-bottom:16px
+}
+.callSoundsTitle-3MKqcf
+{
+	margin-bottom:8px
+}
+.callSoundsDivider-2cDFJw
+{
+	margin-top:4px;
+	margin-bottom:24px
 }
 .notice-2vbxjJ
 {
