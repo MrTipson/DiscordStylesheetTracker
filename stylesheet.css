@@ -41588,12 +41588,19 @@ html .progress-2Otdc-
 .productCard-10T4y5
 {
 	width:340px;
-	background:var(--background-secondary);
 	border-radius:8px;
 	overflow:hidden;
+	position:relative;
 	height:100%
 }
-.productCard-10T4y5,
+.solidBackground-13BMn7
+{
+	background:var(--background-secondary)
+}
+.opaqueBackground-3Unh3V
+{
+	background:rgba(var(--background-modifier-hover),.3)
+}
 .productThumbnailContainer-iSvWHI
 {
 	position:relative
@@ -65231,7 +65238,8 @@ strong
 }
 .tabDisabled-1l0OgZ
 {
-	background-color:var(--background-modifier-hover)
+	background-color:var(--background-modifier-hover);
+	cursor:not-allowed
 }
 .iconContainer-2gP6IM
 {
@@ -65331,6 +65339,12 @@ strong
 .content-1tt_Au
 {
 	padding:32px 42px
+}
+.contentContainer-1faF_F
+{
+	margin:auto;
+	max-width:1068px;
+	min-width:704px
 }
 
 .container-3XgAHv
@@ -87312,7 +87326,10 @@ strong
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
-	display:flex
+	display:flex;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between
 }
 .details-3127IY
 {
@@ -87320,10 +87337,7 @@ strong
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
-	gap:4px;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between
+	gap:4px
 }
 .button-s7E4zh
 {
@@ -91631,11 +91645,6 @@ strong
 
 .friendsEmpty-gs15T1
 {
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
@@ -91644,7 +91653,10 @@ strong
 	justify-content:center;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center
+	align-items:center;
+	-webkit-box-flex:1;
+	-ms-flex-positive:1;
+	flex-grow:1
 }
 .button-1rU5v7
 {
@@ -91752,14 +91764,21 @@ strong
 	padding:16px;
 	border-radius:8px;
 	background-color:var(--background-secondary);
-	margin:20px 20px 8px 30px
+	margin:20px 20px 8px 30px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	gap:16px
 }
 .header-1HrLa9
 {
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
-	justify-content:space-between;
-	margin-bottom:16px
+	justify-content:space-between
 }
 .header-1HrLa9,
 .inline-8U7WvT
@@ -92163,7 +92182,14 @@ strong
 {
 	position:relative;
 	width:100%;
-	height:100%
+	height:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
 }
 .peopleList-2VBrVI
 {
@@ -109741,6 +109767,20 @@ html .tabBadge-h4HGed
 	width:14px;
 	height:14px;
 	color:var(--header-primary)
+}
+
+.image-3O4q0c
+{
+	width:200px;
+	position:absolute;
+	top:-40px;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%)
+}
+.content-3Fu4xg
+{
+	padding-top:72px
 }
 
 .panel-2ZFCRb
