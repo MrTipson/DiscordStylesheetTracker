@@ -21161,29 +21161,34 @@ html.disable-forced-colors *
 
 .profileEffects-km5xa2
 {
-	z-index:1
-}
-.inner-2xMRmK,
-.profileEffects-km5xa2
-{
 	position:absolute;
 	height:100%;
 	width:100%;
 	top:0;
 	left:0;
-	pointer-events:none
+	pointer-events:none;
+	z-index:2;
+	-webkit-transition:opacity .6s ease-in-out;
+	transition:opacity .6s ease-in-out
+}
+.hovered-1pHBzl
+{
+	opacity:.35
 }
 .inner-2xMRmK
 {
 	overflow:hidden;
-	border-radius:8px
+	border-radius:8px;
+	height:100%;
+	pointer-events:none
 }
-.effect-23JFo_
+.effect-23JFo_,
+.inner-2xMRmK
 {
-	top:0;
-	left:0;
+	position:absolute;
 	width:100%;
-	position:absolute
+	top:0;
+	left:0
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG
@@ -34418,7 +34423,7 @@ img[alt]
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	margin-bottom:36px;
-	padding:13px 27px 13px 13px;
+	padding:12px 22px 12px 12px;
 	pointer-events:all;
 	position:relative;
 	width:438px
@@ -34478,6 +34483,10 @@ img[alt]
 	-webkit-box-flex:0;
 	-ms-flex:0 0 auto;
 	flex:0 0 auto
+}
+.ctaButton-39lz0z
+{
+	border-radius:var(--custom-button-button-lg-height)
 }
 .guildName-3yK56c
 {
@@ -50495,6 +50504,31 @@ html .progress-2Otdc-
 .closeIcon-2Qp1gl:active
 {
 	color:var(--interactive-active)
+}
+
+.accessory-A8wSuS
+{
+	cursor:pointer;
+	color:var(--interactive-normal);
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	gap:var(--spacing-4)
+}
+.accessory-A8wSuS:hover
+{
+	color:var(--interactive-hover)
+}
+.accessory-A8wSuS:hover .accessoryText-7HAF8F
+{
+	color:var(--interactive-hover)
+}
+.accessoryText-7HAF8F
+{
+	color:var(--interactive-normal)
 }
 
 .lineClamp2Plus-1eksIb
@@ -72828,6 +72862,9 @@ strong
 {
 	padding:8px;
 	width:300px;
+	-webkit-box-pack:start;
+	-ms-flex-pack:start;
+	justify-content:flex-start;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
@@ -72844,6 +72881,12 @@ strong
 .tabDisabled-1l0OgZ
 {
 	cursor:not-allowed
+}
+.tabPreviewClose-Ic6Mxe
+{
+	margin-left:auto;
+	color:var(--interactive-normal);
+	padding-right:4px
 }
 .iconContainer-2gP6IM
 {
@@ -105225,10 +105268,9 @@ html:not(.custom-theme-background) .container-Vrgqxz
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	padding:13px 27px 13px 13px;
+	padding:12px;
 	pointer-events:all;
-	position:relative;
-	width:438px
+	position:relative
 }
 .innerWrapper-Eo2E86:after,
 .innerWrapper-Eo2E86:before
@@ -105265,10 +105307,14 @@ html:not(.custom-theme-background) .container-Vrgqxz
 {
 	background-color:var(--background-secondary)
 }
+.button-2j-SXS,
+.shinyButton-3_LSN1
+{
+	border-radius:var(--custom-button-button-md-height)
+}
 .button-2j-SXS
 {
-	width:160px;
-	height:40px
+	width:160px
 }
 .button-2j-SXS:first-child
 {
@@ -135991,7 +136037,8 @@ input::-webkit-outer-spin-button
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	padding:0
+	padding:0;
+	overflow:hidden
 }
 .modalHeadings-3LBRJZ
 {
@@ -136119,7 +136166,9 @@ input::-webkit-outer-spin-button
 .profileCustomizationPreview-3zZw6E
 {
 	position:relative;
-	min-height:280px
+	min-height:280px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box
 }
 .banner-3D8GgT
 {
@@ -142464,6 +142513,49 @@ html .invoiceCancelRow-3s2UuC
 	height:1px;
 	margin:24px 0;
 	background-color:var(--background-modifier-accent)
+}
+
+.headerImg-3pc9WG
+{
+	width:112px;
+	height:112px;
+	margin-bottom:var(--spacing-16)
+}
+.headerText-lupoPT
+{
+	text-transform:uppercase
+}
+.modalBody-1FMXCs
+{
+	text-align:center;
+	padding:var(--spacing-8) var(--spacing-16) var(--spacing-16)
+}
+.modalInteriorHeader-lLiM_t
+{
+	margin-bottom:var(--spacing-8)
+}
+.modalHeader-TUfObH
+{
+	overflow:visible;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	margin-top:-72px
+}
+.buttonContainer-UOdff1
+{
+	padding:var(--spacing-24) 0 0
+}
+.buttonContainer-UOdff1>button
+{
+	margin-bottom:var(--spacing-8)
 }
 
 .textArea-3GydfY
@@ -166168,15 +166260,52 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	width:200px;
+	width:100%;
 	height:390px;
 	z-index:0
+}
+.previewContainerAnimation-DIEHcA
+{
+	-webkit-animation:scaleIn-3PX5jn .5s;
+	animation:scaleIn-3PX5jn .5s
 }
 .preview-RKQD82
 {
 	position:relative;
+	-o-object-fit:contain;
+	object-fit:contain;
+	-o-object-position:top;
+	object-position:top;
 	width:100%;
 	height:100%
+}
+@-webkit-keyframes scaleIn-3PX5jn
+{
+	0%
+	{
+		-webkit-transform:scale(.7);
+		transform:scale(.7)
+	}
+	to
+	{
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+	
+}
+@keyframes scaleIn-3PX5jn
+{
+	0%
+	{
+		-webkit-transform:scale(.7);
+		transform:scale(.7)
+	}
+	to
+	{
+		-webkit-transform:scale(1);
+		transform:scale(1)
+	}
+	
 }
 
 .priceWrapper-3XSWjw
@@ -166224,9 +166353,6 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
-	-webkit-box-pack:justify;
-	-ms-flex-pack:justify;
-	justify-content:space-between;
 	cursor:pointer;
 	overflow:hidden
 }
@@ -166258,7 +166384,17 @@ html .invoiceCancelRow-3s2UuC
 .cardText-2OugTh
 {
 	margin-top:32px;
-	z-index:1
+	z-index:1;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
 }
 .description-1aSbLq
 {
@@ -166320,11 +166456,15 @@ html .invoiceCancelRow-3s2UuC
 	-ms-flex:1;
 	flex:1
 }
+.detailsWrapper-_FRe44,
 .hoverUpsellContainer-2so0Ya
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
-	display:flex;
+	display:flex
+}
+.hoverUpsellContainer-2so0Ya
+{
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
@@ -166363,7 +166503,10 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	height:100%
+	height:100%;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
 }
 .checkmarkWrapper-30c52R
 {
@@ -166598,12 +166741,8 @@ html .invoiceCancelRow-3s2UuC
 	-webkit-box-pack:end;
 	-ms-flex-pack:end;
 	justify-content:flex-end;
-	pointer-events:none;
 	top:32px;
-	right:32px
-}
-.closeIcon-ErXdZG
-{
+	right:32px;
 	pointer-events:all
 }
 .cardsContainer-2kdrm8
@@ -166681,48 +166820,81 @@ html .invoiceCancelRow-3s2UuC
 	overflow:hidden;
 	-webkit-animation:placeholderPulse-ooES5N 1.3s ease-in-out infinite;
 	animation:placeholderPulse-ooES5N 1.3s ease-in-out infinite;
-	background-color:var(--background-secondary);
+	background-color:var(--background-secondary-alt);
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
 	-ms-flex-direction:column;
-	flex-direction:column
+	flex-direction:column;
+	height:300px;
+	padding:16px
 }
-.cardBody-1ntQaF,
-.skeleton-1U6yWM
+.bannerBody-20oTYV
+{
+	width:inherit
+}
+.bannerBody-20oTYV,
+.cardBody-1ntQaF
 {
 	display:-webkit-box;
 	display:-ms-flexbox;
-	display:flex
+	display:flex;
+	background-color:var(--background-secondary);
+	height:inherit;
+	border-radius:var(--radius-lg)
 }
 .cardBody-1ntQaF
 {
-	height:170px;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
 	-webkit-box-align:center;
 	-ms-flex-align:center;
-	align-items:center;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center
+	align-items:center
 }
 .cardAvatar-DsY13f
 {
+	margin-top:32px;
 	height:96px;
 	width:96px;
-	border-radius:50%
+	border-radius:50%;
+	background-color:var(--background-primary)
 }
-.cardAvatar-DsY13f,
+.cardTitle-3D3z1l
+{
+	margin-top:16px;
+	width:35%
+}
+.cardDescription-1eoWy6,
+.cardTitle-3D3z1l
+{
+	background-color:var(--background-primary);
+	height:16px;
+	border-radius:var(--radius-sm)
+}
+.cardDescription-1eoWy6
+{
+	margin-top:8px;
+	width:25%
+}
 .cardSummary-218DWR
 {
-	background-color:var(--background-secondary-alt)
-}
-.cardSummary-218DWR
-{
-	height:calc(100% - 170px)
+	height:32px;
+	width:90%;
+	border-radius:var(--radius-sm);
+	background-color:var(--background-primary);
+	margin-top:auto;
+	margin-bottom:16px
 }
 
 .bannerCard-2LJzbg
 {
-	padding:2px;
+	padding:32px;
+	max-width:100%;
+	max-height:100%;
 	position:relative;
 	margin-top:24px;
 	display:-webkit-box;
@@ -166739,19 +166911,20 @@ html .invoiceCancelRow-3s2UuC
 .bannerBackground-HeU8g7,
 .bannerCard-2LJzbg
 {
-	height:300px;
-	border-radius:var(--radius-xxl);
-	width:1060px
+	border-radius:var(--radius-xxl)
 }
 .bannerBackground-HeU8g7
 {
 	position:absolute;
+	height:100%;
+	width:100%;
 	z-index:0
 }
 .bannerFont-J6Rq9R
 {
-	width:500px;
-	height:56px
+	width:auto;
+	height:auto;
+	max-width:100%
 }
 .bannerDescription-1muIwg
 {
@@ -166811,19 +166984,19 @@ html .invoiceCancelRow-3s2UuC
 }
 .decoSection-gerPq1
 {
-	gap:24px
+	gap:20px
 }
 .pinkInterface-3WSNgF
 {
-	margin-top:8px
+	margin-top:4px
 }
 .blueHeadset-3YaP41
 {
-	margin-top:150px
+	margin-top:120px
 }
 .greenSmoke-18S32C
 {
-	margin-top:24px
+	margin-top:20px
 }
 .premiumUnlockHook-3W9Gfe
 {
@@ -172331,7 +172504,7 @@ html .invoiceCancelRow-3s2UuC
 }
 .list-1UuDOi
 {
-	width:310px;
+	width:298px;
 	padding-bottom:4px;
 	margin-top:2px;
 	left:-12px
@@ -172536,7 +172709,8 @@ html .invoiceCancelRow-3s2UuC
 .bannerContainer-2aPEIR
 {
 	position:relative;
-	height:228px
+	height:228px;
+	overflow:hidden
 }
 .collectedInfoContainer-Rds0XX
 {
@@ -172570,6 +172744,14 @@ html .invoiceCancelRow-3s2UuC
 	position:absolute;
 	width:100%;
 	height:100%
+}
+.profileEffectShopPreview-223heR
+{
+	position:relative;
+	height:100%;
+	width:160px;
+	top:20px;
+	margin:0 auto
 }
 
 .headerContainer-20VxQq
