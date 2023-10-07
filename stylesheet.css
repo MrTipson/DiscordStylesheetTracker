@@ -18413,12 +18413,7 @@ html.disable-forced-colors *
 	height:32px;
 	background:var(--bg-overlay-2,var(--background-secondary));
 	-webkit-box-shadow:0 1px 0 rgba(4,4,5,.2),0 1.5px 0 rgba(6,6,7,.05),0 2px 0 rgba(4,4,5,.05);
-	box-shadow:0 1px 0 rgba(4,4,5,.2),0 1.5px 0 rgba(6,6,7,.05),0 2px 0 rgba(4,4,5,.05);
-	z-index:3
-}
-.topicsPillPadForumPostActions-31TaC6
-{
-	top:40px
+	box-shadow:0 1px 0 rgba(4,4,5,.2),0 1.5px 0 rgba(6,6,7,.05),0 2px 0 rgba(4,4,5,.05)
 }
 .topicsPill-2UkeUm
 {
@@ -21409,7 +21404,9 @@ html.disable-forced-colors *
 }
 .pencilIcon-3ZoLdr
 {
-	padding-right:8px
+	padding-right:8px;
+	width:16px;
+	height:16px
 }
 
 .referencePosition-3awUp7
@@ -21621,17 +21618,24 @@ html.disable-forced-colors *
 .inner-2xMRmK
 {
 	overflow:hidden;
+	position:absolute;
 	border-radius:8px;
 	height:100%;
-	pointer-events:none
-}
-.effect-23JFo_,
-.inner-2xMRmK
-{
-	position:absolute;
 	width:100%;
 	top:0;
-	left:0
+	left:0;
+	pointer-events:none
+}
+.innerNoRadius-33APt0
+{
+	border-radius:0
+}
+.effect-23JFo_
+{
+	top:0;
+	left:0;
+	width:100%;
+	position:absolute
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG
@@ -22947,6 +22951,10 @@ html.disable-forced-colors *
 .containerWithContent-2Yws8V
 {
 	padding:4px
+}
+.clydeBadgeList-1CA7wP
+{
+	background-color:"transparent"
 }
 .clickable-1knRMS
 {
@@ -55338,7 +55346,9 @@ html .progress-2Otdc-
 
 .guildShopEmbed-1nkLdU
 {
-	width:510px;
+	max-width:510px;
+	min-width:160px;
+	width:100%;
 	min-height:300px;
 	padding:16px;
 	border-radius:12px
@@ -55380,6 +55390,8 @@ html .progress-2Otdc-
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
 	width:100%;
 	gap:12px
 }
@@ -56371,7 +56383,9 @@ html .progress-2Otdc-
 
 .postPreviewContainer-1loFYP
 {
-	width:512px;
+	max-width:512px;
+	min-width:160px;
+	width:100%;
 	border-radius:10px;
 	overflow:hidden
 }
@@ -56461,6 +56475,8 @@ html .progress-2Otdc-
 	-webkit-box-align:center;
 	-ms-flex-align:center;
 	align-items:center;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
 	gap:16px
 }
 .authorAvatar-ZJsFdS
@@ -77697,7 +77713,15 @@ strong
 }
 .shop-3sIaH8
 {
-	background-color:var(--background-floating)
+	background-color:var(--background-floating);
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
+}
+.shop-3sIaH8,
+.shopScroll-2RzMLg
+{
+	height:100%
 }
 .itemTypeTitleContainer-3KVj87
 {
@@ -77737,13 +77761,6 @@ strong
 	justify-content:center;
 	width:100%;
 	position:relative
-}
-.headerBar-292C6X
-{
-	position:fixed;
-	width:calc(100% - 312px);
-	right:0;
-	top:0
 }
 .logo-2i6m3N
 {
@@ -109510,6 +109527,11 @@ strong
 	transition:max-height .4s ease-in-out;
 	overflow:hidden
 }
+.subscriberNitroHome-2yhIpB.reducedMotion-3BlabZ
+{
+	-webkit-transition:none;
+	transition:none
+}
 .partiallyHidden-1_IhuR
 {
 	max-height:500px
@@ -109530,6 +109552,11 @@ strong
 {
 	opacity:0
 }
+.reducedMotion-3BlabZ .cover-20EvR4
+{
+	-webkit-transition:none;
+	transition:none
+}
 
 .flipCardContainer-Yr1oDc,
 .noFlipCardContainer-EXGBVu
@@ -109538,7 +109565,9 @@ strong
 	display:-ms-flexbox;
 	display:flex;
 	height:100%;
-	width:100%
+	width:100%;
+	-webkit-filter:saturate(var(--saturation-factor,1));
+	filter:saturate(var(--saturation-factor,1))
 }
 .flipCardContainer-Yr1oDc.forceShadow-1PusjL .card-20tMLf,
 .noFlipCardContainer-EXGBVu.forceShadow-1PusjL .card-20tMLf
@@ -109606,6 +109635,11 @@ strong
 	-webkit-transform:rotateY(-30deg);
 	transform:rotateY(-30deg)
 }
+.flipCardContainer-Yr1oDc:hover .partialFlipCard-3ljnDA.reducedMotion-Tfo8id
+{
+	-webkit-transform:none;
+	transform:none
+}
 .flipCardContainer-Yr1oDc:hover .ultraFlipCard-1Mb6J9
 {
 	-webkit-transform:rotateY(-570deg);
@@ -109627,6 +109661,11 @@ strong
 	transition:transform .8s,-webkit-transform .8s;
 	-webkit-transform-style:preserve-3d;
 	transform-style:preserve-3d
+}
+.flipCard-39OCl1.reducedMotion-Tfo8id
+{
+	-webkit-transition:none;
+	transition:none
 }
 .flipCardBack-WarPiy,
 .flipCardFront-13TUSs
@@ -109701,6 +109740,11 @@ strong
 .card-20tMLf:hover .cardDescription-23s_MQ button
 {
 	pointer-events:all
+}
+.reducedMotion-Tfo8id .card-20tMLf
+{
+	-webkit-transition:none;
+	transition:none
 }
 .clickable-1A6JsZ
 {
@@ -109789,6 +109833,11 @@ strong
 	align-self:center;
 	min-width:180px
 }
+.reducedMotion-Tfo8id .cardDescription-23s_MQ
+{
+	-webkit-transition:none;
+	transition:none
+}
 .theme-light .cardDescription-23s_MQ
 {
 	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(30%,#fff),color-stop(80%,hsla(0,0%,100%,.5)));
@@ -109806,6 +109855,11 @@ strong
 	transition:all .2s ease-in-out;
 	pointer-events:none;
 	border-radius:20px
+}
+.reducedMotion-Tfo8id .cover-1nw8ay
+{
+	-webkit-transition:none;
+	transition:none
 }
 .above-3GwaSM
 {
@@ -109944,6 +109998,8 @@ strong
 	background-image:url(/assets/02966902c01f5e60b71838f2a2f9e75b.svg);
 	background-repeat:no-repeat;
 	background-position:100%;
+	-webkit-filter:saturate(var(--saturation-factor,1));
+	filter:saturate(var(--saturation-factor,1));
 	overflow:hidden
 }
 @media (max-width:960px)
@@ -110104,7 +110160,9 @@ strong
 .imageContainer-3dEb5N
 {
 	margin-top:16px;
-	width:100%
+	width:100%;
+	-webkit-filter:saturate(var(--saturation-factor,1));
+	filter:saturate(var(--saturation-factor,1))
 }
 .imageContainer-3dEb5N img
 {
@@ -114799,19 +114857,6 @@ html .tabBadge-h4HGed
 {
 	color:var(--premium-tier-2-purple-for-gradients-2);
 	position:absolute
-}
-.shopSparkleBig-1CvCPL
-{
-	width:12px;
-	height:12px;
-	top:8px
-}
-.shopSparkleSmall-1R-KsA
-{
-	width:8px;
-	height:8px;
-	top:4px;
-	left:8px
 }
 .searchBar-3TnChZ
 {
