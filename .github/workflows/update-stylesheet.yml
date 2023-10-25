@@ -17,7 +17,7 @@ jobs:
       
       - name: Download CSS file
         run: |
-          wget -O temp.css discord.com/assets/$(curl --list-only https://discord.com/app | grep -o "stylesheet.*/>" | cut -d " " -f2 | cut -d "/" -f3 | sed s/\"//)
+          wget -O temp.css discord.com/$(curl --list-only https://discord.com/app | grep -o "<.*stylesheet.*/>" | cut -d " " -f2 | cut -d \" -f2)
           
       - name: Format stylesheet
         run: cat temp.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
