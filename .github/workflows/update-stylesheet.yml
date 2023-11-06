@@ -15,20 +15,32 @@ jobs:
       - name: Make script executable
         run: chmod +x indent.sh
       
+      - name: Make temporary directory
+        run: mkdir temp
+
       - name: Download CSS file
         run: |
-          wget -O temp.css discord.com/$(curl --list-only https://discord.com/app | grep -o "<[^<>]*stylesheet[^<>]*\/>" | cut -d " " -f2 | cut -d \" -f2)
+          sheets=$(curl --list-only https://discord.com/app | grep -o "<[^<>]*stylesheet[^<>]*\/>" | cut -d " " -f2 | cut -d \" -f2)
+          for i in $sheets; do
+            wget -O - > temp/$(basename $i) "discord.com$i"
+          done
           
-      - name: Format stylesheet
-        run: cat temp.css | sed 's/\([}{]\)/\n\1\n/g' | sed 's/\(;\)/\1\n/g' | ./indent.sh > stylesheet.css
+      - name: Format stylesheets
+        run: |
+          for i in temp/*.css; do
+            sed 's/\([}{]\)/\n\1\n/g' $i | sed 's/\(;\)/\1\n/g' | ./indent.sh > $(basename $i | cut -d "." -f1).css
+          done
         
       - name: Clean up files
-        run: rm temp.css
+        run: rm -r ./temp
         
       - name: Check for errors
-        run: test -s stylesheet.css
+        run: |
+          for i in ./*.css; do
+            test -s $i
+          done
         
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: stylesheet.css
+          file_pattern: '*.css'
           commit_author: GitHub actions <actions@github.com>
