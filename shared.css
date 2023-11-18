@@ -5789,6 +5789,11 @@ html.decorate-links .lowSaturationUnderline__95e71
 	height:10px;
 	color:var(--text-muted)
 }
+.show-redesigned-icons .caret_ce50ce
+{
+	width:16px;
+	height:16px
+}
 .disabled_a32bfe
 {
 	cursor:pointer;
@@ -8288,12 +8293,376 @@ html.decorate-links .lowSaturationUnderline__95e71
 {
 	border-color:Highlight
 }
-.slider_d6d94d
+.flowerStarContainer_d8d14b
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative
+}
+.flowerStar_a9981e
+{
+	width:100%;
+	height:100%
+}
+.childContainer__4e664
 {
 	position:absolute;
-	left:0;
+	top:-.05px;
+	left:.05px;
 	right:0;
-	bottom:0
+	bottom:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	pointer-events:none
+}
+.redesignIconChildContainer__1bee6>svg
+{
+	width:12px;
+	height:12px
+}
+.background_e8dd16
+{
+	width:16px;
+	height:16px
+}
+.hubContainer__1ed6a
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative
+}
+.verified__8167d
+{
+	color:var(--green-360)
+}
+.staff_cdaa2a
+{
+	color:var(--primary-500)
+}
+.staff_cdaa2a .icon__5b3a5
+{
+	width:75%;
+	height:75%
+}
+.partnered__77913
+{
+	color:var(--brand-experiment)
+}
+.hub_b3afcf>.icon__5b3a5>circle
+{
+	fill:var(--background-accent)
+}
+.verifiedHub__88d64>.icon__5b3a5>circle
+{
+	fill:var(--green-360)
+}
+.icon__5b3a5
+{
+	width:100%;
+	height:100%;
+	color:var(--white-500)
+}
+.icon_c48348
+{
+	position:relative;
+	background-clip:padding-box;
+	background-color:none;
+	background-position:center center;
+	background-size:100%100%
+}
+.icon_c48348 .guildIconBadge__08ec3
+{
+	position:absolute;
+	right:-2px;
+	bottom:-2px;
+	width:14px;
+	height:14px
+}
+.iconInactive__90d40
+{
+	border-radius:50%
+}
+.iconActiveMini__0163a
+{
+	border-radius:6px
+}
+.iconActiveSmaller__5519c
+{
+	border-radius:7px
+}
+.iconActiveSmall_fadb80
+{
+	border-radius:9px
+}
+.iconActiveMedium_d5475f
+{
+	border-radius:12px
+}
+.iconActiveLarge__8985a
+{
+	border-radius:15px
+}
+.iconActiveLarger__0698f
+{
+	border-radius:16px
+}
+.iconActiveXLarge_f0b973
+{
+	border-radius:30px
+}
+.iconSizeSmol__7ee47
+{
+	width:16px;
+	height:16px
+}
+.iconSizeMini_deb5f6
+{
+	width:20px;
+	height:20px
+}
+.iconSizeSmaller_df2b3f
+{
+	width:24px;
+	height:24px
+}
+.iconSizeSmall_e83ed9
+{
+	width:30px;
+	height:30px
+}
+.iconSizeMedium_c7d5f7
+{
+	width:40px;
+	height:40px
+}
+.iconSizeLarge__1e6d4
+{
+	width:50px;
+	height:50px
+}
+.iconSizeLarger__57b8e
+{
+	width:64px;
+	height:64px
+}
+.iconSizeXLarge__7f18d
+{
+	width:100px;
+	height:100px
+}
+.acronym__439d3
+{
+	overflow:hidden;
+	white-space:nowrap;
+	width:100%
+}
+.noIcon__06e39
+{
+	background-color:var(--background-secondary);
+	color:var(--text-normal);
+	text-align:center
+}
+.noIcon__06e39.iconSizeSmol__7ee47
+{
+	line-height:16px
+}
+.noIcon__06e39.iconSizeMini_deb5f6
+{
+	line-height:20px
+}
+.noIcon__06e39.iconSizeSmaller_df2b3f
+{
+	line-height:24px
+}
+.noIcon__06e39.iconSizeSmall_e83ed9
+{
+	line-height:30px
+}
+.noIcon__06e39.iconSizeMedium_c7d5f7
+{
+	line-height:40px
+}
+.noIcon__06e39.iconSizeLarge__1e6d4
+{
+	line-height:50px
+}
+.noIcon__06e39.iconSizeLarger__57b8e
+{
+	line-height:64px
+}
+.noIcon__06e39.iconSizeXLarge__7f18d
+{
+	line-height:100px
+}
+.noAcronym__126c2
+{
+	background-color:var(--background-modifier-accent)
+}
+.botTag__4211a
+{
+	font-size:.625rem;
+	text-transform:uppercase;
+	vertical-align:top;
+	display:inline-flex;
+	align-items:center;
+	flex-shrink:0;
+	text-indent:0
+}
+.px__97c6b.botTag__4211a
+{
+	height:15px;
+	padding:0 4px;
+	margin-top:1px;
+	border-radius:3px
+}
+.rem__931aa.botTag__4211a
+{
+	height:.9375rem;
+	padding:0 .275rem;
+	margin-top:.075em;
+	border-radius:.1875rem
+}
+.rem__931aa.botTag__4211a.botTagOP_e48ddb
+{
+	border-radius:.4rem;
+	margin-top:.25em
+}
+.botTagRegular_c89c9a
+{
+	background:var(--brand-experiment);
+	color:var(--white-500)
+}
+.botTagInvert_c85692
+{
+	background:var(--white-500);
+	color:var(--brand-experiment)
+}
+.botTagAI_f6af2f
+{
+	background:var(--text-positive);
+	color:var(--white-500)
+}
+.botTag__4211a.botTagRemix_abf2f2
+{
+	top:.3em
+}
+.botTagVerified_a8fa0b
+{
+	display:inline-block
+}
+.px__97c6b .botTagVerified_a8fa0b
+{
+	width:15px;
+	height:15px;
+	margin-left:-4px
+}
+.rem__931aa .botTagVerified_a8fa0b
+{
+	width:.9375rem;
+	height:.9375rem;
+	margin-left:-.25rem
+}
+.botText__19848
+{
+	position:relative;
+	font-weight:500;
+	vertical-align:top
+}
+.px__97c6b .botText__19848
+{
+	font-size:10px;
+	line-height:15px
+}
+.rem__931aa .botText__19848
+{
+	line-height:.9375rem
+}
+.botTagOP_e48ddb
+{
+	color:var(--brand-560);
+	background-color:var(--brand-260);
+	border-radius:8px
+}
+.gameIcon__90c32
+{
+	filter:saturate(1);
+	filter:saturate(var(--saturation-factor,1));
+	-webkit-user-drag:none;
+	background-size:100%;
+	border-radius:3px;
+	color:var(--header-primary)
+}
+.small__52213,
+.medium__2316b,
+.large__7dc67
+{
+	flex-shrink:0
+}
+.xsmall_b118ce
+{
+	width:24px;
+	height:24px
+}
+.small__52213
+{
+	width:30px;
+	height:30px
+}
+.medium__2316b
+{
+	width:40px;
+	height:40px
+}
+.large__7dc67
+{
+	width:60px;
+	height:60px
+}
+.eighty__3c4f9
+{
+	width:80px;
+	height:80px
+}
+.container__61999
+{
+	min-width:100%;
+	display:flex;
+	flex-direction:row
+}
+.stepContainer_ce1f7e
+{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-start
+}
+.stepContainer_ce1f7e+.stepContainer_ce1f7e
+{
+	margin-left:8px
+}
+.progressBar__0a392
+{
+	margin-bottom:8px;
+	height:4px;
+	width:100%;
+	background-color:var(--text-muted);
+	border-radius:4px
+}
+.selectedProgressBar__10383
+{
+	background-color:var(--text-brand)
+}
+.enable-forced-colors .progressBar__0a392
+{
+	background-color:CanvasText
+}
+.enable-forced-colors .selectedProgressBar__10383
+{
+	background-color:Highlight
 }
 .heading-sm-normal__5f295
 {
@@ -8812,214 +9181,6 @@ html.decorate-links .lowSaturationUnderline__95e71
 	color:Highlight;
 	outline:2px solid Canvas
 }
-.flowerStarContainer_d8d14b
-{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	position:relative
-}
-.flowerStar_a9981e
-{
-	width:100%;
-	height:100%
-}
-.childContainer__4e664
-{
-	position:absolute;
-	top:-.05px;
-	left:.05px;
-	right:0;
-	bottom:0;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	pointer-events:none
-}
-.redesignIconChildContainer__1bee6>svg
-{
-	width:12px;
-	height:12px
-}
-.background_e8dd16
-{
-	width:16px;
-	height:16px
-}
-.hubContainer__1ed6a
-{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	position:relative
-}
-.verified__8167d
-{
-	color:var(--green-360)
-}
-.staff_cdaa2a
-{
-	color:var(--primary-500)
-}
-.staff_cdaa2a .icon__5b3a5
-{
-	width:75%;
-	height:75%
-}
-.partnered__77913
-{
-	color:var(--brand-experiment)
-}
-.hub_b3afcf>.icon__5b3a5>circle
-{
-	fill:var(--background-accent)
-}
-.verifiedHub__88d64>.icon__5b3a5>circle
-{
-	fill:var(--green-360)
-}
-.icon__5b3a5
-{
-	width:100%;
-	height:100%;
-	color:var(--white-500)
-}
-.icon_c48348
-{
-	position:relative;
-	background-clip:padding-box;
-	background-color:none;
-	background-position:center center;
-	background-size:100%100%
-}
-.icon_c48348 .guildIconBadge__08ec3
-{
-	position:absolute;
-	right:-2px;
-	bottom:-2px;
-	width:14px;
-	height:14px
-}
-.iconInactive__90d40
-{
-	border-radius:50%
-}
-.iconActiveMini__0163a
-{
-	border-radius:6px
-}
-.iconActiveSmaller__5519c
-{
-	border-radius:7px
-}
-.iconActiveSmall_fadb80
-{
-	border-radius:9px
-}
-.iconActiveMedium_d5475f
-{
-	border-radius:12px
-}
-.iconActiveLarge__8985a
-{
-	border-radius:15px
-}
-.iconActiveLarger__0698f
-{
-	border-radius:16px
-}
-.iconActiveXLarge_f0b973
-{
-	border-radius:30px
-}
-.iconSizeSmol__7ee47
-{
-	width:16px;
-	height:16px
-}
-.iconSizeMini_deb5f6
-{
-	width:20px;
-	height:20px
-}
-.iconSizeSmaller_df2b3f
-{
-	width:24px;
-	height:24px
-}
-.iconSizeSmall_e83ed9
-{
-	width:30px;
-	height:30px
-}
-.iconSizeMedium_c7d5f7
-{
-	width:40px;
-	height:40px
-}
-.iconSizeLarge__1e6d4
-{
-	width:50px;
-	height:50px
-}
-.iconSizeLarger__57b8e
-{
-	width:64px;
-	height:64px
-}
-.iconSizeXLarge__7f18d
-{
-	width:100px;
-	height:100px
-}
-.acronym__439d3
-{
-	overflow:hidden;
-	white-space:nowrap;
-	width:100%
-}
-.noIcon__06e39
-{
-	background-color:var(--background-secondary);
-	color:var(--text-normal);
-	text-align:center
-}
-.noIcon__06e39.iconSizeSmol__7ee47
-{
-	line-height:16px
-}
-.noIcon__06e39.iconSizeMini_deb5f6
-{
-	line-height:20px
-}
-.noIcon__06e39.iconSizeSmaller_df2b3f
-{
-	line-height:24px
-}
-.noIcon__06e39.iconSizeSmall_e83ed9
-{
-	line-height:30px
-}
-.noIcon__06e39.iconSizeMedium_c7d5f7
-{
-	line-height:40px
-}
-.noIcon__06e39.iconSizeLarge__1e6d4
-{
-	line-height:50px
-}
-.noIcon__06e39.iconSizeLarger__57b8e
-{
-	line-height:64px
-}
-.noIcon__06e39.iconSizeXLarge__7f18d
-{
-	line-height:100px
-}
-.noAcronym__126c2
-{
-	background-color:var(--background-modifier-accent)
-}
 @value responsiveWidthMobile from './WaveSplash.module.css';
 @value maxQRLoginWidth from './WaveSplash.module.css';
 .discordLogo_ed89b7
@@ -9300,130 +9461,90 @@ html.decorate-links .lowSaturationUnderline__95e71
 	margin-top:8px;
 	font-size:12px
 }
-.botTag__4211a
+.wrapper__18aa1
 {
-	font-size:.625rem;
-	text-transform:uppercase;
-	vertical-align:top;
-	display:inline-flex;
-	align-items:center;
-	flex-shrink:0;
-	text-indent:0
+	margin:0
 }
-.px__97c6b.botTag__4211a
+.base__7ba63
 {
-	height:15px;
-	padding:0 4px;
-	margin-top:1px;
-	border-radius:3px
-}
-.rem__931aa.botTag__4211a
-{
-	height:.9375rem;
-	padding:0 .275rem;
-	margin-top:.075em;
-	border-radius:.1875rem
-}
-.rem__931aa.botTag__4211a.botTagOP_e48ddb
-{
-	border-radius:.4rem;
-	margin-top:.25em
-}
-.botTagRegular_c89c9a
-{
-	background:var(--brand-experiment);
-	color:var(--white-500)
-}
-.botTagInvert_c85692
-{
-	background:var(--white-500);
-	color:var(--brand-experiment)
-}
-.botTagAI_f6af2f
-{
-	background:var(--text-positive);
-	color:var(--white-500)
-}
-.botTag__4211a.botTagRemix_abf2f2
-{
-	top:.3em
-}
-.botTagVerified_a8fa0b
-{
-	display:inline-block
-}
-.px__97c6b .botTagVerified_a8fa0b
-{
-	width:15px;
-	height:15px;
-	margin-left:-4px
-}
-.rem__931aa .botTagVerified_a8fa0b
-{
-	width:.9375rem;
-	height:.9375rem;
-	margin-left:-.25rem
-}
-.botText__19848
-{
-	position:relative;
-	font-weight:500;
-	vertical-align:top
-}
-.px__97c6b .botText__19848
-{
-	font-size:10px;
-	line-height:15px
-}
-.rem__931aa .botText__19848
-{
-	line-height:.9375rem
-}
-.botTagOP_e48ddb
-{
-	color:var(--brand-560);
-	background-color:var(--brand-260);
-	border-radius:8px
-}
-.gameIcon__90c32
-{
-	filter:saturate(1);
-	filter:saturate(var(--saturation-factor,1));
-	-webkit-user-drag:none;
-	background-size:100%;
-	border-radius:3px;
+	font-weight:600;
+	font-family:var(--font-display);
 	color:var(--header-primary)
 }
-.small__52213,
-.medium__2316b,
-.large__7dc67
+.selectable__49dfb
 {
-	flex-shrink:0
+	-webkit-user-select:text;
+	-moz-user-select:text;
+	user-select:text
 }
-.xsmall_b118ce
+.base__7ba63.muted__3d103
 {
-	width:24px;
-	height:24px
+	color:var(--header-secondary)
 }
-.small__52213
+.uppercase_e6572d
 {
-	width:30px;
-	height:30px
+	text-transform:uppercase
 }
-.medium__2316b
+.logo__7f9c8
 {
-	width:40px;
-	height:40px
+	color:var(--header-primary)
 }
-.large__7dc67
+.title__808ee
 {
-	width:60px;
-	height:60px
+	font-size:17px
 }
-.eighty__3c4f9
+.header__32541
 {
-	width:80px;
-	height:80px
+	display:flex;
+	align-items:center;
+	gap:8px
+}
+.transition__4df5e
+{
+	transition:transform.2s ease
+}
+.directionDown_d14df7
+{
+	transform:rotate3d(0,0,-1,0)
+}
+.directionRight__232ce
+{
+	transform:rotate3d(0,0,-1,90deg)
+}
+.directionLeft__7c310
+{
+	transform:rotate3d(0,0,-1,270deg)
+}
+.directionUp_cb88db
+{
+	transform:rotate3d(0,0,-1,180deg)
+}
+.left__6c5c8
+{
+	transform:rotate(270deg)
+}
+.right__309a5
+{
+	transform:rotate(90deg)
+}
+.down__0b7f6
+{
+	transform:rotate(180deg)
+}
+.downRight__403de
+{
+	transform:rotate(135deg)
+}
+.upLeft__51554
+{
+	transform:rotate(315deg)
+}
+.slider_d6d94d
+{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0
 }
 .shinyButton_fc8363
 {
@@ -9512,122 +9633,6 @@ html.decorate-links .lowSaturationUnderline__95e71
 		transform:translate3d(200%,0,0)
 	}
 	
-}
-.container__61999
-{
-	min-width:100%;
-	display:flex;
-	flex-direction:row
-}
-.stepContainer_ce1f7e
-{
-	width:100%;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:flex-start
-}
-.stepContainer_ce1f7e+.stepContainer_ce1f7e
-{
-	margin-left:8px
-}
-.progressBar__0a392
-{
-	margin-bottom:8px;
-	height:4px;
-	width:100%;
-	background-color:var(--text-muted);
-	border-radius:4px
-}
-.selectedProgressBar__10383
-{
-	background-color:var(--text-brand)
-}
-.enable-forced-colors .progressBar__0a392
-{
-	background-color:CanvasText
-}
-.enable-forced-colors .selectedProgressBar__10383
-{
-	background-color:Highlight
-}
-.wrapper__18aa1
-{
-	margin:0
-}
-.base__7ba63
-{
-	font-weight:600;
-	font-family:var(--font-display);
-	color:var(--header-primary)
-}
-.selectable__49dfb
-{
-	-webkit-user-select:text;
-	-moz-user-select:text;
-	user-select:text
-}
-.base__7ba63.muted__3d103
-{
-	color:var(--header-secondary)
-}
-.uppercase_e6572d
-{
-	text-transform:uppercase
-}
-.logo__7f9c8
-{
-	color:var(--header-primary)
-}
-.title__808ee
-{
-	font-size:17px
-}
-.header__32541
-{
-	display:flex;
-	align-items:center;
-	gap:8px
-}
-.transition__4df5e
-{
-	transition:transform.2s ease
-}
-.directionDown_d14df7
-{
-	transform:rotate3d(0,0,-1,0)
-}
-.directionRight__232ce
-{
-	transform:rotate3d(0,0,-1,90deg)
-}
-.directionLeft__7c310
-{
-	transform:rotate3d(0,0,-1,270deg)
-}
-.directionUp_cb88db
-{
-	transform:rotate3d(0,0,-1,180deg)
-}
-.left__6c5c8
-{
-	transform:rotate(270deg)
-}
-.right__309a5
-{
-	transform:rotate(90deg)
-}
-.down__0b7f6
-{
-	transform:rotate(180deg)
-}
-.downRight__403de
-{
-	transform:rotate(135deg)
-}
-.upLeft__51554
-{
-	transform:rotate(315deg)
 }
 .cardIcon__3476e
 {
@@ -23513,7 +23518,7 @@ button.button__4f306.disabled_dc5630
 {
 	width:260px;
 	position:absolute;
-	top:-131px;
+	bottom:-11px;
 	align-self:center;
 	z-index:1
 }
@@ -23523,7 +23528,8 @@ button.button__4f306.disabled_dc5630
 	background-size:100%calc(100% - 20px);
 	display:flex;
 	justify-content:center;
-	align-items:center
+	align-items:center;
+	position:relative
 }
 .closeButton_bf11e4
 {
