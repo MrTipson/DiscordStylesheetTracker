@@ -20249,7 +20249,7 @@ h6.title__7a3bb
 }
 .markdown_e76780
 {
-	font-size:1rem;
+	font-size:16px;
 	-webkit-user-select:text;
 	-moz-user-select:text;
 	user-select:text
@@ -23100,7 +23100,8 @@ strong
 	bottom:0;
 	right:0
 }
-button.button__4f306
+button.button__4f306,
+span.button__4f306
 {
 	line-height:0;
 	width:32px;
@@ -23112,12 +23113,14 @@ button.button__4f306
 	position:relative;
 	color:var(--interactive-normal)
 }
-button.button__4f306.enabled__470f0:hover
+button.button__4f306.enabled__470f0:hover,
+span.button__4f306.enabled__470f0:hover
 {
 	color:var(--interactive-hover);
 	background-color:var(--background-modifier-selected)
 }
-button.button__4f306.disabled_dc5630
+button.button__4f306.disabled_dc5630,
+span.button__4f306.disabled_dc5630
 {
 	opacity:.4
 }
