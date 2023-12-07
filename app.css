@@ -82917,10 +82917,13 @@ input::-webkit-inner-spin-button
 	display:flex;
 	justify-content:center;
 	width:100%;
-	height:390px;
 	border-radius:var(--radius-md);
 	overflow:hidden;
 	z-index:0
+}
+.previewContainerSetHeight__1e0a5
+{
+	height:390px
 }
 .previewContainerAnimation__32005
 {
@@ -84343,9 +84346,8 @@ input::-webkit-inner-spin-button
 .profileEffectShopPreview_b8d693
 {
 	position:relative;
-	height:120px;
-	width:200px;
-	top:-10px;
+	height:100%;
+	width:100%;
 	margin:0 auto
 }
 .productName_ece1e1
