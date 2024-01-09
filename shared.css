@@ -18136,9 +18136,16 @@ html.disable-forced-colors *
 	flex-direction:column;
 	margin-top:4px;
 	background-color:var(--background-secondary);
-	padding:12px;
+	border-radius:8px;
+	overflow:hidden;
+	margin-bottom:12px
+}
+.cardContent_fc7261
+{
+	display:flex;
+	flex-direction:column;
 	gap:8px;
-	border-radius:8px 8px 0 0
+	padding:12px
 }
 .cardHeader__60ecb
 {
@@ -18167,9 +18174,7 @@ html.disable-forced-colors *
 	flex-direction:row;
 	align-items:center;
 	background-color:var(--background-secondary-alt);
-	padding:4px;
-	border-radius:0 0 8px 8px;
-	margin-bottom:12px
+	padding:4px
 }
 .iconContainer_c66c93
 {
@@ -18278,6 +18283,32 @@ html.disable-forced-colors *
 {
 	display:flex!important;
 	flex-direction:row
+}
+.alertsEnabledSubHeader_d89186
+{
+	display:flex;
+	align-items:center;
+	gap:4px
+}
+.alertsEnabledSubHeaderAvatarUsername_f5fe74
+{
+	display:flex;
+	align-items:center;
+	cursor:pointer
+}
+.dotSeparatedRow__2d230
+{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	gap:4px
+}
+.dot__65d82
+{
+	width:4px;
+	height:4px;
+	background-color:var(--background-modifier-accent);
+	border-radius:50%
 }
 .channelNameChange__6b031
 {
@@ -20301,7 +20332,6 @@ h6.title__7a3bb
 	padding:.5em;
 	border-radius:4px;
 	-webkit-text-size-adjust:none;
-	-moz-text-size-adjust:none;
 	text-size-adjust:none;
 	color:var(--text-normal);
 	background:var(--background-secondary)
