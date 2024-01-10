@@ -31274,6 +31274,33 @@ html .progress__4ef76
 {
 	flex:1
 }
+.notice__6934b
+{
+	display:flex;
+	padding:8px 16px;
+	align-items:center;
+	justify-content:space-between;
+	background-color:var(--background-secondary-alt)
+}
+.info_b9d68d
+{
+	flex:1
+}
+.buttons_d1f537
+{
+	display:flex
+}
+.button_e2e738
+{
+	border-radius:8px;
+	padding:3px 8px
+}
+.buttonInner_d034a5
+{
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
 .chatHeaderBar__28ee6
 {
 	position:relative;
@@ -32943,8 +32970,8 @@ html .progress__4ef76
 .message__13e98
 {
 	font-weight:500;
-	font-size:16px;
-	line-height:20px;
+	font-size:1rem;
+	line-height:1.25rem;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	overflow:hidden
@@ -43050,14 +43077,9 @@ html .progress__4ef76
 	width:16px;
 	height:16px
 }
-.ring__452c3
+.tooltipText__03fc1
 {
-	border-radius:var(--radius-round);
-	outline:2px solid var(--status-positive-background);
-	background:var(--status-positive-background);
-	position:absolute;
-	width:100%;
-	height:100%
+	color:var(--white)
 }
 .pill_f4ac2f
 {
@@ -43068,6 +43090,22 @@ html .progress__4ef76
 .favoriteIcon_adf80e
 {
 	display:block
+}
+.ring__349e5
+{
+	box-sizing:border-box;
+	border-radius:var(--radius-round);
+	border-color:var(--status-positive-background);
+	border-style:solid;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+.ringActive_bb4059
+{
+	border-width:2px
 }
 .listItemWrapper__1f93b:active
 {
@@ -43232,6 +43270,22 @@ html .progress__4ef76
 {
 	background-color:Highlight;
 	outline:2px solid Canvas
+}
+.circleIconButton_aea38e
+{
+	cursor:pointer;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	box-sizing:border-box;
+	width:48px;
+	height:48px;
+	transition:color.15s ease-out,background-color.15s ease-out
+}
+.geoRestrictedBadge_c8de97
+{
+	background-color:var(--status-warning);
+	color:var(--black)
 }
 .progressContainer__7d5bb
 {
@@ -44050,7 +44104,7 @@ html .progress__4ef76
 }
 .iconWithGuildIcon__4461b
 {
-	background:var(--background-accent);
+	background:var(--bg-mod-strong);
 	border-radius:var(--radius-round);
 	color:var(--text-secondary);
 	height:12px;
@@ -44157,6 +44211,11 @@ html .progress__4ef76
 .modeMuted__0aeea .name__8d1ec
 {
 	color:var(--interactive-muted)
+}
+.modeMuted__0aeea .iconWithGuildIcon__4461b
+{
+	color:var(--text-muted);
+	background:var(--bg-mod-faint)
 }
 .theme-light.custom-theme-background .modeMuted__0aeea .icon_eff5d4,
 .theme-light.custom-theme-background .modeMuted__0aeea .name__8d1ec
@@ -59938,12 +59997,12 @@ html .progress__4ef76
 }
 .container__74da1
 {
+	position:relative;
 	flex:1;
 	display:flex;
 	flex-direction:column;
 	margin:0 auto;
-	align-items:center;
-	height:100%
+	align-items:center
 }
 .settingsHeroNoBackground__0cfbe
 {
@@ -60105,6 +60164,17 @@ html .progress__4ef76
 	left:10px;
 	transform:translatey(50%)
 }
+.bottomOfPageVisibilitySensor__201a9
+{
+	position:absolute;
+	bottom:0;
+	height:300px
+}
+.scroller_a1aadd
+{
+	background-color:var(--background-primary);
+	contain:layout size
+}
 .container__662c9
 {
 	display:flex;
@@ -60210,6 +60280,7 @@ html .progress__4ef76
 .container__6eaa3
 {
 	display:flex;
+	position:relative;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
@@ -60252,6 +60323,17 @@ html .progress__4ef76
 .heroHeading_a17887
 {
 	margin-bottom:16px
+}
+.bottomOfPageVisibilitySensor_ab7f4d
+{
+	position:absolute;
+	bottom:0;
+	height:300px
+}
+.mainPageScroller__12afb
+{
+	background-color:var(--background-primary);
+	contain:layout size
 }
 .container__9ecba
 {
@@ -60523,12 +60605,6 @@ html .progress__4ef76
 .theme-light .tier1StreamPerk__930b9
 {
 	color:#69974d
-}
-.bottomOfPageVisibilitySensor_ca9280
-{
-	position:absolute;
-	bottom:0;
-	height:300px
 }
 .socialLinks_c1fc99
 {
@@ -74369,11 +74445,6 @@ input::-webkit-inner-spin-button
 	width:100%;
 	margin:0 auto
 }
-.scroller__244e5
-{
-	background-color:var(--background-primary);
-	contain:layout size
-}
 .categoryHeader__46769
 {
 	display:flex;
@@ -74439,7 +74510,8 @@ input::-webkit-inner-spin-button
 .homeWrapper__59a03
 {
 	display:flex;
-	flex-direction:column
+	flex-direction:column;
+	position:relative
 }
 .homeWrapperNormal__6f127
 {
@@ -74464,12 +74536,6 @@ input::-webkit-inner-spin-button
 .headerBar_afb1ac
 {
 	transform:translatez(0)
-}
-.premiumContainer__2ebd0
-{
-	position:relative;
-	flex:1 1 auto;
-	margin:0 auto
 }
 .theme-dark .premiumApplicationsHeader_e2dd83,
 .theme-dark .categoryHeader__46769
@@ -92307,6 +92373,10 @@ html .tabBadge__002b3
 	flex-direction:row;
 	align-items:center;
 	white-space:nowrap
+}
+.upsellText__80136
+{
+	margin-left:8px
 }
 .tooltip_c91c10
 {
