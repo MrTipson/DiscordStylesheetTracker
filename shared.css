@@ -14755,6 +14755,43 @@ html.decorate-links .lowSaturationUnderline__95e71
 {
 	cursor:pointer
 }
+.copiableWrapper__9fc8c
+{
+	display:flex;
+	cursor:pointer
+}
+.childWrapper_d40a85
+{
+	flex:1
+}
+.copyIcon_e27399
+{
+	padding-top:4px;
+	padding-left:4px;
+	color:var(--header-secondary)
+}
+@media(hover:none)
+{
+	.copiableWrapper__9fc8c .copyIcon_e27399
+	{
+		display:block;
+		visibility:visible
+	}
+	
+}
+@media(hover:hover)
+{
+	.copiableWrapper__9fc8c .copyIcon_e27399
+	{
+		visibility:hidden
+	}
+	.clickTarget_eab467:hover .copyIcon_e27399,.keyboard-mode .clickTarget_eab467:focus .copyIcon_e27399
+	{
+		color:var(--header-secondary);
+		visibility:visible
+	}
+	
+}
 .container_de798d
 {
 	box-sizing:border-box;
