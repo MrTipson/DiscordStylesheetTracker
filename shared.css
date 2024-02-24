@@ -16730,10 +16730,6 @@ html.decorate-links .lowSaturationUnderline__95e71
 	position:absolute;
 	z-index:1000
 }
-.pictureInPictureWindowOverflow__3abe4
-{
-	overflow:hidden
-}
 .borderRadius__3965c
 {
 	border-radius:8px
@@ -16741,10 +16737,6 @@ html.decorate-links .lowSaturationUnderline__95e71
 .hidden__576d2
 {
 	display:none
-}
-.noBoxShadow_d45938
-{
-	box-shadow:none
 }
 html,
 [data-popout-root]
@@ -18545,8 +18537,6 @@ html.disable-forced-colors *
 {
 	width:100%;
 	height:100%;
-	display:flex;
-	flex-direction:column;
 	max-width:550px;
 	border-radius:8px;
 	overflow:hidden
@@ -28131,31 +28121,32 @@ span.button__4f306.disabled_dc5630
 }
 .cardHeaderImg_f6c932
 {
-	width:100%;
-	height:120px;
+	align-items:center;
+	background-color:var(--brand-400);
+	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center
+	display:flex;
+	height:187px;
+	justify-content:center;
+	width:100%
 }
-.cardTitleWrapper_c73f42
+.details_f03d10
 {
-	width:100%;
-	padding:16px;
-	box-sizing:border-box;
-	border-bottom:thin solid var(--background-modifier-accent)
+	align-items:flex-start;
+	align-self:stretch;
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	padding:16px
 }
-.cardTitleName__0e039
+.description_f818e8
 {
-	font-size:20px;
-	font-weight:var(--font-weight-extrabold);
-	line-height:20px
-}
-.cardTitleDesc__59fab
-{
-	padding-top:8px;
-	font-size:12px;
-	color:var(--primary-360);
-	line-height:16px
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	display:-webkit-box;
+	height:32px;
+	overflow:hidden
 }
 .cardPrice__92dbb
 {
@@ -28165,57 +28156,112 @@ span.button__4f306.disabled_dc5630
 	box-sizing:border-box;
 	align-items:center
 }
-.cardPriceLabel_eb2eee
+.footer__13718
 {
-	font-size:12px;
-	color:#dbdee1;
-	line-height:16px;
-	margin-top:5px
-}
-.cardBenefitsWrapper_d04abe
-{
+	align-items:center;
+	align-self:stretch;
+	border-top:1px solid var(--background-modifier-accent);
+	display:flex;
+	justify-content:space-between;
 	padding:16px
 }
-.cardBenefit_ed801c
+.container__34d9d
 {
-	width:100%;
+	align-items:flex-start;
+	align-self:stretch;
 	display:flex;
-	gap:16px;
-	padding:16px 0
+	flex-direction:column;
+	gap:24px
 }
-.cardBenefitTitle__98537
+.list__42144
 {
-	font-size:12px;
-	text-transform:uppercase;
-	font-weight:var(--font-weight-bold);
-	color:var(--primary-330)
+	align-items:flex-start;
+	align-self:stretch;
+	display:flex;
+	flex-direction:column;
+	gap:12px
 }
-@value iconSize: 24px;
-.cardBenefitIcon_ef7acc
+.benefit__6c606
 {
-	width:24px;
-	height:24px;
-	font-size:24px
+	align-items:center;
+	align-self:stretch;
+	display:flex;
+	gap:16px
 }
-.cardBenefitIcon_ef7acc img
+.button__4efed
 {
-	width:24px;
-	height:24px;
-	-o-object-fit:cover;
-	object-fit:cover
+	background:inherit;
+	padding:0
 }
-.cardBenefitName__3fac8
+.details_bebd21
 {
-	font-size:16px;
-	font-weight:var(--font-weight-semibold);
-	color:var(--primary-130);
-	line-height:20px
+	align-items:center;
+	cursor:pointer;
+	display:flex;
+	gap:4px
 }
-.cardBenefitDesc__61917
+.container_e318fa
 {
-	font-size:14px;
-	font-weight:var(--font-weight-medium);
-	line-height:18px;
-	color:var(--primary-330)
+	align-items:center;
+	background:var(--background-floating);
+	border-radius:12px;
+	display:inline-flex;
+	gap:4px;
+	padding:2px 8px
+}
+.container_a98e7e
+{
+	border-radius:8px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+	overflow:hidden
+}
+.image__2e834
+{
+	align-items:center;
+	background-color:var(--brand-experiment);
+	border-radius:100%;
+	display:flex;
+	flex-shrink:0;
+	height:80px;
+	justify-content:center;
+	overflow:hidden;
+	width:80px
+}
+.image__2e834 img
+{
+	height:80px;
+	width:80px
+}
+.description__6afbb
+{
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	display:-webkit-box;
+	height:36px;
+	overflow:hidden
+}
+.card__3135c
+{
+	align-items:center;
+	background:var(--background-modifier-active);
+	display:flex;
+	flex-direction:column;
+	gap:10px;
+	padding:16px
+}
+.body__1e5ed
+{
+	align-items:center;
+	align-self:stretch;
+	display:flex;
+	flex-direction:column;
+	gap:16px
+}
+.benefits_f2b1cc
+{
+	background:var(--background-modifier-hover);
+	padding:16px
 }
 
