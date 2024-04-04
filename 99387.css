@@ -7900,7 +7900,8 @@ html .invoiceCancelRow_aa7946
 	padding-bottom:12px
 }
 @value iconSize: 40px;
-.recentGames_e4425b
+.recentGames_e4425b,
+.recentGamesGrid_d370b2
 {
 	display:flex;
 	flex-direction:column;
@@ -41613,6 +41614,12 @@ html .progress__00e29
 	-moz-user-select:text;
 	user-select:text
 }
+.buttons__836c3
+{
+	display:flex;
+	align-items:center;
+	gap:8px
+}
 .questionContainer_cda91c
 {
 	margin-top:24px
@@ -41814,12 +41821,6 @@ html .progress__00e29
 {
 	display:flex;
 	flex-direction:column;
-	gap:8px
-}
-.buttons__15cf3
-{
-	display:flex;
-	align-items:center;
 	gap:8px
 }
 .image__8bdd3
@@ -48967,7 +48968,9 @@ html .progress__00e29
 }
 .contentImage__1c893
 {
-	border-radius:var(--radius-xs)
+	border-radius:var(--radius-xs);
+	-o-object-fit:contain;
+	object-fit:contain
 }
 .menu__8306d
 {
@@ -48979,6 +48982,46 @@ html .progress__00e29
 	max-width:32px;
 	display:flex;
 	align-items:center;
+	cursor:pointer
+}
+.messageHistory__7547c
+{
+	display:flex;
+	justify-content:flex-end;
+	flex-direction:column;
+	background:var(--background-primary);
+	position:relative;
+	height:300px;
+	margin-bottom:16px;
+	overflow:hidden
+}
+.messages_b7915b *
+{
+	overflow:hidden
+}
+.messages_b7915b ol>:last-child
+{
+	height:4px
+}
+.headerContainer__90e92
+{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:16px;
+	position:relative;
+	overflow:visible;
+	z-index:1;
+	box-shadow:0 4px 4px 0 hsl(var(--black-500-hsl)/.25)
+}
+.header__8fe3d
+{
+	display:flex;
+	align-items:center;
+	gap:6px
+}
+.closeIcon__622b1
+{
 	cursor:pointer
 }
 .popout_cfa8bc
@@ -49038,6 +49081,24 @@ html .progress__00e29
 .badgeContainer__67878
 {
 	padding:2px
+}
+.reactionContainerShareToChannel__318bd
+{
+	padding-bottom:16px;
+	background-color:var(--background-primary);
+	border-bottom-left-radius:var(--radius-md);
+	border-bottom-right-radius:var(--radius-md)
+}
+.emojiHotrailShareToChannel__16b9a
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:16px 28px
+}
+.inputContainerShareToChannel__8eca3
+{
+	padding:0 16px
 }
 .container__1ba51
 {
@@ -55435,8 +55496,8 @@ html .progress__00e29
 }
 .name__4eb92
 {
-	font-size:1rem;
-	line-height:1.25rem;
+	font-size:16px;
+	line-height:20px;
 	font-weight:500;
 	flex:1 1 auto
 }
@@ -57388,23 +57449,32 @@ html .progress__00e29
 	font-family:cursive;
 	color:var(--border-strong)
 }
-.overviewSidebarContent_b8b257
+.overviewSidebarWrapper__8ca7a
 {
 	padding:100px 76px 148px 64px;
 	position:relative;
-	display:flex;
-	flex-direction:column;
-	gap:24px;
 	width:380px;
+	display:flex;
 	overflow-x:hidden;
 	overflow-y:auto;
 	overflow:hidden auto
 }
+.overviewSidebarContent_b8b257
+{
+	display:flex;
+	flex-direction:column;
+	gap:24px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	overflow:hidden auto;
+	text-overflow:ellipsis;
+	scrollbar-width:none
+}
 .overviewText__01ee0
 {
 	font-family:serif;
-	text-overflow:ellipsis;
-	overflow:hidden
+	overflow:clip;
+	text-overflow:ellipsis
 }
 .overviewText__01ee0 strong
 {
@@ -64029,6 +64099,10 @@ html .progress__00e29
 	display:flex;
 	flex:0 0 auto;
 	justify-content:space-between
+}
+.questUnacceptedContent_bbaf94
+{
+	height:224px
 }
 .questAcceptedContent__6e04c .utils_db260c
 {
@@ -126639,7 +126713,10 @@ div.nagbar_c731ff
 {
 	margin-bottom:16px;
 	font-size:14px;
-	line-height:18px
+	line-height:18px;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:12px
 }
 .note__7a4f4
 {
