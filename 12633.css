@@ -20317,67 +20317,98 @@ span.clanTag_a31c43
 	height:4px;
 	border-radius:50%
 }
-:where(.button_f1cdcc).icon_f1cdcc,
-:where(.button_f1cdcc).banner_f1cdcc
+.tag_f2440e
 {
-	border-radius:var(--radius-round);
+	position:absolute;
+	margin-top:8px;
+	right:16px;
+	border-radius:4px
+}
+:where(.button_f9d37d).icon_f9d37d
+{
 	width:var(--custom-button-button-sm-height);
 	height:var(--custom-button-button-sm-height)
 }
-:where(.buttonInner_f1cdcc).text_f1cdcc
+:where(.button_f9d37d).hover_f9d37d,
+:where(.button_f9d37d).banner_f9d37d
+{
+	border-radius:var(--radius-round)
+}
+:where(.button_f9d37d).hover_f9d37d
+{
+	width:16px;
+	height:16px;
+	opacity:0
+}
+:where(.button_f9d37d).hover_f9d37d.visible_f9d37d,
+:where(.button_f9d37d).hover_f9d37d:focus-visible
+{
+	opacity:1
+}
+:not(.keyboard-mode).full-motion :where(.button_f9d37d).hover_f9d37d
+{
+	transition:opacity var(--custom-button-transition-duration)ease
+}
+:where(.buttonInner_f9d37d)
 {
 	display:flex;
 	align-items:center;
 	gap:4px
 }
-:where(.buttonInner_f1cdcc).icon_f1cdcc,
-:where(.buttonInner_f1cdcc).banner_f1cdcc
+:where(.buttonInner_f9d37d).icon_f9d37d
 {
 	min-width:16px;
 	min-height:16px;
 	max-width:16px;
 	max-height:16px
 }
-.color_f1cdcc.banner_f1cdcc
-{
-	background:hsl(var(--black-500-hsl)/.7);
-	color:var(--white-500)
-}
-.color_f1cdcc.banner_f1cdcc:hover,
-.color_f1cdcc.banner_f1cdcc:active
-{
-	background:hsl(var(--black-500-hsl)/.85)
-}
-.color_f1cdcc.banner_f1cdcc:disabled,
-.color_f1cdcc.banner_f1cdcc[aria-disabled=true]
-{
-	opacity:.5
-}
-.custom-profile-theme .color_f1cdcc.text_f1cdcc,
-.custom-profile-theme .color_f1cdcc.icon_f1cdcc
+.custom-profile-theme .color_f9d37d
 {
 	background:var(--profile-gradient-button-color);
 	color:var(--white-500);
 	transition:opacity.2s ease-in-out
 }
-.custom-profile-theme .color_f1cdcc.text_f1cdcc:hover,
-.custom-profile-theme .color_f1cdcc.icon_f1cdcc:hover
+.custom-profile-theme .color_f9d37d:hover
 {
 	background:var(--profile-gradient-button-color);
 	opacity:.8
 }
-.custom-profile-theme .color_f1cdcc.text_f1cdcc:active,
-.custom-profile-theme .color_f1cdcc.icon_f1cdcc:active
+.custom-profile-theme .color_f9d37d:active
 {
 	background:var(--profile-gradient-button-color);
 	opacity:.9
 }
-.custom-profile-theme .color_f1cdcc.text_f1cdcc:disabled,
-.custom-profile-theme .color_f1cdcc.text_f1cdcc[aria-disabled=true],
-.custom-profile-theme .color_f1cdcc.icon_f1cdcc:disabled,
-.custom-profile-theme .color_f1cdcc.icon_f1cdcc[aria-disabled=true]
+.custom-profile-theme .color_f9d37d:disabled,
+.custom-profile-theme .color_f9d37d[aria-disabled=true]
 {
 	background:var(--profile-gradient-button-color);
+	opacity:.5
+}
+.hoverColor_f9d37d
+{
+	color:var(--interactive-normal)
+}
+.hoverColor_f9d37d:hover
+{
+	color:var(--interactive-hover)
+}
+.hoverColor_f9d37d:active
+{
+	color:var(--interactive-active)
+}
+.bannerColor_f9d37d
+{
+	background:hsl(var(--black-500-hsl)/.7);
+	color:var(--white-500)
+}
+.bannerColor_f9d37d:hover,
+.bannerColor_f9d37d:active
+{
+	background:hsl(var(--black-500-hsl)/.85)
+}
+.bannerColor_f9d37d:disabled,
+.bannerColor_f9d37d[aria-disabled=true]
+{
 	opacity:.5
 }
 .wrapper_cb78f1
@@ -32980,31 +33011,7 @@ h3.improved_f017d0:after
 	background-color:var(--profile-gradient-button-color);
 	opacity:.5
 }
-.button_a80370
-{
-	width:16px;
-	height:16px;
-	opacity:0;
-	transition:opacity var(--custom-button-transition-duration)ease
-}
-.button_a80370.visible_a80370,
-.button_a80370:focus-visible
-{
-	opacity:1
-}
-.color_a80370
-{
-	color:var(--interactive-normal)
-}
-.color_a80370:hover
-{
-	color:var(--interactive-hover)
-}
-.color_a80370:active
-{
-	color:var(--interactive-active)
-}
-.tooltip_a80370
+.tooltip_a778ee
 {
 	max-width:224px
 }
@@ -33318,11 +33325,6 @@ h3.improved_f017d0:after
 	flex-direction:row;
 	gap:10px
 }
-.ctaTooltipContainer_dc0b43
-{
-	display:flex;
-	flex:1
-}
 .menuItemLabel_dc0b43
 {
 	display:flex;
@@ -33331,8 +33333,7 @@ h3.improved_f017d0:after
 .biteSizeIconButton_dc0b43
 {
 	height:38px;
-	width:38px;
-	border-radius:3px
+	width:38px
 }
 .biteSizeButton_dc0b43
 {
@@ -33340,8 +33341,6 @@ h3.improved_f017d0:after
 }
 .engagementExpButton_dc0b43
 {
-	display:flex;
-	flex:1;
 	background-color:var(--profile-gradient-button-color);
 	color:var(--white-500);
 	transition:opacity var(--custom-button-transition-duration)ease
@@ -39977,8 +39976,8 @@ html.disable-forced-colors *
 	--paypal-hsl:230 calc(var(--saturation-factor, 1) * 69.8%) 24.7%;
 	--playstation:hsl(var(--playstation-hsl) / 1);
 	--playstation-hsl:220 calc(var(--saturation-factor, 1) * 95.7%) 27.1%;
-	--plum-23-alpha:hsl(var(--plum-23-alpha-hsl) / 0.09);
-	--plum-23-alpha-hsl:230 calc(var(--saturation-factor, 1) * 60.7%) 78%;
+	--plum-23-alpha:hsl(var(--plum-23-alpha-hsl) / 0.1);
+	--plum-23-alpha-hsl:240 calc(var(--saturation-factor, 1) * 63.4%) 83.9%;
 	--plum-0:hsl(var(--plum-0-hsl) / 1);
 	--plum-0-hsl:240 calc(var(--saturation-factor, 1) * 9.1%) 97.8%;
 	--plum-1:hsl(var(--plum-1-hsl) / 1);
@@ -40589,7 +40588,7 @@ html.disable-forced-colors *
 	--icon-muted:var(--primary-400);
 	--icon-primary:var(--primary-130);
 	--icon-secondary:var(--primary-330);
-	--icon-transparent:hsl(var(--transparent-hsl) / 0.01);
+	--icon-transparent:hsl(var(--transparent-hsl) / 0);
 	--info-box-background:hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background:hsl(var(--red-400-hsl) / 0.1);
 	--info-danger-foreground:var(--red-400);
@@ -41309,8 +41308,8 @@ blue))and (top:var(--f))
 		);
 		--icon-transparent:color-mix(
 		in oklab,
-		hsl(var(--transparent-hsl) / 0.01) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%)
+		hsl(var(--transparent-hsl) / 0) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%)
 		);
 		--info-box-background:color-mix(
 		in oklab,
@@ -42206,7 +42205,7 @@ blue))and (top:var(--f))
 	--icon-muted:var(--primary-400);
 	--icon-primary:var(--primary-860);
 	--icon-secondary:var(--primary-500);
-	--icon-transparent:hsl(var(--transparent-hsl) / 0.01);
+	--icon-transparent:hsl(var(--transparent-hsl) / 0);
 	--info-box-background:hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background:hsl(var(--red-430-hsl) / 0.1);
 	--info-danger-foreground:var(--red-430);
@@ -42922,8 +42921,8 @@ blue))and (top:var(--f))
 		);
 		--icon-transparent:color-mix(
 		in oklab,
-		hsl(var(--transparent-hsl) / 0.01) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%)
+		hsl(var(--transparent-hsl) / 0) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%)
 		);
 		--info-box-background:color-mix(
 		in oklab,
@@ -43671,7 +43670,7 @@ blue))and (top:var(--f))
 	--background-message-hover:var(--plum-21);
 	--background-mobile-primary:var(--black);
 	--background-mobile-secondary:var(--black);
-	--background-modifier-accent:var(--plum-23-alpha);
+	--background-modifier-accent:hsl(var(--plum-23-alpha-hsl) / 0.1);
 	--background-modifier-accent-2:hsl(var(--plum-11-hsl) / 0.32);
 	--background-modifier-active:hsl(var(--plum-13-hsl) / 0.48);
 	--background-modifier-hover:hsl(var(--plum-13-hsl) / 0.3);
@@ -43811,7 +43810,7 @@ blue))and (top:var(--f))
 	--icon-muted:var(--plum-12);
 	--icon-primary:var(--plum-5);
 	--icon-secondary:var(--plum-9);
-	--icon-transparent:hsl(var(--transparent-hsl) / 0.01);
+	--icon-transparent:hsl(var(--transparent-hsl) / 0);
 	--info-box-background:hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background:hsl(var(--red-400-hsl) / 0.1);
 	--info-danger-foreground:var(--red-400);
@@ -43825,7 +43824,7 @@ blue))and (top:var(--f))
 	--info-warning-background:hsl(var(--yellow-300-hsl) / 0.1);
 	--info-warning-foreground:var(--yellow-300);
 	--info-warning-text:var(--white);
-	--input-background:var(--plum-23-alpha);
+	--input-background:hsl(var(--plum-23-alpha-hsl) / 0.1);
 	--input-focused-border:hsl(var(--plum-11-hsl) / 0.24);
 	--input-placeholder-text:var(--plum-9);
 	--interactive-active:var(--plum-3);
@@ -43910,7 +43909,7 @@ blue))and (top:var(--f))
 	--redesign-button-selected-background:hsl(var(--brand-500-hsl) / 0.24);
 	--redesign-button-selected-pressed-background:hsl(var(--brand-500-hsl) / 0.28);
 	--redesign-button-selected-text:var(--brand-500);
-	--redesign-button-tertiary-background:var(--plum-23-alpha);
+	--redesign-button-tertiary-background:hsl(var(--plum-23-alpha-hsl) / 0.1);
 	--redesign-button-tertiary-pressed-background:hsl(var(--plum-11-hsl) / 0.2);
 	--redesign-button-tertiary-pressed-text:var(--plum-6);
 	--redesign-button-tertiary-text:var(--plum-4);
@@ -43918,7 +43917,7 @@ blue))and (top:var(--f))
 	--redesign-channel-message-preview-text:var(--plum-10);
 	--redesign-channel-name-muted-text:var(--plum-10);
 	--redesign-channel-name-text:var(--plum-2);
-	--redesign-chat-input-background:var(--plum-23-alpha);
+	--redesign-chat-input-background:hsl(var(--plum-23-alpha-hsl) / 0.1);
 	--redesign-image-button-pressed-background:hsl(var(--black-hsl) / 0.08);
 	--redesign-input-control-active-bg:var(--plum-17);
 	--redesign-input-control-selected:var(--brand-500);
@@ -44072,8 +44071,8 @@ blue))and (top:var(--f))
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
-		var(--plum-23-alpha) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent-2:color-mix(
 		in oklab,
@@ -44527,8 +44526,8 @@ blue))and (top:var(--f))
 		);
 		--icon-transparent:color-mix(
 		in oklab,
-		hsl(var(--transparent-hsl) / 0.01) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%)
+		hsl(var(--transparent-hsl) / 0) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%)
 		);
 		--info-box-background:color-mix(
 		in oklab,
@@ -44597,8 +44596,8 @@ blue))and (top:var(--f))
 		);
 		--input-background:color-mix(
 		in oklab,
-		var(--plum-23-alpha) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%)
 		);
 		--input-focused-border:color-mix(
 		in oklab,
@@ -45022,8 +45021,8 @@ blue))and (top:var(--f))
 		);
 		--redesign-button-tertiary-background:color-mix(
 		in oklab,
-		var(--plum-23-alpha) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%)
 		);
 		--redesign-button-tertiary-pressed-background:color-mix(
 		in oklab,
@@ -45062,8 +45061,8 @@ blue))and (top:var(--f))
 		);
 		--redesign-chat-input-background:color-mix(
 		in oklab,
-		var(--plum-23-alpha) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-23-alpha-hsl) / 0.1) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1) var(--theme-base-color-amount, 0%)
 		);
 		--redesign-image-button-pressed-background:color-mix(
 		in oklab,
@@ -45424,7 +45423,7 @@ blue))and (top:var(--f))
 	--icon-muted:var(--plum-11);
 	--icon-primary:var(--plum-4);
 	--icon-secondary:var(--plum-9);
-	--icon-transparent:hsl(var(--transparent-hsl) / 0.01);
+	--icon-transparent:hsl(var(--transparent-hsl) / 0);
 	--info-box-background:hsl(var(--blue-345-hsl) / 0.1);
 	--info-danger-background:hsl(var(--red-400-hsl) / 0.1);
 	--info-danger-foreground:var(--red-400);
@@ -46144,8 +46143,8 @@ blue))and (top:var(--f))
 		);
 		--icon-transparent:color-mix(
 		in oklab,
-		hsl(var(--transparent-hsl) / 0.01) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.01) var(--theme-text-color-amount, 0%)
+		hsl(var(--transparent-hsl) / 0) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-text-color-amount, 0%)
 		);
 		--info-box-background:color-mix(
 		in oklab,
