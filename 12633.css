@@ -7191,6 +7191,10 @@ html.decorate-links .lowSaturationUnderline_c7819f
 	height:24px;
 	cursor:pointer
 }
+.container_cebd1c.disabled_cebd1c
+{
+	cursor:not-allowed
+}
 .input_cebd1c
 {
 	position:absolute;
@@ -7205,7 +7209,6 @@ html.decorate-links .lowSaturationUnderline_c7819f
 }
 .input_cebd1c[disabled]
 {
-	cursor:not-allowed;
 	pointer-events:none
 }
 .slider_cebd1c
@@ -7285,6 +7288,10 @@ html.decorate-links .lowSaturationUnderline_c7819f
 .note_ed1d57
 {
 	margin-top:8px
+}
+.disabledText_ed1d57
+{
+	margin-top:4px
 }
 .dividerDefault_ed1d57
 {
@@ -12936,6 +12943,14 @@ html.decorate-links .lowSaturationUnderline_c7819f
 	color:var(--white-500);
 	background-color:var(--brand-500)
 }
+.icon_efcc0c
+{
+	width:.5em;
+	height:.5em;
+	margin-left:4px;
+	margin-right:2px;
+	margin-bottom:1px
+}
 .icon_a89787
 {
 	width:.95rem;
@@ -16425,14 +16440,6 @@ html.decorate-links .lowSaturationUnderline_c7819f
 .icon_edc433
 {
 	margin-right:.1rem
-}
-.icon_efcc0c
-{
-	width:.5em;
-	height:.5em;
-	margin-left:4px;
-	margin-right:2px;
-	margin-bottom:1px
 }
 .tooltip_bea280
 {
@@ -23932,22 +23939,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	height:12px;
 	background-color:var(--premium-tier-2-purple)
 }
-.turnTransparent_e8f337.reducedMotion_e8f337
-{
-	opacity:1
-}
-.turnTransparent_e8f337:not(.reducedMotion_e8f337)
-{
-	animation:turnTransparentAnimation_e8f337 1s 4s forwards
-}
-@keyframes turnTransparentAnimation_e8f337
-{
-	to
-	{
-		opacity:0
-	}
-	
-}
 .premiumUnlockAnimation_e8f337
 {
 	position:absolute;
@@ -23992,7 +23983,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	gap:4px;
 	padding:4px 16px;
 	border-radius:14px;
-	background:linear-gradient(90deg,#b252a5 1.54%,#522247 51.78%,#1e1f22 106.77%);
+	background:var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 	box-shadow:0 0 4px 0 rgba(194,105,195,.6)inset;
 	opacity:0;
 	height:24px;
@@ -24331,18 +24322,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 {
 	position:sticky;
 	top:0
-}
-.categorySectionOpacityAnimation_a3bc57
-{
-	animation:opacityAnimation_a3bc57 1s 4s forwards
-}
-@keyframes opacityAnimation_a3bc57
-{
-	to
-	{
-		background:transparent
-	}
-	
 }
 .inactiveNitroHeader_a3bc57
 {
