@@ -23951,8 +23951,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 {
 	display:flex;
 	align-items:center;
-	padding:0 12px;
-	height:52px;
+	padding:12px;
 	border-radius:12px;
 	background:linear-gradient(var(--background-secondary),var(--background-secondary))padding-box,var(--custom-premium-colors-premium-gradient-tier-2-tri-color)border-box
 }
@@ -24721,6 +24720,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 .popover_a64b81:focus-within
 {
 	opacity:1
+}
+.reduce-motion .popover_a64b81
+{
+	pointer-events:all
 }
 .statusPopover_a64b81
 {
@@ -34976,7 +34979,7 @@ img.thumbnail_c64476
 	gap:8px
 }
 .section_ba4d80:empty,
-.section_ba4d80:has(>.heading_ba4d80:only-child)
+.section_ba4d80:has(>.headings_ba4d80:only-child)
 {
 	display:none
 }
@@ -35746,10 +35749,6 @@ img.thumbnail_c64476
 {
 	position:absolute;
 	z-index:1000
-}
-.pictureInPictureWindowFloatingPIP_e0c856
-{
-	z-index:1002
 }
 .borderRadius_e0c856
 {
@@ -42065,7 +42064,7 @@ html.disable-forced-colors *
 	--background-secondary-alt:var(--primary-660);
 	--background-tertiary:var(--primary-700);
 	--badge-brand-bg:var(--brand-260);
-	--badge-brand-text:var(--brand-500);
+	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.7);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--primary-600);
@@ -43703,7 +43702,7 @@ blue))and (top:var(--f))
 	--background-secondary-alt:var(--primary-160);
 	--background-tertiary:var(--primary-200);
 	--badge-brand-bg:var(--brand-260);
-	--badge-brand-text:var(--brand-500);
+	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.54);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--white);
@@ -43862,7 +43861,7 @@ blue))and (top:var(--f))
 	--live-stage-tile-border:hsl(var(--primary-430-hsl) / 0.15);
 	--logo-primary:var(--brand-500);
 	--mention-background:hsl(var(--brand-500-hsl) / 0.15);
-	--mention-foreground:var(--brand-500);
+	--mention-foreground:var(--brand-560);
 	--menu-item-danger-active-bg:var(--red-530);
 	--menu-item-danger-hover-bg:var(--red-430);
 	--menu-item-default-active-bg:var(--brand-560);
@@ -44689,7 +44688,7 @@ blue))and (top:var(--f))
 		);
 		--mention-foreground:color-mix(
 		in oklab,
-		var(--brand-500) 100%,
+		var(--brand-560) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--menu-item-danger-active-bg:color-mix(
@@ -45329,7 +45328,7 @@ blue))and (top:var(--f))
 	--background-secondary-alt:var(--plum-17);
 	--background-tertiary:var(--plum-19);
 	--badge-brand-bg:var(--brand-260);
-	--badge-brand-text:var(--brand-500);
+	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--plum-19-hsl) / 0.75);
 	--bg-backdrop-no-opacity:var(--plum-19);
 	--bg-base-primary:var(--black);
@@ -46963,7 +46962,7 @@ blue))and (top:var(--f))
 	--background-secondary-alt:var(--plum-15);
 	--background-tertiary:var(--plum-16);
 	--badge-brand-bg:var(--brand-260);
-	--badge-brand-text:var(--brand-500);
+	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.7);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--plum-20);
