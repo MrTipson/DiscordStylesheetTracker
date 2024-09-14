@@ -18491,6 +18491,9 @@ html.decorate-links .lowSaturationUnderline_c7819f
 }
 .otherEmojisContainer_e58351
 {
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
 	margin-top:4px
 }
 .otherEmoji_e58351
@@ -19819,6 +19822,11 @@ html.decorate-links .lowSaturationUnderline_c7819f
 	box-shadow:var(--shadow-low);
 	transform:translatey(-2px)scale(.99)
 }
+.clickableCard_e0fe28:active .card_e0fe28:has(.favoriteButton_e0fe28:hover)
+{
+	box-shadow:var(--shadow-high);
+	transform:translatey(-2px)
+}
 .card_e0fe28
 {
 	min-width:240px;
@@ -20081,6 +20089,46 @@ html.decorate-links .lowSaturationUnderline_c7819f
 .selectedTrait_e0fe28:active
 {
 	border-color:var(--border-strong)
+}
+.full-motion .animateButtonIn_e0fe28
+{
+	animation:pulseIn_e0fe28.3s
+}
+.full-motion .animateButtonOut_e0fe28
+{
+	animation:pulseOut_e0fe28.2s
+}
+@keyframes pulseIn_e0fe28
+{
+	0%
+	{
+		transform:scale(1)
+	}
+	50%
+	{
+		transform:scale(.9)
+	}
+	to
+	{
+		transform:scale(1)
+	}
+	
+}
+@keyframes pulseOut_e0fe28
+{
+	0%
+	{
+		transform:scale(1)
+	}
+	50%
+	{
+		transform:scale(.95)
+	}
+	to
+	{
+		transform:scale(1)
+	}
+	
 }
 .customButton_ff01f0
 {
@@ -20782,13 +20830,7 @@ div.cardContainer_c22357
 }
 .sponsorLogo_b3552d
 {
-	margin-bottom:4px;
-	width:80px
-}
-.sponsoredBy_b3552d
-{
-	color:rgba(255,255,255,.5);
-	margin-bottom:8px
+	width:144px
 }
 .headerImage_cf4d85
 {
@@ -35112,58 +35154,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	right:2px;
 	bottom:2px;
 	color:var(--brand-500)
-}
-.icon_e5a869
-{
-	position:relative;
-	width:32px;
-	height:32px;
-	display:flex;
-	align-items:center;
-	justify-content:center
-}
-.badge_e5a869
-{
-	position:absolute;
-	bottom:2px;
-	right:4px;
-	width:10px;
-	height:10px;
-	color:var(--header-secondary)
-}
-.container_e54bbe
-{
-	display:flex;
-	gap:16px;
-	justify-content:space-between;
-	width:100%
-}
-.content_e54bbe
-{
-	display:flex;
-	flex-direction:column;
-	flex-grow:1
-}
-.actions_e54bbe
-{
-	display:flex;
-	align-self:end;
-	gap:4px;
-	align-items:baseline;
-	margin:8px -4px -4px 0
-}
-.button_e54bbe
-{
-	cursor:pointer;
-	color:var(--interactive-normal)
-}
-.button_e54bbe:hover
-{
-	color:var(--interactive-hover)
-}
-.button_e54bbe:active
-{
-	color:var(--interactive-active)
 }
 .mirror_c11cdc
 {
