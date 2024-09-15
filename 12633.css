@@ -24283,6 +24283,10 @@ h3.improved_f017d0:after
 	gap:8px;
 	align-items:center
 }
+:where(.badgesContainer_d60c6d):empty
+{
+	display:none
+}
 .badgesContainerCard_d60c6d>:nth-child(n+3)
 {
 	display:none
@@ -47741,6 +47745,25 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--plum-17) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		)
+	}
+	
+}
+.visual-refresh.theme-light,
+.visual-refresh .theme-light
+{
+	--bg-mod-strong:hsl(var(--primary-400-hsl) / 0.24)
+}
+@supports(color:color-mix(in lch,
+red,
+blue))and (top:var(--f))
+{
+	.visual-refresh.theme-light,.visual-refresh .theme-light
+	{
+		--bg-mod-strong:color-mix(
+		in oklab,
+		hsl(var(--primary-400-hsl) / 0.24) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.24) var(--theme-base-color-amount, 0%)
 		)
 	}
 	
