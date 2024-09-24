@@ -9681,7 +9681,8 @@ html.decorate-links .lowSaturationUnderline_c7819f
 }
 .visual-refresh .container_fc4f04
 {
-	--__header-bar-background:var(--bg-base-primary)
+	--__header-bar-background:var(--bg-base-primary);
+	min-height:40px
 }
 .upperContainer_fc4f04
 {
@@ -9772,17 +9773,14 @@ html.decorate-links .lowSaturationUnderline_c7819f
 }
 .visual-refresh .icon_fc4f04
 {
-	width:20px;
-	height:20px
+	width:18px;
+	height:18px
 }
 .visual-refresh .iconWrapper_fc4f04
 {
 	display:flex;
 	align-items:center;
-	justify-content:center;
-	height:40px;
-	width:40px;
-	margin:0 2px
+	justify-content:center
 }
 .icon_fc4f04
 {
@@ -21383,7 +21381,8 @@ span.clanTag_a31c43
 .threadMessageAccessoryAvatar_f9f2ca,
 .replyAvatar_f9f2ca,
 .replyBadge_f9f2ca,
-.executedCommandAvatar_f9f2ca
+.executedCommandAvatar_f9f2ca,
+.replyChatIconContainer_f9f2ca
 {
 	flex:0 0 auto;
 	width:16px;
@@ -21509,6 +21508,31 @@ span.clanTag_a31c43
 {
 	font-weight:500;
 	color:var(--header-primary)
+}
+.executedCommand_f9f2ca .targetUsername_f9f2ca,
+.executedCommand_f9f2ca .repliedMessage_f9f2ca .username_f9f2ca
+{
+	flex-shrink:3;
+	text-overflow:ellipsis
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca
+{
+	margin-bottom:0;
+	min-width:40px;
+	padding-left:0
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca .username_f9f2ca
+{
+	margin-right:4px
+}
+.executedCommand_f9f2ca .repliedMessage_f9f2ca:before
+{
+	display:none
+}
+.executedCommandSeparator_f9f2ca
+{
+	flex-shrink:0;
+	margin-right:2px
 }
 .repliedTextPreview_f9f2ca,
 .threadMessageAccessoryPreview_f9f2ca
@@ -32977,8 +33001,8 @@ div.popoutCloseButton_d523a2:hover
 .image_d523a2
 {
 	position:absolute;
-	width:200px;
-	top:-40px
+	width:95px;
+	top:-75px
 }
 .buttonContainer_d523a2
 {
