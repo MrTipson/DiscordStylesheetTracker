@@ -13883,7 +13883,6 @@ html.decorate-links .lowSaturationUnderline_c7819f
 	background-size:cover;
 	background-position:center;
 	box-sizing:border-box;
-	border:1px solid rgba(255,139,13,.8);
 	transform:scale(1);
 	border-bottom-left-radius:17px;
 	border-bottom-right-radius:17px
@@ -24136,22 +24135,17 @@ h3.improved_f017d0:after
 	gap:4px;
 	align-items:center
 }
-.headerTags_ae1fa2
-{
-	display:flex;
-	gap:8px
-}
-.headerTags_ae1fa2:empty
+.headerContextMenu_ae1fa2:empty
 {
 	display:none
 }
-.headerTags_ae1fa2.absolute_ae1fa2
+.headerContextMenu_ae1fa2.absolute_ae1fa2
 {
 	position:absolute;
 	top:8px;
 	right:8px
 }
-.headerTags_ae1fa2.absolute_ae1fa2.panel_ae1fa2
+.headerContextMenu_ae1fa2.absolute_ae1fa2.panel_ae1fa2
 {
 	top:12px;
 	right:12px
@@ -44683,7 +44677,7 @@ blue))and (top:var(--f))
 	--bg-base-secondary:var(--black);
 	--bg-base-tertiary:var(--black);
 	--bg-brand:var(--brand-500);
-	--bg-mod-faint:hsl(var(--plum-11-hsl) / 0.08);
+	--bg-mod-faint:hsl(var(--plum-11-hsl) / 0.16);
 	--bg-mod-strong:hsl(var(--plum-11-hsl) / 0.18);
 	--bg-mod-subtle:hsl(var(--plum-11-hsl) / 0.12);
 	--bg-surface-overlay:var(--plum-19);
@@ -44691,9 +44685,9 @@ blue))and (top:var(--f))
 	--bg-surface-raised:var(--plum-23);
 	--blur-fallback:hsl(var(--plum-19-hsl) / 0.96);
 	--blur-fallback-pressed:hsl(var(--plum-20-hsl) / 0.96);
-	--border-faint:hsl(var(--plum-11-hsl) / 0.06);
+	--border-faint:hsl(var(--plum-11-hsl) / 0.08);
 	--border-strong:hsl(var(--plum-11-hsl) / 0.24);
-	--border-subtle:hsl(var(--plum-11-hsl) / 0.12);
+	--border-subtle:hsl(var(--plum-11-hsl) / 0.14);
 	--bug-reporter-modal-submitting-background:hsl(var(--plum-23-hsl) / 0.6);
 	--button-creator-revenue-background:var(--teal-430);
 	--button-danger-background:var(--red-430);
@@ -44900,12 +44894,12 @@ blue))and (top:var(--f))
 	--redesign-button-primary-pressed-background:var(--brand-560);
 	--redesign-button-primary-text:var(--white);
 	--redesign-button-secondary-background:var(--plum-17);
-	--redesign-button-secondary-border:hsl(var(--plum-11-hsl) / 0.12);
+	--redesign-button-secondary-border:hsl(var(--plum-11-hsl) / 0.14);
 	--redesign-button-secondary-overlay-background:hsl(var(--black-hsl) / 0.54);
 	--redesign-button-secondary-overlay-pressed-background:hsl(var(--black-hsl) / 0.64);
 	--redesign-button-secondary-overlay-text:var(--white);
 	--redesign-button-secondary-pressed-background:var(--plum-15);
-	--redesign-button-secondary-pressed-border:hsl(var(--plum-11-hsl) / 0.06);
+	--redesign-button-secondary-pressed-border:hsl(var(--plum-11-hsl) / 0.08);
 	--redesign-button-secondary-text:var(--plum-4);
 	--redesign-button-selected-background:hsl(var(--brand-500-hsl) / 0.24);
 	--redesign-button-selected-pressed-background:hsl(var(--brand-500-hsl) / 0.28);
@@ -45147,8 +45141,8 @@ blue))and (top:var(--f))
 		);
 		--bg-mod-faint:color-mix(
 		in oklab,
-		hsl(var(--plum-11-hsl) / 0.08) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-11-hsl) / 0.16) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.16) var(--theme-base-color-amount, 0%)
 		);
 		--bg-mod-strong:color-mix(
 		in oklab,
@@ -45187,8 +45181,8 @@ blue))and (top:var(--f))
 		);
 		--border-faint:color-mix(
 		in oklab,
-		hsl(var(--plum-11-hsl) / 0.06) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-11-hsl) / 0.08) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%)
 		);
 		--border-strong:color-mix(
 		in oklab,
@@ -45197,8 +45191,8 @@ blue))and (top:var(--f))
 		);
 		--border-subtle:color-mix(
 		in oklab,
-		hsl(var(--plum-11-hsl) / 0.12) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-11-hsl) / 0.14) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.14) var(--theme-base-color-amount, 0%)
 		);
 		--bug-reporter-modal-submitting-background:color-mix(
 		in oklab,
@@ -45987,8 +45981,8 @@ blue))and (top:var(--f))
 		);
 		--redesign-button-secondary-border:color-mix(
 		in oklab,
-		hsl(var(--plum-11-hsl) / 0.12) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-11-hsl) / 0.14) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.14) var(--theme-base-color-amount, 0%)
 		);
 		--redesign-button-secondary-overlay-background:color-mix(
 		in oklab,
@@ -46012,8 +46006,8 @@ blue))and (top:var(--f))
 		);
 		--redesign-button-secondary-pressed-border:color-mix(
 		in oklab,
-		hsl(var(--plum-11-hsl) / 0.06) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%)
+		hsl(var(--plum-11-hsl) / 0.08) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.08) var(--theme-base-color-amount, 0%)
 		);
 		--redesign-button-secondary-text:color-mix(
 		in oklab,
@@ -48940,10 +48934,6 @@ code
 	--custom-emoji-picker-constants-emoji-premium-upsell-height:54px;
 	--custom-emoji-picker-constants-emoji-premium-upsell-margin-top:16px;
 	--custom-emoji-picker-constants-newly-added-emoji-badge-height:16px
-}
-:root
-{
-	--custom-drop-redemption-modal-art-height:120px
 }
 :root
 {
