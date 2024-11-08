@@ -7943,6 +7943,24 @@ div.modalHeader_c5e09c
 	padding-left:4px;
 	top:2px
 }
+.icon_dd5a70
+{
+	width:16px;
+	height:16px
+}
+.sliderContainer_dd5a70
+{
+	min-width:188px;
+	display:flex;
+	padding:var(--spacing-12);
+	flex-direction:column;
+	background-color:var(--background-floating);
+	border-radius:var(--radius-sm)
+}
+.slider_dd5a70
+{
+	margin-bottom:calc(-1*var(--spacing-8))
+}
 .soundButtonWrapper_f40049
 {
 	list-style:none;
@@ -8377,6 +8395,10 @@ div.modalHeader_c5e09c
 {
 	border:1px solid rgba(255,255,255,.5);
 	background:var(--card-primary-pressed-bg)
+}
+.inlineButton_f38a29.playing_f38a29
+{
+	border:1px solid var(--button-outline-positive-border)
 }
 .inlineContainer_f38a29
 {
@@ -10634,14 +10656,6 @@ div.modalHeader_c5e09c
 	width:100%
 }
 .imageContent_cf58b5
-{
-	display:flex;
-	flex-flow:column nowrap;
-	flex:auto;
-	width:-moz-fit-content;
-	width:fit-content
-}
-.imageContentSafari_cf58b5
 {
 	display:flex;
 	flex-flow:column nowrap;
@@ -18118,6 +18132,97 @@ span.clanTag_a31c43
 {
 	background-image:var(--custom-default-gradient)
 }
+.timestamp_c5d1c1
+{
+	font-family:var(--font-code)
+}
+.timestamp_c5d1c1.bold_c5d1c1
+{
+	font-weight:700
+}
+.inlineTimestamp_c5d1c1
+{
+	display:inline
+}
+.badgeContainer_d60c6d
+{
+	display:flex;
+	gap:4px;
+	align-items:center;
+	overflow:hidden;
+	flex-shrink:0
+}
+.badgeContainer_d60c6d svg
+{
+	flex-shrink:0
+}
+.badgeContainer_d60c6d div
+{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden
+}
+.badgeLabel_d60c6d
+{
+	overflow-x:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+:where(.badgesContainer_d60c6d)
+{
+	display:flex;
+	gap:8px;
+	align-items:center
+}
+:where(.badgesContainer_d60c6d):empty
+{
+	display:none
+}
+.badgesContainerCard_d60c6d>:nth-child(n+3)
+{
+	display:none
+}
+.badgesContainerCard_d60c6d>:nth-child(2)
+{
+	flex-shrink:1
+}
+.badgesContainerPopout_d60c6d,
+.badgesContainerGameProfile_d60c6d
+{
+	flex-wrap:wrap;
+	row-gap:4px
+}
+.container_ba1926
+{
+	border-radius:8px;
+	padding:8px;
+	display:flex;
+	gap:12px;
+	width:400px;
+	height:80px;
+	align-items:center;
+	background:linear-gradient(90.89deg,#1f1a36 .17%,#4e334a 99.24%);
+	box-sizing:border-box
+}
+.avatar_ba1926
+{
+	border-radius:50%;
+	overflow:hidden
+}
+.title_ba1926
+{
+	color:var(--content-inventory-overlay-text-primary)
+}
+.gameTitle_ba1926
+{
+	color:#cbaa62
+}
+.gameTitleContainer_ba1926
+{
+	display:flex;
+	gap:6px;
+	align-items:center
+}
 .container_cf8a7d
 {
 	border-radius:8px
@@ -18160,9 +18265,24 @@ span.clanTag_a31c43
 	overflow:hidden;
 	position:relative
 }
+.userRow_cf8a7d .copyLinkContainer_cf8a7d
+{
+	display:none;
+	height:16px;
+	width:16px
+}
 .userRow_cf8a7d:hover
 {
 	background:var(--bg-overlay-5,var(--background-modifier-hover))
+}
+.userRow_cf8a7d:hover .copyLinkContainer_cf8a7d
+{
+	display:inline;
+	display:initial
+}
+.userRow_cf8a7d:hover .liveIcon_cf8a7d
+{
+	display:none
 }
 .rankChangeIndicator_cf8a7d
 {
@@ -18228,6 +18348,29 @@ span.clanTag_a31c43
 	position:relative;
 	top:2px;
 	left:2px
+}
+.copySpinner_cf8a7d
+{
+	width:16px
+}
+.copyLink_cf8a7d
+{
+	cursor:pointer;
+	color:red
+}
+.badgesContainer_cf8a7d
+{
+	display:flex;
+	gap:8px
+}
+.copySpinner_cf8a7d
+{
+	width:16px;
+	height:16px
+}
+.copySpinner_cf8a7d circle
+{
+	stroke:var(--interactive-normal)
 }
 .popout_b245a4
 {
@@ -18526,6 +18669,52 @@ span.clanTag_a31c43
 	filter:saturate(1);
 	filter:saturate(var(--saturation-factor,1))
 }
+.largeCountdownPill_aa13b8
+{
+	display:flex;
+	justify-content:center
+}
+.largeCountdownPillText_aa13b8
+{
+	font-weight:800;
+	display:inline-block;
+	padding:8px 16px;
+	color:var(--custom-premium-colors-banner-yellow);
+	background-color:rgba(255,255,255,.1);
+	border-radius:20px;
+	font-size:14px;
+	line-height:16px
+}
+.unavailableCounterContainer_e57ea2
+{
+	display:flex;
+	justify-content:center
+}
+.unavailableCounterPill_e57ea2
+{
+	display:inline-flex;
+	border:1px solid var(--white);
+	padding:0 20px;
+	border-radius:57px;
+	justify-content:center;
+	align-items:center
+}
+.unavailableCounterPillText_e57ea2
+{
+	margin:20px 0;
+	line-height:8px
+}
+.countDownText_e57ea2
+{
+	padding:5px 12px;
+	margin-left:8px
+}
+.tooltip_e57ea2
+{
+	text-align:center;
+	width:215px;
+	max-width:215px
+}
 .guildStatus_cbe7a3
 {
 	margin-bottom:50px;
@@ -18661,6 +18850,10 @@ span.clanTag_a31c43
 	height:16px;
 	margin-right:8px;
 	width:16px
+}
+.FPContainer_cbe7a3
+{
+	margin-bottom:23px
 }
 .wrapper_e55051
 {
@@ -20262,66 +20455,6 @@ h3.improved_f017d0:after
 	cursor:pointer;
 	margin-right:4px
 }
-.timestamp_c5d1c1
-{
-	font-family:var(--font-code)
-}
-.timestamp_c5d1c1.bold_c5d1c1
-{
-	font-weight:700
-}
-.inlineTimestamp_c5d1c1
-{
-	display:inline
-}
-.badgeContainer_d60c6d
-{
-	display:flex;
-	gap:4px;
-	align-items:center;
-	overflow:hidden;
-	flex-shrink:0
-}
-.badgeContainer_d60c6d svg
-{
-	flex-shrink:0
-}
-.badgeContainer_d60c6d div
-{
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	overflow:hidden
-}
-.badgeLabel_d60c6d
-{
-	overflow-x:hidden;
-	text-overflow:ellipsis;
-	white-space:nowrap
-}
-:where(.badgesContainer_d60c6d)
-{
-	display:flex;
-	gap:8px;
-	align-items:center
-}
-:where(.badgesContainer_d60c6d):empty
-{
-	display:none
-}
-.badgesContainerCard_d60c6d>:nth-child(n+3)
-{
-	display:none
-}
-.badgesContainerCard_d60c6d>:nth-child(2)
-{
-	flex-shrink:1
-}
-.badgesContainerPopout_d60c6d,
-.badgesContainerGameProfile_d60c6d
-{
-	flex-wrap:wrap;
-	row-gap:4px
-}
 .nameTag_cd0810
 {
 	display:flex;
@@ -20616,6 +20749,12 @@ h3.improved_f017d0:after
 {
 	pointer-events:all
 }
+.popover_cf8aee div:last-child .button_cf8aee
+{
+	padding-right:6px;
+	border-radius:6px 100px 100px 6px;
+	margin-right:0
+}
 .activityPopover_cf8aee
 {
 	right:8px
@@ -20675,12 +20814,8 @@ h3.improved_f017d0:after
 .button_cf8aee.left_cf8aee
 {
 	padding-left:6px;
-	border-radius:100px 6px 6px 100px
-}
-.button_cf8aee.right_cf8aee
-{
-	padding-right:6px;
-	border-radius:6px 100px 100px 6px
+	border-radius:100px 6px 6px 100px;
+	margin-right:0
 }
 .button_cf8aee:hover
 {
@@ -28341,6 +28476,57 @@ div.popoutCloseButton_d523a2:hover
 {
 	margin-left:-28px
 }
+.activityCoachmark_a3e4b5
+{
+	width:210px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:12px 8px
+}
+.avatarCoachmark_a3e4b5
+{
+	width:210px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:40px 8px 12px
+}
+.profileCoachmark_a3e4b5
+{
+	width:210px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:54px 8px 12px
+}
+.statusCoachmark_a3e4b5
+{
+	width:210px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:0 8px 12px
+}
+.tooltipHeader_a3e4b5
+{
+	font-size:14px;
+	font-style:normal;
+	font-weight:700;
+	line-height:18px
+}
+.avatarImage_a3e4b5
+{
+	position:absolute;
+	left:27px;
+	top:-38px
+}
+.profileImage_a3e4b5
+{
+	position:absolute;
+	left:27px;
+	top:-25px
+}
 .heading-sm\/normal_ec1c2d
 {
 	font-family:var(--font-display);
@@ -29785,49 +29971,6 @@ div.popoutCloseButton_d523a2:hover
 	left:0;
 	width:100%;
 	position:absolute
-}
-.avatarCoachmark_a3e4b5
-{
-	width:210px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	padding:40px 8px 12px
-}
-.profileCoachmark_a3e4b5
-{
-	width:210px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	padding:54px 8px 12px
-}
-.statusCoachmark_a3e4b5
-{
-	width:210px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	padding:0 8px 12px
-}
-.tooltipHeader_a3e4b5
-{
-	font-size:14px;
-	font-style:normal;
-	font-weight:700;
-	line-height:18px
-}
-.avatarImage_a3e4b5
-{
-	position:absolute;
-	left:27px;
-	top:-38px
-}
-.profileImage_a3e4b5
-{
-	position:absolute;
-	left:27px;
-	top:-25px
 }
 .background_d22603
 {
@@ -44945,6 +45088,7 @@ html.disable-forced-colors *
 	--badge-brand-bg:var(--brand-260);
 	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.7);
+	--bg-backdrop-immersive:hsl(var(--black-hsl) / 0.85);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--primary-600);
 	--bg-base-secondary:var(--primary-630);
@@ -45430,6 +45574,11 @@ blue))and (top:var(--f))
 		in oklab,
 		hsl(var(--black-hsl) / 0.7) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%)
+		);
+		--bg-backdrop-immersive:color-mix(
+		in oklab,
+		hsl(var(--black-hsl) / 0.85) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.85) var(--theme-base-color-amount, 0%)
 		);
 		--bg-backdrop-no-opacity:color-mix(
 		in oklab,
@@ -46649,6 +46798,7 @@ blue))and (top:var(--f))
 	--badge-brand-bg:var(--brand-260);
 	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.54);
+	--bg-backdrop-immersive:hsl(var(--black-hsl) / 0.8);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--white);
 	--bg-base-secondary:var(--primary-130);
@@ -47130,6 +47280,11 @@ blue))and (top:var(--f))
 		in oklab,
 		hsl(var(--black-hsl) / 0.54) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.54) var(--theme-base-color-amount, 0%)
+		);
+		--bg-backdrop-immersive:color-mix(
+		in oklab,
+		hsl(var(--black-hsl) / 0.8) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.8) var(--theme-base-color-amount, 0%)
 		);
 		--bg-backdrop-no-opacity:color-mix(
 		in oklab,
@@ -48341,6 +48496,7 @@ blue))and (top:var(--f))
 	--badge-brand-bg:var(--brand-260);
 	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--plum-19-hsl) / 0.75);
+	--bg-backdrop-immersive:hsl(var(--plum-19-hsl) / 0.9);
 	--bg-backdrop-no-opacity:var(--plum-19);
 	--bg-base-primary:var(--black);
 	--bg-base-secondary:var(--black);
@@ -48822,6 +48978,11 @@ blue))and (top:var(--f))
 		in oklab,
 		hsl(var(--plum-19-hsl) / 0.75) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.75) var(--theme-base-color-amount, 0%)
+		);
+		--bg-backdrop-immersive:color-mix(
+		in oklab,
+		hsl(var(--plum-19-hsl) / 0.9) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.9) var(--theme-base-color-amount, 0%)
 		);
 		--bg-backdrop-no-opacity:color-mix(
 		in oklab,
@@ -50041,6 +50202,7 @@ blue))and (top:var(--f))
 	--badge-brand-bg:var(--brand-260);
 	--badge-brand-text:var(--brand-560);
 	--bg-backdrop:hsl(var(--black-hsl) / 0.7);
+	--bg-backdrop-immersive:hsl(var(--black-hsl) / 0.85);
 	--bg-backdrop-no-opacity:var(--black);
 	--bg-base-primary:var(--plum-20);
 	--bg-base-secondary:var(--plum-20);
@@ -50526,6 +50688,11 @@ blue))and (top:var(--f))
 		in oklab,
 		hsl(var(--black-hsl) / 0.7) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.7) var(--theme-base-color-amount, 0%)
+		);
+		--bg-backdrop-immersive:color-mix(
+		in oklab,
+		hsl(var(--black-hsl) / 0.85) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.85) var(--theme-base-color-amount, 0%)
 		);
 		--bg-backdrop-no-opacity:color-mix(
 		in oklab,
@@ -55656,7 +55823,8 @@ code
 	to right,
 	var(--premium-tier-2-purple),
 	var(--premium-tier-2-pink)
-	)
+	);
+	--custom-premium-colors-banner-yellow:rgb(255, 234, 160)
 }
 :root
 {
