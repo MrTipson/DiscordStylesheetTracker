@@ -8516,10 +8516,9 @@ div.modalHeader_c5e09c
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
-	height:200%;
-	width:200%;
-	opacity:1;
-	z-index:1
+	height:190%;
+	width:190%;
+	opacity:1
 }
 .glowVideo_ef18ee
 {
@@ -11427,6 +11426,10 @@ div.modalHeader_c5e09c
 	background-color:var(--background-secondary-alt);
 	align-items:start
 }
+.infoExpandedGuildInfo_dd5a70
+{
+	width:100%
+}
 .infoExpandedGuildTitle_dd5a70
 {
 	align-self:flex-start
@@ -11491,6 +11494,10 @@ div.modalHeader_c5e09c
 	width:1em;
 	position:relative;
 	top:2px
+}
+.tooltip_f38a29
+{
+	border-radius:var(--radius-sm)
 }
 .tooltipContainer_f38a29
 {
@@ -11949,6 +11956,93 @@ div.modalHeader_c5e09c
 	mask-repeat:no-repeat;
 	margin-right:-6px
 }
+.gameImageContainer_d987e8
+{
+	position:relative;
+	width:24px;
+	height:24px;
+	border-radius:4px;
+	border:1.5px solid transparent
+}
+.highlighted_d987e8
+{
+	background-color:var(--border-strong);
+	border-radius:5px
+}
+.extraGameCount_d987e8
+{
+	position:absolute;
+	width:24px;
+	height:24px;
+	background-color:var(--bg-backdrop);
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:4px
+}
+.gameActivityLevel_d987e8
+{
+	position:absolute;
+	top:-4px;
+	right:-4px;
+	border-radius:50%;
+	background-color:var(--background-tertiary);
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+.gameActivityLevelInner_d987e8
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:10px;
+	height:10px;
+	padding:2px
+}
+.gameImage_d987e8
+{
+	width:24px;
+	height:24px;
+	border-radius:4px
+}
+.tooltipText_d987e8
+{
+	text-align:center
+}
+.tooltipGameImageContainer_d987e8
+{
+	width:16px;
+	height:16px;
+	flex:0 0 16px
+}
+.tooltipGameImage_d987e8
+{
+	width:16px;
+	height:16px;
+	border-radius:4px
+}
+.tooltipGameName_d987e8
+{
+	flex:1
+}
+.tooltipGames_d987e8
+{
+	display:flex;
+	flex-direction:column;
+	gap:8px
+}
+.tooltipGame_d987e8
+{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	gap:8px
+}
 .guildIconImage_a2e41e
 {
 	width:100%;
@@ -12028,153 +12122,7 @@ div.modalHeader_c5e09c
 {
 	border-color:var(--brand-500)
 }
-@keyframes placeholderPulse_d82d0d
-{
-	0%
-	{
-		opacity:.2
-	}
-	50%
-	{
-		opacity:.5
-	}
-	to
-	{
-		opacity:.2
-	}
-	
-}
-.placeholderSkeleton_d82d0d
-{
-	border-radius:8px;
-	background:var(--bg-mod-faint);
-	opacity:.2;
-	animation:placeholderPulse_d82d0d 3s ease-in-out infinite
-}
-.gameImageContainer_fda254
-{
-	position:relative;
-	width:24px;
-	height:24px;
-	border-radius:4px;
-	border:1.5px solid transparent
-}
-.highlighted_fda254
-{
-	background-color:var(--border-strong);
-	border-radius:5px
-}
-.extraGameCount_fda254
-{
-	position:absolute;
-	width:24px;
-	height:24px;
-	background-color:var(--bg-backdrop);
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	border-radius:4px
-}
-.gameActivityLevel_fda254
-{
-	position:absolute;
-	top:-4px;
-	right:-4px;
-	border-radius:50%;
-	background-color:var(--background-tertiary);
-	display:flex;
-	justify-content:center;
-	align-items:center
-}
-.gameActivityLevelInner_fda254
-{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width:10px;
-	height:10px;
-	padding:2px
-}
-.gameImage_fda254
-{
-	width:24px;
-	height:24px;
-	border-radius:4px
-}
-.tooltipText_fda254
-{
-	text-align:center
-}
-.tooltipGameImageContainer_fda254
-{
-	width:16px;
-	height:16px;
-	flex:0 0 16px
-}
-.tooltipGameImage_fda254
-{
-	width:16px;
-	height:16px;
-	border-radius:4px
-}
-.tooltipGameName_fda254
-{
-	flex:1
-}
-.tooltipGames_fda254
-{
-	display:flex;
-	flex-direction:column;
-	gap:8px
-}
-.tooltipGame_fda254
-{
-	display:flex;
-	flex-direction:row;
-	align-items:center;
-	gap:8px
-}
-.container_d1e805
-{
-	width:100%;
-	position:relative
-}
-.items_d1e805
-{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap
-}
-.itemMeasurements_d1e805
-{
-	display:flex
-}
-.overflowMeasurement_d1e805
-{
-	display:inline-block
-}
-.measurements_d1e805
-{
-	visibility:hidden;
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	pointer-events:none;
-	z-index:-1
-}
-.tooltip_d1e805
-{
-	display:flex;
-	flex-wrap:wrap;
-	gap:4px
-}
-.clickableCard_e0fe28
+.clickableCard_c9a4c0
 {
 	border-radius:8px;
 	cursor:pointer;
@@ -12184,31 +12132,31 @@ div.modalHeader_c5e09c
 	width:100%;
 	height:400px
 }
-.clickableCard_e0fe28:hover .card_e0fe28
+.clickableCard_c9a4c0:hover .card_c9a4c0
 {
 	box-shadow:var(--shadow-high);
 	transform:translatey(-2px)
 }
-.clickableCard_e0fe28:active .card_e0fe28
+.clickableCard_c9a4c0:active .card_c9a4c0
 {
 	box-shadow:var(--shadow-low);
 	transform:translatey(-2px)scale(.99)
 }
-.clickableCard_e0fe28:active .card_e0fe28:has(.favoriteButton_e0fe28:hover)
+.clickableCard_c9a4c0:active .card_c9a4c0:has(.favoriteButton_c9a4c0:hover)
 {
 	box-shadow:var(--shadow-high);
 	transform:translatey(-2px)
 }
-.applyToJoinButton_e0fe28
+.applyToJoinButton_c9a4c0
 {
 	padding:12px;
 	padding-top:0
 }
-.applyToJoinContainer_e0fe28
+.applyToJoinContainer_c9a4c0
 {
 	height:427px!important
 }
-.card_e0fe28
+.card_c9a4c0
 {
 	min-width:240px;
 	max-width:500px;
@@ -12221,16 +12169,16 @@ div.modalHeader_c5e09c
 	flex-direction:column;
 	box-sizing:border-box
 }
-.full-motion .card_e0fe28
+.full-motion .card_c9a4c0
 {
 	transition:transform.2s,box-shadow.1s
 }
-.skeletonCard_e0fe28
+.skeletonCard_c9a4c0
 {
 	height:100%;
 	background-color:var(--bg-base-tertiary)
 }
-.favoriteButton_e0fe28
+.favoriteButton_c9a4c0
 {
 	position:absolute;
 	top:12px;
@@ -12244,53 +12192,53 @@ div.modalHeader_c5e09c
 	opacity:0;
 	transition:opacity.2s ease-in-out,background-color 64ms ease-in-out
 }
-.shownFavoriteButton_e0fe28
+.shownFavoriteButton_c9a4c0
 {
 	opacity:1
 }
-.favoriteButton_e0fe28:hover,
-.favoriteButton_e0fe28:active
+.favoriteButton_c9a4c0:hover,
+.favoriteButton_c9a4c0:active
 {
 	background-color:var(--bg-surface-raised)
 }
-.cardStaticHeight_e0fe28
+.cardStaticHeight_c9a4c0
 {
 	height:400px
 }
-.header_e0fe28
+.header_c9a4c0
 {
 	position:relative
 }
-.clanIconMask_e0fe28
+.clanIconMask_c9a4c0
 {
 	position:absolute;
 	width:70px;
 	height:70px;
 	top:-51px
 }
-.clanIconInner_e0fe28
+.clanIconInner_c9a4c0
 {
 	background-color:var(--bg-surface-overlay);
 	padding:3px
 }
-.skeletonIconInner_e0fe28
+.skeletonIconInner_c9a4c0
 {
 	background-color:var(--bg-base-tertiary);
 	padding:3px;
 	overflow:hidden;
 	border-radius:12px
 }
-.skeletonIcon_e0fe28
+.skeletonIcon_c9a4c0
 {
 	border-radius:16px
 }
-.clanBadge_e0fe28
+.clanBadge_c9a4c0
 {
 	position:absolute;
 	right:12px;
 	top:12px
 }
-.cardBrandingHeader_e0fe28
+.cardBrandingHeader_c9a4c0
 {
 	display:flex;
 	justify-content:center;
@@ -12299,17 +12247,17 @@ div.modalHeader_c5e09c
 	height:100px;
 	width:100%
 }
-.clanBannerPreview_e0fe28
+.clanBannerPreview_c9a4c0
 {
 	height:98px;
 	margin-top:-2px
 }
-.cardBrandingFooter_e0fe28
+.cardBrandingFooter_c9a4c0
 {
 	height:8px;
 	width:100%
 }
-.headerBadge_e0fe28
+.headerBadge_c9a4c0
 {
 	position:absolute;
 	top:12px;
@@ -12321,7 +12269,7 @@ div.modalHeader_c5e09c
 	padding:4px 8px;
 	border-radius:12px
 }
-.cardContent_e0fe28
+.cardContent_c9a4c0
 {
 	padding:12px;
 	display:flex;
@@ -12329,31 +12277,31 @@ div.modalHeader_c5e09c
 	gap:8px;
 	flex:1
 }
-.cardContentTitleSection_e0fe28
+.cardContentTitleSection_c9a4c0
 {
 	flex:0 0 auto
 }
-.cardContentDescriptionSection_e0fe28
+.cardContentDescriptionSection_c9a4c0
 {
 	flex:1 1 auto
 }
-.cardContentDescriptionCollapsed_e0fe28
+.cardContentDescriptionCollapsed_c9a4c0
 {
 	max-height:64px
 }
-.cardNameAndTagWrapper_e0fe28
+.cardNameAndTagWrapper_c9a4c0
 {
 	position:relative;
 	width:100%;
 	margin-bottom:8px
 }
-.clanTagChipletWrapper_e0fe28
+.clanTagChipletWrapper_c9a4c0
 {
 	display:flex;
 	justify-content:flex-end;
 	width:100%
 }
-.clanTagChiplet_e0fe28
+.clanTagChiplet_c9a4c0
 {
 	display:flex;
 	gap:4px;
@@ -12364,15 +12312,15 @@ div.modalHeader_c5e09c
 	padding:2px 6px;
 	transition:border-color.2s ease-in-out
 }
-.clanTagChiplet_e0fe28:hover
+.clanTagChiplet_c9a4c0:hover
 {
 	border-color:var(--border-strong)
 }
-.playstyle_e0fe28
+.playstyle_c9a4c0
 {
 	color:var(--role-orange)
 }
-.traitsContainer_e0fe28
+.traitsContainer_c9a4c0
 {
 	height:52px;
 	flex:0 0 auto;
@@ -12382,7 +12330,7 @@ div.modalHeader_c5e09c
 	gap:4px;
 	padding:8px 0 0
 }
-.thinTrait_e0fe28
+.thinTrait_c9a4c0
 {
 	padding:4px 8px;
 	gap:4px;
@@ -12390,7 +12338,7 @@ div.modalHeader_c5e09c
 	height:24px;
 	box-sizing:border-box
 }
-.cardFooter_e0fe28
+.cardFooter_c9a4c0
 {
 	display:flex;
 	justify-content:space-between;
@@ -12399,46 +12347,46 @@ div.modalHeader_c5e09c
 	border-top:1px solid var(--border-subtle);
 	min-height:24px
 }
-.cardFooterInfo_e0fe28
+.cardFooterInfo_c9a4c0
 {
 	display:flex;
 	flex-direction:column;
 	gap:4px
 }
-.cardFooterMembers_e0fe28
+.cardFooterMembers_c9a4c0
 {
 	display:flex;
 	gap:4px;
 	align-items:center
 }
-.cardFooterMembersIcon_e0fe28
+.cardFooterMembersIcon_c9a4c0
 {
 	width:12px;
 	height:12px;
 	color:var(--text-secondary)
 }
-.cardFooterGames_e0fe28
+.cardFooterGames_c9a4c0
 {
 	display:flex;
 	gap:2px
 }
-.overflowTooltip_e0fe28
+.overflowTooltip_c9a4c0
 {
 	display:flex;
 	flex-wrap:wrap;
 	gap:4px
 }
-.clanInfoRow_e0fe28
+.clanInfoRow_c9a4c0
 {
 	display:flex;
 	gap:4px;
 	align-items:center
 }
-.clanInfoItem_e0fe28
+.clanInfoItem_c9a4c0
 {
 	flex:0 0 auto
 }
-.wildCardText_e0fe28
+.wildCardText_c9a4c0
 {
 	white-space:nowrap;
 	overflow:hidden;
@@ -12447,39 +12395,39 @@ div.modalHeader_c5e09c
 	font-size:12px;
 	font-weight:600
 }
-.nameText_e0fe28
+.nameText_c9a4c0
 {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	display:block
 }
-.bannerImage_e0fe28
+.bannerImage_c9a4c0
 {
 	width:100%;
 	height:100%;
 	-o-object-fit:cover;
 	object-fit:cover
 }
-.selectedTrait_e0fe28
+.selectedTrait_c9a4c0
 {
 	border-color:var(--border-strong);
 	background:var(--bg-surface-raised)
 }
-.selectedTrait_e0fe28:hover,
-.selectedTrait_e0fe28:active
+.selectedTrait_c9a4c0:hover,
+.selectedTrait_c9a4c0:active
 {
 	border-color:var(--border-strong)
 }
-.full-motion .animateButtonIn_e0fe28
+.full-motion .animateButtonIn_c9a4c0
 {
-	animation:pulseIn_e0fe28.3s
+	animation:pulseIn_c9a4c0.3s
 }
-.full-motion .animateButtonOut_e0fe28
+.full-motion .animateButtonOut_c9a4c0
 {
-	animation:pulseOut_e0fe28.2s
+	animation:pulseOut_c9a4c0.2s
 }
-@keyframes pulseIn_e0fe28
+@keyframes pulseIn_c9a4c0
 {
 	0%
 	{
@@ -12495,7 +12443,7 @@ div.modalHeader_c5e09c
 	}
 	
 }
-@keyframes pulseOut_e0fe28
+@keyframes pulseOut_c9a4c0
 {
 	0%
 	{
@@ -14034,6 +13982,10 @@ div.cardContainer_c22357
 .freeTrialPill_c87d73.freeTrialPillTier2GradientFill_c87d73
 {
 	background:var(--custom-premium-colors-premium-gradient-tier-2)
+}
+.freeTrialPill_c87d73.greyBackgroundPill_c87d73
+{
+	background:var(--primary-500)
 }
 .freeTrialPill_c87d73.freeTrialPillTier2OldGradientFill_c87d73
 {
@@ -16129,6 +16081,97 @@ span.clanTag_a31c43
 {
 	margin-left:auto
 }
+.popoutWrapper_ccc074
+{
+	position:relative;
+	left:-30px;
+	width:200px;
+	display:flex;
+	max-height:40vh
+}
+.scroller_ccc074
+{
+	border-radius:4px;
+	padding:8px 16px;
+	background-color:var(--background-floating)
+}
+.avatars_ccc074
+{
+	display:flex;
+	flex-grow:0;
+	align-items:center;
+	position:relative
+}
+.avatar_ccc074
+{
+	margin-left:-2px;
+	-webkit-mask:url(/assets/e8de2050ff99e00963e3.svg);
+	mask:url(/assets/e8de2050ff99e00963e3.svg);
+	-webkit-mask-size:100%;
+	mask-size:100%;
+	mask-type:alpha
+}
+.avatar_ccc074:first-child
+{
+	margin-left:0
+}
+.avatar_ccc074:last-child
+{
+	-webkit-mask:none;
+	mask:none
+}
+.overflow_ccc074
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:0 8px;
+	width:auto;
+	height:24px;
+	border-radius:16px;
+	background-color:var(--background-tertiary)
+}
+.container_bf3873
+{
+	margin-bottom:24px
+}
+.appContainer_bf3873
+{
+	padding:16px;
+	border:1px solid var(--background-modifier-accent);
+	border-radius:8px
+}
+.header_bf3873
+{
+	margin-bottom:8px;
+	color:var(--header-secondary)
+}
+.appInfo_bf3873
+{
+	display:flex;
+	align-items:center
+}
+.appIconMask_bf3873
+{
+	margin-right:16px;
+	min-width:32px;
+	min-height:32px
+}
+.appIcon_bf3873
+{
+	width:100%;
+	height:100%;
+	cursor:pointer
+}
+.textContainer_bf3873
+{
+	display:flex;
+	flex-direction:column
+}
+.guildStack_bf3873
+{
+	margin-top:4px
+}
 .container_d74c59
 {
 	margin-bottom:24px
@@ -18149,7 +18192,7 @@ span.clanTag_a31c43
 .container_bc01cf
 {
 	border-radius:8px;
-	padding:0 16px;
+	padding-left:16px;
 	height:32px;
 	box-sizing:border-box;
 	display:flex;
@@ -18160,6 +18203,40 @@ span.clanTag_a31c43
 {
 	color:var(--content-inventory-overlay-text-secondary);
 	flex:1
+}
+.textContainer_bc01cf
+{
+	display:flex;
+	align-items:baseline
+}
+.username_bc01cf
+{
+	margin-right:4px
+}
+.statsText_bc01cf
+{
+	margin-right:16px
+}
+.heroArtContainer_bc01cf
+{
+	height:32px;
+	width:32px;
+	border-radius:0 8px 8px 0;
+	overflow:hidden
+}
+.heroArt_bc01cf
+{
+	--custom-crop-width:2px;
+	width:calc(100% + 4px);
+	width:calc(100% + 2*var(--custom-crop-width));
+	height:calc(100% + 4px);
+	height:calc(100% + 2*var(--custom-crop-width));
+	-o-object-fit:cover;
+	object-fit:cover;
+	-o-object-position:-2px -2px;
+	object-position:-2px -2px;
+	-o-object-position:calc(-1*var(--custom-crop-width))calc(-1*var(--custom-crop-width));
+	object-position:calc(-1*var(--custom-crop-width))calc(-1*var(--custom-crop-width))
 }
 .heroContainer_e12502
 {
@@ -18462,6 +18539,15 @@ span.clanTag_a31c43
 	height:16px;
 	width:16px
 }
+.userRow_cf8a7d .copyLinkContainer_cf8a7d[aria-busy=false]
+{
+	cursor:pointer
+}
+.userRow_cf8a7d .copyLinkContainer_cf8a7d>.copyLink_cf8a7d,
+.userRow_cf8a7d .copyLinkContainer_cf8a7d .copySpinner_cf8a7d
+{
+	pointer-events:none
+}
 .userRow_cf8a7d:hover
 {
 	background:var(--background-modifier-hover)
@@ -18547,7 +18633,6 @@ span.clanTag_a31c43
 }
 .copyLink_cf8a7d
 {
-	cursor:pointer;
 	color:red
 }
 .badgesContainer_cf8a7d
@@ -18563,6 +18648,12 @@ span.clanTag_a31c43
 .copySpinner_cf8a7d circle
 {
 	stroke:var(--interactive-normal)
+}
+.tooltip_cf8a7d
+{
+	display:flex;
+	align-items:center;
+	gap:4px
 }
 .popout_b245a4
 {
@@ -20713,56 +20804,6 @@ h3.improved_f017d0:after
 }
 .memberListItem_d22f5a:not(.popoutDisabled_d22f5a):hover
 {
-	background-color:var(--background-tertiary)
-}
-.popoutWrapper_ccc074
-{
-	position:relative;
-	left:-30px;
-	width:200px;
-	display:flex;
-	max-height:40vh
-}
-.scroller_ccc074
-{
-	border-radius:4px;
-	padding:8px 16px;
-	background-color:var(--background-floating)
-}
-.avatars_ccc074
-{
-	display:flex;
-	flex-grow:0;
-	align-items:center;
-	position:relative
-}
-.avatar_ccc074
-{
-	margin-left:-2px;
-	-webkit-mask:url(/assets/e8de2050ff99e00963e3.svg);
-	mask:url(/assets/e8de2050ff99e00963e3.svg);
-	-webkit-mask-size:100%;
-	mask-size:100%;
-	mask-type:alpha
-}
-.avatar_ccc074:first-child
-{
-	margin-left:0
-}
-.avatar_ccc074:last-child
-{
-	-webkit-mask:none;
-	mask:none
-}
-.overflow_ccc074
-{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	padding:0 8px;
-	width:auto;
-	height:24px;
-	border-radius:16px;
 	background-color:var(--background-tertiary)
 }
 .upsellTooltipWrapper_dafa63
@@ -31276,6 +31317,42 @@ div.popoutCloseButton_d523a2:hover
 	background-color:HighlightText;
 	border-color:Highlight;
 	color:Highlight
+}
+.container_b18699
+{
+	width:100%;
+	position:relative
+}
+.items_b18699
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap
+}
+.itemMeasurements_b18699
+{
+	display:flex
+}
+.overflowMeasurement_b18699
+{
+	display:inline-block
+}
+.measurements_b18699
+{
+	visibility:hidden;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	pointer-events:none;
+	z-index:-1
+}
+.tooltip_b18699
+{
+	display:flex;
+	flex-wrap:wrap;
+	gap:4px
 }
 .menu_d90b3d
 {
@@ -43505,6 +43582,10 @@ html.disable-forced-colors *
 	--input-placeholder-text-dark-hsl:216 calc(var(--saturation-factor, 1) * 2.128%) 53.922%;
 	--lol:hsl(var(--lol-hsl) / 1);
 	--lol-hsl:190.286 calc(var(--saturation-factor, 1) * 89.744%) 7.647%;
+	--lol-text-dark:hsl(var(--lol-text-dark-hsl) / 1);
+	--lol-text-dark-hsl:37.444 calc(var(--saturation-factor, 1) * 81.595%) 31.961%;
+	--lol-text-light:hsl(var(--lol-text-light-hsl) / 1);
+	--lol-text-light-hsl:41.143 calc(var(--saturation-factor, 1) * 50.239%) 59.02%;
 	--neutral-1:hsl(var(--neutral-1-hsl) / 1);
 	--neutral-1-hsl:0 calc(var(--saturation-factor, 1) * 0%) 100%;
 	--neutral-10:hsl(var(--neutral-10-hsl) / 1);
@@ -45249,6 +45330,7 @@ html.disable-forced-colors *
 	--interactive-hover:var(--primary-230);
 	--interactive-muted:var(--primary-500);
 	--interactive-normal:var(--primary-330);
+	--leaderboard-league-brand-text:var(--lol-text-light);
 	--legacy-android-blur-overlay-default:hsl(var(--primary-660-hsl) / 0.5);
 	--legacy-android-blur-overlay-ultra-thin:hsl(var(--black-hsl) / 0.025);
 	--legacy-blur-fallback-default:hsl(var(--primary-660-hsl) / 0.975);
@@ -46041,6 +46123,11 @@ blue))and (top:var(--f))
 		var(--primary-330) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
+		--leaderboard-league-brand-text:color-mix(
+		in oklab,
+		var(--lol-text-light) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
 		--legacy-android-blur-overlay-default:color-mix(
 		in oklab,
 		hsl(var(--primary-660-hsl) / 0.5) 100%,
@@ -46809,6 +46896,7 @@ blue))and (top:var(--f))
 	--interactive-hover:var(--primary-600);
 	--interactive-muted:var(--primary-300);
 	--interactive-normal:var(--primary-500);
+	--leaderboard-league-brand-text:var(--lol-text-dark);
 	--legacy-android-blur-overlay-default:hsl(var(--primary-130-hsl) / 0.1);
 	--legacy-android-blur-overlay-ultra-thin:hsl(var(--white-hsl) / 0.25);
 	--legacy-blur-fallback-default:hsl(var(--primary-230-hsl) / 0.975);
@@ -47597,6 +47685,11 @@ blue))and (top:var(--f))
 		var(--primary-500) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
+		--leaderboard-league-brand-text:color-mix(
+		in oklab,
+		var(--lol-text-dark) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
 		--legacy-android-blur-overlay-default:color-mix(
 		in oklab,
 		hsl(var(--primary-130-hsl) / 0.1) 100%,
@@ -48357,6 +48450,7 @@ blue))and (top:var(--f))
 	--interactive-hover:var(--plum-4);
 	--interactive-muted:var(--plum-13);
 	--interactive-normal:var(--plum-6);
+	--leaderboard-league-brand-text:var(--lol-text-light);
 	--legacy-android-blur-overlay-default:hsl(var(--primary-660-hsl) / 0.5);
 	--legacy-android-blur-overlay-ultra-thin:hsl(var(--black-hsl) / 0.025);
 	--legacy-blur-fallback-default:hsl(var(--primary-660-hsl) / 0.975);
@@ -49145,6 +49239,11 @@ blue))and (top:var(--f))
 		var(--plum-6) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
+		--leaderboard-league-brand-text:color-mix(
+		in oklab,
+		var(--lol-text-light) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
 		--legacy-android-blur-overlay-default:color-mix(
 		in oklab,
 		hsl(var(--primary-660-hsl) / 0.5) 100%,
@@ -49913,6 +50012,7 @@ blue))and (top:var(--f))
 	--interactive-hover:var(--plum-4);
 	--interactive-muted:var(--plum-13);
 	--interactive-normal:var(--plum-6);
+	--leaderboard-league-brand-text:var(--lol-text-light);
 	--legacy-android-blur-overlay-default:hsl(var(--primary-660-hsl) / 0.5);
 	--legacy-android-blur-overlay-ultra-thin:hsl(var(--black-hsl) / 0.025);
 	--legacy-blur-fallback-default:hsl(var(--primary-660-hsl) / 0.975);
@@ -50703,6 +50803,11 @@ blue))and (top:var(--f))
 		--interactive-normal:color-mix(
 		in oklab,
 		var(--plum-6) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--leaderboard-league-brand-text:color-mix(
+		in oklab,
+		var(--lol-text-light) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--legacy-android-blur-overlay-default:color-mix(
@@ -53967,7 +54072,8 @@ blue))and (top:var(--f))
 	--text-positive:var(--green-new-32);
 	--text-primary:var(--neutral-7);
 	--text-secondary:var(--neutral-27);
-	--text-warning:var(--yellow-new-34)
+	--text-warning:var(--yellow-new-34);
+	--text-feedback-positive:var(--green-new-32)
 }
 @supports(color:color-mix(in lch,
 red,
@@ -54069,6 +54175,11 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--yellow-new-34) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--text-feedback-positive:color-mix(
+		in oklab,
+		var(--green-new-32) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		)
 	}
 	
@@ -54095,7 +54206,8 @@ blue))and (top:var(--f))
 	--text-positive:var(--green-new-56);
 	--text-primary:var(--neutral-89);
 	--text-secondary:var(--neutral-41);
-	--text-warning:var(--yellow-new-52)
+	--text-warning:var(--yellow-new-52);
+	--text-feedback-positive:var(--green-new-56)
 }
 @supports(color:color-mix(in lch,
 red,
@@ -54202,6 +54314,11 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--yellow-new-52) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--text-feedback-positive:color-mix(
+		in oklab,
+		var(--green-new-56) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		)
 	}
 	
@@ -54225,7 +54342,8 @@ blue))and (top:var(--f))
 	--text-positive:var(--green-new-40);
 	--text-primary:var(--neutral-8);
 	--text-secondary:var(--neutral-35);
-	--text-warning:var(--yellow-new-42)
+	--text-warning:var(--yellow-new-42);
+	--text-feedback-positive:var(--green-new-40)
 }
 @supports(color:color-mix(in lch,
 red,
@@ -54317,6 +54435,11 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--yellow-new-42) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--text-feedback-positive:color-mix(
+		in oklab,
+		var(--green-new-40) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		)
 	}
 	
@@ -54340,7 +54463,8 @@ blue))and (top:var(--f))
 	--text-positive:var(--green-new-42);
 	--text-primary:var(--neutral-4);
 	--text-secondary:var(--neutral-33);
-	--text-warning:var(--yellow-new-44)
+	--text-warning:var(--yellow-new-44);
+	--text-feedback-positive:var(--green-new-42)
 }
 @supports(color:color-mix(in lch,
 red,
@@ -54431,6 +54555,11 @@ blue))and (top:var(--f))
 		--text-warning:color-mix(
 		in oklab,
 		var(--yellow-new-44) 100%,
+		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--text-feedback-positive:color-mix(
+		in oklab,
+		var(--green-new-42) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		)
 	}
