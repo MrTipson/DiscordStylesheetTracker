@@ -2599,6 +2599,19 @@ html.decorate-links .lowSaturationUnderline_c7819f
 	background-color:var(--background-floating);
 	color:var(--interactive-active)
 }
+.visual-refresh .primary_e258f5,
+.visual-refresh .secondary_e258f5,
+.visual-refresh .tertiary_e258f5
+{
+	background-color:var(--button-secondary-background);
+	color:var(--button-secondary-text)
+}
+.visual-refresh .primary_e258f5:hover,
+.visual-refresh .secondary_e258f5:hover,
+.visual-refresh .tertiary_e258f5:hover
+{
+	background-color:var(--button-secondary-background-hover)
+}
 .size24_e258f5
 {
 	padding:4px;
@@ -10217,6 +10230,10 @@ div.modalHeader_c5e09c
 {
 	background-color:var(--text-feedback-critical)
 }
+.visual-refresh .jumpToPresentBar_cf58b5
+{
+	color:var(--text-default)
+}
 .newMessagesBar_cf58b5
 {
 	height:32px;
@@ -10230,6 +10247,10 @@ div.modalHeader_c5e09c
 {
 	padding-top:1px;
 	box-shadow:0 0 0 hsl(var(--black-500-hsl)/0)
+}
+:where(.visual-refresh) .newMessagesBar_cf58b5
+{
+	color:var(--white)
 }
 .newMessagesPillContainer_cf58b5
 {
@@ -11174,6 +11195,23 @@ div.modalHeader_c5e09c
 	top:-4px;
 	right:-8px
 }
+.effect_efd76b
+{
+	position:absolute;
+	pointer-events:none;
+	z-index:1001;
+	bottom:0;
+	width:var(--custom-voice-channel-effect-voice-channel-effect-animation-size)
+}
+.effects_b5b75b
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+	pointer-events:none
+}
 .soundButtonWrapper_f40049
 {
 	list-style:none;
@@ -11712,7 +11750,10 @@ div.modalHeader_c5e09c
 .jumboContainer_f38a29
 {
 	margin:2px;
-	display:inline-flex
+	display:inline-flex;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none
 }
 .jumboButton_f38a29
 {
@@ -11747,7 +11788,10 @@ div.modalHeader_c5e09c
 	padding:0 var(--spacing-4);
 	margin:0 var(--spacing-4);
 	border-radius:var(--radius-sm);
-	cursor:pointer
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none
 }
 .soundmojiEmoji_f38a29
 {
@@ -14603,6 +14647,15 @@ div.cardContainer_c22357
 	border-bottom-left-radius:17px;
 	border-bottom-right-radius:17px
 }
+.tier2SideGradient_c87d73
+{
+	position:absolute;
+	width:100vw;
+	height:1e3px;
+	background:radial-gradient(80%70%at 100%50%,#2d01dc 0%,transparent 100%),radial-gradient(80%70%at 100%50%,#b182ff 0%,transparent 100%);
+	opacity:.4;
+	pointer-events:none
+}
 .heading_aac415
 {
 	margin-bottom:8px
@@ -16704,11 +16757,6 @@ span.clanTag_a31c43
 	padding-bottom:var(--custom-message-spacing-vertical-container-cozy);
 	padding-left:var(--custom-message-margin-left-content-cozy)
 }
-.visual-refresh .cozy_f9f2ca.wrapper_f9f2ca
-{
-	padding-top:calc(var(--space-4) + var(--custom-message-spacing-vertical-container-cozy));
-	padding-bottom:calc(var(--space-4) + var(--custom-message-spacing-vertical-container-cozy))
-}
 .cozy_f9f2ca.wrapper_f9f2ca.contentOnly_f9f2ca,
 .compact_f9f2ca.wrapper_f9f2ca.contentOnly_f9f2ca
 {
@@ -18021,6 +18069,11 @@ span.clanTag_a31c43
 	font-weight:600;
 	border-radius:8px
 }
+.visual-refresh .content_c2654d
+{
+	background:none;
+	padding-left:var(--space-4)
+}
 .isUnread_c2654d .content_c2654d
 {
 	color:var(--divider-color)
@@ -18233,10 +18286,6 @@ span.clanTag_a31c43
 {
 	margin-top:8px
 }
-.visual-refresh .channelTextArea_d5deea
-{
-	margin-bottom:var(--space-8)
-}
 .divider_d5deea
 {
 	margin-left:1rem;
@@ -18255,11 +18304,6 @@ span.clanTag_a31c43
 .groupStart_d5deea
 {
 	margin-top:var(--custom-group-spacing-start)
-}
-.visual-refresh .groupStart_d5deea
-{
-	margin-top:calc(var(--custom-group-spacing-start) - var(--space-4));
-	margin-bottom:calc(-1*var(--space-4))
 }
 .group-spacing-0 .groupStart_d5deea
 {
@@ -18908,6 +18952,11 @@ span.clanTag_a31c43
 {
 	color:var(--content-inventory-overlay-text-primary);
 	display:inline
+}
+.gameIcon_b245a4
+{
+	width:24px;
+	height:24px
 }
 .leaderboardTitle_b245a4
 {
@@ -20767,7 +20816,7 @@ h3.improved_f017d0:after
 :not(.keyboard-mode).full-motion .popover_cf8aee:hover
 {
 	opacity:0;
-	animation:hoverIn_cf8aee.15s ease forwards
+	animation:fadeIn_cf8aee.15s ease forwards
 }
 :not(.keyboard-mode).full-motion .popover_cf8aee.visible_cf8aee.expandable_cf8aee,
 :not(.keyboard-mode).full-motion .popover_cf8aee:focus-within.expandable_cf8aee,
@@ -20775,7 +20824,17 @@ h3.improved_f017d0:after
 {
 	animation-delay:.45s
 }
-@keyframes hoverIn_cf8aee
+:not(.keyboard-mode).full-motion .popover_cf8aee.fadeInAndOut_cf8aee
+{
+	opacity:0;
+	animation:fadeIn_cf8aee.15s ease-in forwards,fadeOut_cf8aee.15s 2s ease-out forwards
+}
+.reduce-motion .popover_cf8aee.fadeInAndOut_cf8aee
+{
+	opacity:0;
+	animation:fadeIn_cf8aee 0s ease-in forwards,fadeOut_cf8aee 0s 2s ease-out forwards
+}
+@keyframes fadeIn_cf8aee
 {
 	0%
 	{
@@ -20792,6 +20851,26 @@ h3.improved_f017d0:after
 		top:-16px;
 		opacity:1;
 		pointer-events:all
+	}
+	
+}
+@keyframes fadeOut_cf8aee
+{
+	0%
+	{
+		top:-16px;
+		opacity:1;
+		pointer-events:all
+	}
+	1%
+	{
+		pointer-events:none
+	}
+	to
+	{
+		top:-14px;
+		opacity:0;
+		pointer-events:none
 	}
 	
 }
@@ -23941,11 +24020,11 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 {
 	height:200px
 }
-.stickersHeaderWithEmojiResults_f81d65
+.secondarySection_f81d65
 {
 	padding-top:0
 }
-.emojiStickersDivider_f81d65
+.divider_f81d65
 {
 	padding-bottom:0!important
 }
@@ -24093,14 +24172,13 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	}
 	
 }
-.size_c5e128
-{
-	width:29px;
-	height:29px
-}
 .gifFavoriteButton_c5e128
 {
-	color:var(--white)
+	color:var(--icon-primary);
+	background-color:var(--background-primary);
+	border-radius:5px;
+	padding:6px;
+	opacity:1
 }
 .gifFavoriteButton_c5e128:after
 {
@@ -24130,7 +24208,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 }
 .gifFavoriteButton_c5e128.selected_c5e128
 {
-	color:var(--text-warning)
+	color:var(--yellow-300)
 }
 .gifFavoriteButton_c5e128.selected_c5e128.showPulse_c5e128:after
 {
@@ -24821,6 +24899,14 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 .settingsClickArea_ca5acd:focus
 {
 	color:var(--interactive-hover)
+}
+.settingsSoundmojiClickArea_ca5acd
+{
+	padding:0
+}
+.settingsSoundmojiClickArea_ca5acd:last-child
+{
+	padding-right:0
 }
 .settingsIcon_ca5acd
 {
@@ -26163,6 +26249,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	user-select:none;
 	pointer-events:none
 }
+.visual-refresh .placeholder_a552a6
+{
+	line-height:1.5rem
+}
 .enable-forced-colors .placeholder_a552a6
 {
 	color:GrayText
@@ -26180,9 +26270,12 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 }
 .visual-refresh .slateTextArea_e52116
 {
+	--custom-vertical-padding:calc(var(--custom-channel-textarea-text-area-height) / 4);
 	box-sizing:border-box;
-	padding-top:var(--space-20);
-	padding-bottom:var(--space-16)
+	padding-top:calc(.25*var(--custom-channel-textarea-text-area-height));
+	padding-top:var(--custom-vertical-padding);
+	padding-bottom:calc(.25*var(--custom-channel-textarea-text-area-height));
+	padding-bottom:var(--custom-vertical-padding)
 }
 .enable-forced-colors .placeholder_e52116
 {
@@ -26309,6 +26402,11 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 {
 	border-top-left-radius:0;
 	border-top-right-radius:0
+}
+.visual-refresh .inlineContainer_bdf0de
+{
+	display:grid;
+	grid-template-columns:1fr auto
 }
 .inner_bdf0de
 {
@@ -26603,7 +26701,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	padding:var(--space-8)var(--space-16);
+	padding:var(--space-4)var(--space-16);
 	border-top:1px solid var(--border-faint)
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
@@ -26613,12 +26711,16 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	align-items:center;
 	position:relative
 }
+.visual-refresh .accessoryBarRight_bdf0de
+{
+	margin-right:calc(-1*var(--space-4))
+}
 .visual-refresh .rightAccessories_bdf0de
 {
 	display:flex;
 	align-items:center;
 	max-height:var(--custom-channel-textarea-text-area-height);
-	margin-right:var(--space-20)
+	margin-right:var(--space-16)
 }
 .enable-forced-colors .scrollableContainer_bdf0de
 {
@@ -27689,14 +27791,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	display:flex;
 	align-items:center
 }
-.bar_cab5bc
-{
-	display:flex;
-	flex-direction:row;
-	align-items:center;
-	padding:16px;
-	gap:12px
-}
 .bar_d1cd43
 {
 	display:flex;
@@ -28413,6 +28507,11 @@ div.popoutCloseButton_d523a2:hover
 	display:flex;
 	justify-content:center;
 	align-items:center
+}
+.visual-refresh .giftIconContainer_fdeb78
+{
+	width:20px;
+	height:20px
 }
 .generalHeading_a2f60b
 {
@@ -30325,10 +30424,6 @@ div.popoutCloseButton_d523a2:hover
 	cursor:pointer;
 	display:contents
 }
-.custom-profile-theme .clickableContainer_ae1fa2>.card_ae1fa2
-{
-	box-shadow:0 4px 16px 0 hsl(var(--black-500-hsl)/8%)
-}
 .clickableContainer_ae1fa2:hover>.card_ae1fa2
 {
 	background:var(--bg-mod-subtle)
@@ -30349,7 +30444,7 @@ div.popoutCloseButton_d523a2:hover
 	background-color:var(--black-500);
 	border-radius:var(--radius-xs);
 	opacity:0;
-	cursor:pointer
+	pointer-events:none
 }
 .full-motion .clickableImage_ae1fa2:after
 {
@@ -36883,6 +36978,10 @@ img.thumbnail_c64476
 	line-height:30px;
 	padding:10px 20px
 }
+.visual-refresh .notice_be03aa
+{
+	grid-area:notice
+}
 .platform-osx .notice_be03aa
 {
 	-webkit-app-region:drag
@@ -37090,10 +37189,6 @@ img.thumbnail_c64476
 	border:none;
 	-webkit-text-decoration:underline;
 	text-decoration:underline
-}
-.visual-refresh .notice_be03aa
-{
-	min-height:40px
 }
 .enable-forced-colors .notice_be03aa
 {
@@ -58438,17 +58533,17 @@ blue))and (top:var(--f))
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
 	--background-message-hover:var(--neutral-94);
 	--background-modifier-accent:hsl(var(--opacity-20-hsl) / 0.2);
-	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-	--background-modifier-selected:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--background-modifier-hover:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--background-modifier-selected:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-primary:var(--neutral-95);
 	--background-secondary:var(--neutral-97);
 	--background-tertiary:var(--neutral-100);
 	--bg-base-primary:var(--neutral-95);
 	--bg-base-secondary:var(--neutral-97);
 	--bg-base-tertiary:var(--neutral-100);
-	--bg-mod-faint:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-	--bg-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-	--bg-mod-subtle:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--bg-mod-faint:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--bg-mod-strong:hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+	--bg-mod-subtle:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--border-faint:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--border-strong:hsl(var(--opacity-48-hsl) / 0.47843137254901963);
 	--border-subtle:hsl(var(--opacity-20-hsl) / 0.2);
@@ -58534,9 +58629,9 @@ blue))and (top:var(--f))
 	--background-feedback-info:var(--blue-new-93);
 	--background-feedback-positive:var(--green-new-93);
 	--background-feedback-warning:var(--yellow-new-93);
-	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-	--background-mod-subtle:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+	--background-mod-normal:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+	--background-mod-strong:hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+	--background-mod-subtle:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-surface-high:var(--neutral-91);
 	--background-surface-higher:var(--neutral-87);
 	--background-surface-highest:var(--neutral-83);
@@ -58607,13 +58702,13 @@ blue))and (top:var(--f))
 		);
 		--background-modifier-hover:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-selected:color-mix(
 		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
 		--background-primary:color-mix(
 		in oklab,
@@ -58647,18 +58742,18 @@ blue))and (top:var(--f))
 		);
 		--bg-mod-faint:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--bg-mod-strong:color-mix(
 		in oklab,
-		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804) var(--theme-base-color-amount, 0%)
 		);
 		--bg-mod-subtle:color-mix(
 		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
 		--border-faint:color-mix(
 		in oklab,
@@ -58912,18 +59007,18 @@ blue))and (top:var(--f))
 		);
 		--background-mod-normal:color-mix(
 		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
-		);
-		--background-mod-strong:color-mix(
-		in oklab,
 		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
+		--background-mod-strong:color-mix(
+		in oklab,
+		hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804) var(--theme-base-color-amount, 0%)
+		);
 		--background-mod-subtle:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-surface-high:color-mix(
 		in oklab,
@@ -60103,8 +60198,8 @@ blue))and (top:var(--f))
 	--font-display:'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-headline:'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -60117,8 +60212,8 @@ blue))and (top:var(--f))
 	--font-display:'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-headline:'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -60131,8 +60226,8 @@ blue))and (top:var(--f))
 	--font-headline:'ABC Ginto Nord', 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic', Gulim, 굴림,
 	Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic',
 	Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
@@ -60147,8 +60242,8 @@ blue))and (top:var(--f))
 	--font-headline:'ABC Ginto Nord', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ,
 	Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',
 	メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
@@ -60164,10 +60259,10 @@ blue))and (top:var(--f))
 	--font-headline:'ABC Ginto Nord', 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei', 宋体,
 	SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
-	--font-clan-body:Fraunces, 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei',
-	宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
+	--font-clan-body:Fraunces, 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
+	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -60180,8 +60275,8 @@ blue))and (top:var(--f))
 	--font-headline:'ABC Ginto Nord', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI', 'Microsoft YaHei',
 	微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-code:'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-	'Courier New', Courier, monospace;
+	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
 	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
@@ -61214,7 +61309,7 @@ img[alt]
 	--custom-guild-list-width:76px;
 	--custom-guild-sidebar-width:268px;
 	--custom-app-sidebar-target-width:calc(var(--custom-guild-sidebar-width) + var(--custom-guild-list-width));
-	--custom-channel-textarea-text-area-height:58px;
+	--custom-channel-textarea-text-area-height:48px;
 	--custom-rtc-account-height:64px;
 	--custom-app-top-bar-height:32px;
 	--custom-channel-header-height:56px;
