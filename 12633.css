@@ -15369,21 +15369,21 @@ div.cardContainer_c22357
 .headerContainer_b3552d
 {
 	grid-area:header;
-	min-height:200px;
 	display:grid;
-	grid-template:"layer"1fr/1fr
+	grid-template:"layer"1fr/1fr;
+	background-color:var(--modal-footer-background);
+	border-top-left-radius:4px;
+	border-top-right-radius:4px
 }
 .headerBackground_b3552d
 {
 	grid-area:layer;
 	width:100%;
 	max-width:440px;
-	min-height:100%;
 	-o-object-fit:cover;
 	object-fit:cover;
 	border-top-left-radius:4px;
-	border-top-right-radius:4px;
-	filter:brightness(50%)
+	border-top-right-radius:4px
 }
 .headerForeground_b3552d
 {
@@ -15394,9 +15394,9 @@ div.cardContainer_c22357
 }
 .previewContainer_b3552d
 {
-	align-self:center;
 	justify-self:center;
-	grid-area:layer
+	padding-top:8px;
+	padding-bottom:28px
 }
 .close_b3552d
 {
@@ -15404,23 +15404,18 @@ div.cardContainer_c22357
 	justify-self:end;
 	grid-area:layer
 }
-.footerContainer_b3552d
-{
-	grid-area:footer;
-	padding:0;
-	background-color:#000
-}
-.gradient_b3552d
+.footerBody_b3552d
 {
 	box-sizing:border-box;
 	width:100%;
 	min-height:200px;
-	padding:32px 16px;
+	padding:16px;
 	text-align:center;
 	display:flex;
 	flex-direction:column;
 	flex-wrap:nowrap;
-	align-items:center
+	align-items:center;
+	gap:8px
 }
 .heading_b3552d
 {
@@ -15760,7 +15755,7 @@ span.clanTag_a31c43
 	right:-8px;
 	padding:var(--spacing-4);
 	border-radius:var(--radius-round);
-	background-color:var(--bg-surface-raised);
+	background-color:var(--profile-gradient-primary-color);
 	overflow:hidden
 }
 :root
@@ -16294,6 +16289,10 @@ span.clanTag_a31c43
 	right:-8px;
 	background-color:var(--modal-background);
 	border-radius:var(--radius-round)
+}
+.visual-refresh .icon_b01a4f
+{
+	background-color:var(--background-surface-high)
 }
 .label_eb3c91
 {
@@ -16851,7 +16850,7 @@ span.clanTag_a31c43
 	margin-left:-1px;
 	margin-left:calc(-.5*var(--spine-width));
 	margin-bottom:calc(-4px + var(--custom-message-spacing-vertical-container-cozy));
-	border-color:var(--interactive-muted);
+	border-color:var(--spine-default);
 	border-width:2px 0 0 2px;
 	border-width:var(--spine-width)0 0 var(--spine-width);
 	border-style:solid;
@@ -17486,8 +17485,8 @@ span.clanTag_a31c43
 }
 .cozy_f9f2ca.hasThread_f9f2ca:after
 {
-	border-left:2px solid var(--interactive-muted);
-	border-bottom:2px solid var(--interactive-muted);
+	border-left:2px solid var(--spine-default);
+	border-bottom:2px solid var(--spine-default);
 	border-bottom-left-radius:8px;
 	bottom:29px;
 	content:"";
@@ -18071,7 +18070,6 @@ span.clanTag_a31c43
 }
 .visual-refresh .content_c2654d
 {
-	background:none;
 	padding-left:var(--space-4)
 }
 .isUnread_c2654d .content_c2654d
@@ -23219,7 +23217,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	font-size:12px;
 	font-weight:500;
 	line-height:16px;
-	color:var(--text-tertiary)
+	color:var(--text-secondary)
 }
 .isComboing_d7ebeb
 {
@@ -26319,6 +26317,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	border:1px solid var(--border-faint);
 	border-radius:var(--radius-sm);
 	transition:border-color.2s ease;
+	box-shadow:var(--shadow-low);
 	overflow-y:auto
 }
 :where(.visual-refresh) .scrollableContainer_bdf0de:focus-within
@@ -26406,7 +26405,20 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 .visual-refresh .inlineContainer_bdf0de
 {
 	display:grid;
-	grid-template-columns:1fr auto
+	grid-template-columns:1fr auto;
+	box-shadow:none
+}
+.visual-refresh .inlineContainer_bdf0de .accessoryBar_bdf0de
+{
+	border-top:none
+}
+.visual-refresh .flushContainer_bdf0de
+{
+	border:none
+}
+.visual-refresh .flushContainer_bdf0de .accessoryBar_bdf0de
+{
+	border-top:none
 }
 .inner_bdf0de
 {
@@ -29310,14 +29322,6 @@ div.popoutCloseButton_d523a2:hover
 	align-items:center;
 	padding:12px 8px
 }
-.avatarCoachmark_a3e4b5
-{
-	width:210px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	padding:40px 8px 12px
-}
 .profileCoachmark_a3e4b5
 {
 	width:210px;
@@ -29326,26 +29330,12 @@ div.popoutCloseButton_d523a2:hover
 	align-items:center;
 	padding:54px 8px 12px
 }
-.statusCoachmark_a3e4b5
-{
-	width:210px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	padding:0 8px 12px
-}
 .tooltipHeader_a3e4b5
 {
 	font-size:14px;
 	font-style:normal;
 	font-weight:700;
 	line-height:18px
-}
-.avatarImage_a3e4b5
-{
-	position:absolute;
-	left:27px;
-	top:-38px
 }
 .profileImage_a3e4b5
 {
@@ -32428,7 +32418,8 @@ img.thumbnail_c64476
 	padding:var(--spacing-12);
 	gap:var(--spacing-8);
 	display:flex;
-	flex-direction:row
+	flex-direction:row;
+	align-items:center
 }
 .baseAvatar_e3a0ec
 {
@@ -32623,10 +32614,12 @@ img.thumbnail_c64476
 }
 .spinner_c5a065
 {
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
 	width:240px;
-	height:240px;
-	align-self:center;
-	justify-self:center
+	height:240px
 }
 .action_c5a065
 {
@@ -48040,6 +48033,7 @@ html.disable-forced-colors *
 	--scrollbar-auto-track:var(--primary-630);
 	--scrollbar-thin-thumb:var(--primary-730);
 	--scrollbar-thin-track:hsl(var(--black-hsl) / 0);
+	--spine-default:var(--primary-500);
 	--spoiler-hidden-background:var(--primary-700);
 	--spoiler-revealed-background:var(--primary-660);
 	--stage-card-pill-bg:var(--primary-630);
@@ -49210,6 +49204,11 @@ blue))and (top:var(--f))
 		hsl(var(--black-hsl) / 0) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		var(--primary-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--spoiler-hidden-background:color-mix(
 		in oklab,
 		var(--primary-700) 100%,
@@ -49632,6 +49631,7 @@ blue))and (top:var(--f))
 	--scrollbar-auto-track:var(--primary-160);
 	--scrollbar-thin-thumb:hsl(var(--primary-500-hsl) / 0.3);
 	--scrollbar-thin-track:hsl(var(--black-hsl) / 0);
+	--spine-default:var(--primary-300);
 	--spoiler-hidden-background:var(--primary-200);
 	--spoiler-revealed-background:var(--primary-160);
 	--stage-card-pill-bg:var(--white);
@@ -50794,6 +50794,11 @@ blue))and (top:var(--f))
 		hsl(var(--black-hsl) / 0) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		var(--primary-300) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--spoiler-hidden-background:color-mix(
 		in oklab,
 		var(--primary-200) 100%,
@@ -51212,6 +51217,7 @@ blue))and (top:var(--f))
 	--scrollbar-auto-track:var(--plum-25);
 	--scrollbar-thin-thumb:var(--plum-20);
 	--scrollbar-thin-track:hsl(var(--black-hsl) / 0);
+	--spine-default:var(--plum-13);
 	--spoiler-hidden-background:var(--plum-14);
 	--spoiler-revealed-background:hsl(var(--plum-11-hsl) / 0.16);
 	--stage-card-pill-bg:var(--plum-25);
@@ -52378,6 +52384,11 @@ blue))and (top:var(--f))
 		hsl(var(--black-hsl) / 0) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		var(--plum-13) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--spoiler-hidden-background:color-mix(
 		in oklab,
 		var(--plum-14) 100%,
@@ -52800,6 +52811,7 @@ blue))and (top:var(--f))
 	--scrollbar-auto-track:var(--plum-19);
 	--scrollbar-thin-thumb:var(--plum-21);
 	--scrollbar-thin-track:hsl(var(--black-hsl) / 0);
+	--spine-default:var(--plum-13);
 	--spoiler-hidden-background:var(--plum-14);
 	--spoiler-revealed-background:hsl(var(--plum-11-hsl) / 0.16);
 	--stage-card-pill-bg:var(--plum-19);
@@ -53969,6 +53981,11 @@ blue))and (top:var(--f))
 		in oklab,
 		hsl(var(--black-hsl) / 0) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0) var(--theme-base-color-amount, 0%)
+		);
+		--spine-default:color-mix(
+		in oklab,
+		var(--plum-13) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--spoiler-hidden-background:color-mix(
 		in oklab,
@@ -57254,20 +57271,20 @@ blue))and (top:var(--f))
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark
 {
-	--activity-card-background:var(--neutral-67);
-	--autocomplete-bg:var(--neutral-67);
-	--background-floating:var(--neutral-67);
+	--activity-card-background:var(--neutral-66);
+	--autocomplete-bg:var(--neutral-66);
+	--background-floating:var(--neutral-66);
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
-	--background-message-hover:var(--neutral-75);
+	--background-message-hover:var(--neutral-74);
 	--background-modifier-accent:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
 	--background-modifier-selected:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-	--background-primary:var(--neutral-70);
-	--background-secondary:var(--neutral-73);
+	--background-primary:var(--neutral-69);
+	--background-secondary:var(--neutral-72);
 	--background-tertiary:var(--neutral-76);
-	--bg-base-primary:var(--neutral-70);
-	--bg-base-secondary:var(--neutral-73);
+	--bg-base-primary:var(--neutral-69);
+	--bg-base-secondary:var(--neutral-72);
 	--bg-base-tertiary:var(--neutral-76);
 	--bg-mod-faint:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
 	--bg-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -57310,18 +57327,18 @@ blue))and (top:var(--f))
 	--button-transparent-background-active:hsl(var(--primary-500-hsl) / 0.3);
 	--button-transparent-background-hover:hsl(var(--opacity-20-hsl) / 0.2);
 	--button-transparent-text:var(--neutral-6);
-	--channel-icon:var(--neutral-16);
-	--channels-default:var(--neutral-23);
-	--header-muted:var(--neutral-23);
+	--channel-icon:var(--neutral-15);
+	--channels-default:var(--neutral-22);
+	--header-muted:var(--neutral-22);
 	--header-primary:var(--neutral-1);
-	--header-secondary:var(--neutral-5);
-	--icon-muted:var(--neutral-23);
+	--header-secondary:var(--neutral-11);
+	--icon-muted:var(--neutral-22);
 	--icon-primary:var(--neutral-2);
-	--icon-secondary:var(--neutral-16);
-	--info-danger-background:var(--red-new-72);
+	--icon-secondary:var(--neutral-15);
+	--info-danger-background:var(--red-new-71);
 	--info-danger-text:var(--red-new-1);
 	--info-help-background:var(--blue-new-93);
-	--info-help-text:var(--blue-new-27);
+	--info-help-text:var(--blue-new-26);
 	--info-positive-background:var(--green-new-93);
 	--info-positive-text:var(--green-new-27);
 	--info-warning-background:var(--yellow-new-93);
@@ -57330,63 +57347,64 @@ blue))and (top:var(--f))
 	--input-border:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--input-focused-border:hsl(var(--white-hsl) / 0.04);
 	--interactive-active:var(--neutral-1);
-	--interactive-hover:var(--neutral-16);
-	--interactive-normal:var(--neutral-16);
+	--interactive-hover:var(--neutral-15);
+	--interactive-normal:var(--neutral-15);
 	--mention-background:hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981);
-	--mention-foreground:var(--blurple-11);
+	--mention-foreground:var(--blurple-10);
 	--scrollbar-auto-scrollbar-color-thumb:var(--neutral-38);
 	--scrollbar-auto-scrollbar-color-track:var(--neutral-75);
-	--scrollbar-auto-thumb:var(--neutral-38);
+	--scrollbar-auto-thumb:var(--neutral-37);
 	--scrollbar-auto-track:hsl(var(--transparent-hsl) / 0);
 	--scrollbar-thin-thumb:var(--neutral-39);
-	--text-brand:var(--blurple-26);
-	--text-link:var(--blue-new-27);
-	--text-muted:var(--neutral-23);
-	--text-normal:var(--neutral-5);
+	--spine-default:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+	--text-brand:var(--blurple-25);
+	--text-link:var(--blue-new-26);
+	--text-muted:var(--neutral-22);
+	--text-normal:var(--neutral-11);
 	--text-positive:var(--green-new-27);
 	--text-primary:var(--neutral-1);
-	--text-secondary:var(--neutral-16);
+	--text-secondary:var(--neutral-15);
 	--text-warning:var(--yellow-new-25);
 	--app-border-frame:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
-	--background-base-low:var(--neutral-70);
-	--background-base-lower:var(--neutral-73);
+	--background-base-low:var(--neutral-69);
+	--background-base-lower:var(--neutral-72);
 	--background-base-lowest:var(--neutral-76);
 	--background-code:hsl(var(--opacity-blurple-4-hsl) / 0.0392156862745098);
 	--background-code-addition:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
 	--background-code-deletion:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-critical:var(--red-new-72);
+	--background-feedback-critical:var(--red-new-71);
 	--background-feedback-info:var(--blue-new-93);
 	--background-feedback-positive:var(--green-new-93);
 	--background-feedback-warning:var(--yellow-new-93);
 	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-mod-subtle:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-	--background-surface-high:var(--neutral-67);
-	--background-surface-higher:var(--neutral-64);
-	--background-surface-highest:var(--neutral-61);
+	--background-surface-high:var(--neutral-66);
+	--background-surface-higher:var(--neutral-63);
+	--background-surface-highest:var(--neutral-60);
 	--border-feedback-critical:hsl(var(--opacity-red-20-hsl) / 0.2);
 	--border-normal:hsl(var(--opacity-20-hsl) / 0.2);
-	--chat-background-default:var(--neutral-70);
+	--chat-background-default:var(--neutral-69);
 	--icon-default:var(--neutral-2);
-	--icon-tertiary:var(--neutral-23);
-	--text-code-addition:var(--green-new-9);
+	--icon-tertiary:var(--neutral-22);
+	--text-code-addition:var(--green-new-8);
 	--text-code-builtin:var(--orange-new-23);
-	--text-code-bullet:var(--yellow-new-24);
+	--text-code-bullet:var(--yellow-new-23);
 	--text-code-comment:var(--neutral-28);
-	--text-code-default:var(--blue-new-20);
+	--text-code-default:var(--blue-new-19);
 	--text-code-deletion:var(--red-new-5);
 	--text-code-keyword:var(--red-new-22);
-	--text-code-section:var(--blue-new-20);
+	--text-code-section:var(--blue-new-19);
 	--text-code-string:var(--teal-new-20);
-	--text-code-tag:var(--green-new-26);
-	--text-code-title:var(--blurple-14);
+	--text-code-tag:var(--green-new-25);
+	--text-code-title:var(--blurple-13);
 	--text-code-variable:var(--blue-new-25);
-	--text-default:var(--neutral-5);
+	--text-default:var(--neutral-11);
 	--text-feedback-critical:var(--red-new-1);
-	--text-feedback-info:var(--blue-new-27);
+	--text-feedback-info:var(--blue-new-26);
 	--text-feedback-positive:var(--green-new-27);
 	--text-feedback-warning:var(--yellow-new-25);
-	--text-tertiary:var(--neutral-23)
+	--text-tertiary:var(--neutral-22)
 }
 @supports(color:color-mix(in lch,
 red,
@@ -57396,17 +57414,17 @@ blue))and (top:var(--f))
 	{
 		--activity-card-background:color-mix(
 		in oklab,
-		var(--neutral-67) 100%,
+		var(--neutral-66) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--autocomplete-bg:color-mix(
 		in oklab,
-		var(--neutral-67) 100%,
+		var(--neutral-66) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-floating:color-mix(
 		in oklab,
-		var(--neutral-67) 100%,
+		var(--neutral-66) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-mentioned:color-mix(
@@ -57421,7 +57439,7 @@ blue))and (top:var(--f))
 		);
 		--background-message-hover:color-mix(
 		in oklab,
-		var(--neutral-75) 100%,
+		var(--neutral-74) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent:color-mix(
@@ -57441,12 +57459,12 @@ blue))and (top:var(--f))
 		);
 		--background-primary:color-mix(
 		in oklab,
-		var(--neutral-70) 100%,
+		var(--neutral-69) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-secondary:color-mix(
 		in oklab,
-		var(--neutral-73) 100%,
+		var(--neutral-72) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-tertiary:color-mix(
@@ -57456,12 +57474,12 @@ blue))and (top:var(--f))
 		);
 		--bg-base-primary:color-mix(
 		in oklab,
-		var(--neutral-70) 100%,
+		var(--neutral-69) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--bg-base-secondary:color-mix(
 		in oklab,
-		var(--neutral-73) 100%,
+		var(--neutral-72) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--bg-base-tertiary:color-mix(
@@ -57501,17 +57519,17 @@ blue))and (top:var(--f))
 		);
 		--channel-icon:color-mix(
 		in oklab,
-		var(--neutral-16) 100%,
+		var(--neutral-15) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--channels-default:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--header-muted:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--header-primary:color-mix(
@@ -57521,12 +57539,12 @@ blue))and (top:var(--f))
 		);
 		--header-secondary:color-mix(
 		in oklab,
-		var(--neutral-5) 100%,
+		var(--neutral-11) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--icon-muted:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--icon-primary:color-mix(
@@ -57536,12 +57554,12 @@ blue))and (top:var(--f))
 		);
 		--icon-secondary:color-mix(
 		in oklab,
-		var(--neutral-16) 100%,
+		var(--neutral-15) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-danger-background:color-mix(
 		in oklab,
-		var(--red-new-72) 100%,
+		var(--red-new-71) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--info-danger-text:color-mix(
@@ -57556,7 +57574,7 @@ blue))and (top:var(--f))
 		);
 		--info-help-text:color-mix(
 		in oklab,
-		var(--blue-new-27) 100%,
+		var(--blue-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-positive-background:color-mix(
@@ -57601,12 +57619,12 @@ blue))and (top:var(--f))
 		);
 		--interactive-hover:color-mix(
 		in oklab,
-		var(--neutral-16) 100%,
+		var(--neutral-15) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--interactive-normal:color-mix(
 		in oklab,
-		var(--neutral-16) 100%,
+		var(--neutral-15) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--mention-background:color-mix(
@@ -57616,7 +57634,7 @@ blue))and (top:var(--f))
 		);
 		--mention-foreground:color-mix(
 		in oklab,
-		var(--blurple-11) 100%,
+		var(--blurple-10) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--scrollbar-auto-scrollbar-color-thumb:color-mix(
@@ -57631,7 +57649,7 @@ blue))and (top:var(--f))
 		);
 		--scrollbar-auto-thumb:color-mix(
 		in oklab,
-		var(--neutral-38) 100%,
+		var(--neutral-37) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--scrollbar-auto-track:color-mix(
@@ -57644,24 +57662,29 @@ blue))and (top:var(--f))
 		var(--neutral-39) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		);
 		--text-brand:color-mix(
 		in oklab,
-		var(--blurple-26) 100%,
+		var(--blurple-25) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-link:color-mix(
 		in oklab,
-		var(--blue-new-27) 100%,
+		var(--blue-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-muted:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-normal:color-mix(
 		in oklab,
-		var(--neutral-5) 100%,
+		var(--neutral-11) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-positive:color-mix(
@@ -57676,7 +57699,7 @@ blue))and (top:var(--f))
 		);
 		--text-secondary:color-mix(
 		in oklab,
-		var(--neutral-16) 100%,
+		var(--neutral-15) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-warning:color-mix(
@@ -57691,12 +57714,12 @@ blue))and (top:var(--f))
 		);
 		--background-base-low:color-mix(
 		in oklab,
-		var(--neutral-70) 100%,
+		var(--neutral-69) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-base-lower:color-mix(
 		in oklab,
-		var(--neutral-73) 100%,
+		var(--neutral-72) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-base-lowest:color-mix(
@@ -57721,7 +57744,7 @@ blue))and (top:var(--f))
 		);
 		--background-feedback-critical:color-mix(
 		in oklab,
-		var(--red-new-72) 100%,
+		var(--red-new-71) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-info:color-mix(
@@ -57756,17 +57779,17 @@ blue))and (top:var(--f))
 		);
 		--background-surface-high:color-mix(
 		in oklab,
-		var(--neutral-67) 100%,
+		var(--neutral-66) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-surface-higher:color-mix(
 		in oklab,
-		var(--neutral-64) 100%,
+		var(--neutral-63) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--background-surface-highest:color-mix(
 		in oklab,
-		var(--neutral-61) 100%,
+		var(--neutral-60) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--border-feedback-critical:color-mix(
@@ -57781,7 +57804,7 @@ blue))and (top:var(--f))
 		);
 		--chat-background-default:color-mix(
 		in oklab,
-		var(--neutral-70) 100%,
+		var(--neutral-69) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--icon-default:color-mix(
@@ -57791,12 +57814,12 @@ blue))and (top:var(--f))
 		);
 		--icon-tertiary:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-addition:color-mix(
 		in oklab,
-		var(--green-new-9) 100%,
+		var(--green-new-8) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-builtin:color-mix(
@@ -57806,7 +57829,7 @@ blue))and (top:var(--f))
 		);
 		--text-code-bullet:color-mix(
 		in oklab,
-		var(--yellow-new-24) 100%,
+		var(--yellow-new-23) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-comment:color-mix(
@@ -57816,7 +57839,7 @@ blue))and (top:var(--f))
 		);
 		--text-code-default:color-mix(
 		in oklab,
-		var(--blue-new-20) 100%,
+		var(--blue-new-19) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-deletion:color-mix(
@@ -57831,7 +57854,7 @@ blue))and (top:var(--f))
 		);
 		--text-code-section:color-mix(
 		in oklab,
-		var(--blue-new-20) 100%,
+		var(--blue-new-19) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-string:color-mix(
@@ -57841,12 +57864,12 @@ blue))and (top:var(--f))
 		);
 		--text-code-tag:color-mix(
 		in oklab,
-		var(--green-new-26) 100%,
+		var(--green-new-25) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-title:color-mix(
 		in oklab,
-		var(--blurple-14) 100%,
+		var(--blurple-13) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-code-variable:color-mix(
@@ -57856,7 +57879,7 @@ blue))and (top:var(--f))
 		);
 		--text-default:color-mix(
 		in oklab,
-		var(--neutral-5) 100%,
+		var(--neutral-11) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-critical:color-mix(
@@ -57866,7 +57889,7 @@ blue))and (top:var(--f))
 		);
 		--text-feedback-info:color-mix(
 		in oklab,
-		var(--blue-new-27) 100%,
+		var(--blue-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-positive:color-mix(
@@ -57881,7 +57904,7 @@ blue))and (top:var(--f))
 		);
 		--text-tertiary:color-mix(
 		in oklab,
-		var(--neutral-23) 100%,
+		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		)
 	}
@@ -57896,21 +57919,21 @@ blue))and (top:var(--f))
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
 	--background-message-hover:var(--neutral-3);
-	--background-modifier-accent:hsl(var(--opacity-20-hsl) / 0.2);
-	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-	--background-modifier-selected:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--background-modifier-accent:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+	--background-modifier-hover:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--background-modifier-selected:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-primary:var(--neutral-2);
 	--background-secondary:var(--neutral-2);
 	--background-tertiary:var(--neutral-4);
 	--bg-base-primary:var(--neutral-2);
 	--bg-base-secondary:var(--neutral-2);
 	--bg-base-tertiary:var(--neutral-4);
-	--bg-mod-faint:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
-	--bg-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-	--bg-mod-subtle:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-	--border-faint:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+	--bg-mod-faint:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
+	--bg-mod-strong:hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+	--bg-mod-subtle:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+	--border-faint:hsl(var(--opacity-20-hsl) / 0.2);
 	--border-strong:hsl(var(--opacity-48-hsl) / 0.47843137254901963);
-	--border-subtle:hsl(var(--opacity-20-hsl) / 0.2);
+	--border-subtle:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--button-danger-background:var(--red-new-50);
 	--button-danger-background-active:var(--red-new-61);
 	--button-danger-background-disabled:var(--red-new-50);
@@ -57950,7 +57973,7 @@ blue))and (top:var(--f))
 	--channels-default:var(--neutral-38);
 	--header-muted:var(--neutral-38);
 	--header-primary:var(--neutral-71);
-	--header-secondary:var(--neutral-55);
+	--header-secondary:var(--neutral-67);
 	--icon-muted:var(--neutral-38);
 	--icon-primary:var(--neutral-59);
 	--icon-secondary:var(--neutral-44);
@@ -57963,7 +57986,7 @@ blue))and (top:var(--f))
 	--info-warning-background:var(--yellow-new-9);
 	--info-warning-text:var(--yellow-new-47);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
-	--input-border:hsl(var(--opacity-20-hsl) / 0.2);
+	--input-border:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--input-focused-border:hsl(var(--black-hsl) / 0.04);
 	--interactive-active:var(--neutral-71);
 	--interactive-hover:var(--neutral-44);
@@ -57975,15 +57998,16 @@ blue))and (top:var(--f))
 	--scrollbar-auto-thumb:var(--neutral-30);
 	--scrollbar-auto-track:hsl(var(--transparent-hsl) / 0);
 	--scrollbar-thin-thumb:var(--neutral-32);
+	--spine-default:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--text-brand:var(--blurple-49);
 	--text-link:var(--blue-new-49);
 	--text-muted:var(--neutral-38);
-	--text-normal:var(--neutral-55);
+	--text-normal:var(--neutral-67);
 	--text-positive:var(--green-new-48);
 	--text-primary:var(--neutral-71);
 	--text-secondary:var(--neutral-44);
 	--text-warning:var(--yellow-new-47);
-	--app-border-frame:hsl(var(--opacity-20-hsl) / 0.2);
+	--app-border-frame:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-base-low:var(--neutral-2);
 	--background-base-lower:var(--neutral-2);
 	--background-base-lowest:var(--neutral-4);
@@ -57994,14 +58018,14 @@ blue))and (top:var(--f))
 	--background-feedback-info:var(--blue-new-9);
 	--background-feedback-positive:var(--green-new-9);
 	--background-feedback-warning:var(--yellow-new-9);
-	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
-	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-	--background-mod-subtle:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
+	--background-mod-normal:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
+	--background-mod-strong:hsl(var(--opacity-32-hsl) / 0.3215686274509804);
+	--background-mod-subtle:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-surface-high:var(--neutral-1);
 	--background-surface-higher:var(--neutral-1);
 	--background-surface-highest:var(--neutral-1);
 	--border-feedback-critical:hsl(var(--opacity-red-24-hsl) / 0.23921568627450981);
-	--border-normal:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
+	--border-normal:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
 	--chat-background-default:var(--neutral-1);
 	--icon-default:var(--neutral-59);
 	--icon-tertiary:var(--neutral-38);
@@ -58017,7 +58041,7 @@ blue))and (top:var(--f))
 	--text-code-tag:var(--green-new-60);
 	--text-code-title:var(--blurple-68);
 	--text-code-variable:var(--blue-new-60);
-	--text-default:var(--neutral-55);
+	--text-default:var(--neutral-67);
 	--text-feedback-critical:var(--red-new-74);
 	--text-feedback-info:var(--blue-new-49);
 	--text-feedback-positive:var(--green-new-48);
@@ -58062,18 +58086,18 @@ blue))and (top:var(--f))
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-hover:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-selected:color-mix(
 		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
 		--background-primary:color-mix(
 		in oklab,
@@ -58107,23 +58131,23 @@ blue))and (top:var(--f))
 		);
 		--bg-mod-faint:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--bg-mod-strong:color-mix(
+		in oklab,
+		hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804) var(--theme-base-color-amount, 0%)
+		);
+		--bg-mod-subtle:color-mix(
 		in oklab,
 		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
-		--bg-mod-subtle:color-mix(
-		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
-		);
 		--border-faint:color-mix(
 		in oklab,
-		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--border-strong:color-mix(
 		in oklab,
@@ -58132,8 +58156,8 @@ blue))and (top:var(--f))
 		);
 		--border-subtle:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--channel-icon:color-mix(
 		in oklab,
@@ -58157,7 +58181,7 @@ blue))and (top:var(--f))
 		);
 		--header-secondary:color-mix(
 		in oklab,
-		var(--neutral-55) 100%,
+		var(--neutral-67) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--icon-muted:color-mix(
@@ -58222,8 +58246,8 @@ blue))and (top:var(--f))
 		);
 		--input-border:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--input-focused-border:color-mix(
 		in oklab,
@@ -58280,6 +58304,11 @@ blue))and (top:var(--f))
 		var(--neutral-32) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
+		);
 		--text-brand:color-mix(
 		in oklab,
 		var(--blurple-49) 100%,
@@ -58297,7 +58326,7 @@ blue))and (top:var(--f))
 		);
 		--text-normal:color-mix(
 		in oklab,
-		var(--neutral-55) 100%,
+		var(--neutral-67) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-positive:color-mix(
@@ -58322,8 +58351,8 @@ blue))and (top:var(--f))
 		);
 		--app-border-frame:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-base-low:color-mix(
 		in oklab,
@@ -58377,18 +58406,18 @@ blue))and (top:var(--f))
 		);
 		--background-mod-normal:color-mix(
 		in oklab,
-		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
-		);
-		--background-mod-strong:color-mix(
-		in oklab,
 		hsl(var(--opacity-24-hsl) / 0.23921568627450981) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.23921568627450981) var(--theme-base-color-amount, 0%)
 		);
+		--background-mod-strong:color-mix(
+		in oklab,
+		hsl(var(--opacity-32-hsl) / 0.3215686274509804) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3215686274509804) var(--theme-base-color-amount, 0%)
+		);
 		--background-mod-subtle:color-mix(
 		in oklab,
-		hsl(var(--opacity-8-hsl) / 0.0784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-surface-high:color-mix(
 		in oklab,
@@ -58412,8 +58441,8 @@ blue))and (top:var(--f))
 		);
 		--border-normal:color-mix(
 		in oklab,
-		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--chat-background-default:color-mix(
 		in oklab,
@@ -58492,7 +58521,7 @@ blue))and (top:var(--f))
 		);
 		--text-default:color-mix(
 		in oklab,
-		var(--neutral-55) 100%,
+		var(--neutral-67) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-critical:color-mix(
@@ -58532,7 +58561,7 @@ blue))and (top:var(--f))
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
 	--background-message-hover:var(--neutral-94);
-	--background-modifier-accent:hsl(var(--opacity-20-hsl) / 0.2);
+	--background-modifier-accent:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-modifier-hover:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-modifier-selected:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-primary:var(--neutral-95);
@@ -58544,9 +58573,9 @@ blue))and (top:var(--f))
 	--bg-mod-faint:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--bg-mod-strong:hsl(var(--opacity-32-hsl) / 0.3215686274509804);
 	--bg-mod-subtle:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
-	--border-faint:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
+	--border-faint:hsl(var(--opacity-20-hsl) / 0.2);
 	--border-strong:hsl(var(--opacity-48-hsl) / 0.47843137254901963);
-	--border-subtle:hsl(var(--opacity-20-hsl) / 0.2);
+	--border-subtle:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--button-danger-background:var(--red-new-50);
 	--button-danger-background-active:var(--red-new-61);
 	--button-danger-background-disabled:var(--red-new-50);
@@ -58586,7 +58615,7 @@ blue))and (top:var(--f))
 	--channels-default:var(--neutral-33);
 	--header-muted:var(--neutral-33);
 	--header-primary:var(--neutral-7);
-	--header-secondary:var(--neutral-17);
+	--header-secondary:var(--neutral-10);
 	--icon-muted:var(--neutral-33);
 	--icon-primary:var(--neutral-14);
 	--icon-secondary:var(--neutral-27);
@@ -58599,7 +58628,7 @@ blue))and (top:var(--f))
 	--info-warning-background:var(--yellow-new-93);
 	--info-warning-text:var(--yellow-new-40);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
-	--input-border:hsl(var(--opacity-20-hsl) / 0.2);
+	--input-border:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--interactive-active:var(--neutral-7);
 	--interactive-hover:var(--neutral-27);
 	--interactive-normal:var(--neutral-27);
@@ -58610,15 +58639,16 @@ blue))and (top:var(--f))
 	--scrollbar-auto-thumb:var(--neutral-45);
 	--scrollbar-auto-track:hsl(var(--transparent-hsl) / 0);
 	--scrollbar-thin-thumb:var(--neutral-46);
+	--spine-default:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--text-brand:var(--blurple-41);
 	--text-link:var(--blue-new-42);
 	--text-muted:var(--neutral-33);
-	--text-normal:var(--neutral-17);
+	--text-normal:var(--neutral-10);
 	--text-positive:var(--green-new-41);
 	--text-primary:var(--neutral-7);
 	--text-secondary:var(--neutral-27);
 	--text-warning:var(--yellow-new-40);
-	--app-border-frame:hsl(var(--opacity-20-hsl) / 0.2);
+	--app-border-frame:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-base-low:var(--neutral-95);
 	--background-base-lower:var(--neutral-97);
 	--background-base-lowest:var(--neutral-100);
@@ -58636,8 +58666,8 @@ blue))and (top:var(--f))
 	--background-surface-higher:var(--neutral-87);
 	--background-surface-highest:var(--neutral-83);
 	--border-feedback-critical:hsl(var(--opacity-red-24-hsl) / 0.23921568627450981);
-	--border-normal:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
-	--chat-background-default:var(--neutral-93);
+	--border-normal:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
+	--chat-background-default:var(--neutral-92);
 	--icon-default:var(--neutral-14);
 	--icon-tertiary:var(--neutral-33);
 	--text-code-addition:var(--green-new-23);
@@ -58652,7 +58682,7 @@ blue))and (top:var(--f))
 	--text-code-tag:var(--green-new-38);
 	--text-code-title:var(--blurple-28);
 	--text-code-variable:var(--blue-new-38);
-	--text-default:var(--neutral-17);
+	--text-default:var(--neutral-10);
 	--text-feedback-critical:var(--red-new-16);
 	--text-feedback-info:var(--blue-new-42);
 	--text-feedback-positive:var(--green-new-41);
@@ -58697,8 +58727,8 @@ blue))and (top:var(--f))
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-hover:color-mix(
 		in oklab,
@@ -58757,8 +58787,8 @@ blue))and (top:var(--f))
 		);
 		--border-faint:color-mix(
 		in oklab,
-		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--border-strong:color-mix(
 		in oklab,
@@ -58767,8 +58797,8 @@ blue))and (top:var(--f))
 		);
 		--border-subtle:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--channel-icon:color-mix(
 		in oklab,
@@ -58792,7 +58822,7 @@ blue))and (top:var(--f))
 		);
 		--header-secondary:color-mix(
 		in oklab,
-		var(--neutral-17) 100%,
+		var(--neutral-10) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--icon-muted:color-mix(
@@ -58857,8 +58887,8 @@ blue))and (top:var(--f))
 		);
 		--input-border:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--interactive-active:color-mix(
 		in oklab,
@@ -58910,6 +58940,11 @@ blue))and (top:var(--f))
 		var(--neutral-46) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
+		);
 		--text-brand:color-mix(
 		in oklab,
 		var(--blurple-41) 100%,
@@ -58927,7 +58962,7 @@ blue))and (top:var(--f))
 		);
 		--text-normal:color-mix(
 		in oklab,
-		var(--neutral-17) 100%,
+		var(--neutral-10) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-positive:color-mix(
@@ -58952,8 +58987,8 @@ blue))and (top:var(--f))
 		);
 		--app-border-frame:color-mix(
 		in oklab,
-		hsl(var(--opacity-20-hsl) / 0.2) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-base-low:color-mix(
 		in oklab,
@@ -59042,12 +59077,12 @@ blue))and (top:var(--f))
 		);
 		--border-normal:color-mix(
 		in oklab,
-		hsl(var(--opacity-28-hsl) / 0.2784313725490196) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2784313725490196) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-36-hsl) / 0.3607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.3607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--chat-background-default:color-mix(
 		in oklab,
-		var(--neutral-93) 100%,
+		var(--neutral-92) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--icon-default:color-mix(
@@ -59122,7 +59157,7 @@ blue))and (top:var(--f))
 		);
 		--text-default:color-mix(
 		in oklab,
-		var(--neutral-17) 100%,
+		var(--neutral-10) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-critical:color-mix(
@@ -59216,7 +59251,7 @@ blue))and (top:var(--f))
 	--channels-default:var(--neutral-29);
 	--header-muted:var(--neutral-29);
 	--header-primary:var(--neutral-2);
-	--header-secondary:var(--neutral-13);
+	--header-secondary:var(--neutral-5);
 	--icon-muted:var(--neutral-29);
 	--icon-primary:var(--neutral-10);
 	--icon-secondary:var(--neutral-22);
@@ -59240,10 +59275,11 @@ blue))and (top:var(--f))
 	--scrollbar-auto-thumb:var(--neutral-42);
 	--scrollbar-auto-track:hsl(var(--transparent-hsl) / 0);
 	--scrollbar-thin-thumb:var(--neutral-44);
+	--spine-default:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--text-brand:var(--blurple-35);
 	--text-link:var(--blue-new-36);
 	--text-muted:var(--neutral-29);
-	--text-normal:var(--neutral-13);
+	--text-normal:var(--neutral-5);
 	--text-positive:var(--green-new-36);
 	--text-primary:var(--neutral-2);
 	--text-secondary:var(--neutral-22);
@@ -59267,7 +59303,7 @@ blue))and (top:var(--f))
 	--background-surface-highest:var(--neutral-73);
 	--border-feedback-critical:hsl(var(--opacity-red-20-hsl) / 0.2);
 	--border-normal:hsl(var(--opacity-20-hsl) / 0.2);
-	--chat-background-default:var(--neutral-82);
+	--chat-background-default:var(--neutral-81);
 	--icon-default:var(--neutral-10);
 	--icon-tertiary:var(--neutral-29);
 	--text-code-addition:var(--green-new-17);
@@ -59282,7 +59318,7 @@ blue))and (top:var(--f))
 	--text-code-tag:var(--green-new-33);
 	--text-code-title:var(--blurple-22);
 	--text-code-variable:var(--blue-new-33);
-	--text-default:var(--neutral-13);
+	--text-default:var(--neutral-5);
 	--text-feedback-critical:var(--red-new-9);
 	--text-feedback-info:var(--blue-new-36);
 	--text-feedback-positive:var(--green-new-36);
@@ -59422,7 +59458,7 @@ blue))and (top:var(--f))
 		);
 		--header-secondary:color-mix(
 		in oklab,
-		var(--neutral-13) 100%,
+		var(--neutral-5) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--icon-muted:color-mix(
@@ -59540,6 +59576,11 @@ blue))and (top:var(--f))
 		var(--neutral-44) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--spine-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		);
 		--text-brand:color-mix(
 		in oklab,
 		var(--blurple-35) 100%,
@@ -59557,7 +59598,7 @@ blue))and (top:var(--f))
 		);
 		--text-normal:color-mix(
 		in oklab,
-		var(--neutral-13) 100%,
+		var(--neutral-5) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-positive:color-mix(
@@ -59677,7 +59718,7 @@ blue))and (top:var(--f))
 		);
 		--chat-background-default:color-mix(
 		in oklab,
-		var(--neutral-82) 100%,
+		var(--neutral-81) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--icon-default:color-mix(
@@ -59752,7 +59793,7 @@ blue))and (top:var(--f))
 		);
 		--text-default:color-mix(
 		in oklab,
-		var(--neutral-13) 100%,
+		var(--neutral-5) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-critical:color-mix(
