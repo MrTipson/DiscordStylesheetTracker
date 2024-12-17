@@ -2828,7 +2828,8 @@ html.decorate-links .lowSaturationUnderline_c7819f
 .label_f6cde8
 {
 	flex:1 1 auto;
-	min-width:0
+	min-width:0;
+	color:var(--text-normal)
 }
 .labelClickable_f6cde8
 {
@@ -8549,6 +8550,20 @@ div.modalHeader_c5e09c
 {
 	background:rgba(255,255,255,.1)
 }
+.colorable_ef18ee.experimentActiveLight_ef18ee
+{
+	background:var(--white-500)
+}
+.colorable_ef18ee.experimentActiveLight_ef18ee,
+.colorable_ef18ee.experimentActiveLight_ef18ee .centerIcon_ef18ee
+{
+	color:var(--primary-860)
+}
+.colorable_ef18ee.experimentActiveLight_ef18ee.active_ef18ee,
+.colorable_ef18ee.experimentActiveLight_ef18ee:hover
+{
+	background:var(--primary-230)
+}
 .centerButton_ef18ee
 {
 	border-radius:50%;
@@ -8561,8 +8576,8 @@ div.modalHeader_c5e09c
 }
 .experimentButton_ef18ee
 {
-	border-radius:4px;
-	padding:6px;
+	border-radius:8px;
+	padding:10px;
 	transition:background.15s ease-in-out,color.15s ease-in-out
 }
 .experimentButton_ef18ee .centerIcon_ef18ee
@@ -8576,7 +8591,7 @@ div.modalHeader_c5e09c
 .fullRegionDropdownButton_ef18ee
 {
 	display:flex;
-	padding:8px;
+	padding:4px;
 	justify-content:center;
 	align-items:center;
 	border-radius:12px;
@@ -8596,7 +8611,7 @@ div.modalHeader_c5e09c
 }
 .fullRegionIcon_ef18ee
 {
-	padding:8px 16px
+	padding:4px 12px
 }
 .buttonPremiumGlow_ef18ee
 {
@@ -8659,8 +8674,14 @@ div.modalHeader_c5e09c
 }
 .contextMenuNubExperiment_ef18ee
 {
+	cursor:pointer;
 	padding:10px 2px;
-	border-radius:4px;
+	border-radius:8px;
+	height:20px;
+	width:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	transition:background.15s ease-in-out,color.15s ease-in-out
 }
 .contextMenuCaret_ef18ee
@@ -23230,6 +23251,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 .visual-refresh .base_d7ebeb
 {
 	position:static;
+	overflow:auto;
 	font-size:12px;
 	font-weight:500;
 	line-height:16px;
@@ -26448,7 +26470,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 }
 .sansAttachButton_bdf0de
 {
-	padding-left:16px
+	padding-left:calc(-1px + var(--space-16))
 }
 .sansAttachButtonCreateThread_bdf0de
 {
@@ -26731,12 +26753,15 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	justify-content:space-between;
 	align-items:center;
 	padding:var(--space-4)var(--space-16);
-	border-top:1px solid var(--border-faint)
+	border-top:1px solid var(--border-faint);
+	margin-left:-1px;
+	margin-right:1px
 }
 .visual-refresh .accessoryBarLeft_bdf0de,
 .visual-refresh .accessoryBarRight_bdf0de
 {
-	display:flex;
+	display:grid;
+	grid-auto-flow:column;
 	align-items:center;
 	position:relative
 }
