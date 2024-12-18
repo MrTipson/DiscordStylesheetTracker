@@ -7039,6 +7039,23 @@ div.modalHeader_c5e09c
 {
 	border-bottom:1px solid var(--background-modifier-hover)
 }
+.visual-refresh .row_c2f3ef
+{
+	background-color:var(--background-mod-subtle)
+}
+.visual-refresh .row_c2f3ef:hover
+{
+	background-color:var(--background-mod-normal)
+}
+.visual-refresh .row_c2f3ef:not(:last-child) .rowInner_c2f3ef
+{
+	border-color:var(--border-subtle)
+}
+.visual-refresh .rows_c2f3ef
+{
+	border:1px solid var(--border-subtle);
+	border-radius:var(--radius-sm)
+}
 .rowInner_c2f3ef
 {
 	display:flex;
@@ -7082,6 +7099,11 @@ div.modalHeader_c5e09c
 	gap:var(--spacing-8);
 	display:flex;
 	flex-direction:column
+}
+.visual-refresh .overviewContainerNoVideo_c2f3ef
+{
+	background-color:var(--background-mod-subtle);
+	border:1px solid var(--border-faint)
 }
 .titleContainer_c2f3ef
 {
@@ -8697,8 +8719,8 @@ div.modalHeader_c5e09c
 }
 .contextMenuCaretExperiment_ef18ee
 {
-	width:12px;
-	height:12px;
+	width:16px;
+	height:16px;
 	cursor:pointer;
 	transition:none
 }
@@ -18100,7 +18122,8 @@ span.clanTag_a31c43
 }
 .visual-refresh .content_c2654d
 {
-	padding-left:var(--space-4)
+	padding-left:var(--space-4);
+	background:var(--bg-overlay-chat,var(--background-base-lower))
 }
 .isUnread_c2654d .content_c2654d
 {
@@ -18703,6 +18726,11 @@ span.clanTag_a31c43
 {
 	color:var(--content-inventory-overlay-text-secondary)
 }
+.winnerImage_d270e1
+{
+	height:14px;
+	width:14px
+}
 .timestamp_c5d1c1
 {
 	font-family:var(--font-code)
@@ -18795,6 +18823,11 @@ span.clanTag_a31c43
 	display:flex;
 	gap:6px;
 	align-items:center
+}
+.winnerImage_ba1926
+{
+	height:16px;
+	width:16px
 }
 .container_cf8a7d
 {
@@ -18892,6 +18925,11 @@ span.clanTag_a31c43
 	display:flex;
 	align-items:center
 }
+.userWinnerImage_cf8a7d
+{
+	height:14px;
+	width:14px
+}
 .joinLeaderboardCTAContainer_cf8a7d
 {
 	display:flex;
@@ -18901,13 +18939,10 @@ span.clanTag_a31c43
 	margin-top:12px;
 	margin-bottom:6px
 }
-.joinLeaderboardCTA_cf8a7d
+.joinLeaderboardCTAWinnerImage_cf8a7d
 {
-	color:var(--content-inventory-overlay-text-secondary)
-}
-.leagueIcon_cf8a7d path
-{
-	fill:var(--content-inventory-overlay-text-secondary)
+	width:14px;
+	height:14px
 }
 .rankChangeBadge_cf8a7d
 {
@@ -18930,11 +18965,13 @@ span.clanTag_a31c43
 {
 	color:var(--content-inventory-overlay-text-primary)
 }
-.emptyCrownIcon_cf8a7d
+.emptyWinnerImage_cf8a7d
 {
 	position:relative;
 	top:2px;
-	left:2px
+	left:2px;
+	width:16px;
+	height:16px
 }
 .copySpinner_cf8a7d
 {
@@ -19021,7 +19058,7 @@ span.clanTag_a31c43
 	border-top:1px solid var(--border-subtle);
 	cursor:pointer
 }
-.badge_e8c4b6
+.badge_cf8912
 {
 	display:inline-block;
 	margin-left:.25rem;
@@ -19033,6 +19070,11 @@ span.clanTag_a31c43
 	cursor:pointer;
 	text-indent:0;
 	text-indent:0
+}
+.image_cf8912
+{
+	height:20px;
+	width:20px
 }
 .badge_ba89c1
 {
@@ -21226,6 +21268,11 @@ h3.improved_f017d0:after
 	width:20px;
 	height:20px;
 	margin-right:8px
+}
+.visual-refresh .icon_d03bba
+{
+	margin-left:-2px;
+	margin-right:calc(-2px + var(--space-8))
 }
 .size56_d03bba .avatarContainer_d03bba
 {
@@ -32561,6 +32608,10 @@ img.thumbnail_c64476
 	padding:0;
 	width:100%
 }
+.visual-refresh .oauth2ModalWrapper_c2b22e .footer_c2b22e
+{
+	box-sizing:border-box
+}
 .wrapper_e1a4cf
 {
 	flex:1;
@@ -32654,6 +32705,19 @@ img.thumbnail_c64476
 	flex-direction:row;
 	background:var(--background-primary)
 }
+.visual-refresh .authorize_c5a065
+{
+	background:transparent none repeat 0 0/auto auto padding-box border-box scroll;
+	background:initial;
+	margin:0
+}
+.visual-refresh .footer_c5a065
+{
+	background:transparent none repeat 0 0/auto auto padding-box border-box scroll;
+	background:initial;
+	padding-left:0;
+	padding-right:0
+}
 .spinner_c5a065
 {
 	position:fixed;
@@ -32728,6 +32792,20 @@ img.thumbnail_c64476
 .contentBackground_c5a065
 {
 	background:var(--background-secondary)
+}
+.visual-refresh .content_c5a065
+{
+	margin:0;
+	padding:var(--space-16)
+}
+.visual-refresh .content_c5a065.minimalPadding_c5a065
+{
+	padding:var(--space-24)0 var(--space-24)
+}
+.visual-refresh .contentBackground_c5a065
+{
+	background:var(--background-mod-subtle);
+	border:1px solid var(--border-faint)
 }
 @media(max-width:568px)
 {
@@ -36107,7 +36185,8 @@ img.thumbnail_c64476
 .visual-refresh .container_fc4f04
 {
 	--__header-bar-background:var(--background-base-lower);
-	border-bottom:1px solid var(--border-subtle)
+	border-bottom:1px solid var(--border-subtle);
+	padding-left:20px
 }
 .upperContainer_fc4f04
 {
@@ -57322,7 +57401,9 @@ blue))and (top:var(--f))
 	--background-floating:var(--neutral-66);
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
-	--background-message-hover:var(--neutral-74);
+	--background-message-highlight:hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902);
+	--background-message-highlight-hover:hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039);
+	--background-message-hover:hsl(var(--opacity-black-12-hsl) / 0.12156862745098039);
 	--background-modifier-accent:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-modifier-active:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -57484,10 +57565,20 @@ blue))and (top:var(--f))
 		hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
+		--background-message-highlight:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		);
+		--background-message-highlight-hover:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		);
 		--background-message-hover:color-mix(
 		in oklab,
-		var(--neutral-74) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
@@ -57970,7 +58061,9 @@ blue))and (top:var(--f))
 	--background-floating:var(--neutral-1);
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
-	--background-message-hover:var(--neutral-3);
+	--background-message-highlight:hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902);
+	--background-message-highlight-hover:hsl(var(--opacity-blurple-20-hsl) / 0.2);
+	--background-message-hover:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-modifier-accent:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-modifier-active:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -58132,10 +58225,20 @@ blue))and (top:var(--f))
 		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
 		);
+		--background-message-highlight:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		);
+		--background-message-highlight-hover:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
+		);
 		--background-message-hover:color-mix(
 		in oklab,
-		var(--neutral-3) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
@@ -58618,7 +58721,9 @@ blue))and (top:var(--f))
 	--background-floating:var(--neutral-91);
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
-	--background-message-hover:var(--neutral-94);
+	--background-message-highlight:hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902);
+	--background-message-highlight-hover:hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039);
+	--background-message-hover:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-modifier-accent:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-modifier-active:hsl(var(--opacity-20-hsl) / 0.2);
 	--background-modifier-hover:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -58779,10 +58884,20 @@ blue))and (top:var(--f))
 		hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
+		--background-message-highlight:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		);
+		--background-message-highlight-hover:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		);
 		--background-message-hover:color-mix(
 		in oklab,
-		var(--neutral-94) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
@@ -59260,7 +59375,9 @@ blue))and (top:var(--f))
 	--background-floating:var(--neutral-79);
 	--background-mentioned:hsl(var(--opacity-yellow-8-hsl) / 0.0784313725490196);
 	--background-mentioned-hover:hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902);
-	--background-message-hover:var(--neutral-89);
+	--background-message-highlight:hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902);
+	--background-message-highlight-hover:hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039);
+	--background-message-hover:hsl(var(--opacity-black-12-hsl) / 0.12156862745098039);
 	--background-modifier-accent:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-modifier-active:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-modifier-hover:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -59421,10 +59538,20 @@ blue))and (top:var(--f))
 		hsl(var(--opacity-yellow-16-hsl) / 0.1607843137254902) 100%,
 		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
+		--background-message-highlight:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
+		);
+		--background-message-highlight-hover:color-mix(
+		in oklab,
+		hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		);
 		--background-message-hover:color-mix(
 		in oklab,
-		var(--neutral-89) 100%,
-		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-black-12-hsl) / 0.12156862745098039) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
 		);
 		--background-modifier-accent:color-mix(
 		in oklab,
@@ -60123,6 +60250,76 @@ blue))and (top:var(--f))
 }
 @font-face
 {
+	font-family:"ABC Ginto Normal";
+	font-style:normal;
+	font-weight:300;
+	src:url(/assets/de0ea9e656d376ead50b.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:italic;
+	font-weight:300;
+	src:url(/assets/f2ca4dfa3d5eb7a78f0d.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:normal;
+	font-weight:400;
+	src:url(/assets/b182a77b250085023348.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:italic;
+	font-weight:400;
+	src:url(/assets/a837a7d3441974e852ca.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:normal;
+	font-weight:500;
+	src:url(/assets/0b388475ed207eedf34c.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:italic;
+	font-weight:500;
+	src:url(/assets/7ae55ec85248a0a345cc.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:normal;
+	font-weight:700;
+	src:url(/assets/e7eab90bca29dff800af.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:italic;
+	font-weight:700;
+	src:url(/assets/62bd153059b53d8a0f01.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:normal;
+	font-weight:800;
+	src:url(/assets/a4bf2abc52700c871ac1.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Normal";
+	font-style:italic;
+	font-weight:800;
+	src:url(/assets/1870f9e7f4db57ba6f51.woff2)format("woff2")
+}
+@font-face
+{
 	font-family:"gg sans";
 	font-style:normal;
 	font-weight:400;
@@ -60312,7 +60509,9 @@ blue))and (top:var(--f))
 	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
 	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+	sans-serif
 }
 :root:lang(el),
 :root:lang(ru),
@@ -60326,7 +60525,8 @@ blue))and (top:var(--f))
 	'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
 	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display-marketing:'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 :root:lang(ko)
 {
@@ -60342,6 +60542,8 @@ blue))and (top:var(--f))
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic',
 	Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
+	'Malgun Gothic', Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
 	'Malgun Gothic', Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 :root:lang(ja)
@@ -60359,6 +60561,9 @@ blue))and (top:var(--f))
 	メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
 	'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+	sans-serif;
+	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
+	'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
 	sans-serif
 }
 :root:lang(zh-CN)
@@ -60375,6 +60580,8 @@ blue))and (top:var(--f))
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
+	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 :root:lang(zh-TW)
@@ -60391,7 +60598,10 @@ blue))and (top:var(--f))
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
 	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
-	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體,
+	'Microsoft JhengHei UI', 'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+	sans-serif
 }
 :root
 {
