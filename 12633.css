@@ -2897,19 +2897,18 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8
 }
 :where(.visual-refresh) .checkbox_f6cde8
 {
-	border-radius:6px
+	border-radius:6px;
+	border-color:var(--checkbox-border-default);
+	background-color:var(--checkbox-background-default)
 }
 :where(.visual-refresh) .checkbox_f6cde8.checkboxDisabled_f6cde8
 {
 	opacity:.6
 }
-:where(.visual-refresh) .checkbox_f6cde8
-{
-	border-color:var(--input-border)
-}
 :where(.visual-refresh) .checkbox_f6cde8.checked_f6cde8
 {
-	background-color:var(--redesign-input-control-selected)
+	border-color:var(--checkbox-border-checked);
+	background-color:var(--checkbox-background-checked)
 }
 .collapseable_a3cc4a
 {
@@ -12540,7 +12539,7 @@ div.modalHeader_c5e09c
 }
 .guildIconImage_a2e41e.acronym_a2e41e
 {
-	background-color:var(--background-secondary)
+	background-color:var(--bg-base-tertiary)
 }
 .acronym_a2e41e
 {
@@ -15685,10 +15684,6 @@ div.cardContainer_c22357
 	max-width:224px;
 	margin-left:8px
 }
-.visual-refresh .member_a31c43
-{
-	max-width:calc(-16px + var(--custom-member-list-width))
-}
 .memberInner_a31c43
 {
 	padding-top:calc(.5*var(--custom-member-list-item-avatar-decoration-padding));
@@ -15776,6 +15771,20 @@ span.clanTag_a31c43
 	margin-top:1px;
 	margin-left:4px;
 	margin-bottom:1px
+}
+.visual-refresh .member_a31c43
+{
+	max-width:calc(-16px + var(--custom-member-list-width))
+}
+.visual-refresh .memberInner_a31c43
+{
+	box-sizing:border-box;
+	padding:var(--space-xxs)var(--space-16)var(--space-xxs)var(--space-xs);
+	height:auto
+}
+.visual-refresh .activityText_a31c43
+{
+	color:var(--text-secondary)
 }
 .container_a5ad5c
 {
@@ -26420,7 +26429,7 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	border-radius:var(--radius-sm);
 	transition:border-color.2s ease;
 	box-shadow:var(--shadow-low);
-	background:var(--bg-overlay-3,var(--channeltextarea-background))
+	background:var(--bg-overlay-3,var(--chat-background-default))
 }
 :where(.visual-refresh) .channelTextArea_bdf0de:focus-within
 {
@@ -26534,6 +26543,10 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 .sansAttachButton_bdf0de
 {
 	padding-left:calc(-1px + var(--space-16))
+}
+.inlineContainer_bdf0de .sansAttachButton_bdf0de
+{
+	padding-left:0
 }
 .sansAttachButtonCreateThread_bdf0de
 {
@@ -26834,7 +26847,9 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	display:flex;
 	align-items:center;
 	max-height:var(--custom-channel-textarea-text-area-height);
-	margin-right:var(--space-4)
+	margin-right:var(--space-4);
+	position:sticky;
+	top:0
 }
 .enable-forced-colors .scrollableContainer_bdf0de
 {
@@ -32153,6 +32168,10 @@ img.thumbnail_c64476
 	background:var(--input-background);
 	border-radius:3px
 }
+.visual-refresh .inner_c59af2
+{
+	border-radius:var(--radius-sm)
+}
 .custom-profile-theme .inner_c59af2
 {
 	background:rgb(var(--bg-overlay-color-inverse)/.1)
@@ -37111,7 +37130,9 @@ img.thumbnail_c64476
 	flex-shrink:0;
 	flex-grow:0;
 	border-radius:8px 0 0;
-	box-shadow:var(--elevation-low)
+	box-shadow:var(--elevation-low);
+	background:var(--custom-notice-background);
+	color:var(--custom-notice-text)
 }
 .notice_be03aa strong
 {
@@ -37122,9 +37143,30 @@ img.thumbnail_c64476
 	line-height:30px;
 	padding:10px 20px
 }
+.notice_be03aa .button_be03aa
+{
+	color:var(--custom-notice-text)!important;
+	border-color:var(--custom-notice-text)!important
+}
+.notice_be03aa .button_be03aa:hover
+{
+	color:var(--custom-notice-button-hover);
+	background-color:var(--bg-mod-subtle)
+}
+.notice_be03aa .closeIcon_be03aa path
+{
+	fill:var(--custom-notice-text)
+}
 .visual-refresh .notice_be03aa
 {
-	grid-area:notice
+	grid-area:notice;
+	border-top:1px solid var(--app-border-frame);
+	border-left:1px solid var(--app-border-frame);
+	box-shadow:none
+}
+.visual-refresh .notice_be03aa .button_be03aa
+{
+	border-color:var(--custom-notice-text)!important
 }
 .platform-osx .notice_be03aa
 {
@@ -37132,115 +37174,112 @@ img.thumbnail_c64476
 }
 .colorDefault_be03aa
 {
-	background-color:var(--status-positive-background);
-	color:var(--status-positive-text)
-}
-.colorDefault_be03aa .button_be03aa:hover
-{
-	color:var(--status-positive-background)
+	--custom-notice-background:var(--status-positive-background);
+	--custom-notice-text:var(--status-positive-text);
+	--custom-notice-button-hover:var(--status-positive-background)
 }
 .colorNeutral_be03aa
 {
-	background-color:var(--background-accent);
-	color:var(--white-500)
-}
-.colorNeutral_be03aa .button_be03aa:hover
-{
-	color:#222
+	--custom-notice-background:var(--background-accent);
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:#222222
 }
 .colorPremium_be03aa
 {
-	color:var(--white-500)
+	--custom-notice-text:var(--white-500)
 }
 .colorPremiumTier0_be03aa
 {
-	background-image:linear-gradient(to left,var(--premium-tier-0-purple),var(--premium-tier-0-blue))
-}
-.colorPremiumTier0_be03aa .button_be03aa:hover
-{
-	color:var(--brand-500)
+	--custom-notice-background:linear-gradient(to left, var(--premium-tier-0-purple), var(--premium-tier-0-blue));
+	--custom-notice-button-hover:var(--brand-500)
 }
 .colorPremiumTier1_be03aa
 {
-	background:linear-gradient(270deg,var(--premium-tier-1-blue-for-gradients)0%,var(--premium-tier-1-dark-blue-for-gradients)100%)
-}
-.colorPremiumTier1_be03aa .button_be03aa:hover
-{
-	color:var(--brand-500)
+	--custom-notice-background:linear-gradient(
+	270deg,
+	var(--premium-tier-1-blue-for-gradients) 0%,
+	var(--premium-tier-1-dark-blue-for-gradients) 100%
+	);
+	--custom-notice-button-hover:var(--brand-500)
 }
 .colorPremiumTier2_be03aa
 {
-	background-image:linear-gradient(90deg,var(--premium-tier-2-purple-for-gradients)0%,var(--premium-tier-2-purple-for-gradients-2)50.24%,var(--premium-tier-2-pink-for-gradients)100%)
-}
-.colorPremiumTier2_be03aa .button_be03aa:hover
-{
-	color:var(--premium-tier-2-pink)
+	--custom-notice-background:linear-gradient(
+	90deg,
+	var(--premium-tier-2-purple-for-gradients) 0%,
+	var(--premium-tier-2-purple-for-gradients-2) 50.24%,
+	var(--premium-tier-2-pink-for-gradients) 100%
+	);
+	--custom-notice-button-hover:var(--premium-tier-2-pink)
 }
 .colorInfo_be03aa
 {
-	background-color:#4a90e2;
-	color:var(--white-500)
-}
-.colorInfo_be03aa .button_be03aa:hover
-{
-	color:#4a90e2
+	--custom-notice-background:#4a90e2;
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:#4a90e2
 }
 .colorSuccess_be03aa
 {
-	background-color:var(--status-positive-background);
-	color:var(--status-positive-text)
-}
-.colorSuccess_be03aa .button_be03aa:hover
-{
-	color:var(--text-positive)
+	--custom-notice-background:var(--status-positive-background);
+	--custom-notice-text:var(--status-positive-text);
+	--custom-notice-button-hover:var(--text-positive)
 }
 .colorWarning_be03aa
 {
-	background-color:var(--status-warning-background);
-	color:var(--status-warning-text)
+	--custom-notice-background:var(--status-warning-background);
+	--custom-notice-text:var(--status-warning-text);
+	--custom-notice-button-hover:var(--status-warning-text)
 }
 .colorWarning_be03aa .button_be03aa
 {
 	border-color:var(--status-warning-text)!important;
 	color:var(--status-warning-text)
 }
-.colorWarning_be03aa .button_be03aa:hover
-{
-	background-color:rgba(255,255,255,.26667)!important
-}
-.colorWarning_be03aa .button_be03aa:hover
-{
-	color:var(--status-warning-text)
-}
-.colorWarning_be03aa .closeIcon_be03aa path
-{
-	fill:var(--black-500)
-}
 .colorDanger_be03aa
 {
-	background-color:var(--status-danger-background);
-	color:var(--status-danger-text)
+	--custom-notice-background:var(--status-danger-background);
+	--custom-notice-text:var(--status-danger-text);
+	--custom-notice-button-hover:var(--text-danger)
 }
-.colorDanger_be03aa .button_be03aa:hover
+.visual-refresh .colorSuccess_be03aa,
+.visual-refresh .colorDefault_be03aa
 {
-	color:var(--text-danger)
+	--custom-notice-background:var(--notice-background-positive);
+	--custom-notice-text:var(--notice-text-positive);
+	--custom-notice-button-hover:var(--notice-text-positive)
+}
+.visual-refresh .colorWarning_be03aa
+{
+	--custom-notice-background:var(--notice-background-warning);
+	--custom-notice-text:var(--notice-text-warning);
+	--custom-notice-button-hover:var(--notice-text-warning)
+}
+.visual-refresh .colorDanger_be03aa
+{
+	--custom-notice-background:var(--notice-background-critical);
+	--custom-notice-text:var(--notice-text-critical);
+	--custom-notice-button-hover:var(--notice-text-critical)
+}
+.visual-refresh .colorInfo_be03aa
+{
+	--custom-notice-background:var(--notice-background-info);
+	--custom-notice-text:var(--notice-text-info);
+	--custom-notice-button-hover:var(--notice-text-info)
 }
 .colorStreamerMode_be03aa
 {
-	background-color:var(--twitch);
-	color:var(--white-500)
-}
-.colorStreamerMode_be03aa .button_be03aa:hover
-{
-	color:var(--twitch)
+	--custom-notice-background:var(--twitch);
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:var(--twitch)
 }
 .colorSpotify_be03aa
 {
+	--custom-notice-background:var(--spotify);
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:var(--spotify);
 	display:flex;
 	align-items:center;
-	justify-content:center;
-	background-color:var(--spotify);
-	color:var(--white-500)
+	justify-content:center
 }
 .colorSpotify_be03aa .platformIcon_be03aa
 {
@@ -37253,17 +37292,14 @@ img.thumbnail_c64476
 	top:0;
 	margin-left:20px
 }
-.colorSpotify_be03aa .button_be03aa:hover
-{
-	color:var(--spotify)
-}
 .colorPlayStation_be03aa
 {
+	--custom-notice-background:var(--playstation);
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:var(--playstation);
 	display:flex;
 	align-items:center;
-	justify-content:center;
-	background-color:var(--playstation);
-	color:var(--white-500)
+	justify-content:center
 }
 .colorPlayStation_be03aa .platformIcon_be03aa
 {
@@ -37276,22 +37312,15 @@ img.thumbnail_c64476
 	top:0;
 	margin-left:20px
 }
-.colorPlayStation_be03aa .button_be03aa:hover
-{
-	color:var(--playstation)
-}
 .colorBrand_be03aa
 {
-	background-color:var(--brand-500);
-	color:var(--white-500)
+	--custom-notice-background:var(--brand-500);
+	--custom-notice-text:var(--white-500);
+	--custom-notice-button-hover:var(--brand-500)
 }
-.colorBrand_be03aa .button_be03aa:hover
+.colorCustom_be03aa
 {
-	color:var(--brand-500)
-}
-.colorCustom_be03aa .button_be03aa:hover
-{
-	color:#222
+	--custom-notice-button-hover:#222222
 }
 .closeButton_be03aa
 {
@@ -37326,13 +37355,20 @@ img.thumbnail_c64476
 	margin-left:10px;
 	line-height:22px;
 	transition:background-color.2s ease,color.2s ease,border-color.2s ease;
-	-webkit-app-region:no-drag
+	-webkit-app-region:no-drag;
+	border-color:var(--white-500);
+	background-color:transparent
 }
 .button_be03aa.buttonMinor_be03aa
 {
 	border:none;
 	-webkit-text-decoration:underline;
 	text-decoration:underline
+}
+.button_be03aa:hover
+{
+	border-color:var(--white-500);
+	background-color:var(--white-500)
 }
 .enable-forced-colors .notice_be03aa
 {
@@ -37348,16 +37384,6 @@ img.thumbnail_c64476
 .enable-forced-colors .closeButton_be03aa:focus
 {
 	outline:1px solid ButtonText
-}
-.button_be03aa
-{
-	border-color:var(--white-500);
-	background-color:transparent
-}
-.button_be03aa:hover
-{
-	border-color:var(--white-500);
-	background-color:var(--white-500)
 }
 .heading-sm\/normal_df8943
 {
@@ -38439,13 +38465,24 @@ img.thumbnail_c64476
 }
 .visual-refresh .root_f9a4c9
 {
-	background-color:var(--background-surface-high);
 	border-radius:var(--radius-md);
-	border:1px solid var(--border-subtle)
+	border:1px solid var(--border-normal)
 }
 .visual-refresh .small_f9a4c9
 {
-	min-height:220px
+	min-height:220px;
+	width:442px;
+	max-height:min(900px,70vh)
+}
+.visual-refresh .medium_f9a4c9
+{
+	width:602px;
+	max-height:min(900px,70vh)
+}
+.visual-refresh .large_f9a4c9
+{
+	max-width:962px;
+	max-height:min(900px,70vh)
 }
 @media(max-width:485px)
 {
@@ -38509,35 +38546,6 @@ img.thumbnail_c64476
 {
 	box-shadow:inset 0 1px 0 hsl(var(--primary-100-hsl)/.6)
 }
-.visual-refresh .header_f9a4c9,
-.visual-refresh .footer_f9a4c9
-{
-	padding-left:var(--spacing-24);
-	padding-right:var(--spacing-24)
-}
-.visual-refresh .header_f9a4c9
-{
-	padding-bottom:0;
-	overflow:hidden
-}
-.visual-refresh .separator_f9a4c9
-{
-	box-shadow:none
-}
-.visual-refresh .content_f9a4c9
-{
-	padding:var(--space-8)var(--space-24)0 var(--space-24)
-}
-.visual-refresh .footer_f9a4c9
-{
-	padding-top:var(--space-16);
-	background-color:var(--background-surface-high);
-	border-radius:0 0 var(--radius-md)var(--radius-md)
-}
-.visual-refresh .footerSeparator_f9a4c9
-{
-	box-shadow:none
-}
 .content_f9a4c9
 {
 	position:relative;
@@ -38562,6 +38570,11 @@ img.thumbnail_c64476
 {
 	opacity:1;
 	color:var(--interactive-hover)
+}
+.visual-refresh .close_f9a4c9
+{
+	height:24px;
+	color:var(--icon-primary)
 }
 .closeWithCircleBackground_f9a4c9
 {
@@ -38610,6 +38623,31 @@ img.thumbnail_c64476
 	height:100%;
 	justify-content:center;
 	width:100%
+}
+.visual-refresh .separator_f9a4c9,
+.visual-refresh .footerSeparator_f9a4c9
+{
+	box-shadow:none
+}
+:where(.visual-refresh) .header_f9a4c9,
+:where(.visual-refresh) .footer_f9a4c9
+{
+	padding-left:var(--spacing-24);
+	padding-right:var(--spacing-24)
+}
+:where(.visual-refresh) .header_f9a4c9
+{
+	padding-bottom:0;
+	overflow:hidden
+}
+:where(.visual-refresh) .content_f9a4c9
+{
+	padding:var(--space-8)var(--space-24)0 var(--space-24)
+}
+:where(.visual-refresh) .footer_f9a4c9
+{
+	padding-top:var(--space-16);
+	border-radius:0 0 var(--radius-md)var(--radius-md)
 }
 .enable-forced-colors .root_f9a4c9
 {
@@ -57493,14 +57531,14 @@ blue))and (top:var(--f))
 	--icon-muted:var(--neutral-22);
 	--icon-primary:var(--neutral-2);
 	--icon-secondary:var(--neutral-15);
-	--info-danger-background:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--info-danger-text:var(--red-new-20);
-	--info-help-background:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-	--info-help-text:var(--blue-new-21);
-	--info-positive-background:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--info-positive-text:var(--green-new-22);
-	--info-warning-background:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
-	--info-warning-text:var(--yellow-new-20);
+	--info-danger-background:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
+	--info-danger-text:var(--red-new-21);
+	--info-help-background:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
+	--info-help-text:var(--blue-new-23);
+	--info-positive-background:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--info-positive-text:var(--green-new-26);
+	--info-warning-background:hsl(var(--opacity-yellow-20-hsl) / 0.2);
+	--info-warning-text:var(--yellow-new-30);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
 	--input-border:hsl(var(--opacity-20-hsl) / 0.2);
 	--input-focused-border:hsl(var(--white-hsl) / 0.04);
@@ -57509,6 +57547,8 @@ blue))and (top:var(--f))
 	--interactive-normal:var(--neutral-15);
 	--mention-background:hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981);
 	--mention-foreground:var(--blurple-10);
+	--modal-background:var(--neutral-66);
+	--modal-footer-background:var(--neutral-66);
 	--scrollbar-auto-scrollbar-color-thumb:var(--neutral-38);
 	--scrollbar-auto-scrollbar-color-track:var(--neutral-75);
 	--scrollbar-auto-thumb:var(--neutral-37);
@@ -57519,10 +57559,10 @@ blue))and (top:var(--f))
 	--text-link:var(--blue-new-26);
 	--text-muted:var(--neutral-22);
 	--text-normal:var(--neutral-11);
-	--text-positive:var(--green-new-22);
+	--text-positive:var(--green-new-26);
 	--text-primary:var(--neutral-1);
 	--text-secondary:var(--neutral-15);
-	--text-warning:var(--yellow-new-20);
+	--text-warning:var(--yellow-new-30);
 	--app-border-frame:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-base-low:var(--neutral-69);
 	--background-base-lower:var(--neutral-72);
@@ -57530,10 +57570,10 @@ blue))and (top:var(--f))
 	--background-code:hsl(var(--opacity-blurple-8-hsl) / 0.0784313725490196);
 	--background-code-addition:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
 	--background-code-deletion:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-critical:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-info:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-	--background-feedback-positive:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--background-feedback-warning:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
+	--background-feedback-critical:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
+	--background-feedback-info:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
+	--background-feedback-positive:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--background-feedback-warning:hsl(var(--opacity-yellow-20-hsl) / 0.2);
 	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-mod-subtle:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -57543,8 +57583,20 @@ blue))and (top:var(--f))
 	--border-feedback-critical:hsl(var(--opacity-red-20-hsl) / 0.2);
 	--border-normal:hsl(var(--opacity-20-hsl) / 0.2);
 	--chat-background-default:var(--neutral-69);
+	--checkbox-background-checked:var(--brand-500);
+	--checkbox-background-default:hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+	--checkbox-border-checked:var(--brand-500);
+	--checkbox-border-default:var(--neutral-34);
 	--icon-default:var(--neutral-2);
 	--icon-tertiary:var(--neutral-22);
+	--notice-background-critical:var(--red-new-75);
+	--notice-background-info:var(--blue-new-77);
+	--notice-background-positive:var(--green-new-76);
+	--notice-background-warning:var(--yellow-new-76);
+	--notice-text-critical:var(--red-new-1);
+	--notice-text-info:var(--blue-new-2);
+	--notice-text-positive:var(--green-new-3);
+	--notice-text-warning:var(--yellow-new-1);
 	--text-code-addition:var(--green-new-8);
 	--text-code-builtin:var(--orange-new-21);
 	--text-code-bullet:var(--yellow-new-22);
@@ -57558,10 +57610,10 @@ blue))and (top:var(--f))
 	--text-code-title:var(--blurple-12);
 	--text-code-variable:var(--blue-new-23);
 	--text-default:var(--neutral-11);
-	--text-feedback-critical:var(--red-new-20);
-	--text-feedback-info:var(--blue-new-21);
-	--text-feedback-positive:var(--green-new-22);
-	--text-feedback-warning:var(--yellow-new-20);
+	--text-feedback-critical:var(--red-new-21);
+	--text-feedback-info:var(--blue-new-23);
+	--text-feedback-positive:var(--green-new-26);
+	--text-feedback-warning:var(--yellow-new-30);
 	--text-tertiary:var(--neutral-22)
 }
 @supports(color:color-mix(in lch,
@@ -57732,42 +57784,42 @@ blue))and (top:var(--f))
 		);
 		--info-danger-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-danger-text:color-mix(
 		in oklab,
-		var(--red-new-20) 100%,
+		var(--red-new-21) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-help-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-help-text:color-mix(
 		in oklab,
-		var(--blue-new-21) 100%,
+		var(--blue-new-23) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-positive-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--info-positive-text:color-mix(
 		in oklab,
-		var(--green-new-22) 100%,
+		var(--green-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-warning-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--info-warning-text:color-mix(
 		in oklab,
-		var(--yellow-new-20) 100%,
+		var(--yellow-new-30) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--input-background:color-mix(
@@ -57809,6 +57861,16 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--blurple-10) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--modal-background:color-mix(
+		in oklab,
+		var(--neutral-66) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--modal-footer-background:color-mix(
+		in oklab,
+		var(--neutral-66) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--scrollbar-auto-scrollbar-color-thumb:color-mix(
 		in oklab,
@@ -57862,7 +57924,7 @@ blue))and (top:var(--f))
 		);
 		--text-positive:color-mix(
 		in oklab,
-		var(--green-new-22) 100%,
+		var(--green-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-primary:color-mix(
@@ -57877,7 +57939,7 @@ blue))and (top:var(--f))
 		);
 		--text-warning:color-mix(
 		in oklab,
-		var(--yellow-new-20) 100%,
+		var(--yellow-new-30) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--app-border-frame:color-mix(
@@ -57917,23 +57979,23 @@ blue))and (top:var(--f))
 		);
 		--background-feedback-critical:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-info:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-positive:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-warning:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--background-mod-normal:color-mix(
 		in oklab,
@@ -57980,6 +58042,26 @@ blue))and (top:var(--f))
 		var(--neutral-69) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--checkbox-background-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-background-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-default:color-mix(
+		in oklab,
+		var(--neutral-34) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--icon-default:color-mix(
 		in oklab,
 		var(--neutral-2) 100%,
@@ -57989,6 +58071,46 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--neutral-22) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--notice-background-critical:color-mix(
+		in oklab,
+		var(--red-new-75) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-info:color-mix(
+		in oklab,
+		var(--blue-new-77) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-positive:color-mix(
+		in oklab,
+		var(--green-new-76) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-warning:color-mix(
+		in oklab,
+		var(--yellow-new-76) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-critical:color-mix(
+		in oklab,
+		var(--red-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-info:color-mix(
+		in oklab,
+		var(--blue-new-2) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-positive:color-mix(
+		in oklab,
+		var(--green-new-3) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-warning:color-mix(
+		in oklab,
+		var(--yellow-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--text-code-addition:color-mix(
 		in oklab,
@@ -58057,22 +58179,22 @@ blue))and (top:var(--f))
 		);
 		--text-feedback-critical:color-mix(
 		in oklab,
-		var(--red-new-20) 100%,
+		var(--red-new-21) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-info:color-mix(
 		in oklab,
-		var(--blue-new-21) 100%,
+		var(--blue-new-23) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-positive:color-mix(
 		in oklab,
-		var(--green-new-22) 100%,
+		var(--green-new-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-warning:color-mix(
 		in oklab,
-		var(--yellow-new-20) 100%,
+		var(--yellow-new-30) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-tertiary:color-mix(
@@ -58157,10 +58279,10 @@ blue))and (top:var(--f))
 	--info-danger-text:var(--red-new-55);
 	--info-help-background:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
 	--info-help-text:var(--blue-new-57);
-	--info-positive-background:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--info-positive-text:var(--green-new-56);
+	--info-positive-background:hsl(var(--opacity-green-4-hsl) / 0.0392156862745098);
+	--info-positive-text:var(--green-new-53);
 	--info-warning-background:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
-	--info-warning-text:var(--yellow-new-56);
+	--info-warning-text:var(--yellow-new-55);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
 	--input-border:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
 	--input-focused-border:hsl(var(--black-hsl) / 0.04);
@@ -58169,6 +58291,8 @@ blue))and (top:var(--f))
 	--interactive-normal:var(--neutral-44);
 	--mention-background:hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981);
 	--mention-foreground:var(--blurple-71);
+	--modal-background:var(--neutral-1);
+	--modal-footer-background:var(--neutral-1);
 	--scrollbar-auto-scrollbar-color-thumb:var(--neutral-31);
 	--scrollbar-auto-scrollbar-color-track:var(--neutral-3);
 	--scrollbar-auto-thumb:var(--neutral-30);
@@ -58179,10 +58303,10 @@ blue))and (top:var(--f))
 	--text-link:var(--blue-new-49);
 	--text-muted:var(--neutral-38);
 	--text-normal:var(--neutral-67);
-	--text-positive:var(--green-new-56);
+	--text-positive:var(--green-new-53);
 	--text-primary:var(--neutral-71);
 	--text-secondary:var(--neutral-44);
-	--text-warning:var(--yellow-new-56);
+	--text-warning:var(--yellow-new-55);
 	--app-border-frame:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-base-low:var(--neutral-2);
 	--background-base-lower:var(--neutral-2);
@@ -58192,7 +58316,7 @@ blue))and (top:var(--f))
 	--background-code-deletion:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
 	--background-feedback-critical:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
 	--background-feedback-info:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-	--background-feedback-positive:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
+	--background-feedback-positive:hsl(var(--opacity-green-4-hsl) / 0.0392156862745098);
 	--background-feedback-warning:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
 	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
@@ -58203,8 +58327,20 @@ blue))and (top:var(--f))
 	--border-feedback-critical:hsl(var(--opacity-red-24-hsl) / 0.23921568627450981);
 	--border-normal:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
 	--chat-background-default:var(--neutral-1);
+	--checkbox-background-checked:var(--brand-500);
+	--checkbox-background-default:hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+	--checkbox-border-checked:var(--brand-500);
+	--checkbox-border-default:var(--neutral-29);
 	--icon-default:var(--neutral-59);
 	--icon-tertiary:var(--neutral-38);
+	--notice-background-critical:var(--red-new-1);
+	--notice-background-info:var(--blue-new-1);
+	--notice-background-positive:var(--green-new-1);
+	--notice-background-warning:var(--yellow-new-1);
+	--notice-text-critical:var(--red-new-77);
+	--notice-text-info:var(--blue-new-76);
+	--notice-text-positive:var(--green-new-74);
+	--notice-text-warning:var(--yellow-new-76);
 	--text-code-addition:var(--green-new-74);
 	--text-code-builtin:var(--orange-new-60);
 	--text-code-bullet:var(--yellow-new-60);
@@ -58220,8 +58356,8 @@ blue))and (top:var(--f))
 	--text-default:var(--neutral-67);
 	--text-feedback-critical:var(--red-new-55);
 	--text-feedback-info:var(--blue-new-57);
-	--text-feedback-positive:var(--green-new-56);
-	--text-feedback-warning:var(--yellow-new-56);
+	--text-feedback-positive:var(--green-new-53);
+	--text-feedback-warning:var(--yellow-new-55);
 	--text-tertiary:var(--neutral-38)
 }
 @supports(color:color-mix(in lch,
@@ -58412,12 +58548,12 @@ blue))and (top:var(--f))
 		);
 		--info-positive-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
 		);
 		--info-positive-text:color-mix(
 		in oklab,
-		var(--green-new-56) 100%,
+		var(--green-new-53) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-warning-background:color-mix(
@@ -58427,7 +58563,7 @@ blue))and (top:var(--f))
 		);
 		--info-warning-text:color-mix(
 		in oklab,
-		var(--yellow-new-56) 100%,
+		var(--yellow-new-55) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--input-background:color-mix(
@@ -58469,6 +58605,16 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--blurple-71) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--modal-background:color-mix(
+		in oklab,
+		var(--neutral-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--modal-footer-background:color-mix(
+		in oklab,
+		var(--neutral-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--scrollbar-auto-scrollbar-color-thumb:color-mix(
 		in oklab,
@@ -58522,7 +58668,7 @@ blue))and (top:var(--f))
 		);
 		--text-positive:color-mix(
 		in oklab,
-		var(--green-new-56) 100%,
+		var(--green-new-53) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-primary:color-mix(
@@ -58537,7 +58683,7 @@ blue))and (top:var(--f))
 		);
 		--text-warning:color-mix(
 		in oklab,
-		var(--yellow-new-56) 100%,
+		var(--yellow-new-55) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--app-border-frame:color-mix(
@@ -58587,8 +58733,8 @@ blue))and (top:var(--f))
 		);
 		--background-feedback-positive:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-warning:color-mix(
 		in oklab,
@@ -58640,6 +58786,26 @@ blue))and (top:var(--f))
 		var(--neutral-1) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--checkbox-background-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-background-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-default:color-mix(
+		in oklab,
+		var(--neutral-29) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--icon-default:color-mix(
 		in oklab,
 		var(--neutral-59) 100%,
@@ -58649,6 +58815,46 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--neutral-38) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--notice-background-critical:color-mix(
+		in oklab,
+		var(--red-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-info:color-mix(
+		in oklab,
+		var(--blue-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-positive:color-mix(
+		in oklab,
+		var(--green-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-warning:color-mix(
+		in oklab,
+		var(--yellow-new-1) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-critical:color-mix(
+		in oklab,
+		var(--red-new-77) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-info:color-mix(
+		in oklab,
+		var(--blue-new-76) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-positive:color-mix(
+		in oklab,
+		var(--green-new-74) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-warning:color-mix(
+		in oklab,
+		var(--yellow-new-76) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--text-code-addition:color-mix(
 		in oklab,
@@ -58727,12 +58933,12 @@ blue))and (top:var(--f))
 		);
 		--text-feedback-positive:color-mix(
 		in oklab,
-		var(--green-new-56) 100%,
+		var(--green-new-53) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-warning:color-mix(
 		in oklab,
-		var(--yellow-new-56) 100%,
+		var(--yellow-new-55) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-tertiary:color-mix(
@@ -58813,14 +59019,14 @@ blue))and (top:var(--f))
 	--icon-muted:var(--neutral-33);
 	--icon-primary:var(--neutral-14);
 	--icon-secondary:var(--neutral-27);
-	--info-danger-background:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
+	--info-danger-background:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
 	--info-danger-text:var(--red-new-35);
-	--info-help-background:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
+	--info-help-background:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
 	--info-help-text:var(--blue-new-37);
-	--info-positive-background:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--info-positive-text:var(--green-new-37);
-	--info-warning-background:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
-	--info-warning-text:var(--yellow-new-35);
+	--info-positive-background:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--info-positive-text:var(--green-new-39);
+	--info-warning-background:hsl(var(--opacity-yellow-20-hsl) / 0.2);
+	--info-warning-text:var(--yellow-new-43);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
 	--input-border:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
 	--interactive-active:var(--neutral-7);
@@ -58828,6 +59034,8 @@ blue))and (top:var(--f))
 	--interactive-normal:var(--neutral-27);
 	--mention-background:hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981);
 	--mention-foreground:var(--blurple-26);
+	--modal-background:var(--neutral-91);
+	--modal-footer-background:var(--neutral-91);
 	--scrollbar-auto-scrollbar-color-thumb:var(--neutral-45);
 	--scrollbar-auto-scrollbar-color-track:var(--neutral-98);
 	--scrollbar-auto-thumb:var(--neutral-45);
@@ -58838,10 +59046,10 @@ blue))and (top:var(--f))
 	--text-link:var(--blue-new-42);
 	--text-muted:var(--neutral-33);
 	--text-normal:var(--neutral-10);
-	--text-positive:var(--green-new-37);
+	--text-positive:var(--green-new-39);
 	--text-primary:var(--neutral-7);
 	--text-secondary:var(--neutral-27);
-	--text-warning:var(--yellow-new-35);
+	--text-warning:var(--yellow-new-43);
 	--app-border-frame:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-base-low:var(--neutral-95);
 	--background-base-lower:var(--neutral-97);
@@ -58849,10 +59057,10 @@ blue))and (top:var(--f))
 	--background-code:hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039);
 	--background-code-addition:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
 	--background-code-deletion:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-critical:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-info:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-	--background-feedback-positive:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--background-feedback-warning:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
+	--background-feedback-critical:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
+	--background-feedback-info:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
+	--background-feedback-positive:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--background-feedback-warning:hsl(var(--opacity-yellow-20-hsl) / 0.2);
 	--background-mod-normal:hsl(var(--opacity-20-hsl) / 0.2);
 	--background-mod-strong:hsl(var(--opacity-28-hsl) / 0.2784313725490196);
 	--background-mod-subtle:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
@@ -58862,8 +59070,20 @@ blue))and (top:var(--f))
 	--border-feedback-critical:hsl(var(--opacity-red-24-hsl) / 0.23921568627450981);
 	--border-normal:hsl(var(--opacity-36-hsl) / 0.3607843137254902);
 	--chat-background-default:var(--neutral-92);
+	--checkbox-background-checked:var(--brand-500);
+	--checkbox-background-default:hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+	--checkbox-border-checked:var(--brand-500);
+	--checkbox-border-default:var(--neutral-43);
 	--icon-default:var(--neutral-14);
 	--icon-tertiary:var(--neutral-33);
+	--notice-background-critical:var(--red-new-94);
+	--notice-background-info:var(--blue-new-94);
+	--notice-background-positive:var(--green-new-94);
+	--notice-background-warning:var(--yellow-new-94);
+	--notice-text-critical:var(--red-new-17);
+	--notice-text-info:var(--blue-new-19);
+	--notice-text-positive:var(--green-new-20);
+	--notice-text-warning:var(--yellow-new-18);
 	--text-code-addition:var(--green-new-23);
 	--text-code-builtin:var(--orange-new-34);
 	--text-code-bullet:var(--yellow-new-35);
@@ -58879,8 +59099,8 @@ blue))and (top:var(--f))
 	--text-default:var(--neutral-10);
 	--text-feedback-critical:var(--red-new-35);
 	--text-feedback-info:var(--blue-new-37);
-	--text-feedback-positive:var(--green-new-37);
-	--text-feedback-warning:var(--yellow-new-35);
+	--text-feedback-positive:var(--green-new-39);
+	--text-feedback-warning:var(--yellow-new-43);
 	--text-tertiary:var(--neutral-33)
 }
 @supports(color:color-mix(in lch,
@@ -59051,8 +59271,8 @@ blue))and (top:var(--f))
 		);
 		--info-danger-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-danger-text:color-mix(
 		in oklab,
@@ -59061,8 +59281,8 @@ blue))and (top:var(--f))
 		);
 		--info-help-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-help-text:color-mix(
 		in oklab,
@@ -59071,22 +59291,22 @@ blue))and (top:var(--f))
 		);
 		--info-positive-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--info-positive-text:color-mix(
 		in oklab,
-		var(--green-new-37) 100%,
+		var(--green-new-39) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-warning-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--info-warning-text:color-mix(
 		in oklab,
-		var(--yellow-new-35) 100%,
+		var(--yellow-new-43) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--input-background:color-mix(
@@ -59123,6 +59343,16 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--blurple-26) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--modal-background:color-mix(
+		in oklab,
+		var(--neutral-91) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--modal-footer-background:color-mix(
+		in oklab,
+		var(--neutral-91) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--scrollbar-auto-scrollbar-color-thumb:color-mix(
 		in oklab,
@@ -59176,7 +59406,7 @@ blue))and (top:var(--f))
 		);
 		--text-positive:color-mix(
 		in oklab,
-		var(--green-new-37) 100%,
+		var(--green-new-39) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-primary:color-mix(
@@ -59191,7 +59421,7 @@ blue))and (top:var(--f))
 		);
 		--text-warning:color-mix(
 		in oklab,
-		var(--yellow-new-35) 100%,
+		var(--yellow-new-43) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--app-border-frame:color-mix(
@@ -59231,23 +59461,23 @@ blue))and (top:var(--f))
 		);
 		--background-feedback-critical:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-info:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-positive:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-warning:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--background-mod-normal:color-mix(
 		in oklab,
@@ -59294,6 +59524,26 @@ blue))and (top:var(--f))
 		var(--neutral-92) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--checkbox-background-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-background-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-default:color-mix(
+		in oklab,
+		var(--neutral-43) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--icon-default:color-mix(
 		in oklab,
 		var(--neutral-14) 100%,
@@ -59303,6 +59553,46 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--neutral-33) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--notice-background-critical:color-mix(
+		in oklab,
+		var(--red-new-94) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-info:color-mix(
+		in oklab,
+		var(--blue-new-94) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-positive:color-mix(
+		in oklab,
+		var(--green-new-94) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-warning:color-mix(
+		in oklab,
+		var(--yellow-new-94) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-critical:color-mix(
+		in oklab,
+		var(--red-new-17) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-info:color-mix(
+		in oklab,
+		var(--blue-new-19) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-positive:color-mix(
+		in oklab,
+		var(--green-new-20) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-warning:color-mix(
+		in oklab,
+		var(--yellow-new-18) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--text-code-addition:color-mix(
 		in oklab,
@@ -59381,12 +59671,12 @@ blue))and (top:var(--f))
 		);
 		--text-feedback-positive:color-mix(
 		in oklab,
-		var(--green-new-37) 100%,
+		var(--green-new-39) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-warning:color-mix(
 		in oklab,
-		var(--yellow-new-35) 100%,
+		var(--yellow-new-43) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-tertiary:color-mix(
@@ -59467,14 +59757,14 @@ blue))and (top:var(--f))
 	--icon-muted:var(--neutral-29);
 	--icon-primary:var(--neutral-10);
 	--icon-secondary:var(--neutral-22);
-	--info-danger-background:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
+	--info-danger-background:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
 	--info-danger-text:var(--red-new-29);
-	--info-help-background:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
+	--info-help-background:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
 	--info-help-text:var(--blue-new-31);
-	--info-positive-background:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--info-positive-text:var(--green-new-31);
-	--info-warning-background:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
-	--info-warning-text:var(--yellow-new-29);
+	--info-positive-background:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--info-positive-text:var(--green-new-34);
+	--info-warning-background:hsl(var(--opacity-yellow-20-hsl) / 0.2);
+	--info-warning-text:var(--yellow-new-38);
 	--input-background:hsl(var(--opacity-black-8-hsl) / 0.0784313725490196);
 	--input-border:hsl(var(--opacity-20-hsl) / 0.2);
 	--interactive-active:var(--neutral-2);
@@ -59482,6 +59772,8 @@ blue))and (top:var(--f))
 	--interactive-normal:var(--neutral-22);
 	--mention-background:hsl(var(--opacity-blurple-24-hsl) / 0.23921568627450981);
 	--mention-foreground:var(--blurple-19);
+	--modal-background:var(--neutral-79);
+	--modal-footer-background:var(--neutral-79);
 	--scrollbar-auto-scrollbar-color-thumb:var(--neutral-43);
 	--scrollbar-auto-scrollbar-color-track:var(--neutral-90);
 	--scrollbar-auto-thumb:var(--neutral-42);
@@ -59492,10 +59784,10 @@ blue))and (top:var(--f))
 	--text-link:var(--blue-new-36);
 	--text-muted:var(--neutral-29);
 	--text-normal:var(--neutral-5);
-	--text-positive:var(--green-new-31);
+	--text-positive:var(--green-new-34);
 	--text-primary:var(--neutral-2);
 	--text-secondary:var(--neutral-22);
-	--text-warning:var(--yellow-new-29);
+	--text-warning:var(--yellow-new-38);
 	--app-border-frame:hsl(var(--opacity-12-hsl) / 0.12156862745098039);
 	--background-base-low:var(--neutral-82);
 	--background-base-lower:var(--neutral-86);
@@ -59503,10 +59795,10 @@ blue))and (top:var(--f))
 	--background-code:hsl(var(--opacity-blurple-12-hsl) / 0.12156862745098039);
 	--background-code-addition:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
 	--background-code-deletion:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-critical:hsl(var(--opacity-red-12-hsl) / 0.12156862745098039);
-	--background-feedback-info:hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039);
-	--background-feedback-positive:hsl(var(--opacity-green-12-hsl) / 0.12156862745098039);
-	--background-feedback-warning:hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039);
+	--background-feedback-critical:hsl(var(--opacity-red-16-hsl) / 0.1607843137254902);
+	--background-feedback-info:hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902);
+	--background-feedback-positive:hsl(var(--opacity-green-8-hsl) / 0.0784313725490196);
+	--background-feedback-warning:hsl(var(--opacity-yellow-20-hsl) / 0.2);
 	--background-mod-normal:hsl(var(--opacity-16-hsl) / 0.1607843137254902);
 	--background-mod-strong:hsl(var(--opacity-24-hsl) / 0.23921568627450981);
 	--background-mod-subtle:hsl(var(--opacity-8-hsl) / 0.0784313725490196);
@@ -59516,8 +59808,20 @@ blue))and (top:var(--f))
 	--border-feedback-critical:hsl(var(--opacity-red-20-hsl) / 0.2);
 	--border-normal:hsl(var(--opacity-20-hsl) / 0.2);
 	--chat-background-default:var(--neutral-81);
+	--checkbox-background-checked:var(--brand-500);
+	--checkbox-background-default:hsl(var(--opacity-4-hsl) / 0.0392156862745098);
+	--checkbox-border-checked:var(--brand-500);
+	--checkbox-border-default:var(--neutral-40);
 	--icon-default:var(--neutral-10);
 	--icon-tertiary:var(--neutral-29);
+	--notice-background-critical:var(--red-new-85);
+	--notice-background-info:var(--blue-new-86);
+	--notice-background-positive:var(--green-new-86);
+	--notice-background-warning:var(--yellow-new-85);
+	--notice-text-critical:var(--red-new-9);
+	--notice-text-info:var(--blue-new-13);
+	--notice-text-positive:var(--green-new-14);
+	--notice-text-warning:var(--yellow-new-12);
 	--text-code-addition:var(--green-new-17);
 	--text-code-builtin:var(--orange-new-28);
 	--text-code-bullet:var(--yellow-new-29);
@@ -59533,8 +59837,8 @@ blue))and (top:var(--f))
 	--text-default:var(--neutral-5);
 	--text-feedback-critical:var(--red-new-29);
 	--text-feedback-info:var(--blue-new-31);
-	--text-feedback-positive:var(--green-new-31);
-	--text-feedback-warning:var(--yellow-new-29);
+	--text-feedback-positive:var(--green-new-34);
+	--text-feedback-warning:var(--yellow-new-38);
 	--text-tertiary:var(--neutral-29)
 }
 @supports(color:color-mix(in lch,
@@ -59705,8 +60009,8 @@ blue))and (top:var(--f))
 		);
 		--info-danger-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-danger-text:color-mix(
 		in oklab,
@@ -59715,8 +60019,8 @@ blue))and (top:var(--f))
 		);
 		--info-help-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--info-help-text:color-mix(
 		in oklab,
@@ -59725,22 +60029,22 @@ blue))and (top:var(--f))
 		);
 		--info-positive-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--info-positive-text:color-mix(
 		in oklab,
-		var(--green-new-31) 100%,
+		var(--green-new-34) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--info-warning-background:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--info-warning-text:color-mix(
 		in oklab,
-		var(--yellow-new-29) 100%,
+		var(--yellow-new-38) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--input-background:color-mix(
@@ -59777,6 +60081,16 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--blurple-19) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--modal-background:color-mix(
+		in oklab,
+		var(--neutral-79) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--modal-footer-background:color-mix(
+		in oklab,
+		var(--neutral-79) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--scrollbar-auto-scrollbar-color-thumb:color-mix(
 		in oklab,
@@ -59830,7 +60144,7 @@ blue))and (top:var(--f))
 		);
 		--text-positive:color-mix(
 		in oklab,
-		var(--green-new-31) 100%,
+		var(--green-new-34) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-primary:color-mix(
@@ -59845,7 +60159,7 @@ blue))and (top:var(--f))
 		);
 		--text-warning:color-mix(
 		in oklab,
-		var(--yellow-new-29) 100%,
+		var(--yellow-new-38) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--app-border-frame:color-mix(
@@ -59885,23 +60199,23 @@ blue))and (top:var(--f))
 		);
 		--background-feedback-critical:color-mix(
 		in oklab,
-		hsl(var(--opacity-red-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-red-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-info:color-mix(
 		in oklab,
-		hsl(var(--opacity-blue-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-blue-16-hsl) / 0.1607843137254902) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.1607843137254902) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-positive:color-mix(
 		in oklab,
-		hsl(var(--opacity-green-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-green-8-hsl) / 0.0784313725490196) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--theme-base-color-amount, 0%)
 		);
 		--background-feedback-warning:color-mix(
 		in oklab,
-		hsl(var(--opacity-yellow-12-hsl) / 0.12156862745098039) 100%,
-		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.12156862745098039) var(--theme-base-color-amount, 0%)
+		hsl(var(--opacity-yellow-20-hsl) / 0.2) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.2) var(--theme-base-color-amount, 0%)
 		);
 		--background-mod-normal:color-mix(
 		in oklab,
@@ -59948,6 +60262,26 @@ blue))and (top:var(--f))
 		var(--neutral-81) 100%,
 		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
+		--checkbox-background-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-background-default:color-mix(
+		in oklab,
+		hsl(var(--opacity-4-hsl) / 0.0392156862745098) 100%,
+		hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.0392156862745098) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-checked:color-mix(
+		in oklab,
+		var(--brand-500) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--checkbox-border-default:color-mix(
+		in oklab,
+		var(--neutral-40) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
 		--icon-default:color-mix(
 		in oklab,
 		var(--neutral-10) 100%,
@@ -59957,6 +60291,46 @@ blue))and (top:var(--f))
 		in oklab,
 		var(--neutral-29) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+		);
+		--notice-background-critical:color-mix(
+		in oklab,
+		var(--red-new-85) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-info:color-mix(
+		in oklab,
+		var(--blue-new-86) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-positive:color-mix(
+		in oklab,
+		var(--green-new-86) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-background-warning:color-mix(
+		in oklab,
+		var(--yellow-new-85) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-critical:color-mix(
+		in oklab,
+		var(--red-new-9) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-info:color-mix(
+		in oklab,
+		var(--blue-new-13) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-positive:color-mix(
+		in oklab,
+		var(--green-new-14) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
+		);
+		--notice-text-warning:color-mix(
+		in oklab,
+		var(--yellow-new-12) 100%,
+		var(--theme-base-color, black) var(--theme-base-color-amount, 0%)
 		);
 		--text-code-addition:color-mix(
 		in oklab,
@@ -60035,12 +60409,12 @@ blue))and (top:var(--f))
 		);
 		--text-feedback-positive:color-mix(
 		in oklab,
-		var(--green-new-31) 100%,
+		var(--green-new-34) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-feedback-warning:color-mix(
 		in oklab,
-		var(--yellow-new-29) 100%,
+		var(--yellow-new-38) 100%,
 		var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
 		);
 		--text-tertiary:color-mix(
