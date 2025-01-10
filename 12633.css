@@ -18194,6 +18194,11 @@ span.clanTag_a31c43
 {
 	background:var(--background-message-automod)
 }
+.potioned_d5deea
+{
+	position:relative;
+	background:linear-gradient(to right,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/8%),hsl(var(--premium-tier-2-pink-for-gradients-hsl)/8%))
+}
 .mentioned_d5deea
 {
 	position:relative;
@@ -18210,7 +18215,8 @@ span.clanTag_a31c43
 .nitroMessage_d5deea:before,
 .automodMessage_d5deea:before,
 .replying_d5deea:before,
-.highlighted_d5deea:before
+.highlighted_d5deea:before,
+.potioned_d5deea:before
 {
 	content:"";
 	position:absolute;
@@ -18232,6 +18238,10 @@ span.clanTag_a31c43
 .automodMessage_d5deea:before
 {
 	background:var(--text-danger)
+}
+.potioned_d5deea:before
+{
+	background:linear-gradient(to right,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-pink-for-gradients))
 }
 .mentioned_d5deea:before
 {
@@ -18267,7 +18277,7 @@ span.clanTag_a31c43
 .theme-light .message_d5deea.selected_d5deea,
 .theme-light.mouse-mode.full-motion .message_d5deea:hover
 {
-	background:var(--bg-overlay-2,var(--background-message-hover))
+	background:var(--bg-overlay-3,var(--background-message-hover))
 }
 .message_d5deea.mentioned_d5deea.selected_d5deea,
 .mouse-mode.full-motion .message_d5deea.mentioned_d5deea:hover
@@ -18975,7 +18985,8 @@ span.clanTag_a31c43
 {
 	flex:1;
 	display:flex;
-	align-items:center
+	align-items:center;
+	min-width:0
 }
 .userWinnerImage_cf8a7d
 {
@@ -19164,12 +19175,16 @@ span.clanTag_a31c43
 	color:var(--interactive-normal);
 	text-indent:0
 }
-.platform-osx .drag_fccaa9
+.platform-osx:not(.visual-refresh) .drag_fccaa9
 {
 	-webkit-app-region:drag;
 	position:absolute;
 	width:100%;
 	padding-top:32px
+}
+.visual-refresh .drag_fccaa9
+{
+	display:none
 }
 .root_fccaa9
 {
@@ -22694,6 +22709,13 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	}
 	
 }
+.rowContainer_d3469a
+{
+	padding-top:8px;
+	display:flex;
+	flex-direction:row;
+	gap:8px
+}
 .image_b000dd
 {
 	-o-object-fit:contain;
@@ -23074,6 +23096,20 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 	background:var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
 	border-radius:3px;
 	flex-shrink:0
+}
+.soundmojiViewMore_a3bc57
+{
+	cursor:pointer;
+	margin-left:auto;
+	color:var(--header-secondary);
+	font-size:12px;
+	font-weight:600;
+	transition:color.125s;
+	align-self:center
+}
+.soundmojiViewMore_a3bc57:hover
+{
+	color:var(--interactive-active)
 }
 .premiumRetentionNotice_fa8a68
 {
@@ -26583,8 +26619,8 @@ input[type=checkbox]:focus-visible+.label_d1ac9b
 }
 .visual-refresh .flushContainer_bdf0de
 {
-	background-color:transparent;
-	background-color:initial;
+	background:transparent none repeat 0 0/auto auto padding-box border-box scroll;
+	background:initial;
 	border:none
 }
 .visual-refresh .flushContainer_bdf0de .accessoryBar_bdf0de
@@ -33762,7 +33798,6 @@ img.thumbnail_c64476
 	background-color:var(--menu-item-default-hover-bg);
 	color:var(--white)
 }
-.colorDefault_d90b3d.focused_d90b3d .subtext_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .checkbox_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .radioSelection_d90b3d,
 .colorDefault_d90b3d.focused_d90b3d .caret_d90b3d
@@ -36259,7 +36294,7 @@ img.thumbnail_c64476
 	left:calc(50% - 5px);
 	top:29px
 }
-.platform-osx .container_fc4f04
+.platform-osx:not(.visual-refresh) .container_fc4f04
 {
 	-webkit-app-region:drag
 }
@@ -37232,7 +37267,7 @@ img.thumbnail_c64476
 {
 	border-color:var(--custom-notice-text)!important
 }
-.platform-osx .notice_be03aa
+.platform-osx:not(.visual-refresh) .notice_be03aa
 {
 	-webkit-app-region:drag
 }
@@ -38809,8 +38844,11 @@ img.thumbnail_c64476
 .typeMacOSWithFrame_a934d8
 {
 	justify-content:space-between;
+	align-items:center;
 	flex-direction:row;
-	display:flex
+	display:flex;
+	margin-top:0;
+	height:24px
 }
 .typeMacOSWithFrame_a934d8 .macButtons_a934d8
 {
@@ -44902,6 +44940,123 @@ html.disable-forced-colors *
 {
 	margin-left:8px
 }
+.bar_a5e357
+{
+	grid-area:titleBar;
+	display:flex;
+	align-items:center;
+	align-content:center;
+	justify-content:space-between;
+	gap:var(--space-8);
+	min-height:var(--custom-app-top-bar-height);
+	padding-left:calc(var(--custom-guild-list-width) + var(--space-8));
+	padding-right:var(--space-12);
+	position:relative;
+	-webkit-app-region:drag
+}
+.shortBar_a5e357
+{
+	--custom-app-top-bar-height:24px
+}
+.systemBar_a5e357
+{
+	justify-content:flex-end;
+	z-index:999999;
+	display:none
+}
+.show_a5e357
+{
+	display:flex
+}
+.fixed_a5e357
+{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0
+}
+.title_a5e357
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0
+}
+@media(max-width:800px)
+{
+	.title_a5e357
+	{
+		display:none
+	}
+	
+}
+.leading_a5e357
+{
+	box-sizing:border-box;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	gap:var(--space-12);
+	position:relative;
+	z-index:1;
+	-webkit-app-region:no-drag
+}
+.trailing_a5e357
+{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	gap:var(--space-12);
+	position:relative;
+	z-index:1;
+	-webkit-app-region:no-drag
+}
+.winButtons_a5e357
+{
+	color:var(--interactive-normal);
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	gap:var(--space-4);
+	margin-right:calc(-1*var(--space-8))
+}
+.winButtonsWithDivider_a5e357:before
+{
+	content:"";
+	display:block;
+	border-left:1px solid var(--border-subtle);
+	height:calc(var(--custom-app-top-bar-height) - var(--space-12));
+	margin-left:var(--space-4);
+	margin-right:var(--space-4)
+}
+.winButton_a5e357
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:var(--custom-app-top-bar-height);
+	height:var(--custom-app-top-bar-height);
+	cursor:pointer
+}
+.winButtonMinMax_a5e357:hover
+{
+	background-color:var(--background-modifier-hover);
+	color:var(--interactive-hover)
+}
+.winButtonMinMax_a5e357:active
+{
+	background-color:var(--background-modifier-active);
+	color:var(--interactive-active)
+}
+.winButtonClose_a5e357:hover
+{
+	color:var(--white-500);
+	background-color:var(--status-danger)
+}
 .appAsidePanelWrapper_bd26cc
 {
 	flex:1 1 auto;
@@ -44924,14 +45079,6 @@ html.disable-forced-colors *
 	z-index:auto;
 	height:100%
 }
-.visual-refresh .app_bd26cc
-{
-	position:static
-}
-.visual-refresh .notAppAsidePanel_bd26cc:has(~[data-app-right-panel=true]) .app_bd26cc
-{
-	position:relative
-}
 .mobileApp_bd26cc
 {
 	z-index:auto;
@@ -44941,6 +45088,14 @@ html.disable-forced-colors *
 .allowsScrolling_bd26cc
 {
 	overflow:auto
+}
+.visual-refresh .app_bd26cc
+{
+	position:static
+}
+.visual-refresh .notAppAsidePanel_bd26cc:has(~[data-app-right-panel=true]) .app_bd26cc
+{
+	position:relative
 }
 .modal_c97cbd
 {
@@ -60728,6 +60883,13 @@ blue))and (top:var(--f))
 }
 @font-face
 {
+	font-family:"ABC Ginto Nord Discord";
+	font-style:normal;
+	font-weight:700;
+	src:url(/assets/42b3e1a9bad5fc0a5b03.woff2)format("woff2")
+}
+@font-face
+{
 	font-family:"ABC Ginto Normal";
 	font-style:normal;
 	font-weight:300;
@@ -60795,6 +60957,20 @@ blue))and (top:var(--f))
 	font-style:italic;
 	font-weight:800;
 	src:url(/assets/1870f9e7f4db57ba6f51.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Discord";
+	font-style:normal;
+	font-weight:400;
+	src:url(/assets/ecc40c07cc3d8225aac1.woff2)format("woff2")
+}
+@font-face
+{
+	font-family:"ABC Ginto Discord";
+	font-style:normal;
+	font-weight:500;
+	src:url(/assets/711dde52f9129a3286fa.woff2)format("woff2")
 }
 @font-face
 {
@@ -60988,7 +61164,7 @@ blue))and (top:var(--f))
 	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
 	sans-serif
 }
 :root:lang(el),
@@ -61004,7 +61180,8 @@ blue))and (top:var(--f))
 	Monaco, 'Courier New', Courier, monospace;
 	--font-clan-body:Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display-marketing:'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+	sans-serif
 }
 :root:lang(ko)
 {
@@ -61021,7 +61198,7 @@ blue))and (top:var(--f))
 	Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
 	'Malgun Gothic', Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
 	'Malgun Gothic', Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 :root:lang(ja)
@@ -61040,7 +61217,7 @@ blue))and (top:var(--f))
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
 	'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
 	sans-serif;
-	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
 	'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
 	sans-serif
 }
@@ -61059,7 +61236,7 @@ blue))and (top:var(--f))
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
 	'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 :root:lang(zh-TW)
@@ -61077,7 +61254,7 @@ blue))and (top:var(--f))
 	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-clan-signature:Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
 	'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display-marketing:'ABC Ginto Nord', 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體,
+	--font-display-marketing:'ABC Ginto Discord', 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體,
 	'Microsoft JhengHei UI', 'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
 	sans-serif
 }
